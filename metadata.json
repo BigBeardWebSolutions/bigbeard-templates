@@ -1,0 +1,68 @@
+{
+  "repository": "bigbeard-templates",
+  "version": "1.0.0",
+  "description": "Template repository for BigBeard Website Builder",
+  "templates": [
+    {
+      "template_id": "technology-bbws-ai-page-builder-v1",
+      "name": "BBWS AI Page Builder Landing Page",
+      "path": "technology/bbws-ai-page-builder",
+      "industry": "technology",
+      "cta_intent": "signup",
+      "design_style": "modern",
+      "figma_source": "https://figma.com/design/mwrrjDHxuCCap3Sg2i5EXW/BBWS-AI-Page-Builder-Landing-Page?node-id=89:13",
+      "keywords": ["technology", "saas", "ai", "website builder", "landing page", "modern", "gradient"],
+      "created_at": "2026-02-01T16:00:00Z"
+    }
+  ],
+  "industries": [
+    "restaurant",
+    "healthcare",
+    "technology",
+    "ecommerce",
+    "real_estate",
+    "professional_services",
+    "creative_agency",
+    "education",
+    "nonprofit",
+    "fitness",
+    "hospitality",
+    "finance",
+    "retail",
+    "automotive",
+    "beauty_spa",
+    "other"
+  ],
+  "cta_intents": [
+    "contact",
+    "purchase",
+    "booking",
+    "signup",
+    "lead_generation",
+    "download",
+    "learn_more"
+  ],
+  "design_styles": [
+    "modern",
+    "classic",
+    "minimal",
+    "bold",
+    "elegant",
+    "playful",
+    "corporate",
+    "warm"
+  ],
+  "stats": {
+    "total_templates": 1,
+    "by_industry": {
+      "technology": 1
+    },
+    "by_cta_intent": {
+      "signup": 1
+    },
+    "by_design_style": {
+      "modern": 1
+    }
+  },
+  "updated_at": "2026-02-01T16:30:00Z"
+}

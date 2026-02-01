@@ -1,0 +1,270 @@
+name: Sync Templates to S3
+
+on:
+  push:
+    branches:
+      - main      # Production
+      - staging   # SIT
+      - develop   # DEV
+    paths:
+      - '**/*.html'
+      - '**/*.css'
+      - '**/*.js'
+      - '**/template-config.json'
+      - '**/metadata.json'
+      - '**/preview.png'
+      - 'metadata.json'
+
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Target environment'
+        required: true
+        default: 'dev'
+        type: choice
+        options:
+          - dev
+          - sit
+          - prod
+
+env:
+  AWS_REGION: eu-west-1
+
+jobs:
+  validate:
+    name: Validate Templates
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Validate all templates
+        run: |
+          python scripts/validate_template.py --all
+          if [ $? -ne 0 ]; then
+            echo "❌ Template validation failed"
+            exit 1
+          fi
+          echo "✅ All templates validated successfully"
+
+  determine-environment:
+    name: Determine Environment
+    runs-on: ubuntu-latest
+    outputs:
+      environment: ${{ steps.set-env.outputs.environment }}
+      s3_bucket: ${{ steps.set-env.outputs.s3_bucket }}
+    steps:
+      - name: Set environment based on branch
+        id: set-env
+        run: |
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            ENV="${{ github.event.inputs.environment }}"
+          elif [[ "${{ github.ref }}" == "refs/heads/main" ]]; then
+            ENV="prod"
+          elif [[ "${{ github.ref }}" == "refs/heads/staging" ]]; then
+            ENV="sit"
+          else
+            ENV="dev"
+          fi
+
+          echo "environment=${ENV}" >> $GITHUB_OUTPUT
+
+          case $ENV in
+            prod)
+              echo "s3_bucket=bbws-templates-prod" >> $GITHUB_OUTPUT
+              ;;
+            sit)
+              echo "s3_bucket=bbws-templates-sit" >> $GITHUB_OUTPUT
+              ;;
+            *)
+              echo "s3_bucket=bbws-templates-dev" >> $GITHUB_OUTPUT
+              ;;
+          esac
+
+          echo "📦 Target environment: ${ENV}"
+
+  sync-to-s3:
+    name: Sync to S3
+    needs: [validate, determine-environment]
+    runs-on: ubuntu-latest
+    environment: ${{ needs.determine-environment.outputs.environment }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Sync templates to S3
+        env:
+          S3_BUCKET: ${{ needs.determine-environment.outputs.s3_bucket }}
+        run: |
+          echo "🚀 Syncing templates to s3://${S3_BUCKET}/templates/"
+
+          # Sync each industry directory
+          for industry_dir in */; do
+            # Skip hidden directories, scripts, and .github
+            if [[ "$industry_dir" == "."* ]] || [[ "$industry_dir" == "scripts/" ]] || [[ "$industry_dir" == ".github/" ]]; then
+              continue
+            fi
+
+            if [ -d "$industry_dir" ]; then
+              echo "📁 Syncing industry: $industry_dir"
+              aws s3 sync "$industry_dir" "s3://${S3_BUCKET}/templates/${industry_dir}" \
+                --delete \
+                --exclude ".*" \
+                --sse AES256
+            fi
+          done
+
+          # Sync master metadata.json
+          echo "📄 Syncing metadata.json"
+          aws s3 cp metadata.json "s3://${S3_BUCKET}/templates/metadata.json" --sse AES256
+
+          echo "✅ Sync complete!"
+
+      - name: Update template registry
+        env:
+          S3_BUCKET: ${{ needs.determine-environment.outputs.s3_bucket }}
+        run: |
+          echo "📝 Updating template registry..."
+
+          # Create registry from individual metadata files
+          python3 << 'EOF'
+          import json
+          import os
+          from pathlib import Path
+          from datetime import datetime
+
+          # Industry directories
+          industries = [
+              "restaurant", "healthcare", "technology", "ecommerce", "real_estate",
+              "professional_services", "creative_agency", "education", "nonprofit",
+              "fitness", "hospitality", "finance", "retail", "automotive", "beauty_spa", "other"
+          ]
+
+          templates = []
+          stats = {
+              "total_templates": 0,
+              "by_industry": {},
+              "by_cta_intent": {},
+              "by_design_style": {}
+          }
+
+          for industry in industries:
+              industry_path = Path(industry)
+              if not industry_path.exists():
+                  continue
+
+              for template_dir in industry_path.iterdir():
+                  if not template_dir.is_dir():
+                      continue
+
+                  metadata_path = template_dir / "metadata.json"
+                  if not metadata_path.exists():
+                      continue
+
+                  try:
+                      with open(metadata_path) as f:
+                          metadata = json.load(f)
+
+                      # Add s3_key
+                      metadata["s3_key"] = f"templates/{industry}/{template_dir.name}/"
+
+                      templates.append(metadata)
+
+                      # Update stats
+                      stats["total_templates"] += 1
+                      stats["by_industry"][industry] = stats["by_industry"].get(industry, 0) + 1
+
+                      cta = metadata.get("cta_intent", "other")
+                      stats["by_cta_intent"][cta] = stats["by_cta_intent"].get(cta, 0) + 1
+
+                      style = metadata.get("design_style", "other")
+                      stats["by_design_style"][style] = stats["by_design_style"].get(style, 0) + 1
+
+                  except Exception as e:
+                      print(f"Warning: Failed to process {metadata_path}: {e}")
+
+          # Build registry
+          registry = {
+              "templates": templates,
+              "stats": stats,
+              "updated_at": datetime.utcnow().isoformat() + "Z"
+          }
+
+          # Write registry
+          with open("template-registry.json", "w") as f:
+              json.dump(registry, f, indent=2)
+
+          print(f"✅ Generated registry with {len(templates)} templates")
+          EOF
+
+          # Upload registry
+          aws s3 cp template-registry.json "s3://${S3_BUCKET}/templates/template-registry.json" --sse AES256
+
+          echo "✅ Registry updated!"
+
+  trigger-embedding-generation:
+    name: Trigger Embedding Generation
+    needs: [sync-to-s3, determine-environment]
+    runs-on: ubuntu-latest
+    if: needs.determine-environment.outputs.environment != 'prod'  # Only for dev/sit
+
+    steps:
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Invoke embedding Lambda
+        env:
+          ENVIRONMENT: ${{ needs.determine-environment.outputs.environment }}
+        run: |
+          echo "🔄 Triggering embedding generation for ${ENVIRONMENT}..."
+
+          # Invoke Lambda to regenerate embeddings
+          # This Lambda should read from S3 and update the Bedrock Knowledge Base
+          aws lambda invoke \
+            --function-name "bbws-embedding-generator-${ENVIRONMENT}" \
+            --payload '{"action": "regenerate", "source": "github-sync"}' \
+            --cli-binary-format raw-in-base64-out \
+            response.json \
+            || echo "⚠️ Embedding Lambda not found or failed (this is OK for initial setup)"
+
+          if [ -f response.json ]; then
+            cat response.json
+          fi
+
+          echo "✅ Embedding generation triggered"
+
+  notify-completion:
+    name: Notify Completion
+    needs: [sync-to-s3, determine-environment]
+    runs-on: ubuntu-latest
+    if: always()
+
+    steps:
+      - name: Send notification
+        env:
+          ENVIRONMENT: ${{ needs.determine-environment.outputs.environment }}
+          S3_BUCKET: ${{ needs.determine-environment.outputs.s3_bucket }}
+        run: |
+          if [[ "${{ needs.sync-to-s3.result }}" == "success" ]]; then
+            echo "✅ Templates synced successfully to ${ENVIRONMENT} (${S3_BUCKET})"
+          else
+            echo "❌ Template sync failed"
+            exit 1
+          fi

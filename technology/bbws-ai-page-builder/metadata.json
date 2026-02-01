@@ -1,0 +1,41 @@
+{
+  "template_id": "technology-bbws-ai-page-builder-v1",
+  "name": "BBWS AI Page Builder Landing Page",
+  "figma_source": "https://figma.com/design/mwrrjDHxuCCap3Sg2i5EXW/BBWS-AI-Page-Builder-Landing-Page?node-id=89:13",
+  "industry": "technology",
+  "cta_intent": "signup",
+  "design_style": "modern",
+  "color_palette": {
+    "primary": "#0090FF",
+    "secondary": "#36DAE9",
+    "accent": "#36DAE9",
+    "background": "#FAFAFA",
+    "text_primary": "#000000",
+    "text_secondary": "#FFFFFF"
+  },
+  "typography": {
+    "heading_font": "Inter",
+    "body_font": "Inter",
+    "base_size": "16px"
+  },
+  "sections": ["hero", "features", "examples", "cta", "footer"],
+  "customizable_fields": [
+    "{{BUSINESS_NAME}}",
+    "{{TAGLINE}}",
+    "{{HERO_HEADLINE}}",
+    "{{HERO_DESCRIPTION}}",
+    "{{PRIMARY_CTA}}",
+    "{{YEAR}}"
+  ],
+  "css_variables": [
+    "--primary-color",
+    "--secondary-color",
+    "--accent-color",
+    "--background-color",
+    "--text-color"
+  ],
+  "keywords": ["technology", "saas", "ai", "website builder", "landing page", "modern", "gradient"],
+  "description": "A modern technology landing page for AI-powered website builder. Features gradient buttons, feature cards, example prompts section, and call-to-action. Uses Inter font family with blue/cyan gradient accent colors.",
+  "created_at": "2026-02-01T16:00:00Z",
+  "source": "figma-mcp"
+}

@@ -1,0 +1,172 @@
+{
+  "template_id": "technology-bbws-ai-page-builder-v1",
+  "name": "BBWS AI Page Builder Landing Page",
+  "placeholders": {
+    "{{BUSINESS_NAME}}": {
+      "default": "AI Page Builder",
+      "description": "Your company or product name",
+      "required": true
+    },
+    "{{TAGLINE}}": {
+      "default": "AI-Powered Website Creation",
+      "description": "Short tagline or slogan",
+      "required": true
+    },
+    "{{HERO_HEADLINE}}": {
+      "default": "Build Websites with AI",
+      "description": "Main headline for the hero section",
+      "required": true
+    },
+    "{{HERO_DESCRIPTION}}": {
+      "default": "Transform your ideas into stunning websites in minutes. Just describe what you want, and our AI handles the rest.",
+      "description": "Description text below the hero headline",
+      "required": true
+    },
+    "{{PRIMARY_CTA}}": {
+      "default": "GET STARTED",
+      "description": "Primary call-to-action button text",
+      "required": true
+    },
+    "{{YEAR}}": {
+      "default": "2026",
+      "description": "Copyright year",
+      "required": false
+    }
+  },
+  "image_slots": [
+    {
+      "selector": ".hero",
+      "property": "background-image",
+      "path": "images/hero-bg.jpg",
+      "keywords": ["technology", "abstract", "gradient", "dark"],
+      "aspect_ratio": "16:9",
+      "min_width": 1920
+    },
+    {
+      "selector": ".examples",
+      "property": "background-image",
+      "path": "images/examples-bg.jpg",
+      "keywords": ["technology", "abstract", "dark", "pattern"],
+      "aspect_ratio": "16:9",
+      "min_width": 1920
+    },
+    {
+      "selector": ".logo-img",
+      "property": "src",
+      "path": "images/logo.png",
+      "keywords": ["logo", "brand"],
+      "aspect_ratio": "auto",
+      "min_width": 200
+    },
+    {
+      "selector": ".footer-logo",
+      "property": "src",
+      "path": "images/logo-white.png",
+      "keywords": ["logo", "brand", "white"],
+      "aspect_ratio": "auto",
+      "min_width": 200
+    }
+  ],
+  "icon_slots": [
+    {
+      "path": "images/icon-language.png",
+      "alt": "Natural Language",
+      "keywords": ["language", "text", "chat"]
+    },
+    {
+      "path": "images/icon-flash.png",
+      "alt": "Instant Generation",
+      "keywords": ["speed", "fast", "lightning"]
+    },
+    {
+      "path": "images/icon-design.png",
+      "alt": "Beautiful Design",
+      "keywords": ["design", "palette", "art"]
+    },
+    {
+      "path": "images/icon-custom.png",
+      "alt": "Full Customisation",
+      "keywords": ["settings", "customize", "gear"]
+    },
+    {
+      "path": "images/icon-mobile.png",
+      "alt": "Mobile First",
+      "keywords": ["mobile", "phone", "responsive"]
+    },
+    {
+      "path": "images/icon-performance.png",
+      "alt": "Fast Performance",
+      "keywords": ["performance", "speed", "rocket"]
+    },
+    {
+      "path": "images/icon-ai.png",
+      "alt": "AI",
+      "keywords": ["ai", "artificial intelligence", "robot"]
+    }
+  ],
+  "sections": {
+    "hero": {
+      "required": true,
+      "customizable": true,
+      "description": "Full-height hero with background image, headline, description, and feature pills"
+    },
+    "features": {
+      "required": true,
+      "customizable": true,
+      "description": "6 feature cards in a 3-column grid with icons, titles, and descriptions"
+    },
+    "examples": {
+      "required": false,
+      "customizable": true,
+      "description": "6 example prompt cards showing use cases with generate buttons"
+    },
+    "cta": {
+      "required": true,
+      "customizable": true,
+      "description": "Call-to-action section with headline, description, and button"
+    },
+    "footer": {
+      "required": true,
+      "customizable": false,
+      "description": "Simple footer with logo and copyright"
+    }
+  },
+  "css_variables": {
+    "--primary-color": {
+      "default": "#0090FF",
+      "description": "Primary brand color"
+    },
+    "--secondary-color": {
+      "default": "#36DAE9",
+      "description": "Secondary/accent color"
+    },
+    "--accent-color": {
+      "default": "#36DAE9",
+      "description": "Accent color for highlights"
+    },
+    "--background-color": {
+      "default": "#FAFAFA",
+      "description": "Main background color"
+    },
+    "--surface-color": {
+      "default": "#FFFFFF",
+      "description": "Card and surface color"
+    },
+    "--text-color": {
+      "default": "#000000",
+      "description": "Primary text color"
+    },
+    "--text-secondary": {
+      "default": "#FFFFFF",
+      "description": "Secondary text color (on dark backgrounds)"
+    },
+    "--gradient": {
+      "default": "linear-gradient(129deg, #0090FF 9.28%, #36DAE9 82.39%)",
+      "description": "Primary gradient for buttons and accents"
+    }
+  },
+  "responsive_breakpoints": {
+    "tablet": "1024px",
+    "mobile": "768px"
+  }
+}
