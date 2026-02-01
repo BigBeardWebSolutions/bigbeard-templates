@@ -30,6 +30,11 @@ on:
 env:
   AWS_REGION: eu-west-1
 
+# Required for OIDC authentication
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   validate:
     name: Validate Templates
@@ -58,6 +63,7 @@ jobs:
     outputs:
       environment: ${{ steps.set-env.outputs.environment }}
       s3_bucket: ${{ steps.set-env.outputs.s3_bucket }}
+      iam_role: ${{ steps.set-env.outputs.iam_role }}
     steps:
       - name: Set environment based on branch
         id: set-env
@@ -74,15 +80,19 @@ jobs:
 
           echo "environment=${ENV}" >> $GITHUB_OUTPUT
 
+          # Set bucket and IAM role based on environment
           case $ENV in
             prod)
               echo "s3_bucket=bbws-templates-prod" >> $GITHUB_OUTPUT
+              echo "iam_role=arn:aws:iam::536580886816:role/github-actions-bigbeard-templates-prod" >> $GITHUB_OUTPUT
               ;;
             sit)
               echo "s3_bucket=bbws-templates-sit" >> $GITHUB_OUTPUT
+              echo "iam_role=arn:aws:iam::536580886816:role/github-actions-bigbeard-templates-sit" >> $GITHUB_OUTPUT
               ;;
             *)
               echo "s3_bucket=bbws-templates-dev" >> $GITHUB_OUTPUT
+              echo "iam_role=arn:aws:iam::536580886816:role/github-actions-bigbeard-templates-dev" >> $GITHUB_OUTPUT
               ;;
           esac
 
@@ -98,11 +108,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Configure AWS credentials
+      - name: Configure AWS credentials (OIDC)
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          role-to-assume: ${{ needs.determine-environment.outputs.iam_role }}
+          role-session-name: github-actions-template-sync
           aws-region: ${{ env.AWS_REGION }}
 
       - name: Sync templates to S3
@@ -222,11 +232,11 @@ jobs:
     if: needs.determine-environment.outputs.environment != 'prod'  # Only for dev/sit
 
     steps:
-      - name: Configure AWS credentials
+      - name: Configure AWS credentials (OIDC)
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          role-to-assume: ${{ needs.determine-environment.outputs.iam_role }}
+          role-session-name: github-actions-embedding-trigger
           aws-region: ${{ env.AWS_REGION }}
 
       - name: Invoke embedding Lambda
