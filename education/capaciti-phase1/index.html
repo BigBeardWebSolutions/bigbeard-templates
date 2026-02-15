@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{BUSINESS_NAME}} - {{TAGLINE}}</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="nav-logo">
+                <img src="images/logo.png" alt="{{BUSINESS_NAME}}" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#solutions" class="active">{{NAV_LINK_1}}</a></li>
+                <li><a href="#impact">{{NAV_LINK_2}}</a></li>
+                <li><a href="#about">{{NAV_LINK_3}}</a></li>
+                <li><a href="#stories">{{NAV_LINK_4}}</a></li>
+            </ul>
+            <a href="#contact" class="btn btn-secondary">{{PRIMARY_CTA}}</a>
+            <button class="mobile-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg">
+            <img src="images/hero-bg.png" alt="" class="hero-bg-img">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-headline">{{HERO_HEADLINE}}</h1>
+        </div>
+    </section>
+
+    <!-- How We Drive Change Section -->
+    <section id="solutions" class="drive-change-section">
+        <div class="container">
+            <h2 class="section-title dark">{{SECTION_DRIVE_TITLE}}</h2>
+            <p class="section-subtitle dark">{{SECTION_DRIVE_DESCRIPTION}}</p>
+
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <img src="images/solution-1.png" alt="{{SOLUTION_1_TITLE}}" class="solution-bg">
+                    <div class="solution-overlay"></div>
+                    <div class="solution-content">
+                        <h3>{{SOLUTION_1_TITLE}}</h3>
+                        <a href="#" class="solution-cta">{{SECONDARY_CTA}} <span class="arrow">&raquo;</span></a>
+                    </div>
+                </div>
+                <div class="solution-card">
+                    <img src="images/solution-2.png" alt="{{SOLUTION_2_TITLE}}" class="solution-bg">
+                    <div class="solution-overlay"></div>
+                    <div class="solution-content">
+                        <h3>{{SOLUTION_2_TITLE}}</h3>
+                        <a href="#" class="solution-cta">{{SECONDARY_CTA}} <span class="arrow">&raquo;</span></a>
+                    </div>
+                </div>
+                <div class="solution-card">
+                    <img src="images/solution-3.png" alt="{{SOLUTION_3_TITLE}}" class="solution-bg">
+                    <div class="solution-overlay"></div>
+                    <div class="solution-content">
+                        <h3>{{SOLUTION_3_TITLE}}</h3>
+                        <a href="#" class="solution-cta">{{SECONDARY_CTA}} <span class="arrow">&raquo;</span></a>
+                    </div>
+                </div>
+                <div class="solution-card">
+                    <img src="images/solution-4.png" alt="{{SOLUTION_4_TITLE}}" class="solution-bg">
+                    <div class="solution-overlay"></div>
+                    <div class="solution-content">
+                        <h3>{{SOLUTION_4_TITLE}}</h3>
+                        <a href="#" class="solution-cta">{{SECONDARY_CTA}} <span class="arrow">&raquo;</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Where We're Making a Difference (Impact Stats) Section -->
+    <section id="impact" class="impact-section">
+        <div class="impact-bg-gradient"></div>
+        <div class="container impact-content">
+            <div class="impact-left">
+                <h2 class="impact-title">{{SECTION_IMPACT_TITLE}}</h2>
+                <p class="impact-description">{{SECTION_IMPACT_DESCRIPTION}}</p>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">{{STAT_1_VALUE}}</span>
+                        <span class="stat-label">{{STAT_1_LABEL}}</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">{{STAT_2_VALUE}}</span>
+                        <span class="stat-label">{{STAT_2_LABEL}}</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">{{STAT_3_VALUE}}</span>
+                        <span class="stat-label">{{STAT_3_LABEL}}</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">{{STAT_4_VALUE}}</span>
+                        <span class="stat-label">{{STAT_4_LABEL}}</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">{{STAT_5_VALUE}}</span>
+                        <span class="stat-label">{{STAT_5_LABEL}}</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">{{STAT_6_VALUE}}</span>
+                        <span class="stat-label">{{STAT_6_LABEL}}</span>
+                    </div>
+                </div>
+                <a href="#contact" class="btn btn-secondary impact-cta">{{IMPACT_CTA}}</a>
+            </div>
+            <div class="impact-right">
+                <div class="impact-person-wrapper">
+                    <div class="impact-person-bg-decor"></div>
+                    <img src="images/impact-person.png" alt="{{BUSINESS_NAME}} Impact" class="impact-visual">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline-section">
+        <div class="container">
+            <h2 class="section-title dark">{{SECTION_TIMELINE_TITLE}}</h2>
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                <div class="timeline-nodes">
+                    <div class="timeline-node small">
+                        <span class="timeline-year-small">{{TIMELINE_1_YEAR}}</span>
+                    </div>
+                    <div class="timeline-node small">
+                        <span class="timeline-year-small">{{TIMELINE_2_YEAR}}</span>
+                    </div>
+                    <div class="timeline-node center">
+                        <span class="timeline-year-center">{{TIMELINE_CENTER_YEAR}}</span>
+                    </div>
+                    <div class="timeline-node small">
+                        <span class="timeline-year-small">{{TIMELINE_4_YEAR}}</span>
+                    </div>
+                    <div class="timeline-node small">
+                        <span class="timeline-year-small">{{TIMELINE_5_YEAR}}</span>
+                    </div>
+                    <div class="timeline-node small">
+                        <span class="timeline-year-small">{{TIMELINE_6_YEAR}}</span>
+                    </div>
+                </div>
+                <div class="timeline-descriptions">
+                    <p class="timeline-desc left">{{TIMELINE_DESC_LEFT}}</p>
+                    <p class="timeline-desc right">{{TIMELINE_DESC_RIGHT}}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section id="stories" class="stories-section">
+        <div class="container">
+            <h2 class="section-title white">{{SECTION_STORIES_TITLE}}</h2>
+            <div class="testimonials-row">
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="images/testimonial-1.png" alt="{{TESTIMONIAL_1_NAME}}">
+                    </div>
+                    <p class="testimonial-name">{{TESTIMONIAL_1_NAME}}</p>
+                    <p class="testimonial-role">{{TESTIMONIAL_1_ROLE}}</p>
+                    <p class="testimonial-quote">"{{TESTIMONIAL_1_QUOTE}}"</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="images/testimonial-2.png" alt="{{TESTIMONIAL_2_NAME}}">
+                    </div>
+                    <p class="testimonial-name">{{TESTIMONIAL_2_NAME}}</p>
+                    <p class="testimonial-role">{{TESTIMONIAL_2_ROLE}}</p>
+                    <p class="testimonial-quote">"{{TESTIMONIAL_2_QUOTE}}"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get To Know Us Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title dark">{{SECTION_ABOUT_TITLE}}</h2>
+            <p class="section-subtitle dark">{{SECTION_ABOUT_DESCRIPTION}}</p>
+            <div class="about-images">
+                <div class="about-img">
+                    <img src="images/about-1.png" alt="{{BUSINESS_NAME}} Team">
+                </div>
+                <div class="about-img">
+                    <img src="images/about-2.png" alt="{{BUSINESS_NAME}} Community">
+                </div>
+                <div class="about-img">
+                    <img src="images/about-3.png" alt="{{BUSINESS_NAME}} Youth">
+                </div>
+                <div class="about-img">
+                    <img src="images/about-4.png" alt="{{BUSINESS_NAME}} Group">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Visionary Partners Section -->
+    <section id="visionary" class="visionary-section">
+        <div class="container">
+            <h2 class="section-title dark">{{SECTION_VISIONARY_TITLE}}</h2>
+            <div class="visionary-logos">
+                <div class="visionary-logo"><img src="images/partner-1.png" alt="Partner 1"></div>
+                <div class="visionary-logo"><img src="images/partner-2.png" alt="Partner 2"></div>
+                <div class="visionary-logo"><img src="images/partner-3.png" alt="Partner 3"></div>
+                <div class="visionary-logo"><img src="images/partner-4.png" alt="Partner 4"></div>
+                <div class="visionary-logo"><img src="images/partner-5.png" alt="Partner 5"></div>
+                <div class="visionary-logo"><img src="images/partner-6.png" alt="Partner 6"></div>
+                <div class="visionary-logo"><img src="images/partner-7.png" alt="Partner 7"></div>
+                <div class="visionary-logo"><img src="images/partner-8.png" alt="Partner 8"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Our Community Section -->
+    <section id="community" class="community-section">
+        <div class="container">
+            <h2 class="community-title">{{SECTION_COMMUNITY_TITLE}}</h2>
+            <form class="community-form" onsubmit="return false;">
+                <input type="email" placeholder="Your Email" class="community-input" required>
+                <button type="submit" class="btn btn-primary">{{COMMUNITY_CTA}}</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <img src="images/footer-logo.png" alt="{{BUSINESS_NAME}}">
+                </div>
+                <p class="footer-tagline">{{TAGLINE}}</p>
+                <div class="footer-social-row">
+                    <div class="footer-social">
+                        <p class="footer-label">Follow Us:</p>
+                        <div class="social-icons">
+                            <a href="#" aria-label="LinkedIn"><img src="images/icon-linkedin.png" alt="LinkedIn"></a>
+                            <a href="#" aria-label="Instagram"><img src="images/icon-instagram.png" alt="Instagram"></a>
+                            <a href="#" aria-label="Facebook"><img src="images/icon-facebook.png" alt="Facebook"></a>
+                        </div>
+                    </div>
+                    <div class="footer-contact">
+                        <p class="footer-label">Enquiries:</p>
+                        <a href="mailto:{{EMAIL}}" class="footer-email">{{EMAIL}}</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-links-col">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul>
+                    <li><a href="#solutions">{{NAV_LINK_1}}</a></li>
+                    <li><a href="#impact">{{NAV_LINK_2}}</a></li>
+                    <li><a href="#about">{{NAV_LINK_3}}</a></li>
+                    <li><a href="#stories">{{NAV_LINK_4}}</a></li>
+                </ul>
+            </div>
+            <div class="footer-links-col">
+                <h4 class="footer-heading">Locations</h4>
+                <ul>
+                    <li>{{LOCATION_1}}</li>
+                    <li>{{LOCATION_2}}</li>
+                    <li>{{LOCATION_3}}</li>
+                    <li>{{LOCATION_4}}</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-content">
+                <p>Copyright &copy; {{YEAR}} {{BUSINESS_NAME}}. All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

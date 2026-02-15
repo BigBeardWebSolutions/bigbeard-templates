@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A community trust dedicated to empowering young people through education, enterprise development, and food security programs.">
+  <meta name="keywords" content="nonprofit, trust, community, charity, education, youth empowerment">
+  <title>Community Trust - Empowering Communities for a Brighter Future</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+
+  <!-- ===== Top Bar ===== -->
+  <div class="topbar">
+    <div class="topbar__contact">
+      <a href="tel:+27 21 000 0000" class="topbar__item">
+        <img src="images/icon-phone.png" alt="Phone" class="topbar__icon">
+        <span>+27 21 000 0000</span>
+      </a>
+      <a href="mailto:info@communitytrust.org" class="topbar__item">
+        <img src="images/icon-email.png" alt="Email" class="topbar__icon">
+        <span>info@communitytrust.org</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== Header / Navigation ===== -->
+  <header class="header" id="header">
+    <a href="#home">
+      <img src="images/logo.png" alt="Community Trust Logo" class="header__logo">
+    </a>
+    <nav class="header__nav" id="mainNav">
+      <a href="#home" class="header__nav-link header__nav-link--active">Home</a>
+      <a href="#about" class="header__nav-link">About Us</a>
+      <div class="header__nav-dropdown">
+        <a href="#focus" class="header__nav-link">Opportunities</a>
+        <img src="images/icon-dropdown.png" alt="Dropdown" class="header__nav-dropdown-icon">
+      </div>
+      <a href="#focus" class="header__nav-link">Programmes</a>
+      <a href="#impact" class="header__nav-link">Partnership</a>
+      <a href="#news" class="header__nav-link">News</a>
+      <a href="#contact" class="btn header__cta">Contact Us</a>
+    </nav>
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- ===== Hero Section ===== -->
+    <section class="hero" id="home">
+      <div class="hero__slider" id="heroSlider">
+        <div class="hero__slide hero__slide--active">
+          <img src="images/hero-slide-1.jpg" alt="Community members at sunset" class="hero__slide-image">
+        </div>
+        <div class="hero__slide">
+          <img src="images/hero-slide-2.jpg" alt="Youth development program" class="hero__slide-image">
+        </div>
+        <div class="hero__slide">
+          <img src="images/hero-slide-3.jpg" alt="Renewable energy project" class="hero__slide-image">
+        </div>
+      </div>
+      <div class="hero__overlay"></div>
+      <div class="hero__content animate-on-scroll">
+        <h1 class="hero__title">Empowering young people to succeed</h1>
+        <p class="hero__subtitle">Generating power for emerging markets</p>
+        <a href="#focus" class="btn">Discover Our Work</a>
+      </div>
+      <div class="hero__dots" id="heroDots">
+        <span class="hero__dot hero__dot--active" data-slide="0"></span>
+        <span class="hero__dot" data-slide="1"></span>
+        <span class="hero__dot" data-slide="2"></span>
+      </div>
+    </section>
+
+    <!-- ===== About / Who We Are ===== -->
+    <section class="about" id="about">
+      <div class="about__image-wrapper animate-on-scroll">
+        <img src="images/about-image.jpg" alt="Solar panels at community energy project" class="about__image">
+      </div>
+      <div class="about__content animate-on-scroll">
+        <span class="section-label">About Us</span>
+        <div class="section-label-line"></div>
+        <h2 class="about__title">Who We Are</h2>
+        <p class="about__text">Our trust was founded through a community power project, part of the country's Renewable Energy Independent Power Producer programme. This initiative was introduced to help alleviate the country's energy shortages. The Trust holds a stake in the power plant via its trust company. This means that profits are channeled to the Trust through dividends to invest in community upliftment. As an autonomous body, the Trust is guided by a board of trustees committed to operating transparently, ethically, and effectively.</p>
+        <a href="#contact" class="btn">Read More</a>
+      </div>
+    </section>
+
+    <!-- ===== Focus / Programs Section ===== -->
+    <section class="focus" id="focus">
+      <h2 class="focus__title animate-on-scroll">Our Focus</h2>
+      <div class="focus__grid">
+        <div class="focus__card animate-on-scroll">
+          <div class="focus__card-icon">
+            <img src="images/icon-enterprise.png" alt="Market and Enterprise Development">
+          </div>
+          <h3 class="focus__card-title">Market and Enterprise Development</h3>
+          <div class="focus__card-line"></div>
+          <p class="focus__card-text">We support the growth of small businesses, especially in underserved communities, fostering economic activity within our immediate areas of impact.</p>
+        </div>
+        <div class="focus__card animate-on-scroll">
+          <div class="focus__card-icon">
+            <img src="images/icon-education.png" alt="Youth Education and Life Skills">
+          </div>
+          <h3 class="focus__card-title">Youth Education and Life Skills</h3>
+          <div class="focus__card-line"></div>
+          <p class="focus__card-text">Our initiatives aim to empower youth to overcome generational poverty. We place special emphasis on peer-driven support and encouraging beneficiaries to reinvest their knowledge and skills back into their communities.</p>
+        </div>
+        <div class="focus__card animate-on-scroll">
+          <div class="focus__card-icon">
+            <img src="images/icon-food.png" alt="Food Security">
+          </div>
+          <h3 class="focus__card-title">Food Security</h3>
+          <div class="focus__card-line"></div>
+          <p class="focus__card-text">We back local nutrition programmes that assist vulnerable groups, including children and the elderly. Our priority lies with initiatives that grow food within the community or source supplies from small local vendors.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== What We Do / Impact Section ===== -->
+    <section class="impact" id="impact">
+      <img src="images/impact-bg.jpg" alt="African savanna landscape at sunset" class="impact__bg">
+      <div class="impact__overlay"></div>
+      <div class="impact__content animate-on-scroll">
+        <span class="section-label" style="color: var(--text-white);">Giving to the Community</span>
+        <div class="section-label-line section-label-line--white"></div>
+        <h2 class="impact__title">What We Do</h2>
+        <p class="impact__text">We fund community-led projects by awarding grants to organisations through an open and competitive application process. This ensures that funding is directed towards the most impactful and sustainable initiatives in the region.</p>
+        <a href="#about" class="btn">Read More</a>
+      </div>
+    </section>
+
+    <!-- ===== Trustees Section ===== -->
+    <section class="trustees" id="trustees">
+      <h2 class="trustees__title animate-on-scroll">Our Trustees</h2>
+      <div class="trustees__grid">
+        <div class="trustee-card animate-on-scroll">
+          <div class="trustee-card__image-wrapper">
+            <div class="trustee-card__image-bg"></div>
+            <img src="images/trustee-1.png" alt="Jane Doe" class="trustee-card__image">
+          </div>
+          <div class="trustee-card__info">
+            <h3 class="trustee-card__name">Jane Doe</h3>
+            <p class="trustee-card__role">Trustee</p>
+            <a href="#" class="trustee-card__linkedin" aria-label="Jane Doe LinkedIn">
+              <img src="images/icon-linkedin.png" alt="LinkedIn" class="trustee-card__linkedin-icon">
+            </a>
+            <p class="trustee-card__bio">An experienced leader in economic development and community impact, responsible for driving social and sustainable growth initiatives across the region.</p>
+            <a href="#" class="link-read-more">READ MORE</a>
+          </div>
+        </div>
+        <div class="trustee-card animate-on-scroll">
+          <div class="trustee-card__image-wrapper">
+            <div class="trustee-card__image-bg"></div>
+            <img src="images/trustee-2.png" alt="John Smith" class="trustee-card__image">
+          </div>
+          <div class="trustee-card__info">
+            <h3 class="trustee-card__name">John Smith</h3>
+            <p class="trustee-card__role">Community Beneficiary Trustee</p>
+            <a href="#" class="trustee-card__linkedin" aria-label="John Smith LinkedIn">
+              <img src="images/icon-linkedin.png" alt="LinkedIn" class="trustee-card__linkedin-icon">
+            </a>
+            <p class="trustee-card__bio">A community advocate with extensive experience working with non-profit organizations, focusing on youth development within underserved areas.</p>
+            <a href="#" class="link-read-more">READ MORE</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Apply Now / CTA Banner ===== -->
+    <section class="apply-banner" id="apply">
+      <img src="images/apply-bg.jpg" alt="Community gathering background" class="apply-banner__bg">
+      <div class="apply-banner__overlay"></div>
+      <div class="apply-banner__content animate-on-scroll">
+        <h2 class="apply-banner__title">Apply Now</h2>
+        <p class="apply-banner__text">Download the Trust Deed and apply for grants and bursaries.</p>
+        <a href="#contact" class="btn">Download</a>
+      </div>
+    </section>
+
+    <!-- ===== Contact Section ===== -->
+    <section class="contact" id="contact">
+      <div class="contact__info animate-on-scroll">
+        <h2 class="contact__title">Get in touch with us</h2>
+        <p class="contact__description">For fund information, performance reports, or offering documents, please contact our team.</p>
+        <div class="contact__detail">
+          <img src="images/icon-email-dark.png" alt="Email" class="contact__detail-icon">
+          <p class="contact__detail-text">info@communitytrust.org</p>
+        </div>
+        <div class="contact__detail">
+          <img src="images/icon-phone-dark.png" alt="Phone" class="contact__detail-icon">
+          <p class="contact__detail-text">+27 21 000 0000</p>
+        </div>
+        <div class="contact__detail">
+          <img src="images/icon-location.png" alt="Address" class="contact__detail-icon">
+          <div class="contact__detail-text">
+            <p>Unit 5A, 5th Floor</p>
+            <p>Sunclare Building</p>
+            <p>21 Dreyer Street</p>
+            <p>Claremont</p>
+            <p>7708</p>
+          </div>
+        </div>
+        <h3 class="contact__social-label">Follow our social media</h3>
+        <div class="contact__social-icons">
+          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <img src="images/icon-linkedin-dark.png" alt="LinkedIn" class="contact__social-icon">
+          </a>
+        </div>
+      </div>
+      <div class="contact__form animate-on-scroll">
+        <h2 class="contact__form-title">Send us a message</h2>
+        <form id="contactForm" novalidate>
+          <div class="contact__form-row">
+            <div class="contact__form-group">
+              <label class="contact__form-label">Your Name<span class="required">*</span></label>
+              <input type="text" class="contact__form-input" name="name" required placeholder="Enter your full name">
+            </div>
+            <div class="contact__form-group">
+              <label class="contact__form-label">Email Address<span class="required">*</span></label>
+              <input type="email" class="contact__form-input" name="email" required placeholder="Enter your email address">
+            </div>
+          </div>
+          <div class="contact__form-group" style="margin-bottom: var(--spacing-md);">
+            <label class="contact__form-label">Message<span class="required">*</span></label>
+            <textarea class="contact__form-textarea" name="message" required placeholder="Type your message here..."></textarea>
+          </div>
+          <div class="contact__form-checkbox">
+            <input type="checkbox" id="termsCheckbox" name="terms" required>
+            <label for="termsCheckbox">I Accept the Terms of Use</label>
+          </div>
+          <div class="contact__form-radio-group">
+            <label class="contact__form-radio-label">Opt-in to Receive Marketing Communication?<span class="required" style="color: var(--error-color);">*</span></label>
+            <div class="contact__form-radio-options">
+              <label class="contact__form-radio-option">
+                <input type="radio" name="marketing" value="yes" required>
+                <span>Yes</span>
+              </label>
+              <label class="contact__form-radio-option">
+                <input type="radio" name="marketing" value="no">
+                <span>No</span>
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn--full-width">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===== Speak Out / Report Section ===== -->
+    <section class="speak-out" id="speak-out">
+      <img src="images/speak-out-image.jpg" alt="Community engagement scene" class="speak-out__image">
+      <div class="speak-out-banner">
+        <img src="images/speak-out-bg.jpg" alt="Abstract background" class="speak-out-banner__bg">
+        <div class="speak-out-banner__overlay"></div>
+        <div class="speak-out-banner__content animate-on-scroll">
+          <h2 class="speak-out-banner__title">Speak Out</h2>
+          <p class="speak-out-banner__text">Help Us To Prevent Corruption</p>
+          <a href="#contact" class="btn">View More</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer" id="footer">
+    <div class="footer__grid">
+      <div class="footer__column">
+        <a href="#about" class="footer__link">Our Governance</a>
+        <a href="#focus" class="footer__link">Opportunities</a>
+        <a href="#focus" class="footer__link">Special Programmes</a>
+        <a href="#impact" class="footer__link">Partnerships</a>
+        <a href="#news" class="footer__link">News</a>
+      </div>
+      <div class="footer__column">
+        <p class="footer__text">Unit 5A, 5th Floor</p>
+        <p class="footer__text">Sunclare Building</p>
+        <p class="footer__text">21 Dreyer Street</p>
+        <p class="footer__text">Claremont</p>
+        <p class="footer__text">7708</p>
+      </div>
+      <div class="footer__column">
+        <p class="footer__text">+27 21 000 0000</p>
+        <p class="footer__text">info@communitytrust.org</p>
+        <div class="footer__social">
+          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <img src="images/icon-linkedin-white.png" alt="LinkedIn" class="footer__social-icon">
+          </a>
+        </div>
+      </div>
+      <div class="footer__column">
+        <a href="#" class="footer__link">Terms and Conditions</a>
+        <a href="#" class="footer__link">Privacy Policy</a>
+        <a href="#" class="footer__link">Legal Notices</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copyright">2026 Community Trust. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,373 @@
+{
+  "template_id": "healthcare-hasa-main-site-v1",
+  "name": "Healthcare Association Corporate Website",
+  "placeholders": {
+    "{{BUSINESS_NAME}}": {
+      "default": "HASA",
+      "description": "Organization or brand name",
+      "required": true
+    },
+    "{{TAGLINE}}": {
+      "default": "Hospital Association of South Africa",
+      "description": "Short tagline or subtitle displayed in the page title",
+      "required": true
+    },
+    "{{HERO_HEADLINE}}": {
+      "default": "Representing the Owners and Managers of the Majority of Private Sector Hospital Beds in the Country",
+      "description": "Main hero section headline",
+      "required": true
+    },
+    "{{PRIMARY_CTA}}": {
+      "default": "Contact Us",
+      "description": "Primary call-to-action button text (header and footer)",
+      "required": true
+    },
+    "{{SECONDARY_CTA}}": {
+      "default": "Continue Reading",
+      "description": "Secondary CTA text used on news cards and links",
+      "required": true
+    },
+    "{{EMAIL}}": {
+      "default": "info@hasa.co.za",
+      "description": "Contact email address",
+      "required": true
+    },
+    "{{PHONE}}": {
+      "default": "+27 11 450 1029",
+      "description": "Contact phone number",
+      "required": true
+    },
+    "{{ADDRESS}}": {
+      "default": "PO Box 47190, Parklands, 2121",
+      "description": "Physical or postal address",
+      "required": true
+    },
+    "{{YEAR}}": {
+      "default": "2026",
+      "description": "Copyright year",
+      "required": false
+    },
+    "{{NAV_LINK_1}}": {
+      "default": "Home",
+      "description": "First navigation link label",
+      "required": true
+    },
+    "{{NAV_LINK_2}}": {
+      "default": "About Us",
+      "description": "Second navigation link label",
+      "required": true
+    },
+    "{{NAV_LINK_3}}": {
+      "default": "News",
+      "description": "Third navigation link label",
+      "required": true
+    },
+    "{{NAV_LINK_4}}": {
+      "default": "Research Centre",
+      "description": "Fourth navigation link label",
+      "required": true
+    },
+    "{{NAV_LINK_5}}": {
+      "default": "Podcast",
+      "description": "Fifth navigation link label",
+      "required": true
+    },
+    "{{NAV_LINK_6}}": {
+      "default": "Conference",
+      "description": "Sixth navigation link label",
+      "required": true
+    },
+    "{{NAV_LINK_7}}": {
+      "default": "NHI",
+      "description": "Seventh navigation link label",
+      "required": true
+    },
+    "{{MEMBERS_CENTRE_LINK}}": {
+      "default": "#members",
+      "description": "URL for the Members Centre link",
+      "required": false
+    },
+    "{{MEMBERS_LOGIN_LINK}}": {
+      "default": "#login",
+      "description": "URL for the Members Login link",
+      "required": false
+    },
+    "{{SECTION_QUICKLINKS_TITLE}}": {
+      "default": "Quick Links",
+      "description": "Title for the quick links section",
+      "required": true
+    },
+    "{{QUICKLINK_1_TITLE}}": {
+      "default": "Research Centre",
+      "description": "First quick link card title",
+      "required": true
+    },
+    "{{QUICKLINK_1_SUBTITLE}}": {
+      "default": "Access the latest healthcare research and data",
+      "description": "First quick link card subtitle",
+      "required": true
+    },
+    "{{QUICKLINK_2_TITLE}}": {
+      "default": "Members Centre",
+      "description": "Second quick link card title",
+      "required": true
+    },
+    "{{QUICKLINK_2_SUBTITLE}}": {
+      "default": "Exclusive resources for HASA members",
+      "description": "Second quick link card subtitle",
+      "required": true
+    },
+    "{{QUICKLINK_3_TITLE}}": {
+      "default": "Podcast Series",
+      "description": "Third quick link card title",
+      "required": true
+    },
+    "{{QUICKLINK_3_SUBTITLE}}": {
+      "default": "Listen to discussions on private healthcare",
+      "description": "Third quick link card subtitle",
+      "required": true
+    },
+    "{{SECTION_MEMBERS_TITLE}}": {
+      "default": "HASA Members",
+      "description": "Title for the members logo section",
+      "required": true
+    },
+    "{{SECTION_MEMBERS_DESCRIPTION}}": {
+      "default": "HASA represents the owners and managers of the majority of private sector hospital beds in South Africa. Our members include leading hospital groups committed to delivering quality healthcare to all South Africans.",
+      "description": "Description paragraph in the members section",
+      "required": true
+    },
+    "{{SECTION_NEWS_TITLE}}": {
+      "default": "Industry News",
+      "description": "Title for the news section",
+      "required": true
+    },
+    "{{NEWS_1_TITLE}}": {
+      "default": "Private Healthcare Sector Responds to NHI Implementation Plan",
+      "description": "First news article title",
+      "required": true
+    },
+    "{{NEWS_1_EXCERPT}}": {
+      "default": "HASA members have released a joint statement outlining their commitment to working with government on the implementation of the National Health Insurance.",
+      "description": "First news article excerpt",
+      "required": true
+    },
+    "{{NEWS_2_TITLE}}": {
+      "default": "Annual Healthcare Quality Report Released",
+      "description": "Second news article title",
+      "required": true
+    },
+    "{{NEWS_2_EXCERPT}}": {
+      "default": "The latest quality metrics show significant improvements in patient outcomes across private hospital facilities in the past year.",
+      "description": "Second news article excerpt",
+      "required": true
+    },
+    "{{NEWS_3_TITLE}}": {
+      "default": "HASA Conference 2026: Registration Now Open",
+      "description": "Third news article title",
+      "required": true
+    },
+    "{{NEWS_3_EXCERPT}}": {
+      "default": "Join healthcare leaders and policymakers at the annual HASA Conference to discuss the future of private healthcare in South Africa.",
+      "description": "Third news article excerpt",
+      "required": true
+    },
+    "{{FOOTER_COL1_TITLE}}": {
+      "default": "Quick Links",
+      "description": "Footer first column heading",
+      "required": true
+    },
+    "{{FOOTER_COL2_TITLE}}": {
+      "default": "Legal",
+      "description": "Footer second column heading",
+      "required": true
+    },
+    "{{FOOTER_COL3_TITLE}}": {
+      "default": "HASA Archive",
+      "description": "Footer third column heading",
+      "required": true
+    },
+    "{{FOOTER_COL4_TITLE}}": {
+      "default": "Contact",
+      "description": "Footer fourth column heading",
+      "required": true
+    }
+  },
+  "image_slots": [
+    {
+      "selector": ".hero__bg-img",
+      "property": "src",
+      "path": "images/hero-bg.png",
+      "keywords": ["hero", "hospital", "healthcare", "interior"],
+      "aspect_ratio": "16:9",
+      "min_width": 1920
+    },
+    {
+      "selector": ".logo-img",
+      "property": "src",
+      "path": "images/logo.png",
+      "keywords": ["logo", "brand", "healthcare"],
+      "aspect_ratio": "auto",
+      "min_width": 200
+    },
+    {
+      "selector": ".quick-link-card:nth-child(1) .quick-link-card__img",
+      "property": "src",
+      "path": "images/quicklink-1.png",
+      "keywords": ["research", "healthcare", "data"],
+      "aspect_ratio": "16:9",
+      "min_width": 400
+    },
+    {
+      "selector": ".quick-link-card:nth-child(2) .quick-link-card__img",
+      "property": "src",
+      "path": "images/quicklink-2.png",
+      "keywords": ["members", "people", "collaboration"],
+      "aspect_ratio": "16:9",
+      "min_width": 400
+    },
+    {
+      "selector": ".quick-link-card:nth-child(3) .quick-link-card__img",
+      "property": "src",
+      "path": "images/quicklink-3.png",
+      "keywords": ["podcast", "microphone", "discussion"],
+      "aspect_ratio": "16:9",
+      "min_width": 400
+    },
+    {
+      "selector": ".member-logo:nth-child(1) .member-logo__img",
+      "property": "src",
+      "path": "images/member-1.png",
+      "keywords": ["hospital", "member", "logo"],
+      "aspect_ratio": "auto",
+      "min_width": 140
+    },
+    {
+      "selector": ".member-logo:nth-child(2) .member-logo__img",
+      "property": "src",
+      "path": "images/member-2.png",
+      "keywords": ["hospital", "member", "logo"],
+      "aspect_ratio": "auto",
+      "min_width": 140
+    },
+    {
+      "selector": ".member-logo:nth-child(3) .member-logo__img",
+      "property": "src",
+      "path": "images/member-3.png",
+      "keywords": ["hospital", "member", "logo"],
+      "aspect_ratio": "auto",
+      "min_width": 140
+    },
+    {
+      "selector": ".member-logo:nth-child(4) .member-logo__img",
+      "property": "src",
+      "path": "images/member-4.png",
+      "keywords": ["hospital", "member", "logo"],
+      "aspect_ratio": "auto",
+      "min_width": 140
+    },
+    {
+      "selector": ".member-logo:nth-child(5) .member-logo__img",
+      "property": "src",
+      "path": "images/member-5.png",
+      "keywords": ["hospital", "member", "logo"],
+      "aspect_ratio": "auto",
+      "min_width": 140
+    },
+    {
+      "selector": ".member-logo:nth-child(6) .member-logo__img",
+      "property": "src",
+      "path": "images/member-6.png",
+      "keywords": ["hospital", "member", "logo"],
+      "aspect_ratio": "auto",
+      "min_width": 140
+    },
+    {
+      "selector": ".news-card:nth-child(1) .news-card__img",
+      "property": "src",
+      "path": "images/news-1.png",
+      "keywords": ["news", "healthcare", "article"],
+      "aspect_ratio": "16:9",
+      "min_width": 400
+    },
+    {
+      "selector": ".news-card:nth-child(2) .news-card__img",
+      "property": "src",
+      "path": "images/news-2.png",
+      "keywords": ["news", "healthcare", "article"],
+      "aspect_ratio": "16:9",
+      "min_width": 400
+    },
+    {
+      "selector": ".news-card:nth-child(3) .news-card__img",
+      "property": "src",
+      "path": "images/news-3.png",
+      "keywords": ["news", "healthcare", "article"],
+      "aspect_ratio": "16:9",
+      "min_width": 400
+    }
+  ],
+  "sections": {
+    "utility-bar": {
+      "required": true,
+      "customizable": true,
+      "description": "Top teal bar with address, email, phone, members centre, and members login"
+    },
+    "header": {
+      "required": true,
+      "customizable": true,
+      "description": "Sticky frosted-glass header with logo, 7 nav links, search icon, and red Contact Us CTA"
+    },
+    "hero": {
+      "required": true,
+      "customizable": true,
+      "description": "Full-width hero with hospital background image and teal gradient overlay"
+    },
+    "quick-links": {
+      "required": true,
+      "customizable": true,
+      "description": "3 image cards with gradient overlays for Research Centre, Members Centre, Podcast"
+    },
+    "members": {
+      "required": true,
+      "customizable": true,
+      "description": "Grey background section with description text and member hospital logos with pagination dots"
+    },
+    "news": {
+      "required": true,
+      "customizable": true,
+      "description": "3 industry news article cards with images, titles, excerpts, and Continue Reading links"
+    },
+    "footer": {
+      "required": true,
+      "customizable": true,
+      "description": "Teal footer with 4 columns (Quick Links, Legal, Archive, Contact), social icons, and red copyright bar"
+    }
+  },
+  "css_variables": {
+    "--primary-color": {
+      "default": "#8cc3d1",
+      "description": "Primary brand color (teal)"
+    },
+    "--secondary-color": {
+      "default": "#ee3524",
+      "description": "Secondary brand color (red)"
+    },
+    "--text-color": {
+      "default": "#3c3c3c",
+      "description": "Primary text color (charcoal)"
+    },
+    "--background-color": {
+      "default": "#ffffff",
+      "description": "Page background color (white)"
+    },
+    "--surface-color": {
+      "default": "#efefef",
+      "description": "Surface/section background color (grey)"
+    }
+  },
+  "responsive_breakpoints": {
+    "tablet": "1024px",
+    "mobile": "768px"
+  }
+}

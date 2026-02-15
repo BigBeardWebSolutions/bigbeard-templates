@@ -37,7 +37,8 @@ MAX_INPUT_TOKENS = 8192
 VALID_INDUSTRIES = [
     "restaurant", "healthcare", "technology", "ecommerce", "real_estate",
     "professional_services", "creative_agency", "education", "nonprofit",
-    "fitness", "hospitality", "finance", "retail", "automotive", "beauty_spa", "other"
+    "fitness", "hospitality", "finance", "retail", "automotive", "beauty_spa",
+    "manufacturing", "energy", "marketing", "other"
 ]
 
 

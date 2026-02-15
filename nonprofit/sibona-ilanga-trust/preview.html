@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A nonprofit trust dedicated to community upliftment, youth education, and sustainable development through grants and partnerships.">
+  <title>Community Trust - Empowering communities through sustainable development</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+
+  <!-- ================================================================
+       TOP CONTACT BAR
+       ================================================================ -->
+  <div class="top-bar">
+    <a href="tel:+27 21 001 3693" class="top-bar__contact">
+      <img src="images/phone-icon.png" alt="Phone icon">
+      <span>+27 21 001 3693</span>
+    </a>
+    <a href="mailto:info@example.org" class="top-bar__contact">
+      <img src="images/email-icon.png" alt="Email icon">
+      <span>info@example.org</span>
+    </a>
+  </div>
+
+  <!-- ================================================================
+       HEADER / NAVIGATION
+       ================================================================ -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#" class="header__logo" aria-label="Community Trust home">
+        <img src="images/logo.png" alt="Community Trust logo">
+      </a>
+
+      <nav class="header__nav" aria-label="Main navigation">
+        <button class="header__menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="header__nav-list" id="nav-list">
+          <li><a href="#hero" class="header__nav-link header__nav-link--active">Home</a></li>
+          <li><a href="#about" class="header__nav-link">About Us</a></li>
+          <li><a href="#focus" class="header__nav-link header__nav-link--dropdown">Opportunities</a></li>
+          <li><a href="#what-we-do" class="header__nav-link">Programmes</a></li>
+          <li><a href="#trustees" class="header__nav-link">Partnership</a></li>
+          <li><a href="#community" class="header__nav-link">News</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__cta">
+        <a href="#contact" class="btn">Contact Us</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================================================================
+         HERO BANNER SLIDER
+         ================================================================ -->
+    <section class="hero" id="hero">
+      <div class="hero__slider" aria-label="Hero image slider">
+        <div class="hero__slide active">
+          <img src="images/hero-banner.jpg" alt="Community members silhouetted at sunset" class="hero__slide-image">
+        </div>
+        <div class="hero__slide">
+          <img src="images/hero-banner-2.jpg" alt="Sunset landscape with nature" class="hero__slide-image">
+        </div>
+        <div class="hero__slide">
+          <img src="images/hero-banner-3.jpg" alt="Group of people celebrating together at sunset" class="hero__slide-image">
+        </div>
+      </div>
+
+      <div class="hero__overlay"></div>
+
+      <div class="hero__content fade-in">
+        <h1 class="hero__headline">Empowering young people to succeed</h1>
+        <p class="hero__subheadline">Generating power for emerging markets</p>
+        <div class="hero__cta">
+          <a href="#what-we-do" class="btn">Discover Our Work</a>
+        </div>
+      </div>
+
+      <div class="hero__dots" aria-label="Slide indicators">
+        <button class="hero__dot active" data-slide="0" aria-label="Go to slide 1"></button>
+        <button class="hero__dot" data-slide="1" aria-label="Go to slide 2"></button>
+        <button class="hero__dot" data-slide="2" aria-label="Go to slide 3"></button>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         ABOUT US SECTION
+         ================================================================ -->
+    <section class="about" id="about">
+      <div class="about__inner">
+        <div class="about__image-wrapper fade-in">
+          <img src="images/about-us.jpg" alt="Solar energy farm at sunset" class="about__image">
+        </div>
+        <div class="about__content fade-in">
+          <span class="section-label about__label">About us</span>
+          <span class="section-label-line"></span>
+          <h2 class="about__title">Who We Are</h2>
+          <p class="about__description">Our trust was founded through a renewable energy project as part of a national independent power producer programme. The trust holds a stake in the project, and profits are channelled through dividends to fund community development. As an autonomous body, the trust is guided by a board committed to operating transparently, ethically, and effectively.</p>
+          <div class="about__cta">
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         OUR FOCUS SECTION
+         ================================================================ -->
+    <section class="focus" id="focus">
+      <h2 class="focus__title fade-in">Our Focus</h2>
+      <div class="focus__grid">
+        <div class="focus__item fade-in">
+          <div class="focus__icon-wrapper">
+            <img src="images/focus-icon-1.png" alt="Enterprise development icon" class="focus__icon">
+          </div>
+          <h3 class="focus__item-title">Market and Enterprise Development</h3>
+          <div class="focus__item-line"></div>
+          <p class="focus__item-description">We support the growth of small businesses, fostering economic activity within our immediate communities through grants and capacity building.</p>
+        </div>
+        <div class="focus__item fade-in">
+          <div class="focus__icon-wrapper">
+            <img src="images/focus-icon-2.png" alt="Youth education icon" class="focus__icon">
+          </div>
+          <h3 class="focus__item-title">Youth Education and Life Skills</h3>
+          <div class="focus__item-line"></div>
+          <p class="focus__item-description">Our initiatives aim to empower youth to overcome generational poverty. We place special emphasis on peer-driven support and encouraging beneficiaries to reinvest their knowledge and skills back into their communities.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         WHAT WE DO SECTION
+         ================================================================ -->
+    <section class="what-we-do" id="what-we-do">
+      <img src="images/what-we-do-bg.jpg" alt="" class="what-we-do__bg" aria-hidden="true">
+      <div class="what-we-do__overlay"></div>
+      <div class="what-we-do__gradient"></div>
+      <div class="what-we-do__content fade-in">
+        <span class="section-label what-we-do__label">Giving to the Community</span>
+        <span class="section-label-line"></span>
+        <h2 class="what-we-do__title">What We Do</h2>
+        <p class="what-we-do__description">We fund community-led projects by awarding grants to organisations through an open and competitive application process. This ensures that funding is directed towards the most impactful and sustainable initiatives in the region.</p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         COMMUNITY / APPLY NOW SECTION
+         ================================================================ -->
+    <section class="community" id="community">
+      <img src="images/community-bg.jpg" alt="" class="community__bg" aria-hidden="true">
+      <div class="community__overlay"></div>
+      <div class="community__content fade-in">
+        <h2 class="community__title">Apply Now</h2>
+        <p class="community__description">Download the trust deed and apply for community grants and funding opportunities.</p>
+        <div class="community__cta">
+          <a href="#" class="btn">Download</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         OUR TRUSTEES SECTION
+         ================================================================ -->
+    <section class="trustees" id="trustees">
+      <h2 class="trustees__title fade-in">Our Trustees</h2>
+      <div class="trustees__grid">
+
+        <!-- Trustee 1 -->
+        <div class="trustee fade-in">
+          <div class="trustee__image-wrapper">
+            <div class="trustee__image-bg"></div>
+            <img src="images/trustee-1.png" alt="Trustee Name" class="trustee__image">
+          </div>
+          <div class="trustee__info">
+            <h3 class="trustee__name">Trustee Name</h3>
+            <p class="trustee__role">Trustee</p>
+            <p class="trustee__bio">An experienced professional appointed for their expertise in economic development, responsible for social and community development initiatives on behalf of the trust.</p>
+            <a href="#" class="read-more-link">READ MORE</a>
+          </div>
+        </div>
+
+        <!-- Trustee 2 -->
+        <div class="trustee fade-in">
+          <div class="trustee__image-wrapper">
+            <div class="trustee__image-bg"></div>
+            <img src="images/trustee-2.png" alt="Trustee Name" class="trustee__image">
+          </div>
+          <div class="trustee__info">
+            <h3 class="trustee__name">Trustee Name</h3>
+            <p class="trustee__role">Community Beneficiary Trustee</p>
+            <p class="trustee__bio">A dedicated community leader with extensive experience working with non-profit organizations, focusing on youth development within local communities.</p>
+            <a href="#" class="read-more-link">READ MORE</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ================================================================
+       FOOTER
+       ================================================================ -->
+  <footer class="footer" id="contact">
+    <div class="footer__main">
+      <!-- Column 1: Quick Links -->
+      <div class="footer__col">
+        <nav class="footer__links" aria-label="Footer navigation">
+          <a href="#" class="footer__link">Our Governance</a>
+          <a href="#" class="footer__link">Opportunities</a>
+          <a href="#" class="footer__link">Special Programmes</a>
+          <a href="#" class="footer__link">Partnerships</a>
+          <a href="#" class="footer__link">News</a>
+        </nav>
+      </div>
+
+      <!-- Column 2: Address -->
+      <div class="footer__col footer__address">
+        <p>Unit 5A, 5th Floor</p>
+        <p>Office Building</p>
+        <p>21 Main Street</p>
+        <p>Suburb</p>
+        <p>0000</p>
+      </div>
+
+      <!-- Column 3: Contact Info -->
+      <div class="footer__col footer__contact-info">
+        <p>+27 21 001 3693</p>
+        <p>info@example.org</p>
+        <div class="footer__social">
+          <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+            <img src="images/email-icon.png" alt="LinkedIn" class="footer__social-icon">
+          </a>
+        </div>
+      </div>
+
+      <!-- Column 4: Legal -->
+      <div class="footer__col footer__legal">
+        <p><a href="#" class="footer__link">Terms and Conditions</a></p>
+        <p><a href="#" class="footer__link">Privacy Policy</a></p>
+        <p><a href="#" class="footer__link">Legal Notices</a></p>
+      </div>
+    </div>
+
+    <hr class="footer__divider">
+
+    <div class="footer__bottom">
+      <p class="footer__copyright">&copy;2026 Community Trust. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

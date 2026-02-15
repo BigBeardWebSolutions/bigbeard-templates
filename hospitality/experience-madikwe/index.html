@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{BUSINESS_NAME}} - {{TAGLINE}}</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ============================================
+         HEADER / NAVIGATION
+         ============================================ -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="#" class="header-logo">
+                <img src="images/logo.png" alt="{{BUSINESS_NAME}}">
+                <span class="logo-text">
+                    <span class="sr-only">{{BUSINESS_NAME}}</span>
+                </span>
+            </a>
+
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#about" class="active">{{NAV_LINK_1}}</a></li>
+                    <li><a href="#lodges">{{NAV_LINK_2}}</a></li>
+                    <li><a href="#experiences">{{NAV_LINK_3}}</a></li>
+                    <li><a href="#directions">{{NAV_LINK_4}}</a></li>
+                    <li><a href="#contact">{{NAV_LINK_5}}</a></li>
+                    <li class="nav-cta">
+                        <a href="#booking" class="btn btn-primary">{{PRIMARY_CTA}}</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ============================================
+         HERO SECTION
+         ============================================ -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <img src="images/hero-bg.jpg" alt="{{HERO_IMAGE_ALT}}">
+        </div>
+        <div class="hero-overlay">
+            <img src="images/hero-overlay.png" alt="" aria-hidden="true">
+        </div>
+        <div class="hero-content">
+            <h1>{{HERO_HEADLINE}}</h1>
+            <p>{{HERO_DESCRIPTION}}</p>
+            <a href="#booking" class="btn btn-primary">{{PRIMARY_CTA}}</a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <!-- ============================================
+             ABOUT SECTION
+             ============================================ -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about-content fade-in">
+                    <h2>{{ABOUT_TITLE}}</h2>
+                    <p>{{ABOUT_DESCRIPTION}}</p>
+                    <p>{{ABOUT_DESCRIPTION_2}}</p>
+                    <a href="#lodges" class="btn btn-primary">{{SECONDARY_CTA}}</a>
+                </div>
+                <div class="about-image fade-in">
+                    <img src="images/about-elephants.jpg" alt="{{ABOUT_IMAGE_ALT}}">
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             STATS / ACHIEVEMENTS SECTION
+             ============================================ -->
+        <section class="stats" id="experiences">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item fade-in">
+                        <div class="stat-icon">
+                            <img src="images/stat-circle-bg.png" alt="" aria-hidden="true" style="position:absolute;width:100%;height:100%;top:0;left:0;">
+                            <img src="images/icon-safari.png" alt="{{STAT_1_LABEL}}">
+                        </div>
+                        <span class="stat-label">{{STAT_1_LABEL}}</span>
+                    </div>
+                    <div class="stat-item fade-in">
+                        <div class="stat-icon">
+                            <img src="images/stat-circle-bg.png" alt="" aria-hidden="true" style="position:absolute;width:100%;height:100%;top:0;left:0;">
+                            <img src="images/icon-bed.png" alt="{{STAT_2_LABEL}}">
+                        </div>
+                        <span class="stat-label">{{STAT_2_LABEL}}</span>
+                    </div>
+                    <div class="stat-item fade-in">
+                        <div class="stat-icon">
+                            <img src="images/stat-circle-bg.png" alt="" aria-hidden="true" style="position:absolute;width:100%;height:100%;top:0;left:0;">
+                            <img src="images/icon-bird.png" alt="{{STAT_3_LABEL}}">
+                        </div>
+                        <span class="stat-label">{{STAT_3_LABEL}}</span>
+                    </div>
+                    <div class="stat-item fade-in">
+                        <div class="stat-icon">
+                            <img src="images/stat-circle-bg.png" alt="" aria-hidden="true" style="position:absolute;width:100%;height:100%;top:0;left:0;">
+                            <img src="images/icon-landscape.png" alt="{{STAT_4_LABEL}}">
+                        </div>
+                        <span class="stat-label">{{STAT_4_LABEL}}</span>
+                    </div>
+                    <div class="stat-item fade-in">
+                        <div class="stat-icon">
+                            <img src="images/stat-circle-bg.png" alt="" aria-hidden="true" style="position:absolute;width:100%;height:100%;top:0;left:0;">
+                            <img src="images/icon-car.png" alt="{{STAT_5_LABEL}}">
+                        </div>
+                        <span class="stat-label">{{STAT_5_LABEL}}</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             LODGES / ACCOMMODATIONS SECTION
+             ============================================ -->
+        <section class="lodges" id="lodges">
+            <div class="container">
+                <div class="lodges-header fade-in">
+                    <h2>{{LODGES_TITLE}}</h2>
+                    <p>{{LODGES_DESCRIPTION}}</p>
+                </div>
+
+                <div class="lodges-grid">
+                    <div class="lodge-card fade-in">
+                        <img src="images/lodge-1.jpg" alt="{{LODGE_1_NAME}}">
+                        <div class="lodge-card-overlay">
+                            <h3>{{LODGE_1_NAME}}</h3>
+                        </div>
+                    </div>
+                    <div class="lodge-card fade-in">
+                        <img src="images/lodge-2.jpg" alt="{{LODGE_2_NAME}}">
+                        <div class="lodge-card-overlay">
+                            <h3>{{LODGE_2_NAME}}</h3>
+                        </div>
+                    </div>
+                    <div class="lodge-card fade-in">
+                        <img src="images/lodge-3.jpg" alt="{{LODGE_3_NAME}}">
+                        <div class="lodge-card-overlay">
+                            <h3>{{LODGE_3_NAME}}</h3>
+                        </div>
+                    </div>
+                    <div class="lodge-card fade-in">
+                        <img src="images/lodge-4.jpg" alt="{{LODGE_4_NAME}}">
+                        <div class="lodge-card-overlay">
+                            <h3>{{LODGE_4_NAME}}</h3>
+                        </div>
+                    </div>
+                    <div class="lodge-card fade-in">
+                        <img src="images/lodge-5.jpg" alt="{{LODGE_5_NAME}}">
+                        <div class="lodge-card-overlay">
+                            <h3>{{LODGE_5_NAME}}</h3>
+                        </div>
+                    </div>
+                    <div class="lodge-card fade-in">
+                        <img src="images/lodge-6.jpg" alt="{{LODGE_6_NAME}}">
+                        <div class="lodge-card-overlay">
+                            <h3>{{LODGE_6_NAME}}</h3>
+                        </div>
+                    </div>
+                    <div class="lodge-card fade-in">
+                        <img src="images/lodge-7.jpg" alt="{{LODGE_7_NAME}}">
+                        <div class="lodge-card-overlay">
+                            <h3>{{LODGE_7_NAME}}</h3>
+                        </div>
+                    </div>
+                    <div class="lodge-card fade-in">
+                        <img src="images/lodge-8.jpg" alt="{{LODGE_8_NAME}}">
+                        <div class="lodge-card-overlay">
+                            <h3>{{LODGE_8_NAME}}</h3>
+                        </div>
+                    </div>
+                    <div class="lodge-card fade-in">
+                        <img src="images/lodge-9.jpg" alt="{{LODGE_9_NAME}}">
+                        <div class="lodge-card-overlay">
+                            <h3>{{LODGE_9_NAME}}</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lodges-cta">
+                    <a href="#booking" class="btn btn-primary">{{LODGES_CTA}}</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             GETTING HERE / DIRECTIONS SECTION
+             ============================================ -->
+        <section class="directions" id="directions">
+            <div class="container fade-in">
+                <h2>{{DIRECTIONS_TITLE}}</h2>
+                <p>{{DIRECTIONS_DESCRIPTION}}</p>
+                <a href="#contact" class="btn btn-secondary">{{DIRECTIONS_CTA}}</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Column 1: Logo & Contact -->
+                <div class="footer-links">
+                    <div class="footer-logo-section">
+                        <img src="images/logo.png" alt="{{BUSINESS_NAME}}">
+                    </div>
+                    <div class="footer-contact">
+                        <p>
+                            <strong>{{FOOTER_CONTACT_LABEL}}</strong>
+                            {{PHONE}}<br>
+                            {{EMAIL}}
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="footer-links">
+                    <h4>{{FOOTER_COL_2_TITLE}}</h4>
+                    <a href="#about">{{NAV_LINK_1}}</a>
+                    <a href="#lodges">{{NAV_LINK_2}}</a>
+                    <a href="#experiences">{{NAV_LINK_3}}</a>
+                    <a href="#directions">{{NAV_LINK_4}}</a>
+                </div>
+
+                <!-- Column 3: Explore -->
+                <div class="footer-links">
+                    <h4>{{FOOTER_COL_3_TITLE}}</h4>
+                    <a href="#booking">{{FOOTER_LINK_1}}</a>
+                    <a href="#">{{FOOTER_LINK_2}}</a>
+                    <a href="#">{{FOOTER_LINK_3}}</a>
+                    <a href="#">{{FOOTER_LINK_4}}</a>
+                </div>
+
+                <!-- Column 4: Social Icons -->
+                <div class="footer-social">
+                    <a href="{{SOCIAL_YOUTUBE}}" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                        <img src="images/icon-youtube.png" alt="YouTube">
+                    </a>
+                    <a href="{{SOCIAL_INSTAGRAM}}" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <img src="images/icon-instagram.png" alt="Instagram">
+                    </a>
+                    <a href="{{SOCIAL_FACEBOOK}}" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <img src="images/icon-facebook.png" alt="Facebook">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; {{YEAR}} {{BUSINESS_NAME}}. {{FOOTER_COPYRIGHT}}</p>
+                <div class="footer-legal">
+                    <a href="#">{{FOOTER_LEGAL_1}}</a>
+                    <a href="#">{{FOOTER_LEGAL_2}}</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,369 @@
+{
+  "template_id": "education-capaciti-blog-option-2-v1",
+  "name": "Education Blog Listing - Card Layout",
+  "placeholders": {
+    "{{BUSINESS_NAME}}": {
+      "default": "SkillsAcademy",
+      "description": "Your organization or brand name",
+      "required": true
+    },
+    "{{PAGE_TITLE}}": {
+      "default": "Blog & Insights",
+      "description": "Main page heading displayed at the top of the blog listing",
+      "required": true
+    },
+    "{{PRIMARY_CTA}}": {
+      "default": "Contact Us",
+      "description": "Primary call-to-action button text in navigation",
+      "required": true
+    },
+    "{{FEATURED_BADGE}}": {
+      "default": "Featured Story",
+      "description": "Badge label overlaid on the featured story image",
+      "required": true
+    },
+    "{{FEATURED_TITLE}}": {
+      "default": "Representation in Leadership: Reflecting on My Journey",
+      "description": "Featured article headline in the split-layout hero",
+      "required": true
+    },
+    "{{FEATURED_EXCERPT}}": {
+      "default": "An inspiring look at the importance of diverse representation in leadership roles and the personal journey that shaped this perspective.",
+      "description": "Featured article excerpt text below the title",
+      "required": true
+    },
+    "{{FEATURED_DATE}}": {
+      "default": "September 2, 2025",
+      "description": "Publication date of the featured article",
+      "required": true
+    },
+    "{{FEATURED_READ_TIME}}": {
+      "default": "4 Min Read",
+      "description": "Estimated reading time for the featured article",
+      "required": true
+    },
+    "{{FEATURED_CTA}}": {
+      "default": "Read More >",
+      "description": "Call-to-action link text for the featured article",
+      "required": true
+    },
+    "{{ARTICLE_1_TITLE}}": {
+      "default": "How Digital Skills Are Shaping the Future of Work",
+      "description": "Title for article card 1",
+      "required": true
+    },
+    "{{ARTICLE_1_DATE}}": {
+      "default": "August 28, 2025",
+      "description": "Publication date for article card 1",
+      "required": true
+    },
+    "{{ARTICLE_1_READ_TIME}}": {
+      "default": "5 Min Read",
+      "description": "Estimated reading time for article card 1",
+      "required": true
+    },
+    "{{ARTICLE_2_TITLE}}": {
+      "default": "The Power of Mentorship in Career Development",
+      "description": "Title for article card 2",
+      "required": true
+    },
+    "{{ARTICLE_2_DATE}}": {
+      "default": "August 20, 2025",
+      "description": "Publication date for article card 2",
+      "required": true
+    },
+    "{{ARTICLE_2_READ_TIME}}": {
+      "default": "3 Min Read",
+      "description": "Estimated reading time for article card 2",
+      "required": true
+    },
+    "{{ARTICLE_3_TITLE}}": {
+      "default": "Bridging the Skills Gap in Emerging Markets",
+      "description": "Title for article card 3",
+      "required": true
+    },
+    "{{ARTICLE_3_DATE}}": {
+      "default": "August 15, 2025",
+      "description": "Publication date for article card 3",
+      "required": true
+    },
+    "{{ARTICLE_3_READ_TIME}}": {
+      "default": "6 Min Read",
+      "description": "Estimated reading time for article card 3",
+      "required": true
+    },
+    "{{ARTICLE_4_TITLE}}": {
+      "default": "Why Inclusive Hiring Practices Matter Now More Than Ever",
+      "description": "Title for article card 4",
+      "required": true
+    },
+    "{{ARTICLE_4_DATE}}": {
+      "default": "August 10, 2025",
+      "description": "Publication date for article card 4",
+      "required": true
+    },
+    "{{ARTICLE_4_READ_TIME}}": {
+      "default": "4 Min Read",
+      "description": "Estimated reading time for article card 4",
+      "required": true
+    },
+    "{{ARTICLE_5_TITLE}}": {
+      "default": "From Classroom to Boardroom: Success Stories That Inspire",
+      "description": "Title for article card 5",
+      "required": true
+    },
+    "{{ARTICLE_5_DATE}}": {
+      "default": "August 5, 2025",
+      "description": "Publication date for article card 5",
+      "required": true
+    },
+    "{{ARTICLE_5_READ_TIME}}": {
+      "default": "5 Min Read",
+      "description": "Estimated reading time for article card 5",
+      "required": true
+    },
+    "{{ARTICLE_6_TITLE}}": {
+      "default": "Building Resilient Teams Through Continuous Learning",
+      "description": "Title for article card 6",
+      "required": true
+    },
+    "{{ARTICLE_6_DATE}}": {
+      "default": "July 30, 2025",
+      "description": "Publication date for article card 6",
+      "required": true
+    },
+    "{{ARTICLE_6_READ_TIME}}": {
+      "default": "4 Min Read",
+      "description": "Estimated reading time for article card 6",
+      "required": true
+    },
+    "{{ARTICLE_7_TITLE}}": {
+      "default": "The Role of Technology in Modern Education",
+      "description": "Title for article card 7",
+      "required": true
+    },
+    "{{ARTICLE_7_DATE}}": {
+      "default": "July 25, 2025",
+      "description": "Publication date for article card 7",
+      "required": true
+    },
+    "{{ARTICLE_7_READ_TIME}}": {
+      "default": "3 Min Read",
+      "description": "Estimated reading time for article card 7",
+      "required": true
+    },
+    "{{ARTICLE_8_TITLE}}": {
+      "default": "Entrepreneurship and Youth: Cultivating the Next Generation",
+      "description": "Title for article card 8",
+      "required": true
+    },
+    "{{ARTICLE_8_DATE}}": {
+      "default": "July 20, 2025",
+      "description": "Publication date for article card 8",
+      "required": true
+    },
+    "{{ARTICLE_8_READ_TIME}}": {
+      "default": "6 Min Read",
+      "description": "Estimated reading time for article card 8",
+      "required": true
+    },
+    "{{ARTICLE_CTA}}": {
+      "default": "Read More >",
+      "description": "Call-to-action link text shown on each article card",
+      "required": true
+    },
+    "{{NAV_LINK_1}}": {
+      "default": "Our Offering",
+      "description": "First navigation link text",
+      "required": true
+    },
+    "{{NAV_LINK_2}}": {
+      "default": "Our Impact",
+      "description": "Second navigation link text",
+      "required": true
+    },
+    "{{NAV_LINK_3}}": {
+      "default": "Get To Know Us",
+      "description": "Third navigation link text",
+      "required": true
+    },
+    "{{NAV_LINK_4}}": {
+      "default": "Blog",
+      "description": "Fourth navigation link text (active/current page)",
+      "required": true
+    },
+    "{{TAGLINE}}": {
+      "default": "We develop skills, shift mindsets, and build systems for inclusive growth across the continent.",
+      "description": "Footer tagline describing the organization mission",
+      "required": true
+    },
+    "{{EMAIL}}": {
+      "default": "hello@example.com",
+      "description": "Contact email address displayed in footer",
+      "required": true
+    },
+    "{{ADDRESS}}": {
+      "default": "Johannesburg, Cape Town, Durban",
+      "description": "Office locations (comma-separated)",
+      "required": false
+    },
+    "{{YEAR}}": {
+      "default": "2026",
+      "description": "Copyright year in footer",
+      "required": false
+    }
+  },
+  "image_slots": [
+    {
+      "selector": ".logo-img",
+      "property": "src",
+      "path": "images/logo.png",
+      "keywords": ["logo", "brand"],
+      "aspect_ratio": "auto",
+      "min_width": 200
+    },
+    {
+      "selector": ".footer-logo img",
+      "property": "src",
+      "path": "images/footer-logo.png",
+      "keywords": ["logo", "brand", "footer"],
+      "aspect_ratio": "auto",
+      "min_width": 200
+    },
+    {
+      "selector": ".featured-image",
+      "property": "src",
+      "path": "images/featured-story.png",
+      "keywords": ["featured", "story", "hero", "leadership"],
+      "aspect_ratio": "16:9",
+      "min_width": 600
+    },
+    {
+      "selector": ".article-card:nth-child(1) .article-image",
+      "property": "src",
+      "path": "images/article-1.png",
+      "keywords": ["article", "blog", "education"],
+      "aspect_ratio": "4:3",
+      "min_width": 400
+    },
+    {
+      "selector": ".article-card:nth-child(2) .article-image",
+      "property": "src",
+      "path": "images/article-2.png",
+      "keywords": ["article", "blog", "mentorship"],
+      "aspect_ratio": "4:3",
+      "min_width": 400
+    },
+    {
+      "selector": ".article-card:nth-child(3) .article-image",
+      "property": "src",
+      "path": "images/article-3.png",
+      "keywords": ["article", "blog", "skills"],
+      "aspect_ratio": "4:3",
+      "min_width": 400
+    },
+    {
+      "selector": ".article-card:nth-child(4) .article-image",
+      "property": "src",
+      "path": "images/article-4.png",
+      "keywords": ["article", "blog", "hiring"],
+      "aspect_ratio": "4:3",
+      "min_width": 400
+    },
+    {
+      "selector": ".article-card:nth-child(5) .article-image",
+      "property": "src",
+      "path": "images/article-5.png",
+      "keywords": ["article", "blog", "success"],
+      "aspect_ratio": "4:3",
+      "min_width": 400
+    },
+    {
+      "selector": ".article-card:nth-child(6) .article-image",
+      "property": "src",
+      "path": "images/article-6.png",
+      "keywords": ["article", "blog", "learning"],
+      "aspect_ratio": "4:3",
+      "min_width": 400
+    },
+    {
+      "selector": ".article-card:nth-child(7) .article-image",
+      "property": "src",
+      "path": "images/article-7.png",
+      "keywords": ["article", "blog", "technology"],
+      "aspect_ratio": "4:3",
+      "min_width": 400
+    },
+    {
+      "selector": ".article-card:nth-child(8) .article-image",
+      "property": "src",
+      "path": "images/article-8.png",
+      "keywords": ["article", "blog", "entrepreneurship"],
+      "aspect_ratio": "4:3",
+      "min_width": 400
+    }
+  ],
+  "sections": {
+    "header": {
+      "required": true,
+      "customizable": true,
+      "description": "Fixed navigation bar with logo, nav links, and CTA button"
+    },
+    "page-title": {
+      "required": true,
+      "customizable": true,
+      "description": "Centered page heading 'Blog & Insights'"
+    },
+    "featured-story": {
+      "required": true,
+      "customizable": true,
+      "description": "Split-layout featured article with text left and image right, including badge, date, read time, excerpt, and read more link"
+    },
+    "article-grid": {
+      "required": true,
+      "customizable": true,
+      "description": "4-column grid of article cards (8 total) with image, date, read time, title, and read more link"
+    },
+    "pagination": {
+      "required": true,
+      "customizable": false,
+      "description": "Numbered pagination with active state and next arrow"
+    },
+    "footer": {
+      "required": true,
+      "customizable": true,
+      "description": "Dark navy footer with logo, tagline, social links, quick links, locations, and copyright"
+    }
+  },
+  "css_variables": {
+    "--primary-color": {
+      "default": "#1d2951",
+      "description": "Primary brand color (navy)"
+    },
+    "--secondary-color": {
+      "default": "#f25251",
+      "description": "Secondary brand color (red/salmon)"
+    },
+    "--accent-color": {
+      "default": "#f45251",
+      "description": "Accent color (slightly different red for hover states)"
+    },
+    "--surface-color": {
+      "default": "#ffffff",
+      "description": "Surface/card background color"
+    },
+    "--text-color": {
+      "default": "#1d2951",
+      "description": "Primary text color"
+    },
+    "--background-color": {
+      "default": "#ffffff",
+      "description": "Page background color"
+    }
+  },
+  "responsive_breakpoints": {
+    "tablet": "1024px",
+    "mobile": "768px",
+    "small_mobile": "480px"
+  }
+}

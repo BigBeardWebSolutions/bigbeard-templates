@@ -1,0 +1,428 @@
+{
+  "template_id": "healthcare-hasa-nhi-v1",
+  "name": "Healthcare NHI Information Portal",
+  "placeholders": {
+    "{{BUSINESS_NAME}}": {
+      "default": "HASA",
+      "description": "Organization or brand name",
+      "required": true
+    },
+    "{{TAGLINE}}": {
+      "default": "Advocating for quality healthcare for all South Africans through evidence-based policy engagement.",
+      "description": "Short tagline describing the organization's mission",
+      "required": true
+    },
+    "{{HERO_HEADLINE}}": {
+      "default": "National Health Insurance",
+      "description": "Main hero banner headline",
+      "required": true
+    },
+    "{{HERO_DESCRIPTION}}": {
+      "default": "Providing trusted analysis, expert insight, and a clear voice on the implications of the NHI Bill for healthcare in South Africa.",
+      "description": "Hero section supporting description text",
+      "required": true
+    },
+    "{{PRIMARY_CTA}}": {
+      "default": "Get Involved",
+      "description": "Primary call-to-action button text",
+      "required": true
+    },
+    "{{SECONDARY_CTA}}": {
+      "default": "Read More",
+      "description": "Secondary call-to-action button text",
+      "required": true
+    },
+    "{{NAV_LINK_1}}": {
+      "default": "Latest Updates",
+      "description": "First navigation link label",
+      "required": true
+    },
+    "{{NAV_LINK_2}}": {
+      "default": "Featured",
+      "description": "Second navigation link label",
+      "required": true
+    },
+    "{{NAV_LINK_3}}": {
+      "default": "Resources",
+      "description": "Third navigation link label",
+      "required": true
+    },
+    "{{NAV_LINK_4}}": {
+      "default": "FAQ",
+      "description": "Fourth navigation link label",
+      "required": true
+    },
+    "{{NAV_LINK_5}}": {
+      "default": "Contact",
+      "description": "Fifth navigation link label",
+      "required": true
+    },
+    "{{SECTION_UPDATES_TITLE}}": {
+      "default": "Latest Updates",
+      "description": "Title of the news/updates section",
+      "required": true
+    },
+    "{{FEATURED_ARTICLE_TITLE}}": {
+      "default": "NHI Bill: What It Means for Private Healthcare Providers",
+      "description": "Featured (large) article headline",
+      "required": true
+    },
+    "{{FEATURED_ARTICLE_CATEGORY}}": {
+      "default": "Policy Analysis",
+      "description": "Category tag for the featured article",
+      "required": true
+    },
+    "{{FEATURED_ARTICLE_DATE}}": {
+      "default": "15 February 2026",
+      "description": "Publication date of the featured article",
+      "required": true
+    },
+    "{{FEATURED_ARTICLE_EXCERPT}}": {
+      "default": "An in-depth analysis of how the National Health Insurance Bill will reshape the relationship between private healthcare providers and the public health system, including key concerns around reimbursement, quality standards, and implementation timelines.",
+      "description": "Short excerpt or summary of the featured article",
+      "required": true
+    },
+    "{{ARTICLE_1_TITLE}}": {
+      "default": "Constitutional Court Challenge: NHI and the Right to Healthcare",
+      "description": "Title for article card 1",
+      "required": true
+    },
+    "{{ARTICLE_1_DATE}}": {
+      "default": "12 Feb 2026",
+      "description": "Date for article card 1",
+      "required": true
+    },
+    "{{ARTICLE_1_CATEGORY}}": {
+      "default": "Legal",
+      "description": "Category for article card 1",
+      "required": true
+    },
+    "{{ARTICLE_2_TITLE}}": {
+      "default": "Funding the NHI: A Fiscal Reality Check",
+      "description": "Title for article card 2",
+      "required": true
+    },
+    "{{ARTICLE_2_DATE}}": {
+      "default": "08 Feb 2026",
+      "description": "Date for article card 2",
+      "required": true
+    },
+    "{{ARTICLE_2_CATEGORY}}": {
+      "default": "Finance",
+      "description": "Category for article card 2",
+      "required": true
+    },
+    "{{ARTICLE_3_TITLE}}": {
+      "default": "Impact on Medical Schemes: Member FAQ",
+      "description": "Title for article card 3",
+      "required": true
+    },
+    "{{ARTICLE_3_DATE}}": {
+      "default": "01 Feb 2026",
+      "description": "Date for article card 3",
+      "required": true
+    },
+    "{{ARTICLE_3_CATEGORY}}": {
+      "default": "Q&A",
+      "description": "Category for article card 3",
+      "required": true
+    },
+    "{{ARTICLE_4_TITLE}}": {
+      "default": "Rural Healthcare Access Under NHI: Opportunities and Gaps",
+      "description": "Title for article card 4",
+      "required": true
+    },
+    "{{ARTICLE_4_DATE}}": {
+      "default": "28 Jan 2026",
+      "description": "Date for article card 4",
+      "required": true
+    },
+    "{{ARTICLE_4_CATEGORY}}": {
+      "default": "Access",
+      "description": "Category for article card 4",
+      "required": true
+    },
+    "{{SECTION_FEATURED_LABEL}}": {
+      "default": "Featured",
+      "description": "Label above the featured Q&A section title",
+      "required": true
+    },
+    "{{FEATURED_QA_TITLE}}": {
+      "default": "Understanding the NHI: Your Questions Answered by Leading Health Economists",
+      "description": "Featured Q&A section main title",
+      "required": true
+    },
+    "{{FEATURED_QA_SUBTITLE}}": {
+      "default": "Expert analysis and evidence-based answers to the most pressing questions about South Africa's National Health Insurance.",
+      "description": "Featured Q&A section subtitle/description",
+      "required": true
+    },
+    "{{SECTION_ARCHIVE_TITLE}}": {
+      "default": "View Archive",
+      "description": "Title for the resource cards section",
+      "required": true
+    },
+    "{{ARCHIVE_1_TITLE}}": {
+      "default": "Policy Submissions",
+      "description": "First archive card title",
+      "required": true
+    },
+    "{{ARCHIVE_1_DESCRIPTION}}": {
+      "default": "Access our formal submissions to government on the NHI Bill, including detailed recommendations and amendments.",
+      "description": "First archive card description",
+      "required": true
+    },
+    "{{ARCHIVE_2_TITLE}}": {
+      "default": "Presentations",
+      "description": "Second archive card title",
+      "required": true
+    },
+    "{{ARCHIVE_2_DESCRIPTION}}": {
+      "default": "Download slide decks and presentations from NHI conferences, parliamentary hearings, and stakeholder briefings.",
+      "description": "Second archive card description",
+      "required": true
+    },
+    "{{ARCHIVE_3_TITLE}}": {
+      "default": "White Papers",
+      "description": "Third archive card title",
+      "required": true
+    },
+    "{{ARCHIVE_3_DESCRIPTION}}": {
+      "default": "In-depth research papers and reports examining the economic, legal, and clinical implications of the NHI.",
+      "description": "Third archive card description",
+      "required": true
+    },
+    "{{SECTION_FAQ_SUBTITLE}}": {
+      "default": "Understanding NHI",
+      "description": "Small text above the FAQ section title",
+      "required": true
+    },
+    "{{SECTION_FAQ_TITLE}}": {
+      "default": "Frequently Asked Questions",
+      "description": "FAQ section heading",
+      "required": true
+    },
+    "{{SECTION_FAQ_DESCRIPTION}}": {
+      "default": "Get clear, evidence-based answers to the most common questions about National Health Insurance and what it means for you.",
+      "description": "FAQ section introductory description",
+      "required": true
+    },
+    "{{FAQ_1_QUESTION}}": {
+      "default": "What is the National Health Insurance (NHI)?",
+      "description": "First FAQ question",
+      "required": true
+    },
+    "{{FAQ_1_ANSWER}}": {
+      "default": "The NHI is a health financing system designed to pool funds to provide universal access to quality, affordable personal health services for all South Africans based on their health needs, irrespective of their socio-economic status. It aims to ensure that the use of health services does not result in financial hardship for individuals and their families.",
+      "description": "First FAQ answer text",
+      "required": true
+    },
+    "{{FAQ_2_QUESTION}}": {
+      "default": "How will the NHI be funded?",
+      "description": "Second FAQ question",
+      "required": true
+    },
+    "{{FAQ_2_ANSWER}}": {
+      "default": "The NHI Fund will be financed through a combination of general tax revenue, a payroll tax on employers, a surcharge on personal income tax, and reallocation of medical tax credits. The exact contribution rates and fiscal mechanisms are still under consultation and will be phased in over the implementation period.",
+      "description": "Second FAQ answer text",
+      "required": true
+    },
+    "{{FAQ_3_QUESTION}}": {
+      "default": "Will I still be able to use my medical aid?",
+      "description": "Third FAQ question",
+      "required": true
+    },
+    "{{FAQ_3_ANSWER}}": {
+      "default": "Under the NHI Bill, medical schemes will only be allowed to offer complementary cover for services not reimbursed by the NHI Fund. This means that medical schemes will not be able to duplicate services that are already covered under the NHI. The transition will be phased in over time as the NHI system becomes operational.",
+      "description": "Third FAQ answer text",
+      "required": true
+    },
+    "{{FAQ_4_QUESTION}}": {
+      "default": "When will the NHI be fully implemented?",
+      "description": "Fourth FAQ question",
+      "required": true
+    },
+    "{{FAQ_4_ANSWER}}": {
+      "default": "The NHI is being implemented in a phased approach. The current phase focuses on strengthening the public health system and piloting key components. Full implementation, including the establishment of the NHI Fund and contracting of healthcare providers, is expected to take several more years as infrastructure, systems, and workforce capacity are built up.",
+      "description": "Fourth FAQ answer text",
+      "required": true
+    },
+    "{{FAQ_CTA}}": {
+      "default": "View All Questions",
+      "description": "Button text at the bottom of the FAQ section",
+      "required": false
+    },
+    "{{EMAIL}}": {
+      "default": "info@hasa.co.za",
+      "description": "Organization contact email address",
+      "required": true
+    },
+    "{{PHONE}}": {
+      "default": "+27 11 000 0000",
+      "description": "Organization contact phone number",
+      "required": true
+    },
+    "{{ADDRESS}}": {
+      "default": "Johannesburg, South Africa",
+      "description": "Physical address or location",
+      "required": false
+    },
+    "{{YEAR}}": {
+      "default": "2026",
+      "description": "Copyright year",
+      "required": false
+    }
+  },
+  "image_slots": [
+    {
+      "selector": ".hero-bg-img",
+      "property": "src",
+      "path": "images/hero-bg.png",
+      "keywords": ["hero", "healthcare", "hospital", "medical", "background"],
+      "aspect_ratio": "16:9",
+      "min_width": 1920
+    },
+    {
+      "selector": ".hero-person-img",
+      "property": "src",
+      "path": "images/hero-person.png",
+      "keywords": ["person", "professional", "healthcare", "representative"],
+      "aspect_ratio": "auto",
+      "min_width": 400
+    },
+    {
+      "selector": ".logo-img",
+      "property": "src",
+      "path": "images/logo.png",
+      "keywords": ["logo", "brand"],
+      "aspect_ratio": "auto",
+      "min_width": 200
+    },
+    {
+      "selector": ".article-featured .article-image img",
+      "property": "src",
+      "path": "images/article-featured.png",
+      "keywords": ["article", "featured", "news", "healthcare"],
+      "aspect_ratio": "16:9",
+      "min_width": 600
+    },
+    {
+      "selector": ".article-card:nth-child(1) .article-card-image img",
+      "property": "src",
+      "path": "images/article-1.png",
+      "keywords": ["article", "news", "healthcare", "legal"],
+      "aspect_ratio": "16:9",
+      "min_width": 400
+    },
+    {
+      "selector": ".article-card:nth-child(2) .article-card-image img",
+      "property": "src",
+      "path": "images/article-2.png",
+      "keywords": ["article", "news", "healthcare", "finance"],
+      "aspect_ratio": "16:9",
+      "min_width": 400
+    },
+    {
+      "selector": ".article-card:nth-child(3) .article-card-image img",
+      "property": "src",
+      "path": "images/article-3.png",
+      "keywords": ["article", "news", "healthcare", "Q&A"],
+      "aspect_ratio": "16:9",
+      "min_width": 400
+    },
+    {
+      "selector": ".article-card:nth-child(4) .article-card-image img",
+      "property": "src",
+      "path": "images/article-4.png",
+      "keywords": ["article", "news", "healthcare", "rural"],
+      "aspect_ratio": "16:9",
+      "min_width": 400
+    },
+    {
+      "selector": ".featured-bg-img",
+      "property": "src",
+      "path": "images/qa-bg.png",
+      "keywords": ["background", "Q&A", "featured", "dark"],
+      "aspect_ratio": "16:9",
+      "min_width": 1920
+    },
+    {
+      "selector": ".social-icons-img",
+      "property": "src",
+      "path": "images/social-icons.png",
+      "keywords": ["social", "icons", "media"],
+      "aspect_ratio": "auto",
+      "min_width": 100
+    },
+    {
+      "selector": ".icon-arrow",
+      "property": "src",
+      "path": "images/icon-arrow.png",
+      "keywords": ["arrow", "icon", "navigation"],
+      "aspect_ratio": "1:1",
+      "min_width": 16
+    }
+  ],
+  "sections": {
+    "hero": {
+      "required": true,
+      "customizable": true,
+      "description": "Hero banner with blurred background image, teal overlay, headline, description, CTA button, and person cutout"
+    },
+    "latest-updates": {
+      "required": true,
+      "customizable": true,
+      "description": "News section with one large featured article on the left and a 2x2 grid of smaller article cards on the right"
+    },
+    "featured-qa": {
+      "required": true,
+      "customizable": true,
+      "description": "Full-width featured Q&A section with dark overlay background image, label, title, subtitle, and CTA"
+    },
+    "view-archive": {
+      "required": true,
+      "customizable": true,
+      "description": "Three resource cards (Policy Submissions, Presentations, White Papers) with icons, descriptions, and Learn More links"
+    },
+    "faq": {
+      "required": true,
+      "customizable": true,
+      "description": "Dark-themed FAQ section with accordion-style expandable questions and answers"
+    },
+    "footer": {
+      "required": true,
+      "customizable": true,
+      "description": "Teal-background footer with brand info, multi-column navigation links, copyright, social icons"
+    }
+  },
+  "css_variables": {
+    "--primary-color": {
+      "default": "#8cc3d1",
+      "description": "Primary brand color (teal/healthcare blue)"
+    },
+    "--secondary-color": {
+      "default": "#ee3524",
+      "description": "Secondary accent color (red for CTAs)"
+    },
+    "--text-color": {
+      "default": "#3c3c3c",
+      "description": "Primary text color (charcoal)"
+    },
+    "--background-color": {
+      "default": "#f6f6f7",
+      "description": "Page background color (light grey)"
+    },
+    "--surface-color": {
+      "default": "#efefef",
+      "description": "Surface color for cards and sections"
+    },
+    "--surface-white": {
+      "default": "#ffffff",
+      "description": "White surface color"
+    }
+  },
+  "responsive_breakpoints": {
+    "tablet": "1024px",
+    "mobile": "768px"
+  }
+}

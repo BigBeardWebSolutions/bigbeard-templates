@@ -1,0 +1,267 @@
+{
+  "template_id": "healthcare-hasa-gala-event-v1",
+  "name": "Healthcare Gala Awards Event Page",
+  "placeholders": {
+    "{{BUSINESS_NAME}}": {
+      "default": "HASA Conference",
+      "description": "Organization or conference brand name",
+      "required": true
+    },
+    "{{EVENT_NAME}}": {
+      "default": "Gala Awards Evening",
+      "description": "Name of the gala event",
+      "required": true
+    },
+    "{{EVENT_THEME}}": {
+      "default": "Hollywood",
+      "description": "Theme of the gala event (e.g., Hollywood, Gatsby, Masquerade)",
+      "required": true
+    },
+    "{{EVENT_HOST}}": {
+      "default": "Riaad Moosa",
+      "description": "Name of the event host, entertainer, or MC",
+      "required": false
+    },
+    "{{CONFERENCE_NAME}}": {
+      "default": "HASA CONFERENCE 2025 - SUSTAINABLE HEALTHCARE TOGETHER",
+      "description": "Full conference name for the announcement bar",
+      "required": true
+    },
+    "{{CONFERENCE_DATE}}": {
+      "default": "6 - 7 October 2025",
+      "description": "Conference dates displayed in the announcement bar",
+      "required": true
+    },
+    "{{CONFERENCE_VENUE}}": {
+      "default": "Sandton Convention Centre, Johannesburg",
+      "description": "Conference venue for the announcement bar",
+      "required": true
+    },
+    "{{PRIMARY_CTA}}": {
+      "default": "REGISTER NOW",
+      "description": "Primary call-to-action button text (registration)",
+      "required": true
+    },
+    "{{SECONDARY_CTA}}": {
+      "default": "BECOME AN EXHIBITOR",
+      "description": "Secondary call-to-action button text",
+      "required": true
+    },
+    "{{HERO_TITLE_LINE1}}": {
+      "default": "HOLLYWOOD",
+      "description": "First line of the hero title (theme name or prefix text)",
+      "required": true
+    },
+    "{{HERO_TITLE_LINE2}}": {
+      "default": "Awards Show",
+      "description": "Second line of the hero title displayed in large gold script",
+      "required": true
+    },
+    "{{HERO_SUBTITLE}}": {
+      "default": "With Riaad Moosa",
+      "description": "Subtitle below the hero title (e.g., host name)",
+      "required": false
+    },
+    "{{EVENT_TAGLINE}}": {
+      "default": "Get Ready To Shine Under The Spotlight!",
+      "description": "Tagline heading in the event details section",
+      "required": true
+    },
+    "{{EVENT_DESCRIPTION}}": {
+      "default": "Join us for an unforgettable evening of glamour and celebration. Inspired by the glitz and elegance of Hollywood's most iconic awards nights, this year's gala promises a star-studded atmosphere where we honour achievements across the healthcare sector.",
+      "description": "Descriptive paragraph about the event",
+      "required": true
+    },
+    "{{VENUE_NAME}}": {
+      "default": "The Ballroom at the Sandton Convention Centre",
+      "description": "Specific venue name for the event",
+      "required": true
+    },
+    "{{EVENT_DATE_FULL}}": {
+      "default": "Tuesday, 7th October 2025",
+      "description": "Full date of the gala event",
+      "required": true
+    },
+    "{{EVENT_TIME}}": {
+      "default": "18:45 for 19h00",
+      "description": "Event arrival and start time",
+      "required": true
+    },
+    "{{DRESS_CODE}}": {
+      "default": "Black Tie or Hollywood Glam",
+      "description": "Dress code for the event",
+      "required": true
+    },
+    "{{SECRETARIAT_TITLE}}": {
+      "default": "Conference Secretariat",
+      "description": "Title of the secretariat/contact accordion section",
+      "required": true
+    },
+    "{{SECRETARIAT_NAME}}": {
+      "default": "Candice Christians",
+      "description": "Name of the conference secretariat contact person",
+      "required": true
+    },
+    "{{SECRETARIAT_COMPANY}}": {
+      "default": "INHOUSE CONFERENCE SOLUTIONS",
+      "description": "Company name of the conference organizer",
+      "required": true
+    },
+    "{{SECRETARIAT_PHONE}}": {
+      "default": "+27 (0)83 292 3006",
+      "description": "Phone number for the conference secretariat",
+      "required": true
+    },
+    "{{SECRETARIAT_EMAIL}}": {
+      "default": "info@conferencehasa.co.za",
+      "description": "Email address for the conference secretariat",
+      "required": true
+    },
+    "{{EMAIL}}": {
+      "default": "info@conferencehasa.co.za",
+      "description": "General contact email displayed in footer",
+      "required": true
+    },
+    "{{PHONE}}": {
+      "default": "+27 (0) 83 292 3006",
+      "description": "General contact phone displayed in footer",
+      "required": true
+    },
+    "{{YEAR}}": {
+      "default": "2025",
+      "description": "Copyright year",
+      "required": false
+    },
+    "{{NAV_LINK_1}}": {
+      "default": "Conference",
+      "description": "First navigation link text",
+      "required": true
+    },
+    "{{NAV_LINK_2}}": {
+      "default": "Exhibition",
+      "description": "Second navigation link text",
+      "required": true
+    },
+    "{{NAV_LINK_3}}": {
+      "default": "CPD",
+      "description": "Third navigation link text",
+      "required": true
+    },
+    "{{NAV_LINK_4}}": {
+      "default": "Payment",
+      "description": "Fourth navigation link text",
+      "required": true
+    },
+    "{{NAV_LINK_5}}": {
+      "default": "2024 Gallery",
+      "description": "Fifth navigation link text",
+      "required": true
+    },
+    "{{NAV_LINK_6}}": {
+      "default": "Abstracts",
+      "description": "Sixth navigation link text",
+      "required": true
+    }
+  },
+  "image_slots": [
+    {
+      "selector": ".hero-bg-img",
+      "property": "src",
+      "path": "images/hero-bg.jpg",
+      "keywords": ["dark", "bokeh", "lights", "dramatic", "event", "stage"],
+      "aspect_ratio": "16:9",
+      "min_width": 1920
+    },
+    {
+      "selector": ".logo-img",
+      "property": "src",
+      "path": "images/logo.png",
+      "keywords": ["logo", "brand", "conference", "circular"],
+      "aspect_ratio": "1:1",
+      "min_width": 128
+    },
+    {
+      "selector": ".chandelier-img",
+      "property": "src",
+      "path": "images/chandelier.png",
+      "keywords": ["chandelier", "decoration", "elegant", "illustration", "gold"],
+      "aspect_ratio": "auto",
+      "min_width": 400
+    }
+  ],
+  "sections": {
+    "announcement-bar": {
+      "required": true,
+      "customizable": true,
+      "description": "Red announcement bar at the top with conference name, date, and venue"
+    },
+    "navigation": {
+      "required": true,
+      "customizable": true,
+      "description": "Sticky dark navigation with logo, 6 nav links, and 2 CTA buttons"
+    },
+    "hero": {
+      "required": true,
+      "customizable": true,
+      "description": "Dramatic dark hero with bokeh background, large gold gradient text, and chandelier illustration"
+    },
+    "event-details": {
+      "required": true,
+      "customizable": true,
+      "description": "Split layout with event tagline/description on the left and venue/date/dress code cards on the right"
+    },
+    "secretariat": {
+      "required": true,
+      "customizable": true,
+      "description": "Expandable accordion section with conference secretariat contact details"
+    },
+    "footer": {
+      "required": true,
+      "customizable": true,
+      "description": "Dark footer with copyright, privacy/terms links, and phone/email contacts"
+    }
+  },
+  "css_variables": {
+    "--primary-color": {
+      "default": "#3c3c3c",
+      "description": "Primary dark charcoal color for surfaces"
+    },
+    "--secondary-color": {
+      "default": "#ee3524",
+      "description": "Red accent color for CTA buttons and announcement bar"
+    },
+    "--accent-color": {
+      "default": "#ffffff",
+      "description": "White accent for text on dark backgrounds"
+    },
+    "--background-color": {
+      "default": "#000000",
+      "description": "Page background (black)"
+    },
+    "--surface-color": {
+      "default": "#3c3c3c",
+      "description": "Surface/card background color (dark charcoal)"
+    },
+    "--text-color": {
+      "default": "#ffffff",
+      "description": "Primary text color (white)"
+    },
+    "--announcement-bg": {
+      "default": "#ee3524",
+      "description": "Announcement bar background color"
+    },
+    "--header-bg": {
+      "default": "#1a1a1a",
+      "description": "Navigation header background color"
+    },
+    "--footer-bg": {
+      "default": "#3c3c3c",
+      "description": "Footer background color"
+    }
+  },
+  "responsive_breakpoints": {
+    "tablet": "1024px",
+    "mobile": "768px",
+    "small_mobile": "480px"
+  }
+}

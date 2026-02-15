@@ -1,0 +1,341 @@
+{
+  "template_id": "healthcare-hasa-conference-newsletter-v1",
+  "name": "HASA Conference Newsletter Email Template",
+  "placeholders": {
+    "{{BUSINESS_NAME}}": {
+      "default": "HASA",
+      "description": "Organization or association name",
+      "required": true
+    },
+    "{{CONFERENCE_NAME}}": {
+      "default": "HASA 2025 Conference",
+      "description": "Full conference name",
+      "required": true
+    },
+    "{{CONFERENCE_THEME}}": {
+      "default": "Sustainable Healthcare Together",
+      "description": "Conference theme or tagline",
+      "required": true
+    },
+    "{{CONFERENCE_DATE}}": {
+      "default": "12 - 15 August 2025",
+      "description": "Conference dates",
+      "required": true
+    },
+    "{{CONFERENCE_VENUE}}": {
+      "default": "Cape Town International Convention Centre",
+      "description": "Conference venue name",
+      "required": true
+    },
+    "{{CONFERENCE_CITY}}": {
+      "default": "Cape Town",
+      "description": "Conference city",
+      "required": true
+    },
+    "{{HERO_TITLE}}": {
+      "default": "HASA 2025 Conference",
+      "description": "Hero banner main title",
+      "required": true
+    },
+    "{{HERO_SUBTITLE}}": {
+      "default": "Sustainable Healthcare Together",
+      "description": "Hero banner subtitle / theme",
+      "required": true
+    },
+    "{{PRIMARY_CTA}}": {
+      "default": "Register Now",
+      "description": "Primary call-to-action button text on the hero banner",
+      "required": true
+    },
+    "{{REGISTER_CTA}}": {
+      "default": "Register Now",
+      "description": "Registration button text in the welcome/closing section",
+      "required": true
+    },
+    "{{ABSTRACT_CTA}}": {
+      "default": "Submit Your Abstracts",
+      "description": "Call-for-abstracts button text",
+      "required": true
+    },
+    "{{DELEGATE_CTA}}": {
+      "default": "Register as a Delegate",
+      "description": "Delegate registration button text",
+      "required": true
+    },
+    "{{EXHIBITION_CTA}}": {
+      "default": "Book an Exhibition Space",
+      "description": "Exhibition booking button text",
+      "required": true
+    },
+    "{{INTRO_TEXT}}": {
+      "default": "The <strong style=\"color: #ee3524;\">HASA 2025 Conference</strong> brings together healthcare professionals, policymakers, and innovators to explore <strong style=\"color: #ee3524;\">sustainable healthcare</strong> solutions. Join us for thought-provoking sessions, workshops, and networking opportunities that shape the future of healthcare in South Africa and beyond.",
+      "description": "Main introduction paragraph (supports HTML for bold/colored text)",
+      "required": true
+    },
+    "{{NAV_LINK_1}}": {
+      "default": "Conference",
+      "description": "First navigation link text",
+      "required": false
+    },
+    "{{NAV_LINK_2}}": {
+      "default": "Exhibition",
+      "description": "Second navigation link text",
+      "required": false
+    },
+    "{{NAV_LINK_3}}": {
+      "default": "CPD",
+      "description": "Third navigation link text",
+      "required": false
+    },
+    "{{NAV_LINK_4}}": {
+      "default": "Payment",
+      "description": "Fourth navigation link text",
+      "required": false
+    },
+    "{{NAV_LINK_5}}": {
+      "default": "Gallery",
+      "description": "Fifth navigation link text",
+      "required": false
+    },
+    "{{NAV_LINK_6}}": {
+      "default": "Abstracts",
+      "description": "Sixth navigation link text",
+      "required": false
+    },
+    "{{SECTION_ABSTRACTS_TITLE}}": {
+      "default": "Call for Abstracts Are Open",
+      "description": "Abstracts section heading",
+      "required": true
+    },
+    "{{ABSTRACTS_DEADLINE}}": {
+      "default": "Deadline: 30 April 2025",
+      "description": "Abstract submission deadline text",
+      "required": true
+    },
+    "{{ABSTRACTS_THEMES}}": {
+      "default": "Themes: Health Systems Strengthening | Digital Health Innovation | Sustainable Financing | Quality Improvement | Patient-Centred Care",
+      "description": "Abstract themes or topics (pipe-separated)",
+      "required": false
+    },
+    "{{SECTION_DELEGATE_TITLE}}": {
+      "default": "Be Part of the Conversation",
+      "description": "Delegate section heading",
+      "required": true
+    },
+    "{{SECTION_DELEGATE_DESCRIPTION}}": {
+      "default": "Whether you are a healthcare professional, researcher, policymaker, or student, the HASA 2025 Conference offers a unique platform to engage with leading minds in healthcare. Register as a delegate and gain access to all conference sessions, workshops, and networking events.",
+      "description": "Delegate section body text",
+      "required": true
+    },
+    "{{SECTION_EXHIBITION_TITLE}}": {
+      "default": "Showcase Your Innovations",
+      "description": "Exhibition section heading",
+      "required": true
+    },
+    "{{SECTION_EXHIBITION_DESCRIPTION}}": {
+      "default": "The HASA 2025 Exhibition offers an unparalleled opportunity to showcase your products, services, and innovations to a targeted audience of healthcare decision-makers. Secure your exhibition space and connect with potential clients and partners.",
+      "description": "Exhibition section body text",
+      "required": true
+    },
+    "{{SECTION_VIDEO_TITLE}}": {
+      "default": "Watch Highlights from HASA 2024",
+      "description": "Video highlights section heading",
+      "required": true
+    },
+    "{{SECTION_VIDEO_SUBTITLE}}": {
+      "default": "Relive the best moments from last year's conference",
+      "description": "Video highlights section subheading",
+      "required": false
+    },
+    "{{SECTION_WELCOME_TITLE}}": {
+      "default": "We Look Forward to Welcoming You at HASA 2025",
+      "description": "Welcome/closing section heading",
+      "required": true
+    },
+    "{{SECTION_WELCOME_DESCRIPTION}}": {
+      "default": "Join us in Cape Town for an inspiring programme of keynote addresses, panel discussions, interactive workshops, and ample networking opportunities. Together, we can build a sustainable healthcare future.",
+      "description": "Welcome/closing section body text",
+      "required": true
+    },
+    "{{SECRETARIAT_TITLE}}": {
+      "default": "Conference Secretariat",
+      "description": "Secretariat section heading",
+      "required": true
+    },
+    "{{SECRETARIAT_NAME}}": {
+      "default": "Jane Smith",
+      "description": "Secretariat contact person name",
+      "required": true
+    },
+    "{{SECRETARIAT_COMPANY}}": {
+      "default": "Conference Management Services",
+      "description": "Secretariat company or organization name",
+      "required": true
+    },
+    "{{SECRETARIAT_PHONE}}": {
+      "default": "+27 21 123 4567",
+      "description": "Secretariat phone number",
+      "required": true
+    },
+    "{{SECRETARIAT_EMAIL}}": {
+      "default": "info@hasaconference.co.za",
+      "description": "Secretariat email address",
+      "required": true
+    },
+    "{{EMAIL}}": {
+      "default": "info@hasaconference.co.za",
+      "description": "General contact email (used in footer)",
+      "required": true
+    },
+    "{{PHONE}}": {
+      "default": "+27 21 123 4567",
+      "description": "General contact phone number",
+      "required": false
+    },
+    "{{YEAR}}": {
+      "default": "2025",
+      "description": "Copyright year",
+      "required": false
+    }
+  },
+  "image_slots": [
+    {
+      "selector": ".logo-img",
+      "property": "src",
+      "path": "images/logo.png",
+      "keywords": ["logo", "brand", "conference", "HASA"],
+      "aspect_ratio": "auto",
+      "min_width": 150
+    },
+    {
+      "selector": ".hero-banner-img",
+      "property": "src",
+      "path": "images/hero-banner.png",
+      "keywords": ["hero", "conference", "crowd", "event", "banner"],
+      "aspect_ratio": "16:9",
+      "min_width": 680
+    },
+    {
+      "selector": ".delegate-img",
+      "property": "src",
+      "path": "images/delegate-photo.png",
+      "keywords": ["delegate", "person", "conference", "attendee"],
+      "aspect_ratio": "4:3",
+      "min_width": 300
+    },
+    {
+      "selector": ".exhibition-img",
+      "property": "src",
+      "path": "images/exhibition.png",
+      "keywords": ["exhibition", "booth", "showcase", "event"],
+      "aspect_ratio": "4:3",
+      "min_width": 300
+    },
+    {
+      "selector": ".video-thumbnail-img",
+      "property": "src",
+      "path": "images/video-thumbnail.png",
+      "keywords": ["video", "thumbnail", "highlights", "conference"],
+      "aspect_ratio": "16:9",
+      "min_width": 616
+    },
+    {
+      "selector": ".abstracts-watermark img",
+      "property": "src",
+      "path": "images/conference-logo.png",
+      "keywords": ["logo", "watermark", "conference", "emblem"],
+      "aspect_ratio": "1:1",
+      "min_width": 300
+    },
+    {
+      "selector": ".play-btn-overlay img",
+      "property": "src",
+      "path": "images/play-button.png",
+      "keywords": ["play", "button", "video", "icon"],
+      "aspect_ratio": "1:1",
+      "min_width": 64
+    }
+  ],
+  "sections": {
+    "header": {
+      "required": true,
+      "customizable": true,
+      "description": "White header bar with conference logo and inline navigation links"
+    },
+    "hero": {
+      "required": true,
+      "customizable": true,
+      "description": "Full-width hero banner with conference crowd photo, dark gradient overlay, title, date/venue, and red Register Now CTA button"
+    },
+    "intro": {
+      "required": true,
+      "customizable": true,
+      "description": "Introduction paragraph about the conference with red-highlighted key terms"
+    },
+    "abstracts": {
+      "required": true,
+      "customizable": true,
+      "description": "Call for Abstracts section with dark red background, conference logo watermark, submit button, deadline, and theme list"
+    },
+    "delegate": {
+      "required": true,
+      "customizable": true,
+      "description": "Be Part of the Conversation section with grey background, split layout (text left, delegate photo right), and registration CTA"
+    },
+    "exhibition": {
+      "required": true,
+      "customizable": true,
+      "description": "Showcase Your Innovations section with white background, split layout (exhibition photo left, text right), and booking CTA"
+    },
+    "video": {
+      "required": false,
+      "customizable": true,
+      "description": "Video highlights section with grey background, video thumbnail, and centered play button overlay"
+    },
+    "welcome": {
+      "required": true,
+      "customizable": true,
+      "description": "Closing welcome message with centered text and Register Now CTA"
+    },
+    "secretariat": {
+      "required": true,
+      "customizable": true,
+      "description": "Conference Secretariat contact details centered on grey background"
+    },
+    "footer": {
+      "required": true,
+      "customizable": true,
+      "description": "Dark charcoal footer with copyright, unsubscribe link, and view-in-browser link"
+    }
+  },
+  "css_variables": {
+    "--primary-color": {
+      "default": "#3c3c3c",
+      "description": "Primary brand color (charcoal)"
+    },
+    "--secondary-color": {
+      "default": "#ee3524",
+      "description": "Secondary brand color (red) for CTAs and highlights"
+    },
+    "--accent-color": {
+      "default": "#c42837",
+      "description": "Accent color (dark red) for the abstracts section background"
+    },
+    "--surface-color": {
+      "default": "#efefef",
+      "description": "Grey surface color for alternating sections"
+    },
+    "--text-color": {
+      "default": "#3c3c3c",
+      "description": "Primary text color"
+    },
+    "--background-color": {
+      "default": "#ffffff",
+      "description": "White background color"
+    }
+  },
+  "responsive_breakpoints": {
+    "tablet": "680px",
+    "mobile": "480px"
+  }
+}

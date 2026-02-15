@@ -1,0 +1,960 @@
+{
+  "template_id": "technology-chirrup-v1",
+  "name": "Chirrup SaaS Product Landing Page",
+  "placeholders": {
+    "{{BUSINESS_NAME}}": {
+      "default": "Chirrup.ai",
+      "description": "Company or product name displayed in navigation, hero, and footer",
+      "required": true
+    },
+    "{{TAGLINE}}": {
+      "default": "Tracks biodiversity. Easy, affordable and scalable.",
+      "description": "Short tagline for the browser title and SEO",
+      "required": true
+    },
+    "{{META_DESCRIPTION}}": {
+      "default": "A smart platform that turns biodiversity monitoring into actionable insights. Easy, affordable and scalable.",
+      "description": "Meta description for SEO",
+      "required": false
+    },
+    "{{ANNOUNCEMENT_TEXT}}": {
+      "default": "New regulatory requirements & biodiversity reporting from 2024 on",
+      "description": "Top announcement bar message text",
+      "required": false
+    },
+    "{{ANNOUNCEMENT_CTA}}": {
+      "default": "LEARN MORE",
+      "description": "Announcement bar call-to-action link text",
+      "required": false
+    },
+    "{{NAV_LINK_1}}": {
+      "default": "Home",
+      "description": "First navigation link label",
+      "required": true
+    },
+    "{{NAV_LINK_2}}": {
+      "default": "About",
+      "description": "Second navigation link label",
+      "required": true
+    },
+    "{{NAV_LINK_3}}": {
+      "default": "Solutions",
+      "description": "Third navigation link label",
+      "required": true
+    },
+    "{{NAV_LINK_4}}": {
+      "default": "Sectors",
+      "description": "Fourth navigation link label",
+      "required": true
+    },
+    "{{NAV_LINK_5}}": {
+      "default": "News",
+      "description": "Fifth navigation link label",
+      "required": true
+    },
+    "{{NAV_LINK_6}}": {
+      "default": "Investors",
+      "description": "Sixth navigation link label",
+      "required": false
+    },
+    "{{NAV_CTA_PRIMARY}}": {
+      "default": "CONTACT US",
+      "description": "Primary navigation CTA button text",
+      "required": true
+    },
+    "{{NAV_CTA_SECONDARY}}": {
+      "default": "USER LOGIN",
+      "description": "Secondary navigation CTA button text (e.g. login)",
+      "required": false
+    },
+    "{{HERO_HEADLINE}}": {
+      "default": "Our platform tracks biodiversity.",
+      "description": "Main hero section headline",
+      "required": true
+    },
+    "{{HERO_SUBHEADLINE}}": {
+      "default": "It's easy, affordable and scalable.",
+      "description": "Hero section sub-headline text",
+      "required": true
+    },
+    "{{HERO_BG_ALT}}": {
+      "default": "Nature landscape background",
+      "description": "Alt text for the hero background image",
+      "required": false
+    },
+    "{{LISTEN_BADGE_TEXT}}": {
+      "default": "LISTEN",
+      "description": "Text label on the floating listen badge in the hero",
+      "required": false
+    },
+    "{{LISTEN_BADGE_ALT}}": {
+      "default": "Listen to product demo",
+      "description": "Alt text for the listen badge icon",
+      "required": false
+    },
+    "{{BADGE_1_ALT}}": {
+      "default": "Award badge 1",
+      "description": "Alt text for first hero badge image",
+      "required": false
+    },
+    "{{BADGE_2_ALT}}": {
+      "default": "Award badge 2",
+      "description": "Alt text for second hero badge image",
+      "required": false
+    },
+    "{{AUDIENCE_1_TITLE}}": {
+      "default": "For Farmers and Land Managers",
+      "description": "First audience card heading",
+      "required": true
+    },
+    "{{AUDIENCE_1_DESCRIPTION}}": {
+      "default": "Effortless biodiversity monitoring for farmers: simple setup, clear insights, compliance proof, and funding access -- no extra work.",
+      "description": "First audience card description text",
+      "required": true
+    },
+    "{{AUDIENCE_1_CTA}}": {
+      "default": "Learn more",
+      "description": "First audience card CTA button text",
+      "required": true
+    },
+    "{{AUDIENCE_2_TITLE}}": {
+      "default": "For Companies",
+      "description": "Second audience card heading",
+      "required": true
+    },
+    "{{AUDIENCE_2_DESCRIPTION}}": {
+      "default": "Transform sustainability into business success: reliable biodiversity data, easy farmer adoption, regulatory compliance, and scalable insights for your supply chain.",
+      "description": "Second audience card description text",
+      "required": true
+    },
+    "{{AUDIENCE_2_CTA}}": {
+      "default": "Learn more",
+      "description": "Second audience card CTA button text",
+      "required": true
+    },
+    "{{AUDIENCE_3_TITLE}}": {
+      "default": "For Government Bodies",
+      "description": "Third audience card heading",
+      "required": true
+    },
+    "{{AUDIENCE_3_DESCRIPTION}}": {
+      "default": "Bridge policy and action: scalable biodiversity monitoring, farmer adoption, measurable progress, and clear evidence for effective environmental initiatives.",
+      "description": "Third audience card description text",
+      "required": true
+    },
+    "{{AUDIENCE_3_CTA}}": {
+      "default": "Learn more",
+      "description": "Third audience card CTA button text",
+      "required": true
+    },
+    "{{FEATURES_TITLE}}": {
+      "default": "Key features",
+      "description": "Features section heading",
+      "required": true
+    },
+    "{{FEATURE_1_TITLE}}": {
+      "default": "Simple clip-on setup",
+      "description": "First feature item label",
+      "required": true
+    },
+    "{{FEATURE_2_TITLE}}": {
+      "default": "Zero maintenance required",
+      "description": "Second feature item label",
+      "required": true
+    },
+    "{{FEATURE_3_TITLE}}": {
+      "default": "All data handled for you",
+      "description": "Third feature item label",
+      "required": true
+    },
+    "{{FEATURE_4_TITLE}}": {
+      "default": "Access via smart app",
+      "description": "Fourth feature item label",
+      "required": true
+    },
+    "{{FEATURE_5_TITLE}}": {
+      "default": "Sustainable biodiversity gains",
+      "description": "Fifth feature item label",
+      "required": true
+    },
+    "{{FEATURE_6_TITLE}}": {
+      "default": "Scales globally",
+      "description": "Sixth feature item label",
+      "required": true
+    },
+    "{{FEATURE_7_TITLE}}": {
+      "default": "Cost effective",
+      "description": "Seventh feature item label",
+      "required": true
+    },
+    "{{FEATURE_8_TITLE}}": {
+      "default": "Assembled in the UK",
+      "description": "Eighth feature item label",
+      "required": true
+    },
+    "{{INFO_1_TITLE}}": {
+      "default": "What is our platform?",
+      "description": "First info section heading",
+      "required": true
+    },
+    "{{INFO_1_LEAD}}": {
+      "default": "We turn biodiversity monitoring into actionable insights for farmers, land managers, and food businesses.",
+      "description": "First info section lead paragraph",
+      "required": true
+    },
+    "{{INFO_1_BODY}}": {
+      "default": "Whether you're tracking nature on your farm, meeting sustainability goals, or ensuring regulatory compliance, our platform gives you the clear, reliable data you need. No complex setup. No ongoing maintenance. Just straightforward biodiversity insights delivered to you and your stakeholders.",
+      "description": "First info section body paragraph",
+      "required": true
+    },
+    "{{INFO_1_CTA}}": {
+      "default": "ABOUT US",
+      "description": "First info section CTA button text",
+      "required": true
+    },
+    "{{INFO_1_IMAGE_ALT}}": {
+      "default": "Smart monitoring device in nature",
+      "description": "Alt text for the first info section image",
+      "required": false
+    },
+    "{{INFO_2_TITLE}}": {
+      "default": "How does it work?",
+      "description": "Second info section heading",
+      "required": true
+    },
+    "{{INFO_2_LEAD}}": {
+      "default": "Our smart device listens to bird songs on your land -- just clip it to a tree or pole, and you're ready to go.",
+      "description": "Second info section lead paragraph",
+      "required": true
+    },
+    "{{INFO_2_BODY}}": {
+      "default": "Unlike generic environmental tools, our technology is specifically built for farms and rural landscapes, giving you reliable data you can actually use. You'll see exactly which species are on your land, track progress over the seasons, and generate the reports you need for sustainability goals or biodiversity requirements.",
+      "description": "Second info section body paragraph",
+      "required": true
+    },
+    "{{INFO_2_CTA}}": {
+      "default": "ABOUT US",
+      "description": "Second info section CTA button text",
+      "required": true
+    },
+    "{{INFO_2_IMAGE_ALT}}": {
+      "default": "Farm landscape with monitoring equipment",
+      "description": "Alt text for the second info section image",
+      "required": false
+    },
+    "{{INDICATORS_TITLE}}": {
+      "default": "Why are biodiversity indicators important?",
+      "description": "Indicators section heading",
+      "required": true
+    },
+    "{{INDICATORS_LEAD}}": {
+      "default": "Think of nature's health monitors. When populations are thriving, it usually means your whole ecosystem is in good shape -- from the soil beneath your feet to the trees overhead.",
+      "description": "Indicators section lead paragraph",
+      "required": true
+    },
+    "{{INDICATORS_BODY}}": {
+      "default": "They tell us so much because they're connected to everything around them. They eat insects and seeds, spread plant life across your land, and react quickly when their environment changes. So when you track biodiversity, you're actually getting insights into your whole landscape.",
+      "description": "Indicators section body paragraph",
+      "required": true
+    },
+    "{{INDICATORS_CTA}}": {
+      "default": "BIODIVERSITY GAINS",
+      "description": "Indicators section CTA button text",
+      "required": true
+    },
+    "{{INDICATORS_LABEL}}": {
+      "default": "Trophic Pyramid",
+      "description": "Label underneath the pyramid diagram",
+      "required": true
+    },
+    "{{INDICATORS_CAPTION}}": {
+      "default": "Stable, resilient agricultural ecosystems will have a variety of species representing each level of the trophic pyramid",
+      "description": "Caption text below the pyramid diagram",
+      "required": true
+    },
+    "{{INDICATORS_DIAGRAM_ALT}}": {
+      "default": "Trophic pyramid diagram showing ecosystem levels",
+      "description": "Alt text for the pyramid diagram image",
+      "required": false
+    },
+    "{{STAT_1_VALUE}}": {
+      "default": "100",
+      "description": "First statistic numeric value",
+      "required": true
+    },
+    "{{STAT_1_LABEL}}": {
+      "default": "Species Mapped",
+      "description": "First statistic label",
+      "required": true
+    },
+    "{{STAT_2_VALUE}}": {
+      "default": "114",
+      "description": "Second statistic numeric value",
+      "required": true
+    },
+    "{{STAT_2_LABEL}}": {
+      "default": "Partner Farms",
+      "description": "Second statistic label",
+      "required": true
+    },
+    "{{STAT_3_VALUE}}": {
+      "default": "40 000",
+      "description": "Third statistic numeric value",
+      "required": true
+    },
+    "{{STAT_3_LABEL}}": {
+      "default": "Hours Recording",
+      "description": "Third statistic label",
+      "required": true
+    },
+    "{{QUIZ_TITLE}}": {
+      "default": "Take the song recognition quiz",
+      "description": "Quiz/interactive CTA section heading",
+      "required": true
+    },
+    "{{QUIZ_DESCRIPTION}}": {
+      "default": "With less birdsong in the UK, can you tell your sparrow from your swift?",
+      "description": "Quiz/interactive CTA section description",
+      "required": true
+    },
+    "{{QUIZ_CTA}}": {
+      "default": "TAKE THE QUIZ",
+      "description": "Quiz section CTA button text",
+      "required": true
+    },
+    "{{QUIZ_IMAGE_ALT}}": {
+      "default": "Nature quiz background image",
+      "description": "Alt text for the quiz section image",
+      "required": false
+    },
+    "{{NEWS_TITLE}}": {
+      "default": "Latest news",
+      "description": "News section heading",
+      "required": true
+    },
+    "{{NEWS_VIEW_ALL}}": {
+      "default": "VIEW ALL",
+      "description": "View all news button text",
+      "required": false
+    },
+    "{{NEWS_1_CATEGORY}}": {
+      "default": "FUNDING",
+      "description": "First news article category label",
+      "required": true
+    },
+    "{{NEWS_1_TITLE}}": {
+      "default": "Government supports our new next-gen project with funding!",
+      "description": "First news article title",
+      "required": true
+    },
+    "{{NEWS_1_EXCERPT}}": {
+      "default": "In collaboration with the farming research organisation, we are launching a groundbreaking technology, an affordable solution for measuring and managing biodiversity.",
+      "description": "First news article excerpt",
+      "required": true
+    },
+    "{{NEWS_1_DATE}}": {
+      "default": "3 JANUARY 2025 | NEWS",
+      "description": "First news article date and type",
+      "required": true
+    },
+    "{{NEWS_2_CATEGORY}}": {
+      "default": "FUNDING",
+      "description": "Second news article category label",
+      "required": true
+    },
+    "{{NEWS_2_TITLE}}": {
+      "default": "AI in agriculture: radio report from the field",
+      "description": "Second news article title",
+      "required": true
+    },
+    "{{NEWS_2_EXCERPT}}": {
+      "default": "Biodiversity monitoring is a methodology that guarantees wildlife habitats are left in a quantifiably better condition than they were prior to development.",
+      "description": "Second news article excerpt",
+      "required": true
+    },
+    "{{NEWS_2_DATE}}": {
+      "default": "3 JANUARY 2025 | VIDEO",
+      "description": "Second news article date and type",
+      "required": true
+    },
+    "{{NEWS_3_CATEGORY}}": {
+      "default": "BIODIVERSITY",
+      "description": "Third news article category label",
+      "required": true
+    },
+    "{{NEWS_3_TITLE}}": {
+      "default": "Why biodiversity matters: telling the story of biodiversity",
+      "description": "Third news article title",
+      "required": true
+    },
+    "{{NEWS_3_EXCERPT}}": {
+      "default": "Biodiversity monitoring is a methodology that guarantees wildlife habitats are left in a quantifiably better condition than they were prior to development.",
+      "description": "Third news article excerpt",
+      "required": true
+    },
+    "{{NEWS_3_DATE}}": {
+      "default": "3 JANUARY 2025 | ARTICLE",
+      "description": "Third news article date and type",
+      "required": true
+    },
+    "{{TESTIMONIALS_TITLE}}": {
+      "default": "What they say about us",
+      "description": "Testimonials section heading",
+      "required": true
+    },
+    "{{TESTIMONIAL_1_HIGHLIGHT}}": {
+      "default": "The data on the platform is very easy to understand.",
+      "description": "First testimonial bold highlight text",
+      "required": true
+    },
+    "{{TESTIMONIAL_1_BODY}}": {
+      "default": "If there's birds of prey, there's smaller birds, and if there's smaller birds there's insects, and that tells the farmer that their hedgerows, grass margins or catch crops are working as biodiversity measures.",
+      "description": "First testimonial body text",
+      "required": true
+    },
+    "{{TESTIMONIAL_1_AUTHOR}}": {
+      "default": "Ross Robertson",
+      "description": "First testimonial author name",
+      "required": true
+    },
+    "{{TESTIMONIAL_1_ROLE}}": {
+      "default": "Head of Mixed Farming - Agri-EPI Center",
+      "description": "First testimonial author role/title",
+      "required": true
+    },
+    "{{TESTIMONIAL_2_HIGHLIGHT}}": {
+      "default": "A game-changer for our sustainability reporting.",
+      "description": "Second testimonial bold highlight text",
+      "required": false
+    },
+    "{{TESTIMONIAL_2_BODY}}": {
+      "default": "The insights we get from biodiversity monitoring have transformed how we approach environmental compliance across our portfolio of farms.",
+      "description": "Second testimonial body text",
+      "required": false
+    },
+    "{{TESTIMONIAL_2_AUTHOR}}": {
+      "default": "Sarah Mitchell",
+      "description": "Second testimonial author name",
+      "required": false
+    },
+    "{{TESTIMONIAL_2_ROLE}}": {
+      "default": "Sustainability Director",
+      "description": "Second testimonial author role/title",
+      "required": false
+    },
+    "{{PARTNERS_TITLE}}": {
+      "default": "Partners & clients",
+      "description": "Partners logo section heading",
+      "required": true
+    },
+    "{{PARTNER_1_NAME}}": {
+      "default": "Partner 1",
+      "description": "First partner company name (for alt text)",
+      "required": false
+    },
+    "{{PARTNER_2_NAME}}": {
+      "default": "Partner 2",
+      "description": "Second partner company name (for alt text)",
+      "required": false
+    },
+    "{{PARTNER_3_NAME}}": {
+      "default": "Partner 3",
+      "description": "Third partner company name (for alt text)",
+      "required": false
+    },
+    "{{PARTNER_4_NAME}}": {
+      "default": "Partner 4",
+      "description": "Fourth partner company name (for alt text)",
+      "required": false
+    },
+    "{{PARTNER_5_NAME}}": {
+      "default": "Partner 5",
+      "description": "Fifth partner company name (for alt text)",
+      "required": false
+    },
+    "{{PARTNER_6_NAME}}": {
+      "default": "Partner 6",
+      "description": "Sixth partner company name (for alt text)",
+      "required": false
+    },
+    "{{PARTNER_7_NAME}}": {
+      "default": "Partner 7",
+      "description": "Seventh partner company name (for alt text)",
+      "required": false
+    },
+    "{{CTA_HEADLINE}}": {
+      "default": "Join our community today",
+      "description": "Community CTA section main headline",
+      "required": true
+    },
+    "{{CTA_EMAIL_PLACEHOLDER}}": {
+      "default": "Type your email address",
+      "description": "Placeholder text for the email input field",
+      "required": true
+    },
+    "{{CTA_BUTTON_TEXT}}": {
+      "default": "JOIN NOW",
+      "description": "CTA form submit button text",
+      "required": true
+    },
+    "{{CTA_BG_ALT}}": {
+      "default": "Community landscape background",
+      "description": "Alt text for the CTA section background image",
+      "required": false
+    },
+    "{{CTA_DISCLAIMER_PREFIX}}": {
+      "default": "This form is protected by reCAPTCHA and the Google",
+      "description": "Disclaimer text prefix before privacy link",
+      "required": false
+    },
+    "{{CTA_PRIVACY_LINK}}": {
+      "default": "Privacy Policy",
+      "description": "Privacy policy link text",
+      "required": false
+    },
+    "{{CTA_DISCLAIMER_CONJUNCTION}}": {
+      "default": "and",
+      "description": "Conjunction between privacy and terms links",
+      "required": false
+    },
+    "{{CTA_TERMS_LINK}}": {
+      "default": "Terms of Service",
+      "description": "Terms of service link text",
+      "required": false
+    },
+    "{{CTA_DISCLAIMER_SUFFIX}}": {
+      "default": "apply.",
+      "description": "Disclaimer text suffix after terms link",
+      "required": false
+    },
+    "{{FOOTER_DESCRIPTION}}": {
+      "default": "Our platform supports compliance for habitat management plans for your farm and land resources or to get credits or other rewards in your supply chain.",
+      "description": "Footer brand description paragraph",
+      "required": true
+    },
+    "{{FOOTER_COL_1_TITLE}}": {
+      "default": "Navigate",
+      "description": "Footer first column heading",
+      "required": true
+    },
+    "{{FOOTER_COL_1_LINK_1}}": {
+      "default": "About",
+      "description": "Footer first column link 1",
+      "required": true
+    },
+    "{{FOOTER_COL_1_LINK_2}}": {
+      "default": "Investors",
+      "description": "Footer first column link 2",
+      "required": true
+    },
+    "{{FOOTER_COL_1_LINK_3}}": {
+      "default": "Platform",
+      "description": "Footer first column link 3",
+      "required": true
+    },
+    "{{FOOTER_COL_1_LINK_4}}": {
+      "default": "Consulting",
+      "description": "Footer first column link 4",
+      "required": true
+    },
+    "{{FOOTER_COL_1_LINK_5}}": {
+      "default": "Biodiversity Gain",
+      "description": "Footer first column link 5",
+      "required": false
+    },
+    "{{FOOTER_COL_1_LINK_6}}": {
+      "default": "News",
+      "description": "Footer first column link 6",
+      "required": false
+    },
+    "{{FOOTER_COL_1_LINK_7}}": {
+      "default": "Quiz",
+      "description": "Footer first column link 7",
+      "required": false
+    },
+    "{{FOOTER_COL_2_TITLE}}": {
+      "default": "Sectors",
+      "description": "Footer second column heading",
+      "required": true
+    },
+    "{{FOOTER_COL_2_LINK_1}}": {
+      "default": "For Farmers and Land Managers",
+      "description": "Footer second column link 1",
+      "required": true
+    },
+    "{{FOOTER_COL_2_LINK_2}}": {
+      "default": "For Companies",
+      "description": "Footer second column link 2",
+      "required": true
+    },
+    "{{FOOTER_COL_2_LINK_3}}": {
+      "default": "For Government Bodies",
+      "description": "Footer second column link 3",
+      "required": true
+    },
+    "{{FOOTER_COL_2_SUBTITLE}}": {
+      "default": "Legal",
+      "description": "Footer second column sub-heading for legal links",
+      "required": true
+    },
+    "{{FOOTER_COL_2_LEGAL_1}}": {
+      "default": "Terms & Conditions",
+      "description": "Footer legal link 1",
+      "required": true
+    },
+    "{{FOOTER_COL_2_LEGAL_2}}": {
+      "default": "Privacy Policy",
+      "description": "Footer legal link 2",
+      "required": true
+    },
+    "{{FOOTER_COL_2_LEGAL_3}}": {
+      "default": "Terms of Use",
+      "description": "Footer legal link 3",
+      "required": true
+    },
+    "{{FOOTER_COL_3_TITLE}}": {
+      "default": "Contact Us",
+      "description": "Footer third column heading",
+      "required": true
+    },
+    "{{FOOTER_COL_3_SOCIAL_TITLE}}": {
+      "default": "Connect With Us",
+      "description": "Footer social media sub-heading",
+      "required": false
+    },
+    "{{EMAIL}}": {
+      "default": "hello@example.com",
+      "description": "Contact email address",
+      "required": true
+    },
+    "{{PHONE}}": {
+      "default": "+44 (0)000 000 0000",
+      "description": "Contact phone number",
+      "required": true
+    },
+    "{{FOOTER_COPYRIGHT}}": {
+      "default": "Copyright (c) Company Ltd 2025. All Rights Reserved",
+      "description": "Footer copyright text",
+      "required": true
+    },
+    "{{FOOTER_LEGAL_INFO}}": {
+      "default": "Company Ltd is a private limited company, registered in England and Wales",
+      "description": "Footer company registration information",
+      "required": false
+    }
+  },
+  "image_slots": [
+    {
+      "selector": ".navbar__logo img",
+      "property": "src",
+      "path": "images/logo.png",
+      "keywords": ["logo", "brand", "navigation"],
+      "aspect_ratio": "auto",
+      "min_width": 200
+    },
+    {
+      "selector": ".hero__background img",
+      "property": "src",
+      "path": "images/hero-bg.jpg",
+      "keywords": ["hero", "background", "landscape", "nature"],
+      "aspect_ratio": "16:9",
+      "min_width": 1920
+    },
+    {
+      "selector": ".hero__logo img",
+      "property": "src",
+      "path": "images/hero-wordmark.png",
+      "keywords": ["wordmark", "logo", "hero", "brand"],
+      "aspect_ratio": "auto",
+      "min_width": 400
+    },
+    {
+      "selector": ".hero__badges img:nth-child(1)",
+      "property": "src",
+      "path": "images/badge-1.png",
+      "keywords": ["badge", "award", "certification"],
+      "aspect_ratio": "auto",
+      "min_width": 100
+    },
+    {
+      "selector": ".hero__badges img:nth-child(2)",
+      "property": "src",
+      "path": "images/badge-2.png",
+      "keywords": ["badge", "award", "certification"],
+      "aspect_ratio": "auto",
+      "min_width": 100
+    },
+    {
+      "selector": ".hero__listen-badge img",
+      "property": "src",
+      "path": "images/listen-icon.png",
+      "keywords": ["listen", "audio", "icon", "product"],
+      "aspect_ratio": "1:1",
+      "min_width": 85
+    },
+    {
+      "selector": ".feature-item:nth-child(n) .feature-item__icon img",
+      "property": "src",
+      "path": "images/feature-icon-{n}.png",
+      "keywords": ["feature", "icon", "product"],
+      "aspect_ratio": "1:1",
+      "min_width": 80
+    },
+    {
+      "selector": ".info-section:first-of-type .info-section__image img",
+      "property": "src",
+      "path": "images/info-what-is.jpg",
+      "keywords": ["product", "device", "nature", "monitoring"],
+      "aspect_ratio": "4:3",
+      "min_width": 800
+    },
+    {
+      "selector": ".info-section--reversed .info-section__image img",
+      "property": "src",
+      "path": "images/info-how-works.jpg",
+      "keywords": ["farm", "landscape", "agriculture", "technology"],
+      "aspect_ratio": "4:3",
+      "min_width": 800
+    },
+    {
+      "selector": ".indicators__visual .pyramid-circle img",
+      "property": "src",
+      "path": "images/pyramid-diagram.png",
+      "keywords": ["pyramid", "diagram", "trophic", "ecosystem"],
+      "aspect_ratio": "1:1",
+      "min_width": 400
+    },
+    {
+      "selector": ".stat-item:nth-child(n) .stat-item__icon img",
+      "property": "src",
+      "path": "images/stat-icon-{n}.png",
+      "keywords": ["stat", "icon", "metric"],
+      "aspect_ratio": "1:1",
+      "min_width": 100
+    },
+    {
+      "selector": ".quiz__image img",
+      "property": "src",
+      "path": "images/quiz-bg.jpg",
+      "keywords": ["quiz", "nature", "interactive", "bird"],
+      "aspect_ratio": "4:3",
+      "min_width": 800
+    },
+    {
+      "selector": ".news-card:nth-child(1) .news-card__image img",
+      "property": "src",
+      "path": "images/news-1.jpg",
+      "keywords": ["news", "article", "funding"],
+      "aspect_ratio": "16:9",
+      "min_width": 536
+    },
+    {
+      "selector": ".news-card:nth-child(2) .news-card__image img:first-child",
+      "property": "src",
+      "path": "images/news-2.jpg",
+      "keywords": ["news", "video", "agriculture"],
+      "aspect_ratio": "16:9",
+      "min_width": 536
+    },
+    {
+      "selector": ".news-card:nth-child(3) .news-card__image img",
+      "property": "src",
+      "path": "images/news-3.jpg",
+      "keywords": ["news", "article", "biodiversity"],
+      "aspect_ratio": "16:9",
+      "min_width": 536
+    },
+    {
+      "selector": ".news-card__play-btn",
+      "property": "src",
+      "path": "images/icon-play.png",
+      "keywords": ["play", "video", "icon"],
+      "aspect_ratio": "1:1",
+      "min_width": 80
+    },
+    {
+      "selector": ".testimonials__bg img",
+      "property": "src",
+      "path": "images/testimonials-bg.jpg",
+      "keywords": ["background", "landscape", "nature", "testimonial"],
+      "aspect_ratio": "16:9",
+      "min_width": 1920
+    },
+    {
+      "selector": ".testimonial-card__stars img",
+      "property": "src",
+      "path": "images/icon-star.svg",
+      "keywords": ["star", "rating", "icon"],
+      "aspect_ratio": "1:1",
+      "min_width": 20
+    },
+    {
+      "selector": ".partners__logos img",
+      "property": "src",
+      "path": "images/partner-{n}.png",
+      "keywords": ["partner", "client", "logo"],
+      "aspect_ratio": "auto",
+      "min_width": 100
+    },
+    {
+      "selector": ".cta-section__background img",
+      "property": "src",
+      "path": "images/cta-bg.jpg",
+      "keywords": ["community", "landscape", "background", "CTA"],
+      "aspect_ratio": "16:9",
+      "min_width": 1920
+    },
+    {
+      "selector": ".footer__brand-logo img",
+      "property": "src",
+      "path": "images/footer-logo.png",
+      "keywords": ["logo", "footer", "brand"],
+      "aspect_ratio": "auto",
+      "min_width": 200
+    },
+    {
+      "selector": ".footer__social img",
+      "property": "src",
+      "path": "images/icon-{social}.svg",
+      "keywords": ["social", "icon", "linkedin", "twitter", "facebook"],
+      "aspect_ratio": "1:1",
+      "min_width": 32
+    }
+  ],
+  "sections": {
+    "announcement-bar": {
+      "required": false,
+      "customizable": true,
+      "description": "Dismissible top announcement bar with text message and learn-more link"
+    },
+    "navbar": {
+      "required": true,
+      "customizable": true,
+      "description": "Sticky yellow navigation bar with logo, 6 nav links, contact CTA, login button, and mobile hamburger menu"
+    },
+    "hero": {
+      "required": true,
+      "customizable": true,
+      "description": "Full-width hero with background image, dark gradient overlay, logo wordmark, headline, subheadline, award badges, and floating listen badge"
+    },
+    "audience": {
+      "required": true,
+      "customizable": true,
+      "description": "Three-column audience targeting cards with title, description, and learn-more CTA for each user segment"
+    },
+    "features": {
+      "required": true,
+      "customizable": true,
+      "description": "Yellow-background section with centered title and 4x2 grid of circular icon feature items"
+    },
+    "info-what-is": {
+      "required": true,
+      "customizable": true,
+      "description": "Two-column section with image on left and text content (title, lead, body, CTA) on right"
+    },
+    "info-how-it-works": {
+      "required": true,
+      "customizable": true,
+      "description": "Two-column reversed layout section with text content on left and image on right"
+    },
+    "indicators": {
+      "required": true,
+      "customizable": true,
+      "description": "Two-column section with circular pyramid diagram visualization on left and explanatory text with CTA on right"
+    },
+    "stats": {
+      "required": true,
+      "customizable": true,
+      "description": "Yellow-background stats bar with 3 stat items each containing icon, animated counter value, divider, and label"
+    },
+    "quiz": {
+      "required": false,
+      "customizable": true,
+      "description": "Split-panel section with image on left and teal-background CTA content on right"
+    },
+    "news": {
+      "required": true,
+      "customizable": true,
+      "description": "Purple/accent-background news section with header, view-all button, and 3-column card grid with categories, titles, excerpts, and dates"
+    },
+    "testimonials": {
+      "required": true,
+      "customizable": true,
+      "description": "Testimonial carousel with landscape background, star ratings, quote text, author name and role, and prev/next navigation"
+    },
+    "partners": {
+      "required": false,
+      "customizable": true,
+      "description": "Partner and client logo strip with grayscale hover effect"
+    },
+    "cta-community": {
+      "required": true,
+      "customizable": true,
+      "description": "Full-width CTA section with landscape background, large headline, email signup form with pill-shaped input, and privacy disclaimer"
+    },
+    "footer": {
+      "required": true,
+      "customizable": true,
+      "description": "Four-column footer with brand logo and description, navigation links, sector links, legal links, contact info, social icons, divider, and copyright"
+    }
+  },
+  "css_variables": {
+    "--primary-color": {
+      "default": "#F2DD10",
+      "description": "Primary brand color (Sunset Yellow)"
+    },
+    "--secondary-color": {
+      "default": "#62A6A6",
+      "description": "Secondary brand color (Earth Teal)"
+    },
+    "--accent-color": {
+      "default": "#5645ED",
+      "description": "Accent color (Data Sky Blue/Purple)"
+    },
+    "--highlight-color": {
+      "default": "#E48B53",
+      "description": "Highlight color (Optimistic Orange)"
+    },
+    "--background-color": {
+      "default": "#F7F6F2",
+      "description": "Page background color (Trust Stone)"
+    },
+    "--text-color": {
+      "default": "#000000",
+      "description": "Primary text color (Honest Black)"
+    },
+    "--text-light": {
+      "default": "#F7F6F2",
+      "description": "Light text color for dark backgrounds"
+    },
+    "--surface-color": {
+      "default": "#FFFFFF",
+      "description": "Card and surface background color"
+    },
+    "--font-heading": {
+      "default": "'Poppins', 'Segoe UI', sans-serif",
+      "description": "Heading font family"
+    },
+    "--font-body": {
+      "default": "'Inter', 'Segoe UI', sans-serif",
+      "description": "Body text font family"
+    },
+    "--font-cta": {
+      "default": "'Inter', 'Segoe UI', sans-serif",
+      "description": "CTA button font family"
+    },
+    "--border-radius": {
+      "default": "9px",
+      "description": "Default border radius for cards and images"
+    },
+    "--border-radius-pill": {
+      "default": "49px",
+      "description": "Pill-shaped border radius for buttons"
+    }
+  },
+  "responsive_breakpoints": {
+    "tablet": "1024px",
+    "mobile": "768px",
+    "small_mobile": "430px"
+  }
+}

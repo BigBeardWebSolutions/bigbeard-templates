@@ -1,0 +1,647 @@
+{
+  "template_id": "nonprofit-letsatsi-borutho-trust-v1",
+  "name": "Nonprofit Community Trust Website",
+  "placeholders": {
+    "{{BUSINESS_NAME}}": {
+      "default": "Community Trust",
+      "description": "Organization or trust name",
+      "required": true
+    },
+    "{{TAGLINE}}": {
+      "default": "Empowering Communities for a Brighter Future",
+      "description": "Short tagline describing the organization's mission",
+      "required": true
+    },
+    "{{META_DESCRIPTION}}": {
+      "default": "A community trust dedicated to empowering young people through education, enterprise development, and food security programs.",
+      "description": "SEO meta description for the page",
+      "required": false
+    },
+    "{{META_KEYWORDS}}": {
+      "default": "nonprofit, trust, community, charity, education, youth empowerment",
+      "description": "SEO meta keywords",
+      "required": false
+    },
+    "{{PHONE}}": {
+      "default": "+27 21 000 0000",
+      "description": "Organization phone number",
+      "required": true
+    },
+    "{{EMAIL}}": {
+      "default": "info@communitytrust.org",
+      "description": "Organization email address",
+      "required": true
+    },
+    "{{NAV_LINK_HOME}}": {
+      "default": "Home",
+      "description": "Home navigation link text",
+      "required": true
+    },
+    "{{NAV_LINK_ABOUT}}": {
+      "default": "About Us",
+      "description": "About navigation link text",
+      "required": true
+    },
+    "{{NAV_LINK_OPPORTUNITIES}}": {
+      "default": "Opportunities",
+      "description": "Opportunities navigation link text",
+      "required": true
+    },
+    "{{NAV_LINK_PROGRAMMES}}": {
+      "default": "Programmes",
+      "description": "Programmes navigation link text",
+      "required": true
+    },
+    "{{NAV_LINK_PARTNERSHIP}}": {
+      "default": "Partnership",
+      "description": "Partnership navigation link text",
+      "required": true
+    },
+    "{{NAV_LINK_NEWS}}": {
+      "default": "News",
+      "description": "News navigation link text",
+      "required": true
+    },
+    "{{NAV_CTA}}": {
+      "default": "Contact Us",
+      "description": "Navigation call-to-action button text",
+      "required": true
+    },
+    "{{HERO_HEADLINE}}": {
+      "default": "Empowering young people to succeed",
+      "description": "Main hero banner headline",
+      "required": true
+    },
+    "{{HERO_SUBHEADLINE}}": {
+      "default": "Generating power for emerging markets",
+      "description": "Hero subtitle text below the headline",
+      "required": true
+    },
+    "{{HERO_CTA}}": {
+      "default": "Discover Our Work",
+      "description": "Hero call-to-action button text",
+      "required": true
+    },
+    "{{HERO_SLIDE_1_ALT}}": {
+      "default": "Community members at sunset",
+      "description": "Alt text for hero slide 1 image",
+      "required": false
+    },
+    "{{HERO_SLIDE_2_ALT}}": {
+      "default": "Youth development program",
+      "description": "Alt text for hero slide 2 image",
+      "required": false
+    },
+    "{{HERO_SLIDE_3_ALT}}": {
+      "default": "Renewable energy project",
+      "description": "Alt text for hero slide 3 image",
+      "required": false
+    },
+    "{{ABOUT_LABEL}}": {
+      "default": "About Us",
+      "description": "Small label above the About section title",
+      "required": true
+    },
+    "{{ABOUT_TITLE}}": {
+      "default": "Who We Are",
+      "description": "About section heading",
+      "required": true
+    },
+    "{{ABOUT_DESCRIPTION}}": {
+      "default": "Our trust was founded through a community power project, part of the country's Renewable Energy Independent Power Producer programme. This initiative was introduced to help alleviate the country's energy shortages. The Trust holds a stake in the power plant via its trust company. This means that profits are channeled to the Trust through dividends to invest in community upliftment. As an autonomous body, the Trust is guided by a board of trustees committed to operating transparently, ethically, and effectively.",
+      "description": "About section body text",
+      "required": true
+    },
+    "{{ABOUT_CTA}}": {
+      "default": "Read More",
+      "description": "About section call-to-action button text",
+      "required": true
+    },
+    "{{ABOUT_IMAGE_ALT}}": {
+      "default": "Solar panels at community energy project",
+      "description": "Alt text for the about section image",
+      "required": false
+    },
+    "{{FOCUS_TITLE}}": {
+      "default": "Our Focus",
+      "description": "Focus/programs section heading",
+      "required": true
+    },
+    "{{FOCUS_1_TITLE}}": {
+      "default": "Market and Enterprise Development",
+      "description": "First focus area title",
+      "required": true
+    },
+    "{{FOCUS_1_DESCRIPTION}}": {
+      "default": "We support the growth of small businesses, especially in underserved communities, fostering economic activity within our immediate areas of impact.",
+      "description": "First focus area description text",
+      "required": true
+    },
+    "{{FOCUS_2_TITLE}}": {
+      "default": "Youth Education and Life Skills",
+      "description": "Second focus area title",
+      "required": true
+    },
+    "{{FOCUS_2_DESCRIPTION}}": {
+      "default": "Our initiatives aim to empower youth to overcome generational poverty. We place special emphasis on peer-driven support and encouraging beneficiaries to reinvest their knowledge and skills back into their communities.",
+      "description": "Second focus area description text",
+      "required": true
+    },
+    "{{FOCUS_3_TITLE}}": {
+      "default": "Food Security",
+      "description": "Third focus area title",
+      "required": true
+    },
+    "{{FOCUS_3_DESCRIPTION}}": {
+      "default": "We back local nutrition programmes that assist vulnerable groups, including children and the elderly. Our priority lies with initiatives that grow food within the community or source supplies from small local vendors.",
+      "description": "Third focus area description text",
+      "required": true
+    },
+    "{{IMPACT_LABEL}}": {
+      "default": "Giving to the Community",
+      "description": "Small label above the Impact section title",
+      "required": true
+    },
+    "{{IMPACT_TITLE}}": {
+      "default": "What We Do",
+      "description": "Impact section heading",
+      "required": true
+    },
+    "{{IMPACT_DESCRIPTION}}": {
+      "default": "We fund community-led projects by awarding grants to organisations through an open and competitive application process. This ensures that funding is directed towards the most impactful and sustainable initiatives in the region.",
+      "description": "Impact section body text",
+      "required": true
+    },
+    "{{IMPACT_CTA}}": {
+      "default": "Read More",
+      "description": "Impact section call-to-action button text",
+      "required": true
+    },
+    "{{IMPACT_BG_ALT}}": {
+      "default": "African savanna landscape at sunset",
+      "description": "Alt text for the impact section background image",
+      "required": false
+    },
+    "{{TRUSTEES_TITLE}}": {
+      "default": "Our Trustees",
+      "description": "Trustees section heading",
+      "required": true
+    },
+    "{{TRUSTEE_1_NAME}}": {
+      "default": "Jane Doe",
+      "description": "First trustee name",
+      "required": true
+    },
+    "{{TRUSTEE_1_ROLE}}": {
+      "default": "Trustee",
+      "description": "First trustee role/title",
+      "required": true
+    },
+    "{{TRUSTEE_1_BIO}}": {
+      "default": "An experienced leader in economic development and community impact, responsible for driving social and sustainable growth initiatives across the region.",
+      "description": "First trustee biography text",
+      "required": true
+    },
+    "{{TRUSTEE_2_NAME}}": {
+      "default": "John Smith",
+      "description": "Second trustee name",
+      "required": true
+    },
+    "{{TRUSTEE_2_ROLE}}": {
+      "default": "Community Beneficiary Trustee",
+      "description": "Second trustee role/title",
+      "required": true
+    },
+    "{{TRUSTEE_2_BIO}}": {
+      "default": "A community advocate with extensive experience working with non-profit organizations, focusing on youth development within underserved areas.",
+      "description": "Second trustee biography text",
+      "required": true
+    },
+    "{{READ_MORE_LABEL}}": {
+      "default": "READ MORE",
+      "description": "Read more link text on trustee cards",
+      "required": false
+    },
+    "{{APPLY_TITLE}}": {
+      "default": "Apply Now",
+      "description": "Apply/CTA banner heading",
+      "required": true
+    },
+    "{{APPLY_DESCRIPTION}}": {
+      "default": "Download the Trust Deed and apply for grants and bursaries.",
+      "description": "Apply banner description text",
+      "required": true
+    },
+    "{{APPLY_CTA}}": {
+      "default": "Download",
+      "description": "Apply banner button text",
+      "required": true
+    },
+    "{{APPLY_BG_ALT}}": {
+      "default": "Community gathering background",
+      "description": "Alt text for the apply section background image",
+      "required": false
+    },
+    "{{CONTACT_TITLE}}": {
+      "default": "Get in touch with us",
+      "description": "Contact section heading",
+      "required": true
+    },
+    "{{CONTACT_DESCRIPTION}}": {
+      "default": "For fund information, performance reports, or offering documents, please contact our team.",
+      "description": "Contact section introductory text",
+      "required": true
+    },
+    "{{CONTACT_FORM_TITLE}}": {
+      "default": "Send us a message",
+      "description": "Contact form heading",
+      "required": true
+    },
+    "{{ADDRESS_LINE_1}}": {
+      "default": "Unit 5A, 5th Floor",
+      "description": "First line of physical address",
+      "required": true
+    },
+    "{{ADDRESS_LINE_2}}": {
+      "default": "Sunclare Building",
+      "description": "Second line of physical address",
+      "required": true
+    },
+    "{{ADDRESS_LINE_3}}": {
+      "default": "21 Dreyer Street",
+      "description": "Third line of physical address",
+      "required": true
+    },
+    "{{ADDRESS_CITY}}": {
+      "default": "Claremont",
+      "description": "City name",
+      "required": true
+    },
+    "{{ADDRESS_POSTAL_CODE}}": {
+      "default": "7708",
+      "description": "Postal/zip code",
+      "required": true
+    },
+    "{{SOCIAL_LABEL}}": {
+      "default": "Follow our social media",
+      "description": "Social media section label",
+      "required": false
+    },
+    "{{SOCIAL_LINKEDIN_URL}}": {
+      "default": "#",
+      "description": "LinkedIn profile URL",
+      "required": false
+    },
+    "{{FORM_NAME_LABEL}}": {
+      "default": "Your Name",
+      "description": "Form name field label",
+      "required": true
+    },
+    "{{FORM_NAME_PLACEHOLDER}}": {
+      "default": "Enter your full name",
+      "description": "Form name field placeholder text",
+      "required": false
+    },
+    "{{FORM_EMAIL_LABEL}}": {
+      "default": "Email Address",
+      "description": "Form email field label",
+      "required": true
+    },
+    "{{FORM_EMAIL_PLACEHOLDER}}": {
+      "default": "Enter your email address",
+      "description": "Form email field placeholder text",
+      "required": false
+    },
+    "{{FORM_MESSAGE_LABEL}}": {
+      "default": "Message",
+      "description": "Form message field label",
+      "required": true
+    },
+    "{{FORM_MESSAGE_PLACEHOLDER}}": {
+      "default": "Type your message here...",
+      "description": "Form message field placeholder text",
+      "required": false
+    },
+    "{{FORM_TERMS_LABEL}}": {
+      "default": "I Accept the Terms of Use",
+      "description": "Terms acceptance checkbox label",
+      "required": true
+    },
+    "{{FORM_MARKETING_LABEL}}": {
+      "default": "Opt-in to Receive Marketing Communication?",
+      "description": "Marketing opt-in radio button label",
+      "required": true
+    },
+    "{{FORM_YES}}": {
+      "default": "Yes",
+      "description": "Yes option label",
+      "required": true
+    },
+    "{{FORM_NO}}": {
+      "default": "No",
+      "description": "No option label",
+      "required": true
+    },
+    "{{FORM_SUBMIT}}": {
+      "default": "Send Message",
+      "description": "Form submit button text",
+      "required": true
+    },
+    "{{SPEAK_OUT_TITLE}}": {
+      "default": "Speak Out",
+      "description": "Speak out/report section heading",
+      "required": true
+    },
+    "{{SPEAK_OUT_DESCRIPTION}}": {
+      "default": "Help Us To Prevent Corruption",
+      "description": "Speak out section description text",
+      "required": true
+    },
+    "{{SPEAK_OUT_CTA}}": {
+      "default": "View More",
+      "description": "Speak out section call-to-action button text",
+      "required": true
+    },
+    "{{SPEAK_OUT_IMAGE_ALT}}": {
+      "default": "Community engagement scene",
+      "description": "Alt text for the speak out section image",
+      "required": false
+    },
+    "{{SPEAK_OUT_BG_ALT}}": {
+      "default": "Abstract background",
+      "description": "Alt text for the speak out banner background",
+      "required": false
+    },
+    "{{FOOTER_LINK_GOVERNANCE}}": {
+      "default": "Our Governance",
+      "description": "Footer governance link text",
+      "required": true
+    },
+    "{{FOOTER_LINK_OPPORTUNITIES}}": {
+      "default": "Opportunities",
+      "description": "Footer opportunities link text",
+      "required": true
+    },
+    "{{FOOTER_LINK_PROGRAMMES}}": {
+      "default": "Special Programmes",
+      "description": "Footer programmes link text",
+      "required": true
+    },
+    "{{FOOTER_LINK_PARTNERSHIPS}}": {
+      "default": "Partnerships",
+      "description": "Footer partnerships link text",
+      "required": true
+    },
+    "{{FOOTER_LINK_NEWS}}": {
+      "default": "News",
+      "description": "Footer news link text",
+      "required": true
+    },
+    "{{FOOTER_ADDRESS_LINE_1}}": {
+      "default": "Unit 5A, 5th Floor",
+      "description": "Footer address line 1",
+      "required": true
+    },
+    "{{FOOTER_ADDRESS_LINE_2}}": {
+      "default": "Sunclare Building",
+      "description": "Footer address line 2",
+      "required": true
+    },
+    "{{FOOTER_ADDRESS_LINE_3}}": {
+      "default": "21 Dreyer Street",
+      "description": "Footer address line 3",
+      "required": true
+    },
+    "{{FOOTER_ADDRESS_CITY}}": {
+      "default": "Claremont",
+      "description": "Footer city",
+      "required": true
+    },
+    "{{FOOTER_ADDRESS_POSTAL_CODE}}": {
+      "default": "7708",
+      "description": "Footer postal code",
+      "required": true
+    },
+    "{{FOOTER_LINK_TERMS}}": {
+      "default": "Terms and Conditions",
+      "description": "Footer terms link text",
+      "required": true
+    },
+    "{{FOOTER_LINK_PRIVACY}}": {
+      "default": "Privacy Policy",
+      "description": "Footer privacy link text",
+      "required": true
+    },
+    "{{FOOTER_LINK_LEGAL}}": {
+      "default": "Legal Notices",
+      "description": "Footer legal notices link text",
+      "required": true
+    },
+    "{{COPYRIGHT_TEXT}}": {
+      "default": "2026 Community Trust. All Rights Reserved.",
+      "description": "Footer copyright text",
+      "required": true
+    }
+  },
+  "image_slots": [
+    {
+      "selector": ".header__logo",
+      "property": "src",
+      "path": "images/logo.png",
+      "keywords": ["logo", "brand", "trust"],
+      "aspect_ratio": "auto",
+      "min_width": 91
+    },
+    {
+      "selector": ".hero__slide:nth-child(1) .hero__slide-image",
+      "property": "src",
+      "path": "images/hero-slide-1.jpg",
+      "keywords": ["hero", "community", "people", "sunset", "silhouette"],
+      "aspect_ratio": "16:9",
+      "min_width": 1920
+    },
+    {
+      "selector": ".hero__slide:nth-child(2) .hero__slide-image",
+      "property": "src",
+      "path": "images/hero-slide-2.jpg",
+      "keywords": ["hero", "youth", "education", "program"],
+      "aspect_ratio": "16:9",
+      "min_width": 1920
+    },
+    {
+      "selector": ".hero__slide:nth-child(3) .hero__slide-image",
+      "property": "src",
+      "path": "images/hero-slide-3.jpg",
+      "keywords": ["hero", "energy", "solar", "renewable"],
+      "aspect_ratio": "16:9",
+      "min_width": 1920
+    },
+    {
+      "selector": ".about__image",
+      "property": "src",
+      "path": "images/about-image.jpg",
+      "keywords": ["about", "solar", "renewable", "energy", "project"],
+      "aspect_ratio": "4:3",
+      "min_width": 800
+    },
+    {
+      "selector": ".focus__card:nth-child(1) .focus__card-icon img",
+      "property": "src",
+      "path": "images/icon-enterprise.png",
+      "keywords": ["icon", "enterprise", "business", "development"],
+      "aspect_ratio": "1:1",
+      "min_width": 140
+    },
+    {
+      "selector": ".focus__card:nth-child(2) .focus__card-icon img",
+      "property": "src",
+      "path": "images/icon-education.png",
+      "keywords": ["icon", "education", "youth", "skills"],
+      "aspect_ratio": "1:1",
+      "min_width": 140
+    },
+    {
+      "selector": ".focus__card:nth-child(3) .focus__card-icon img",
+      "property": "src",
+      "path": "images/icon-food.png",
+      "keywords": ["icon", "food", "nutrition", "security"],
+      "aspect_ratio": "1:1",
+      "min_width": 140
+    },
+    {
+      "selector": ".impact__bg",
+      "property": "src",
+      "path": "images/impact-bg.jpg",
+      "keywords": ["landscape", "africa", "savanna", "sunset", "nature"],
+      "aspect_ratio": "16:9",
+      "min_width": 1920
+    },
+    {
+      "selector": ".trustee-card:nth-child(1) .trustee-card__image",
+      "property": "src",
+      "path": "images/trustee-1.png",
+      "keywords": ["trustee", "person", "portrait", "professional"],
+      "aspect_ratio": "auto",
+      "min_width": 380
+    },
+    {
+      "selector": ".trustee-card:nth-child(2) .trustee-card__image",
+      "property": "src",
+      "path": "images/trustee-2.png",
+      "keywords": ["trustee", "person", "portrait", "professional"],
+      "aspect_ratio": "auto",
+      "min_width": 380
+    },
+    {
+      "selector": ".apply-banner__bg",
+      "property": "src",
+      "path": "images/apply-bg.jpg",
+      "keywords": ["background", "community", "gathering", "people"],
+      "aspect_ratio": "16:9",
+      "min_width": 1920
+    },
+    {
+      "selector": ".speak-out__image",
+      "property": "src",
+      "path": "images/speak-out-image.jpg",
+      "keywords": ["community", "engagement", "people", "meeting"],
+      "aspect_ratio": "16:9",
+      "min_width": 1920
+    },
+    {
+      "selector": ".speak-out-banner__bg",
+      "property": "src",
+      "path": "images/speak-out-bg.jpg",
+      "keywords": ["background", "dark", "abstract", "overlay"],
+      "aspect_ratio": "16:9",
+      "min_width": 1920
+    }
+  ],
+  "sections": {
+    "topbar": {
+      "required": true,
+      "customizable": true,
+      "description": "Green top bar with phone number and email contact information"
+    },
+    "header": {
+      "required": true,
+      "customizable": true,
+      "description": "Sticky header with logo, navigation links (Home, About Us, Opportunities dropdown, Programmes, Partnership, News), and Contact Us CTA button"
+    },
+    "hero": {
+      "required": true,
+      "customizable": true,
+      "description": "Full-width hero slider with 3 slides, rounded-corner right edge, gradient overlay, headline, subtitle, CTA button, and dot navigation"
+    },
+    "about": {
+      "required": true,
+      "customizable": true,
+      "description": "Two-column about section with rounded image on the left and text content (label, title, description, CTA) on the right"
+    },
+    "focus": {
+      "required": true,
+      "customizable": true,
+      "description": "Three-column focus areas section with circular icons, titles, decorative lines, and descriptions for enterprise development, youth education, and food security"
+    },
+    "impact": {
+      "required": true,
+      "customizable": true,
+      "description": "Full-width impact section with landscape background image, dark gradient overlay, label, title, description, and CTA button"
+    },
+    "trustees": {
+      "required": true,
+      "customizable": true,
+      "description": "Two-column trustee profiles with arch-shaped image backgrounds (blue gradient), trustee photo, name, role, LinkedIn icon, bio, and read more link"
+    },
+    "apply-banner": {
+      "required": true,
+      "customizable": true,
+      "description": "Full-width CTA banner with background image, dark overlay, title, description, and download button"
+    },
+    "contact": {
+      "required": true,
+      "customizable": true,
+      "description": "Two-column contact section with contact info (email, phone, address, social media) on the left and contact form (name, email, message, terms checkbox, marketing opt-in, submit) on the right"
+    },
+    "speak-out": {
+      "required": false,
+      "customizable": true,
+      "description": "Speak out section with full-width image and a dark overlay banner for anti-corruption reporting with title, description, and CTA"
+    },
+    "footer": {
+      "required": true,
+      "customizable": true,
+      "description": "Green footer with four columns: navigation links, physical address, phone/email/social media, and legal links. Blue bottom bar with copyright text"
+    }
+  },
+  "css_variables": {
+    "--primary-color": {
+      "default": "#74aa50",
+      "description": "Primary brand color (green - trust/growth)"
+    },
+    "--secondary-color": {
+      "default": "#00629b",
+      "description": "Secondary brand color (dark blue - stability/trust)"
+    },
+    "--accent-color": {
+      "default": "#2295cf",
+      "description": "Accent color (light blue - for button gradients)"
+    },
+    "--text-color": {
+      "default": "#2e2e2e",
+      "description": "Primary text color (near black)"
+    },
+    "--background-color": {
+      "default": "#ffffff",
+      "description": "Page background color (white)"
+    },
+    "--surface-color": {
+      "default": "#efefef",
+      "description": "Surface color for form inputs and cards"
+    }
+  },
+  "responsive_breakpoints": {
+    "tablet": "1024px",
+    "mobile": "768px"
+  }
+}

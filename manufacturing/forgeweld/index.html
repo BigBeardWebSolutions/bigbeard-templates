@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{BUSINESS_NAME}} - {{TAGLINE}}">
+    <title>{{BUSINESS_NAME}} | {{TAGLINE}}</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- ================================================================
+         Top Bar
+         ================================================================ -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-item">
+                <svg class="icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 3.5C2 2.67 2.67 2 3.5 2h3.09c.36 0 .67.25.74.6l.87 4.36a.75.75 0 01-.22.72l-1.9 1.9a11.05 11.05 0 005.34 5.34l1.9-1.9a.75.75 0 01.72-.22l4.36.87c.35.07.6.38.6.74v3.09c0 .83-.67 1.5-1.5 1.5A15.5 15.5 0 012 3.5z" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span><strong>{{PHONE}}</strong></span>
+            </div>
+            <div class="top-bar-item">
+                <svg class="icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 4.5A2.5 2.5 0 014.5 2h11A2.5 2.5 0 0118 4.5v9a2.5 2.5 0 01-2.5 2.5h-11A2.5 2.5 0 012 13.5v-9z" stroke="#FFFFFF" stroke-width="1.5"/>
+                    <path d="M2 5l7.4 5.18a1 1 0 001.2 0L18 5" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span><strong>{{EMAIL}}</strong></span>
+            </div>
+            <div class="top-bar-item">
+                <svg class="icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 1C6.13 1 3 4.13 3 8c0 5.25 7 11 7 11s7-5.75 7-11c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>{{ADDRESS}}</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================================================================
+         Header / Navigation
+         ================================================================ -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="#" class="nav-logo">
+                <img src="images/logo.png" alt="{{BUSINESS_NAME}} Logo">
+                <span class="nav-tagline">{{TAGLINE}}</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="#hero" class="active">{{NAV_LINK_1}}</a>
+                <a href="#about">{{NAV_LINK_2}}</a>
+                <a href="#services">{{NAV_LINK_3}}</a>
+                <a href="#products">{{NAV_LINK_4}}</a>
+                <a href="#news">{{NAV_LINK_5}}</a>
+                <a href="#contact">{{NAV_LINK_6}}</a>
+            </div>
+
+            <div class="nav-cta">
+                <a href="#contact" class="btn btn-primary">{{PRIMARY_CTA}}</a>
+            </div>
+
+            <button class="mobile-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- ================================================================
+         Main Content
+         ================================================================ -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-bg">
+                <img src="images/hero-bg.jpg" alt="{{HERO_IMAGE_ALT}}">
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-headline">{{HERO_HEADLINE}}</h1>
+                <p class="hero-description">{{HERO_DESCRIPTION}}</p>
+                <a href="#contact" class="btn btn-primary">
+                    {{PRIMARY_CTA}}
+                    <svg class="btn-arrow" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 8h20m0 0l-7-7m7 7l-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="hero-scroll-indicator">
+                {{SCROLL_TEXT}}
+            </div>
+        </section>
+
+        <!-- About / What We Do Section -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="about-image animate-on-scroll">
+                    <img src="images/about.jpg" alt="{{ABOUT_IMAGE_ALT}}">
+                </div>
+                <div class="about-content animate-on-scroll delay-1">
+                    <span class="section-subtitle">{{ABOUT_SUBTITLE}}</span>
+                    <h2 class="section-title">{{ABOUT_TITLE}}</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-description">{{ABOUT_DESCRIPTION}}</p>
+
+                    <div class="stat-badge">
+                        <span class="stat-label-top">{{STAT_LABEL_TOP}}</span>
+                        <span class="stat-value" data-target="{{STAT_VALUE}}">0</span>
+                        <span class="stat-label-bottom">{{STAT_LABEL_BOTTOM}}</span>
+                    </div>
+
+                    <a href="#services" class="link-more">
+                        {{SECONDARY_CTA}}
+                        <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 6h16m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services / Categories Section -->
+        <section class="services-section" id="services">
+            <div class="container">
+                <span class="section-subtitle animate-on-scroll">{{SERVICES_SUBTITLE}}</span>
+                <h2 class="section-title animate-on-scroll">{{SERVICES_TITLE}}</h2>
+                <div class="section-divider animate-on-scroll"></div>
+
+                <div class="services-grid">
+                    <div class="service-card animate-on-scroll delay-1">
+                        <div class="service-icon">
+                            <img src="images/service-icon-1.svg" alt="{{SERVICE_1_TITLE}}">
+                        </div>
+                        <h3>{{SERVICE_1_TITLE}}</h3>
+                        <p>{{SERVICE_1_DESCRIPTION}}</p>
+                        <a href="#" class="link-more">
+                            {{LEARN_MORE_TEXT}}
+                            <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 6h16m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="service-card animate-on-scroll delay-2">
+                        <div class="service-icon">
+                            <img src="images/service-icon-2.svg" alt="{{SERVICE_2_TITLE}}">
+                        </div>
+                        <h3>{{SERVICE_2_TITLE}}</h3>
+                        <p>{{SERVICE_2_DESCRIPTION}}</p>
+                        <a href="#" class="link-more">
+                            {{LEARN_MORE_TEXT}}
+                            <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 6h16m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="service-card animate-on-scroll delay-3">
+                        <div class="service-icon">
+                            <img src="images/service-icon-3.svg" alt="{{SERVICE_3_TITLE}}">
+                        </div>
+                        <h3>{{SERVICE_3_TITLE}}</h3>
+                        <p>{{SERVICE_3_DESCRIPTION}}</p>
+                        <a href="#" class="link-more">
+                            {{LEARN_MORE_TEXT}}
+                            <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 6h16m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="service-card animate-on-scroll delay-4">
+                        <div class="service-icon">
+                            <img src="images/service-icon-4.svg" alt="{{SERVICE_4_TITLE}}">
+                        </div>
+                        <h3>{{SERVICE_4_TITLE}}</h3>
+                        <p>{{SERVICE_4_DESCRIPTION}}</p>
+                        <a href="#" class="link-more">
+                            {{LEARN_MORE_TEXT}}
+                            <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 6h16m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Banner Section -->
+        <section class="products-banner" id="products">
+            <img src="images/products-banner-bg.jpg" alt="{{PRODUCTS_BANNER_IMAGE_ALT}}" class="products-banner-bg">
+            <div class="products-banner-content">
+                <span class="section-subtitle">{{PRODUCTS_SUBTITLE}}</span>
+                <h2 class="section-title">{{PRODUCTS_TITLE}}</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">{{PRODUCTS_DESCRIPTION}}</p>
+            </div>
+        </section>
+
+        <!-- Product Carousel Section -->
+        <section class="products-section">
+            <div class="container">
+                <button class="carousel-nav carousel-prev" aria-label="Previous product">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M30 12L18 24l12 12" stroke="var(--text-color)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+
+                <div class="product-carousel-wrapper">
+                    <div class="product-carousel">
+                        <div class="product-slide animate-on-scroll delay-1">
+                            <div class="product-slide-image">
+                                <img src="images/product-1.jpg" alt="{{PRODUCT_1_NAME}}">
+                            </div>
+                            <div class="product-slide-info">
+                                <p class="product-slide-category">{{PRODUCT_1_CATEGORY}}</p>
+                                <h3 class="product-slide-name">{{PRODUCT_1_NAME}}</h3>
+                                <a href="#" class="link-more">
+                                    {{LEARN_MORE_TEXT}}
+                                    <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 6h16m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="product-slide animate-on-scroll delay-2">
+                            <div class="product-slide-image">
+                                <img src="images/product-2.jpg" alt="{{PRODUCT_2_NAME}}">
+                            </div>
+                            <div class="product-slide-info">
+                                <p class="product-slide-category">{{PRODUCT_2_CATEGORY}}</p>
+                                <h3 class="product-slide-name">{{PRODUCT_2_NAME}}</h3>
+                                <a href="#" class="link-more">
+                                    {{LEARN_MORE_TEXT}}
+                                    <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 6h16m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="product-slide animate-on-scroll delay-3">
+                            <div class="product-slide-image">
+                                <img src="images/product-3.jpg" alt="{{PRODUCT_3_NAME}}">
+                            </div>
+                            <div class="product-slide-info">
+                                <p class="product-slide-category">{{PRODUCT_3_CATEGORY}}</p>
+                                <h3 class="product-slide-name">{{PRODUCT_3_NAME}}</h3>
+                                <a href="#" class="link-more">
+                                    {{LEARN_MORE_TEXT}}
+                                    <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 6h16m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="product-slide">
+                            <div class="product-slide-image">
+                                <img src="images/product-4.jpg" alt="{{PRODUCT_4_NAME}}">
+                            </div>
+                            <div class="product-slide-info">
+                                <p class="product-slide-category">{{PRODUCT_4_CATEGORY}}</p>
+                                <h3 class="product-slide-name">{{PRODUCT_4_NAME}}</h3>
+                                <a href="#" class="link-more">
+                                    {{LEARN_MORE_TEXT}}
+                                    <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 6h16m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="product-slide">
+                            <div class="product-slide-image">
+                                <img src="images/product-5.jpg" alt="{{PRODUCT_5_NAME}}">
+                            </div>
+                            <div class="product-slide-info">
+                                <p class="product-slide-category">{{PRODUCT_5_CATEGORY}}</p>
+                                <h3 class="product-slide-name">{{PRODUCT_5_NAME}}</h3>
+                                <a href="#" class="link-more">
+                                    {{LEARN_MORE_TEXT}}
+                                    <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 6h16m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-nav carousel-next" aria-label="Next product">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 12l12 12-12 12" stroke="var(--text-color)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+        <!-- Certifications / Accreditations Section -->
+        <section class="certifications-section" id="certifications">
+            <div class="container">
+                <span class="section-subtitle animate-on-scroll">{{CERTIFICATIONS_SUBTITLE}}</span>
+                <h2 class="section-title animate-on-scroll">{{CERTIFICATIONS_TITLE}}</h2>
+                <div class="section-divider animate-on-scroll" style="margin: 0 auto var(--space-md);"></div>
+                <p class="section-description animate-on-scroll">{{CERTIFICATIONS_DESCRIPTION}}</p>
+
+                <div class="certifications-logos animate-on-scroll">
+                    <img src="images/cert-logo-1.png" alt="{{CERT_1_NAME}}">
+                    <img src="images/cert-logo-2.png" alt="{{CERT_2_NAME}}">
+                    <img src="images/cert-logo-3.png" alt="{{CERT_3_NAME}}">
+                    <img src="images/cert-logo-4.png" alt="{{CERT_4_NAME}}">
+                    <img src="images/cert-logo-5.png" alt="{{CERT_5_NAME}}">
+                </div>
+            </div>
+        </section>
+
+        <!-- Showcase / Gallery Section -->
+        <section class="showcase-section" id="showcase">
+            <div class="container">
+                <span class="section-subtitle animate-on-scroll">{{SHOWCASE_SUBTITLE}}</span>
+                <h2 class="section-title animate-on-scroll">{{SHOWCASE_TITLE}}</h2>
+                <div class="section-divider animate-on-scroll"></div>
+            </div>
+
+            <div class="showcase-grid animate-on-scroll">
+                <img src="images/showcase-1.jpg" alt="{{SHOWCASE_1_ALT}}">
+                <img src="images/showcase-2.jpg" alt="{{SHOWCASE_2_ALT}}">
+                <img src="images/showcase-3.jpg" alt="{{SHOWCASE_3_ALT}}">
+                <img src="images/showcase-4.jpg" alt="{{SHOWCASE_4_ALT}}">
+            </div>
+        </section>
+
+        <!-- Latest News Section -->
+        <section class="news-section" id="news">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">{{NEWS_TITLE}}</h2>
+
+                <div class="news-grid">
+                    <article class="news-card animate-on-scroll delay-1">
+                        <div class="news-card-image">
+                            <img src="images/news-1.jpg" alt="{{NEWS_1_TITLE}}">
+                        </div>
+                        <div class="news-card-body">
+                            <h3 class="news-card-title">{{NEWS_1_TITLE}}</h3>
+                            <p class="news-card-excerpt">{{NEWS_1_EXCERPT}}</p>
+                            <a href="#" class="link-more">
+                                {{LEARN_MORE_TEXT}}
+                                <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 6h16m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="news-card animate-on-scroll delay-2">
+                        <div class="news-card-image">
+                            <img src="images/news-2.jpg" alt="{{NEWS_2_TITLE}}">
+                        </div>
+                        <div class="news-card-body">
+                            <h3 class="news-card-title">{{NEWS_2_TITLE}}</h3>
+                            <p class="news-card-excerpt">{{NEWS_2_EXCERPT}}</p>
+                            <a href="#" class="link-more">
+                                {{LEARN_MORE_TEXT}}
+                                <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 6h16m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="news-card animate-on-scroll delay-3">
+                        <div class="news-card-image">
+                            <img src="images/news-3.jpg" alt="{{NEWS_3_TITLE}}">
+                        </div>
+                        <div class="news-card-body">
+                            <h3 class="news-card-title">{{NEWS_3_TITLE}}</h3>
+                            <p class="news-card-excerpt">{{NEWS_3_EXCERPT}}</p>
+                            <a href="#" class="link-more">
+                                {{LEARN_MORE_TEXT}}
+                                <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 6h16m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="news-actions animate-on-scroll">
+                    <a href="#" class="btn btn-secondary btn-sm">
+                        {{VIEW_ALL_NEWS_TEXT}}
+                        <svg class="btn-arrow" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 8h20m0 0l-7-7m7 7l-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section" id="contact">
+            <div class="container">
+                <p class="newsletter-text">{{NEWSLETTER_TEXT}}</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" placeholder="{{NEWSLETTER_PLACEHOLDER}}" required aria-label="Email address">
+                    <button type="submit">{{NEWSLETTER_CTA}}</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================================================================
+         Footer
+         ================================================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <!-- Brand Column -->
+                <div class="footer-brand">
+                    <img src="images/logo.png" alt="{{BUSINESS_NAME}} Logo">
+                    <p>{{FOOTER_DESCRIPTION}}</p>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="footer-column">
+                    <h4>{{FOOTER_COL1_TITLE}}</h4>
+                    <ul>
+                        <li><a href="#hero">{{NAV_LINK_1}}</a></li>
+                        <li><a href="#about">{{NAV_LINK_2}}</a></li>
+                        <li><a href="#services">{{NAV_LINK_3}}</a></li>
+                        <li><a href="#products">{{NAV_LINK_4}}</a></li>
+                        <li><a href="#news">{{NAV_LINK_5}}</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services Column -->
+                <div class="footer-column">
+                    <h4>{{FOOTER_COL2_TITLE}}</h4>
+                    <ul>
+                        <li><a href="#">{{SERVICE_1_TITLE}}</a></li>
+                        <li><a href="#">{{SERVICE_2_TITLE}}</a></li>
+                        <li><a href="#">{{SERVICE_3_TITLE}}</a></li>
+                        <li><a href="#">{{SERVICE_4_TITLE}}</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Column -->
+                <div class="footer-column">
+                    <h4>{{FOOTER_COL3_TITLE}}</h4>
+                    <div class="footer-contact-item">
+                        <span class="contact-icon">&#9742;</span>
+                        <a href="tel:{{PHONE}}">{{PHONE}}</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span class="contact-icon">&#9993;</span>
+                        <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span class="contact-icon">&#9906;</span>
+                        <p>{{ADDRESS}}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; {{YEAR}} {{BUSINESS_NAME}}. {{COPYRIGHT_TEXT}}</p>
+                <div class="footer-legal">
+                    <a href="#">{{LEGAL_LINK_1}}</a>
+                    <a href="#">{{LEGAL_LINK_2}}</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        &#8679;
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,406 @@
+{
+  "template_id": "education-capaciti-blog-option-1-v1",
+  "name": "Education Blog Listing - Grid Layout",
+  "placeholders": {
+    "{{BUSINESS_NAME}}": {
+      "default": "SkillsAcademy",
+      "description": "Your organization or brand name",
+      "required": true
+    },
+    "{{PRIMARY_CTA}}": {
+      "default": "Contact Us",
+      "description": "Primary call-to-action button text in navigation",
+      "required": true
+    },
+    "{{PAGE_TITLE}}": {
+      "default": "Blog & Insights",
+      "description": "Main page heading displayed at the top of the blog listing",
+      "required": true
+    },
+    "{{FEATURED_BADGE}}": {
+      "default": "Featured Story",
+      "description": "Badge text displayed on the featured story banner",
+      "required": true
+    },
+    "{{FEATURED_TITLE}}": {
+      "default": "Representation in Leadership: Reflecting on My Journey",
+      "description": "Title of the featured/hero blog article",
+      "required": true
+    },
+    "{{FEATURED_EXCERPT}}": {
+      "default": "An inspiring look at the importance of diverse representation in leadership roles and the journey toward building inclusive workplaces.",
+      "description": "Short excerpt text for the featured story",
+      "required": true
+    },
+    "{{FEATURED_DATE}}": {
+      "default": "2 September 2025",
+      "description": "Publication date for the featured story",
+      "required": true
+    },
+    "{{FEATURED_READ_TIME}}": {
+      "default": "5 Mins",
+      "description": "Estimated reading time for the featured story",
+      "required": true
+    },
+    "{{ARTICLE_1_TITLE}}": {
+      "default": "Building Future-Ready Skills in the Digital Age",
+      "description": "Title for article card 1",
+      "required": true
+    },
+    "{{ARTICLE_1_EXCERPT}}": {
+      "default": "Exploring how digital skills development programmes are shaping the next generation of tech professionals across the continent.",
+      "description": "Excerpt text for article card 1",
+      "required": true
+    },
+    "{{ARTICLE_1_DATE}}": {
+      "default": "15 Aug 2025",
+      "description": "Publication date for article 1",
+      "required": true
+    },
+    "{{ARTICLE_1_READ_TIME}}": {
+      "default": "4 min read",
+      "description": "Reading time for article 1",
+      "required": true
+    },
+    "{{ARTICLE_2_TITLE}}": {
+      "default": "The Power of Mentorship in Career Growth",
+      "description": "Title for article card 2",
+      "required": true
+    },
+    "{{ARTICLE_2_EXCERPT}}": {
+      "default": "How structured mentorship programs are helping young professionals navigate career challenges and accelerate their growth.",
+      "description": "Excerpt text for article card 2",
+      "required": true
+    },
+    "{{ARTICLE_2_DATE}}": {
+      "default": "10 Aug 2025",
+      "description": "Publication date for article 2",
+      "required": true
+    },
+    "{{ARTICLE_2_READ_TIME}}": {
+      "default": "6 min read",
+      "description": "Reading time for article 2",
+      "required": true
+    },
+    "{{ARTICLE_3_TITLE}}": {
+      "default": "Bridging the Gap: From Classroom to Workplace",
+      "description": "Title for article card 3",
+      "required": true
+    },
+    "{{ARTICLE_3_EXCERPT}}": {
+      "default": "Understanding the transition challenges graduates face and how practical training can bridge the skills gap effectively.",
+      "description": "Excerpt text for article card 3",
+      "required": true
+    },
+    "{{ARTICLE_3_DATE}}": {
+      "default": "5 Aug 2025",
+      "description": "Publication date for article 3",
+      "required": true
+    },
+    "{{ARTICLE_3_READ_TIME}}": {
+      "default": "5 min read",
+      "description": "Reading time for article 3",
+      "required": true
+    },
+    "{{ARTICLE_4_TITLE}}": {
+      "default": "Women in Tech: Breaking Barriers and Building Futures",
+      "description": "Title for article card 4",
+      "required": true
+    },
+    "{{ARTICLE_4_EXCERPT}}": {
+      "default": "Celebrating the achievements of women in technology and the initiatives driving gender equality in the tech industry.",
+      "description": "Excerpt text for article card 4",
+      "required": true
+    },
+    "{{ARTICLE_4_DATE}}": {
+      "default": "28 Jul 2025",
+      "description": "Publication date for article 4",
+      "required": true
+    },
+    "{{ARTICLE_4_READ_TIME}}": {
+      "default": "7 min read",
+      "description": "Reading time for article 4",
+      "required": true
+    },
+    "{{ARTICLE_5_TITLE}}": {
+      "default": "Cloud Computing Skills: The New Currency of Employment",
+      "description": "Title for article card 5",
+      "required": true
+    },
+    "{{ARTICLE_5_EXCERPT}}": {
+      "default": "Why cloud computing certifications are becoming essential for career advancement in the modern workplace.",
+      "description": "Excerpt text for article card 5",
+      "required": true
+    },
+    "{{ARTICLE_5_DATE}}": {
+      "default": "20 Jul 2025",
+      "description": "Publication date for article 5",
+      "required": true
+    },
+    "{{ARTICLE_5_READ_TIME}}": {
+      "default": "4 min read",
+      "description": "Reading time for article 5",
+      "required": true
+    },
+    "{{ARTICLE_6_TITLE}}": {
+      "default": "Community Impact: How Skills Development Transforms Lives",
+      "description": "Title for article card 6",
+      "required": true
+    },
+    "{{ARTICLE_6_EXCERPT}}": {
+      "default": "Real stories of transformation from programme graduates who have gone on to build successful careers in technology.",
+      "description": "Excerpt text for article card 6",
+      "required": true
+    },
+    "{{ARTICLE_6_DATE}}": {
+      "default": "15 Jul 2025",
+      "description": "Publication date for article 6",
+      "required": true
+    },
+    "{{ARTICLE_6_READ_TIME}}": {
+      "default": "5 min read",
+      "description": "Reading time for article 6",
+      "required": true
+    },
+    "{{ARTICLE_7_TITLE}}": {
+      "default": "The Rise of Data Literacy in African Businesses",
+      "description": "Title for article card 7",
+      "required": true
+    },
+    "{{ARTICLE_7_EXCERPT}}": {
+      "default": "How data-driven decision making is transforming African enterprises and why data literacy skills are in high demand.",
+      "description": "Excerpt text for article card 7",
+      "required": true
+    },
+    "{{ARTICLE_7_DATE}}": {
+      "default": "8 Jul 2025",
+      "description": "Publication date for article 7",
+      "required": true
+    },
+    "{{ARTICLE_7_READ_TIME}}": {
+      "default": "6 min read",
+      "description": "Reading time for article 7",
+      "required": true
+    },
+    "{{ARTICLE_8_TITLE}}": {
+      "default": "Entrepreneurship in the Digital Economy",
+      "description": "Title for article card 8",
+      "required": true
+    },
+    "{{ARTICLE_8_EXCERPT}}": {
+      "default": "Exploring how young entrepreneurs are leveraging digital tools and platforms to build innovative businesses.",
+      "description": "Excerpt text for article card 8",
+      "required": true
+    },
+    "{{ARTICLE_8_DATE}}": {
+      "default": "1 Jul 2025",
+      "description": "Publication date for article 8",
+      "required": true
+    },
+    "{{ARTICLE_8_READ_TIME}}": {
+      "default": "5 min read",
+      "description": "Reading time for article 8",
+      "required": true
+    },
+    "{{ARTICLE_9_TITLE}}": {
+      "default": "Partnerships That Drive Systemic Change",
+      "description": "Title for article card 9",
+      "required": true
+    },
+    "{{ARTICLE_9_EXCERPT}}": {
+      "default": "A look at strategic partnerships between education providers, corporates, and government in addressing youth unemployment.",
+      "description": "Excerpt text for article card 9",
+      "required": true
+    },
+    "{{ARTICLE_9_DATE}}": {
+      "default": "25 Jun 2025",
+      "description": "Publication date for article 9",
+      "required": true
+    },
+    "{{ARTICLE_9_READ_TIME}}": {
+      "default": "8 min read",
+      "description": "Reading time for article 9",
+      "required": true
+    },
+    "{{TAGLINE}}": {
+      "default": "We develop skills, shift mindsets, and build systems for inclusive growth across the continent.",
+      "description": "Footer tagline describing the organization mission",
+      "required": true
+    },
+    "{{EMAIL}}": {
+      "default": "hello@example.com",
+      "description": "Contact email address",
+      "required": true
+    },
+    "{{ADDRESS}}": {
+      "default": "Johannesburg, Cape Town, Durban",
+      "description": "Office locations (comma-separated or list items)",
+      "required": false
+    },
+    "{{YEAR}}": {
+      "default": "2026",
+      "description": "Copyright year",
+      "required": false
+    }
+  },
+  "image_slots": [
+    {
+      "selector": ".logo-img",
+      "property": "src",
+      "path": "images/logo.png",
+      "keywords": ["logo", "brand"],
+      "aspect_ratio": "auto",
+      "min_width": 200
+    },
+    {
+      "selector": ".footer-logo img",
+      "property": "src",
+      "path": "images/footer-logo.png",
+      "keywords": ["logo", "brand", "footer"],
+      "aspect_ratio": "auto",
+      "min_width": 200
+    },
+    {
+      "selector": ".featured-image",
+      "property": "src",
+      "path": "images/featured-story.png",
+      "keywords": ["featured", "blog", "hero", "story", "leadership"],
+      "aspect_ratio": "16:7",
+      "min_width": 1280
+    },
+    {
+      "selector": ".article-card:nth-child(1) .article-image",
+      "property": "src",
+      "path": "images/article-1.png",
+      "keywords": ["blog", "article", "education", "skills"],
+      "aspect_ratio": "1:1",
+      "min_width": 360
+    },
+    {
+      "selector": ".article-card:nth-child(2) .article-image",
+      "property": "src",
+      "path": "images/article-2.png",
+      "keywords": ["blog", "article", "mentorship", "career"],
+      "aspect_ratio": "1:1",
+      "min_width": 360
+    },
+    {
+      "selector": ".article-card:nth-child(3) .article-image",
+      "property": "src",
+      "path": "images/article-3.png",
+      "keywords": ["blog", "article", "graduates", "workplace"],
+      "aspect_ratio": "1:1",
+      "min_width": 360
+    },
+    {
+      "selector": ".article-card:nth-child(5) .article-image",
+      "property": "src",
+      "path": "images/article-4.png",
+      "keywords": ["blog", "article", "women", "tech"],
+      "aspect_ratio": "1:1",
+      "min_width": 360
+    },
+    {
+      "selector": ".article-card:nth-child(6) .article-image",
+      "property": "src",
+      "path": "images/article-5.png",
+      "keywords": ["blog", "article", "cloud", "computing"],
+      "aspect_ratio": "1:1",
+      "min_width": 360
+    },
+    {
+      "selector": ".article-card:nth-child(7) .article-image",
+      "property": "src",
+      "path": "images/article-6.png",
+      "keywords": ["blog", "article", "community", "impact"],
+      "aspect_ratio": "1:1",
+      "min_width": 360
+    },
+    {
+      "selector": ".article-card:nth-child(9) .article-image",
+      "property": "src",
+      "path": "images/article-7.png",
+      "keywords": ["blog", "article", "data", "literacy"],
+      "aspect_ratio": "1:1",
+      "min_width": 360
+    },
+    {
+      "selector": ".article-card:nth-child(10) .article-image",
+      "property": "src",
+      "path": "images/article-8.png",
+      "keywords": ["blog", "article", "entrepreneurship", "digital"],
+      "aspect_ratio": "1:1",
+      "min_width": 360
+    },
+    {
+      "selector": ".article-card:nth-child(11) .article-image",
+      "property": "src",
+      "path": "images/article-9.png",
+      "keywords": ["blog", "article", "partnerships", "change"],
+      "aspect_ratio": "1:1",
+      "min_width": 360
+    }
+  ],
+  "sections": {
+    "header": {
+      "required": true,
+      "customizable": true,
+      "description": "Fixed navigation bar with logo, nav links, and CTA button"
+    },
+    "page-title": {
+      "required": true,
+      "customizable": true,
+      "description": "Centered page title heading for the blog listing"
+    },
+    "featured-story": {
+      "required": true,
+      "customizable": true,
+      "description": "Full-width featured story banner with gradient overlay, badge, title, excerpt, date, and read time"
+    },
+    "article-grid": {
+      "required": true,
+      "customizable": true,
+      "description": "3-column CSS grid of 9 article cards with images, metadata pills, titles, and excerpts"
+    },
+    "pagination": {
+      "required": true,
+      "customizable": false,
+      "description": "Centered numbered pagination with active state and next button"
+    },
+    "footer": {
+      "required": true,
+      "customizable": true,
+      "description": "Dark navy footer with logo, tagline, social links, quick links, and locations"
+    }
+  },
+  "css_variables": {
+    "--primary-color": {
+      "default": "#1d2951",
+      "description": "Primary brand color (navy)"
+    },
+    "--secondary-color": {
+      "default": "#f25251",
+      "description": "Secondary brand color (red/salmon)"
+    },
+    "--accent-color": {
+      "default": "#f45251",
+      "description": "Accent color (red variant)"
+    },
+    "--surface-color": {
+      "default": "#ffffff",
+      "description": "Surface/card background color"
+    },
+    "--text-color": {
+      "default": "#1d2951",
+      "description": "Primary text color"
+    },
+    "--background-color": {
+      "default": "#ffffff",
+      "description": "Page background color"
+    }
+  },
+  "responsive_breakpoints": {
+    "tablet": "1024px",
+    "mobile": "768px"
+  }
+}

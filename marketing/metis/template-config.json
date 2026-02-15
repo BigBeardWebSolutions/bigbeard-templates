@@ -1,0 +1,710 @@
+{
+  "template_id": "marketing-metis-v1",
+  "name": "Digital Marketing Agency Website",
+  "placeholders": {
+    "{{BUSINESS_NAME}}": {
+      "default": "Performance Agency",
+      "description": "Business or brand name displayed in the header logo alt text, footer, and page title",
+      "required": true
+    },
+    "{{TAGLINE}}": {
+      "default": "Global Performance Marketing",
+      "description": "Short tagline displayed in the page title alongside the business name",
+      "required": true
+    },
+    "{{HERO_HEADLINE}}": {
+      "default": "We are a global performance marketing agency that specializes in scaling eCommerce stores.",
+      "description": "Main hero section headline in large text above the hero image",
+      "required": true
+    },
+    "{{HERO_IMAGE_ALT}}": {
+      "default": "Team collaboration in a modern workspace",
+      "description": "Alt text for the hero banner image",
+      "required": false
+    },
+    "{{VIDEO_PLAY_LABEL}}": {
+      "default": "Play video",
+      "description": "Aria label for the video play button overlay on the hero image",
+      "required": false
+    },
+    "{{VIDEO_PLAY_ALT}}": {
+      "default": "Play video",
+      "description": "Alt text for the video play button icon",
+      "required": false
+    },
+    "{{NAV_MENU_LABEL}}": {
+      "default": "MENU",
+      "description": "Text label displayed above the hamburger menu lines in the header",
+      "required": true
+    },
+    "{{MENU_ARIA_LABEL}}": {
+      "default": "Open navigation menu",
+      "description": "Aria label for the menu toggle button",
+      "required": false
+    },
+    "{{MENU_CLOSE_LABEL}}": {
+      "default": "Close navigation menu",
+      "description": "Aria label for the mobile menu close button",
+      "required": false
+    },
+    "{{PHONE_ARIA_LABEL}}": {
+      "default": "Call us",
+      "description": "Aria label for the phone icon in the header",
+      "required": false
+    },
+    "{{PHONE_ICON_ALT}}": {
+      "default": "Phone",
+      "description": "Alt text for the phone icon",
+      "required": false
+    },
+    "{{EMAIL_ARIA_LABEL}}": {
+      "default": "Email us",
+      "description": "Aria label for the email icon in the header",
+      "required": false
+    },
+    "{{EMAIL_ICON_ALT}}": {
+      "default": "Email",
+      "description": "Alt text for the email icon",
+      "required": false
+    },
+    "{{NAV_LINK_1}}": {
+      "default": "Home",
+      "description": "First navigation link in the mobile menu",
+      "required": true
+    },
+    "{{NAV_LINK_2}}": {
+      "default": "About",
+      "description": "Second navigation link in the mobile menu",
+      "required": true
+    },
+    "{{NAV_LINK_3}}": {
+      "default": "Services",
+      "description": "Third navigation link in the mobile menu",
+      "required": true
+    },
+    "{{NAV_LINK_4}}": {
+      "default": "Our Approach",
+      "description": "Fourth navigation link in the mobile menu",
+      "required": true
+    },
+    "{{NAV_LINK_5}}": {
+      "default": "Case Studies",
+      "description": "Fifth navigation link in the mobile menu",
+      "required": true
+    },
+    "{{NAV_LINK_6}}": {
+      "default": "Contact",
+      "description": "Sixth navigation link in the mobile menu",
+      "required": true
+    },
+    "{{ABOUT_TITLE}}": {
+      "default": "About Us",
+      "description": "Main heading for the About section",
+      "required": true
+    },
+    "{{ABOUT_SUBTITLE}}": {
+      "default": "A performance agency with a twist.",
+      "description": "Subtitle/tagline displayed to the right of the about title",
+      "required": true
+    },
+    "{{ABOUT_CTA}}": {
+      "default": "Our Vision & Mission",
+      "description": "Call-to-action button text in the about section",
+      "required": true
+    },
+    "{{ABOUT_PARAGRAPH_1}}": {
+      "default": "We do not see ourselves as a profit-driven business, but rather a sustainability-driven business passionate about people and empowering them with the tools for success.",
+      "description": "First paragraph of the about section description",
+      "required": true
+    },
+    "{{ABOUT_PARAGRAPH_2}}": {
+      "default": "We are a marketing agency, but we were never the cool kids. Instead, we are the data geeks that love excel and digging through your information to understand where the gaps and opportunities lie.",
+      "description": "Second paragraph of the about section description",
+      "required": true
+    },
+    "{{SERVICES_TITLE}}": {
+      "default": "Our Specialities",
+      "description": "Main heading for the services/specialities section",
+      "required": true
+    },
+    "{{SERVICE_1_NAME}}": {
+      "default": "Social Media Ads",
+      "description": "Name of the first service in the expandable accordion",
+      "required": true
+    },
+    "{{SERVICE_1_DESCRIPTION}}": {
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultrices, ac porttitor pharetra, leo mi sodales ligula, vitae rutrum nisi enim vitae lectus.",
+      "description": "Description text for the first service item",
+      "required": true
+    },
+    "{{SERVICE_1_ICON_ALT}}": {
+      "default": "Social media marketing icon",
+      "description": "Alt text for the first service icon",
+      "required": false
+    },
+    "{{SERVICE_2_NAME}}": {
+      "default": "Google Ads",
+      "description": "Name of the second service in the expandable accordion",
+      "required": true
+    },
+    "{{SERVICE_2_DESCRIPTION}}": {
+      "default": "We manage and optimize your Google Ads campaigns to maximize ROI across Search, Shopping, Display, and YouTube channels.",
+      "description": "Description text for the second service item",
+      "required": true
+    },
+    "{{SERVICE_3_NAME}}": {
+      "default": "Email Marketing",
+      "description": "Name of the third service in the expandable accordion",
+      "required": true
+    },
+    "{{SERVICE_3_DESCRIPTION}}": {
+      "default": "Strategic email marketing campaigns that nurture leads, drive conversions, and build lasting customer relationships through personalized messaging.",
+      "description": "Description text for the third service item",
+      "required": true
+    },
+    "{{SERVICE_4_NAME}}": {
+      "default": "Data Analysis & Reporting",
+      "description": "Name of the fourth service in the expandable accordion",
+      "required": true
+    },
+    "{{SERVICE_4_DESCRIPTION}}": {
+      "default": "Deep-dive data analysis and comprehensive reporting to uncover insights, track performance, and inform strategic decisions for your business growth.",
+      "description": "Description text for the fourth service item",
+      "required": true
+    },
+    "{{SERVICES_CTA}}": {
+      "default": "See More",
+      "description": "Call-to-action button text below the services list",
+      "required": true
+    },
+    "{{APPROACH_LABEL}}": {
+      "default": "Our Approach",
+      "description": "Label/button text displayed in the approach section header",
+      "required": true
+    },
+    "{{APPROACH_TITLE}}": {
+      "default": "Our Proven Step-By-Step Process to grow your eCommerce Store",
+      "description": "Main heading for the approach/process section on the dark background",
+      "required": true
+    },
+    "{{APPROACH_STEP_1_LABEL}}": {
+      "default": "STEP 1",
+      "description": "Label text for the first step displayed prominently in gold",
+      "required": true
+    },
+    "{{APPROACH_STEP_1_DESCRIPTION}}": {
+      "default": "Analyse & audit current online platforms & results",
+      "description": "Description text for the first approach step",
+      "required": true
+    },
+    "{{STEP_1_TAB}}": {
+      "default": "STEP 1",
+      "description": "Tab label for step 1 in the step navigation bar",
+      "required": true
+    },
+    "{{STEP_2_TAB}}": {
+      "default": "STEP 2",
+      "description": "Tab label for step 2 in the step navigation bar",
+      "required": true
+    },
+    "{{STEP_3_TAB}}": {
+      "default": "STEP 3",
+      "description": "Tab label for step 3 in the step navigation bar",
+      "required": true
+    },
+    "{{STEP_4_TAB}}": {
+      "default": "STEP 4",
+      "description": "Tab label for step 4 in the step navigation bar",
+      "required": true
+    },
+    "{{STEP_5_TAB}}": {
+      "default": "STEP 5",
+      "description": "Tab label for step 5 in the step navigation bar",
+      "required": true
+    },
+    "{{STEP_PREV_LABEL}}": {
+      "default": "Previous step",
+      "description": "Aria label for the previous step arrow button",
+      "required": false
+    },
+    "{{STEP_PREV_ALT}}": {
+      "default": "Previous",
+      "description": "Alt text for the previous step arrow icon",
+      "required": false
+    },
+    "{{STEP_NEXT_LABEL}}": {
+      "default": "Next step",
+      "description": "Aria label for the next step arrow button",
+      "required": false
+    },
+    "{{STEP_NEXT_ALT}}": {
+      "default": "Next",
+      "description": "Alt text for the next step arrow icon",
+      "required": false
+    },
+    "{{PARTNERS_TITLE}}": {
+      "default": "Partnerships & Accreditations",
+      "description": "Main heading for the partner logos section",
+      "required": true
+    },
+    "{{PARTNER_1_NAME}}": {
+      "default": "Partner 1",
+      "description": "Alt text for the first partner logo",
+      "required": false
+    },
+    "{{PARTNER_2_NAME}}": {
+      "default": "Partner 2",
+      "description": "Alt text for the second partner logo",
+      "required": false
+    },
+    "{{PARTNER_3_NAME}}": {
+      "default": "Partner 3",
+      "description": "Alt text for the third partner logo",
+      "required": false
+    },
+    "{{PARTNER_4_NAME}}": {
+      "default": "Partner 4",
+      "description": "Alt text for the fourth partner logo",
+      "required": false
+    },
+    "{{PARTNER_5_NAME}}": {
+      "default": "Partner 5",
+      "description": "Alt text for the fifth partner logo",
+      "required": false
+    },
+    "{{PARTNER_6_NAME}}": {
+      "default": "Partner 6",
+      "description": "Alt text for the sixth partner logo",
+      "required": false
+    },
+    "{{CAROUSEL_PREV_ALT}}": {
+      "default": "Previous",
+      "description": "Alt text for carousel previous arrow",
+      "required": false
+    },
+    "{{CAROUSEL_NEXT_ALT}}": {
+      "default": "Next",
+      "description": "Alt text for carousel next arrow",
+      "required": false
+    },
+    "{{CASE_STUDY_1_TITLE}}": {
+      "default": "Case Study Title",
+      "description": "Title of the first case study card",
+      "required": true
+    },
+    "{{CASE_STUDY_1_DATE}}": {
+      "default": "JANUARY 2023",
+      "description": "Date displayed on the first case study card",
+      "required": true
+    },
+    "{{CASE_STUDY_1_IMAGE_ALT}}": {
+      "default": "Case study project showcase",
+      "description": "Alt text for the first case study image",
+      "required": false
+    },
+    "{{CASE_STUDY_1_TAG_1}}": {
+      "default": "INDUSTRY: Skin Care",
+      "description": "First tag/badge on the first case study card",
+      "required": false
+    },
+    "{{CASE_STUDY_1_TAG_2}}": {
+      "default": "MARKET: B2C South Africa",
+      "description": "Second tag/badge on the first case study card",
+      "required": false
+    },
+    "{{CASE_STUDY_2_TITLE}}": {
+      "default": "Case Study Title",
+      "description": "Title of the second case study card",
+      "required": true
+    },
+    "{{CASE_STUDY_2_DATE}}": {
+      "default": "JANUARY 2020",
+      "description": "Date displayed on the second case study card",
+      "required": true
+    },
+    "{{CASE_STUDY_2_IMAGE_ALT}}": {
+      "default": "Case study project showcase",
+      "description": "Alt text for the second case study image",
+      "required": false
+    },
+    "{{CASE_STUDY_2_TAG_1}}": {
+      "default": "INDUSTRY: Skin Care",
+      "description": "First tag/badge on the second case study card",
+      "required": false
+    },
+    "{{CASE_STUDY_2_TAG_2}}": {
+      "default": "MARKET: B2C South Africa",
+      "description": "Second tag/badge on the second case study card",
+      "required": false
+    },
+    "{{CASE_STUDIES_CTA}}": {
+      "default": "Case Studies",
+      "description": "Call-to-action button text below the case study cards",
+      "required": true
+    },
+    "{{CLIENTS_TITLE}}": {
+      "default": "Clients That Trust Us",
+      "description": "Main heading for the client logos section",
+      "required": true
+    },
+    "{{CLIENT_1_NAME}}": {
+      "default": "Client 1",
+      "description": "Alt text for the first client logo",
+      "required": false
+    },
+    "{{CLIENT_2_NAME}}": {
+      "default": "Client 2",
+      "description": "Alt text for the second client logo",
+      "required": false
+    },
+    "{{CLIENT_3_NAME}}": {
+      "default": "Client 3",
+      "description": "Alt text for the third client logo",
+      "required": false
+    },
+    "{{CLIENT_4_NAME}}": {
+      "default": "Client 4",
+      "description": "Alt text for the fourth client logo",
+      "required": false
+    },
+    "{{FOOTER_NEWSLETTER_INTRO}}": {
+      "default": "An inside look at what we've been up to, the coolest vlog featuring the best props around, some stats and facts especially for you!",
+      "description": "Newsletter introduction paragraph in the footer",
+      "required": true
+    },
+    "{{FOOTER_EMAIL_LABEL}}": {
+      "default": "Your Email",
+      "description": "Label text above the email subscription input",
+      "required": true
+    },
+    "{{FOOTER_EMAIL_PLACEHOLDER}}": {
+      "default": "Enter your email address",
+      "description": "Placeholder text inside the email input field",
+      "required": false
+    },
+    "{{FOOTER_SUBSCRIBE_BTN}}": {
+      "default": "SUBSCRIBE",
+      "description": "Subscribe button text in the footer",
+      "required": true
+    },
+    "{{FOOTER_ENQUIRIES_LABEL}}": {
+      "default": "BUSINESS ENQUIRIES",
+      "description": "Label above business enquiry contact details in the footer",
+      "required": true
+    },
+    "{{CONTACT_EMAIL_1}}": {
+      "default": "info@example.com",
+      "description": "Primary business enquiry email address",
+      "required": true
+    },
+    "{{CONTACT_PHONE_1}}": {
+      "default": "+27 00 000 0000",
+      "description": "Primary business phone number",
+      "required": true
+    },
+    "{{FOOTER_CAREERS_LABEL}}": {
+      "default": "Join Our Team",
+      "description": "Label above careers contact details in the footer",
+      "required": false
+    },
+    "{{CONTACT_EMAIL_2}}": {
+      "default": "careers@example.com",
+      "description": "Careers/recruitment email address",
+      "required": false
+    },
+    "{{CONTACT_PHONE_2}}": {
+      "default": "+27 00 000 0000",
+      "description": "Secondary phone number (careers/recruitment)",
+      "required": false
+    },
+    "{{FOOTER_LINK_1}}": {
+      "default": "Who We Are",
+      "description": "First footer navigation link",
+      "required": true
+    },
+    "{{FOOTER_LINK_2}}": {
+      "default": "What We Do",
+      "description": "Second footer navigation link",
+      "required": true
+    },
+    "{{FOOTER_LINK_3}}": {
+      "default": "Case Studies",
+      "description": "Third footer navigation link",
+      "required": true
+    },
+    "{{FOOTER_LINK_4}}": {
+      "default": "Team Brag Sheet",
+      "description": "Fourth footer navigation link",
+      "required": false
+    },
+    "{{FOOTER_NAV_ARIA_LABEL}}": {
+      "default": "Footer navigation",
+      "description": "Aria label for the footer navigation landmark",
+      "required": false
+    },
+    "{{COPYRIGHT_TEXT}}": {
+      "default": "All Rights Reserved. Rooted in South Africa, Connecting Worldwide.",
+      "description": "Copyright notice displayed at the bottom of the footer",
+      "required": true
+    },
+    "{{SOCIAL_LINKEDIN}}": {
+      "default": "#",
+      "description": "URL for the LinkedIn social media profile",
+      "required": false
+    },
+    "{{LINKEDIN_ARIA_LABEL}}": {
+      "default": "Visit our LinkedIn profile",
+      "description": "Aria label for the LinkedIn social link",
+      "required": false
+    },
+    "{{LINKEDIN_ICON_ALT}}": {
+      "default": "LinkedIn",
+      "description": "Alt text for the LinkedIn icon",
+      "required": false
+    }
+  },
+  "image_slots": [
+    {
+      "selector": ".nav__logo img",
+      "property": "src",
+      "path": "images/logo-gold.png",
+      "keywords": ["logo", "brand", "header", "gold"],
+      "aspect_ratio": "auto",
+      "min_width": 200
+    },
+    {
+      "selector": ".hero__image",
+      "property": "src",
+      "path": "images/hero-image.jpg",
+      "keywords": ["hero", "team", "collaboration", "workspace"],
+      "aspect_ratio": "16:9",
+      "min_width": 1640
+    },
+    {
+      "selector": ".hero__decorative-triangles",
+      "property": "src",
+      "path": "images/gold-triangles-2.png",
+      "keywords": ["decorative", "gold", "triangles", "geometric"],
+      "aspect_ratio": "auto",
+      "min_width": 400
+    },
+    {
+      "selector": ".hero__video-btn img",
+      "property": "src",
+      "path": "images/video-play-btn.png",
+      "keywords": ["video", "play", "button", "icon"],
+      "aspect_ratio": "1:1",
+      "min_width": 80
+    },
+    {
+      "selector": ".service-item__icon",
+      "property": "src",
+      "path": "images/icon-social-media.png",
+      "keywords": ["service", "icon", "social media"],
+      "aspect_ratio": "1:1",
+      "min_width": 40
+    },
+    {
+      "selector": ".case-study-card:nth-child(1) img",
+      "property": "src",
+      "path": "images/case-study-1.jpg",
+      "keywords": ["case study", "project", "portfolio"],
+      "aspect_ratio": "7:8",
+      "min_width": 733
+    },
+    {
+      "selector": ".case-study-card:nth-child(2) img",
+      "property": "src",
+      "path": "images/case-study-2.jpg",
+      "keywords": ["case study", "project", "portfolio"],
+      "aspect_ratio": "7:8",
+      "min_width": 733
+    },
+    {
+      "selector": ".partners__logo (klaviyo)",
+      "property": "src",
+      "path": "images/partner-klaviyo.png",
+      "keywords": ["partner", "logo", "klaviyo"],
+      "aspect_ratio": "auto",
+      "min_width": 100
+    },
+    {
+      "selector": ".partners__logo (shopcreative)",
+      "property": "src",
+      "path": "images/partner-shopcreative.png",
+      "keywords": ["partner", "logo", "shopcreative"],
+      "aspect_ratio": "auto",
+      "min_width": 100
+    },
+    {
+      "selector": ".partners__logo (google)",
+      "property": "src",
+      "path": "images/partner-google.png",
+      "keywords": ["partner", "logo", "google"],
+      "aspect_ratio": "auto",
+      "min_width": 100
+    },
+    {
+      "selector": ".partners__logo (meta)",
+      "property": "src",
+      "path": "images/partner-meta.png",
+      "keywords": ["partner", "logo", "meta"],
+      "aspect_ratio": "auto",
+      "min_width": 100
+    },
+    {
+      "selector": ".partners__logo (youtube)",
+      "property": "src",
+      "path": "images/partner-youtube.png",
+      "keywords": ["partner", "logo", "youtube"],
+      "aspect_ratio": "auto",
+      "min_width": 100
+    },
+    {
+      "selector": ".partners__logo (whatagraph)",
+      "property": "src",
+      "path": "images/partner-whatagraph.png",
+      "keywords": ["partner", "logo", "whatagraph"],
+      "aspect_ratio": "auto",
+      "min_width": 100
+    },
+    {
+      "selector": ".clients__logo (wingfield)",
+      "property": "src",
+      "path": "images/client-wingfield.png",
+      "keywords": ["client", "logo"],
+      "aspect_ratio": "auto",
+      "min_width": 100
+    },
+    {
+      "selector": ".clients__logo (ofco)",
+      "property": "src",
+      "path": "images/client-ofco.png",
+      "keywords": ["client", "logo"],
+      "aspect_ratio": "auto",
+      "min_width": 100
+    },
+    {
+      "selector": ".clients__logo (logo-1)",
+      "property": "src",
+      "path": "images/client-logo-1.png",
+      "keywords": ["client", "logo"],
+      "aspect_ratio": "auto",
+      "min_width": 100
+    },
+    {
+      "selector": ".clients__logo (laurica)",
+      "property": "src",
+      "path": "images/client-laurica.png",
+      "keywords": ["client", "logo"],
+      "aspect_ratio": "auto",
+      "min_width": 100
+    },
+    {
+      "selector": ".case-studies__decorative",
+      "property": "src",
+      "path": "images/gold-triangles-1.png",
+      "keywords": ["decorative", "gold", "triangles"],
+      "aspect_ratio": "auto",
+      "min_width": 400
+    },
+    {
+      "selector": ".footer__social-link img",
+      "property": "src",
+      "path": "images/icon-linkedin.png",
+      "keywords": ["social", "linkedin", "icon"],
+      "aspect_ratio": "1:1",
+      "min_width": 24
+    }
+  ],
+  "sections": {
+    "hero": {
+      "required": true,
+      "customizable": true,
+      "description": "Full-width hero with large headline text, background image with gold triangle decorative overlay, and video play button"
+    },
+    "about": {
+      "required": true,
+      "customizable": true,
+      "description": "Two-column about section with title and CTA button on left, subtitle and description paragraphs on right"
+    },
+    "services": {
+      "required": true,
+      "customizable": true,
+      "description": "Expandable accordion-style services list with section title, icons, and descriptions that expand on click"
+    },
+    "approach": {
+      "required": true,
+      "customizable": true,
+      "description": "Dark background step-by-step process section with vertical divider, step tabs, and navigation arrows"
+    },
+    "partners": {
+      "required": false,
+      "customizable": true,
+      "description": "Partner/accreditation logos displayed in a horizontal row with left/right navigation arrows"
+    },
+    "case-studies": {
+      "required": true,
+      "customizable": true,
+      "description": "Two-column case study card grid with titles, dates, large images, and category tag badges on a light gray background"
+    },
+    "clients": {
+      "required": false,
+      "customizable": true,
+      "description": "Client logo carousel with left/right navigation arrows on the light gray background"
+    },
+    "footer": {
+      "required": true,
+      "customizable": true,
+      "description": "Dark three-column footer with newsletter subscription, business/careers contact details, and navigation links with copyright bar"
+    }
+  },
+  "css_variables": {
+    "--primary-color": {
+      "default": "#d0ac6a",
+      "description": "Primary brand color (gold) used for headings, accents, subscribe button, and decorative elements"
+    },
+    "--secondary-color": {
+      "default": "#0b0a0a",
+      "description": "Secondary brand color (near-black) used for header, approach section, and footer backgrounds"
+    },
+    "--accent-color": {
+      "default": "#d3ae6e",
+      "description": "Accent color (slightly warmer gold) used for tag borders and subscribe button border"
+    },
+    "--surface-color": {
+      "default": "#f1f2ee",
+      "description": "Surface color (off-white) used for active step indicators"
+    },
+    "--text-color": {
+      "default": "#1c1b1f",
+      "description": "Primary text color (dark charcoal) for body text on light backgrounds"
+    },
+    "--text-light": {
+      "default": "#e2e2e2",
+      "description": "Light text color used for text on dark backgrounds in the header, approach, and footer sections"
+    },
+    "--background-color": {
+      "default": "#ffffff",
+      "description": "Page background color (white) for the hero and about sections"
+    },
+    "--background-dark": {
+      "default": "#0b0a0a",
+      "description": "Dark background used for the header, approach/process, and footer sections"
+    },
+    "--background-section": {
+      "default": "#e7e7e7",
+      "description": "Light gray background used for case studies and clients sections"
+    },
+    "--font-family": {
+      "default": "'Roboto', sans-serif",
+      "description": "Primary font family used throughout the template (Light 300, Regular 400, SemiBold 600)"
+    }
+  },
+  "responsive_breakpoints": {
+    "desktop": "1280px",
+    "tablet": "1024px",
+    "mobile": "768px",
+    "small": "480px"
+  }
+}

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{TAGLINE}}">
+    <title>{{BUSINESS_NAME}} - {{TAGLINE}}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header class="header" id="header">
+        <a href="#hero">
+            <img src="images/logo.png" alt="{{BUSINESS_NAME}} logo" class="header-logo">
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- ========== MOBILE MENU ========== -->
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Main navigation">
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-nav">
+                <a href="#hero">{{NAV_LINK_1}}</a>
+                <a href="#intro">{{NAV_LINK_2}}</a>
+                <a href="#what-we-offer">{{NAV_LINK_3}}</a>
+                <a href="#case-studies">{{NAV_LINK_4}}</a>
+                <a href="#testimonials">{{NAV_LINK_5}}</a>
+                <a href="#footer">{{NAV_LINK_6}}</a>
+            </div>
+            <div class="mobile-menu-info">
+                <div class="contact-item">{{PHONE}}</div>
+                <div class="contact-item">{{EMAIL}}</div>
+                <div class="contact-item">{{ADDRESS}}</div>
+                <div class="mobile-menu-social">
+                    <a href="#" aria-label="{{SOCIAL_LINK_1}}">{{SOCIAL_LINK_1}}</a>
+                    <a href="#" aria-label="{{SOCIAL_LINK_2}}">{{SOCIAL_LINK_2}}</a>
+                    <a href="#" aria-label="{{SOCIAL_LINK_3}}">{{SOCIAL_LINK_3}}</a>
+                    <a href="#" aria-label="{{SOCIAL_LINK_4}}">{{SOCIAL_LINK_4}}</a>
+                    <a href="#" aria-label="{{SOCIAL_LINK_5}}">{{SOCIAL_LINK_5}}</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main>
+
+        <!-- ===== HERO SECTION ===== -->
+        <section class="hero" id="hero">
+            <img src="images/hero-bg.png" alt="{{BUSINESS_NAME}} hero background" class="hero-bg">
+            <div class="hero-overlay"></div>
+            <div class="hero-overlay-bottom"></div>
+            <div class="hero-content fade-in">
+                <h1>{{HERO_HEADLINE}}</h1>
+                <p class="hero-subtitle">{{HERO_DESCRIPTION}}</p>
+                <a href="#footer" class="btn">
+                    {{PRIMARY_CTA}}
+                    <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- ===== INTRO SECTION ===== -->
+        <section class="intro" id="intro">
+            <div class="intro-left fade-in-left">
+                <p>{{SECTION_INTRO_LEFT}}</p>
+            </div>
+            <div class="intro-right fade-in-right">
+                <p>{{SECTION_INTRO_RIGHT}}</p>
+                <a href="#what-we-offer" class="btn">
+                    {{SECONDARY_CTA}}
+                    <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- ===== WHAT WE OFFER SECTION ===== -->
+        <section class="what-we-offer" id="what-we-offer">
+            <div class="what-we-offer-bg">
+                <img src="images/services-bg.png" alt="Services background">
+            </div>
+            <div class="what-we-offer-bg-overlay-top"></div>
+            <div class="what-we-offer-bg-overlay-bottom"></div>
+
+            <h2 class="section-title fade-in">{{SECTION_OFFER_TITLE}}</h2>
+
+            <div class="services-grid">
+                <!-- Service Card 1 -->
+                <div class="service-card fade-in">
+                    <img src="images/service-card-bg.png" alt="{{SERVICE_1_TITLE}} background" class="service-card-bg-img">
+                    <div class="service-card-content">
+                        <h4>{{SERVICE_1_TITLE}}</h4>
+                        <p>{{SERVICE_1_DESCRIPTION}}</p>
+                    </div>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="service-card fade-in">
+                    <img src="images/service-card-bg.png" alt="{{SERVICE_2_TITLE}} background" class="service-card-bg-img">
+                    <div class="service-card-content">
+                        <h4>{{SERVICE_2_TITLE}}</h4>
+                        <p>{{SERVICE_2_DESCRIPTION}}</p>
+                    </div>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="service-card fade-in">
+                    <img src="images/service-card-bg.png" alt="{{SERVICE_3_TITLE}} background" class="service-card-bg-img">
+                    <div class="service-card-content">
+                        <h4>{{SERVICE_3_TITLE}}</h4>
+                        <p>{{SERVICE_3_DESCRIPTION}}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-cta fade-in">
+                <a href="#footer" class="btn btn-filled">
+                    {{PRIMARY_CTA}}
+                    <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- ===== CASE STUDIES SECTION ===== -->
+        <section class="case-studies" id="case-studies">
+            <div class="orb orb-purple section-orb" style="top: -100px; right: -80px;"></div>
+
+            <div class="case-studies-header fade-in">
+                <h2>{{SECTION_CASES_TITLE}}</h2>
+                <a href="#footer" class="btn">
+                    {{PRIMARY_CTA}}
+                    <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="cases-grid">
+                <!-- Case Study 1 -->
+                <div class="case-card fade-in-left">
+                    <img src="images/case-study-1.png" alt="{{CASE_1_TITLE}} case study">
+                    <div class="case-card-info">
+                        <h4>{{CASE_1_TITLE}}</h4>
+                        <p class="case-tags">{{CASE_1_TAGS}}</p>
+                        <a href="#" class="view-link">View Case Study</a>
+                    </div>
+                </div>
+
+                <!-- Case Study 2 -->
+                <div class="case-card fade-in-right">
+                    <img src="images/case-study-2.png" alt="{{CASE_2_TITLE}} case study">
+                    <div class="case-card-info">
+                        <h4>{{CASE_2_TITLE}}</h4>
+                        <p class="case-tags">{{CASE_2_TAGS}}</p>
+                        <a href="#" class="view-link">View Case Study</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== TESTIMONIALS SECTION ===== -->
+        <section class="testimonials" id="testimonials">
+            <div class="orb orb-pink section-orb" style="bottom: 50px; left: -60px;"></div>
+
+            <div class="testimonials-header fade-in">
+                <h2>{{SECTION_TESTIMONIALS_TITLE}}</h2>
+                <div class="testimonial-nav">
+                    <button class="testimonial-prev" aria-label="Previous testimonial">
+                        <svg viewBox="0 0 64 64" fill="none">
+                            <circle cx="32" cy="32" r="31" stroke="white" stroke-width="2"/>
+                            <path d="M36 22L26 32L36 42" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="testimonial-next" aria-label="Next testimonial">
+                        <svg viewBox="0 0 64 64" fill="none">
+                            <circle cx="32" cy="32" r="31" stroke="white" stroke-width="2"/>
+                            <path d="M28 22L38 32L28 42" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="testimonials-grid" id="testimonials-grid">
+                <!-- Testimonial Card 1 -->
+                <div class="testimonial-card fade-in">
+                    <div>
+                        <img src="images/testimonial-image.png" alt="{{TESTIMONIAL_1_AUTHOR}} logo" class="testimonial-brand-logo">
+                        <div class="testimonial-rating">
+                            <div class="stars">
+                                <svg viewBox="0 0 30 30"><polygon points="15,2 19,11 29,11 21,17 24,27 15,21 6,27 9,17 1,11 11,11" fill="#FFD700"/></svg>
+                                <svg viewBox="0 0 30 30"><polygon points="15,2 19,11 29,11 21,17 24,27 15,21 6,27 9,17 1,11 11,11" fill="#FFD700"/></svg>
+                                <svg viewBox="0 0 30 30"><polygon points="15,2 19,11 29,11 21,17 24,27 15,21 6,27 9,17 1,11 11,11" fill="#FFD700"/></svg>
+                                <svg viewBox="0 0 30 30"><polygon points="15,2 19,11 29,11 21,17 24,27 15,21 6,27 9,17 1,11 11,11" fill="#FFD700"/></svg>
+                                <svg viewBox="0 0 30 30"><polygon points="15,2 19,11 29,11 21,17 24,27 15,21 6,27 9,17 1,11 11,11" fill="#FFD700"/></svg>
+                            </div>
+                            <span class="rating-value">{{TESTIMONIAL_1_RATING}}</span>
+                        </div>
+                        <blockquote>{{TESTIMONIAL_1_QUOTE}}</blockquote>
+                    </div>
+                    <p class="testimonial-author">- {{TESTIMONIAL_1_AUTHOR}}</p>
+                </div>
+
+                <!-- Testimonial Card 2 -->
+                <div class="testimonial-card featured fade-in">
+                    <div>
+                        <div class="testimonial-rating">
+                            <div class="stars">
+                                <svg viewBox="0 0 30 30"><polygon points="15,2 19,11 29,11 21,17 24,27 15,21 6,27 9,17 1,11 11,11" fill="#FFD700"/></svg>
+                                <svg viewBox="0 0 30 30"><polygon points="15,2 19,11 29,11 21,17 24,27 15,21 6,27 9,17 1,11 11,11" fill="#FFD700"/></svg>
+                                <svg viewBox="0 0 30 30"><polygon points="15,2 19,11 29,11 21,17 24,27 15,21 6,27 9,17 1,11 11,11" fill="#FFD700"/></svg>
+                                <svg viewBox="0 0 30 30"><polygon points="15,2 19,11 29,11 21,17 24,27 15,21 6,27 9,17 1,11 11,11" fill="#FFD700"/></svg>
+                                <svg viewBox="0 0 30 30"><polygon points="15,2 19,11 29,11 21,17 24,27 15,21 6,27 9,17 1,11 11,11" fill="#FFD700"/></svg>
+                            </div>
+                            <span class="rating-value">{{TESTIMONIAL_2_RATING}}</span>
+                        </div>
+                        <blockquote>{{TESTIMONIAL_2_QUOTE}}</blockquote>
+                    </div>
+                    <p class="testimonial-author">- {{TESTIMONIAL_2_AUTHOR}}</p>
+                </div>
+
+                <!-- Testimonial Card 3 (duplicate slot for carousel) -->
+                <div class="testimonial-card fade-in">
+                    <div>
+                        <div class="testimonial-rating">
+                            <div class="stars">
+                                <svg viewBox="0 0 30 30"><polygon points="15,2 19,11 29,11 21,17 24,27 15,21 6,27 9,17 1,11 11,11" fill="#FFD700"/></svg>
+                                <svg viewBox="0 0 30 30"><polygon points="15,2 19,11 29,11 21,17 24,27 15,21 6,27 9,17 1,11 11,11" fill="#FFD700"/></svg>
+                                <svg viewBox="0 0 30 30"><polygon points="15,2 19,11 29,11 21,17 24,27 15,21 6,27 9,17 1,11 11,11" fill="#FFD700"/></svg>
+                                <svg viewBox="0 0 30 30"><polygon points="15,2 19,11 29,11 21,17 24,27 15,21 6,27 9,17 1,11 11,11" fill="#FFD700"/></svg>
+                                <svg viewBox="0 0 30 30"><polygon points="15,2 19,11 29,11 21,17 24,27 15,21 6,27 9,17 1,11 11,11" fill="#FFD700"/></svg>
+                            </div>
+                            <span class="rating-value">{{TESTIMONIAL_1_RATING}}</span>
+                        </div>
+                        <blockquote>{{TESTIMONIAL_1_QUOTE}}</blockquote>
+                    </div>
+                    <p class="testimonial-author">- {{TESTIMONIAL_1_AUTHOR}}</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SUBSCRIBE SECTION ===== -->
+        <section class="subscribe" id="subscribe">
+            <div class="subscribe-image fade-in-left">
+                <img src="images/subscribe-image.png" alt="{{SECTION_SUBSCRIBE_TITLE}}">
+            </div>
+            <div class="subscribe-content fade-in-right">
+                <h3>{{SECTION_SUBSCRIBE_TITLE}}</h3>
+                <p>{{SUBSCRIBE_DESCRIPTION}}</p>
+                <form class="subscribe-form" action="#" method="post">
+                    <input type="email" name="email" placeholder="Enter Your email" required aria-label="Email address">
+                    <button type="submit" class="btn btn-filled">
+                        {{SUBSCRIBE_CTA}}
+                        <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- ===== PARTNERS SECTION ===== -->
+        <section class="partners" id="partners">
+            <h3 class="fade-in">{{SECTION_PARTNERS_TITLE}}</h3>
+            <div class="partners-grid fade-in">
+                <img src="images/partner-1.png" alt="Partner 1" class="partner-logo partner-logo-1">
+                <img src="images/partner-2.png" alt="Partner 2" class="partner-logo partner-logo-2">
+                <img src="images/partner-3.png" alt="Partner 3" class="partner-logo partner-logo-3">
+                <img src="images/partner-4.png" alt="Partner 4" class="partner-logo partner-logo-4">
+                <img src="images/partner-5.png" alt="Partner 5" class="partner-logo partner-logo-5">
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer" id="footer">
+        <div class="footer-top">
+            <div class="footer-heading fade-in-left">
+                <h2>{{FOOTER_HEADING}}</h2>
+            </div>
+
+            <div class="footer-phone fade-in">
+                <p class="footer-label">Phone Us</p>
+                <a href="tel:{{PHONE}}">{{PHONE}}</a>
+                <p class="footer-address">{{FOOTER_ADDRESS}}</p>
+            </div>
+
+            <div class="footer-email fade-in-right">
+                <p class="footer-label">Email Us</p>
+                <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>
+                <div class="footer-social-links">
+                    <a href="#">{{SOCIAL_LINK_1}}</a>
+                    <a href="#">{{SOCIAL_LINK_2}}</a>
+                    <a href="#">{{SOCIAL_LINK_3}}</a>
+                    <a href="#">{{SOCIAL_LINK_4}}</a>
+                    <a href="#">{{SOCIAL_LINK_5}}</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                <span>&copy;</span>
+                <span>{{YEAR}}. {{BUSINESS_NAME}}. All rights reserved</span>
+            </div>
+            <div class="footer-privacy">
+                <a href="#">{{PRIVACY_LINK}}</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

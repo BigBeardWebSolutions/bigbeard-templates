@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{META_DESCRIPTION}}">
+  <title>{{BUSINESS_NAME}} - {{TAGLINE}}</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+
+  <!-- ================================================================
+       TOP CONTACT BAR
+       ================================================================ -->
+  <div class="top-bar">
+    <a href="tel:{{PHONE}}" class="top-bar__contact">
+      <img src="images/phone-icon.png" alt="Phone icon">
+      <span>{{PHONE}}</span>
+    </a>
+    <a href="mailto:{{EMAIL}}" class="top-bar__contact">
+      <img src="images/email-icon.png" alt="Email icon">
+      <span>{{EMAIL}}</span>
+    </a>
+  </div>
+
+  <!-- ================================================================
+       HEADER / NAVIGATION
+       ================================================================ -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#" class="header__logo" aria-label="{{BUSINESS_NAME}} home">
+        <img src="images/logo.png" alt="{{BUSINESS_NAME}} logo">
+      </a>
+
+      <nav class="header__nav" aria-label="Main navigation">
+        <button class="header__menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="header__nav-list" id="nav-list">
+          <li><a href="#hero" class="header__nav-link header__nav-link--active">{{NAV_LINK_1}}</a></li>
+          <li><a href="#about" class="header__nav-link">{{NAV_LINK_2}}</a></li>
+          <li><a href="#focus" class="header__nav-link header__nav-link--dropdown">{{NAV_LINK_3}}</a></li>
+          <li><a href="#what-we-do" class="header__nav-link">{{NAV_LINK_4}}</a></li>
+          <li><a href="#trustees" class="header__nav-link">{{NAV_LINK_5}}</a></li>
+          <li><a href="#community" class="header__nav-link">{{NAV_LINK_6}}</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__cta">
+        <a href="#contact" class="btn">{{PRIMARY_CTA}}</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================================================================
+         HERO BANNER SLIDER
+         ================================================================ -->
+    <section class="hero" id="hero">
+      <div class="hero__slider" aria-label="Hero image slider">
+        <div class="hero__slide active">
+          <img src="images/hero-banner.jpg" alt="{{HERO_IMAGE_1_ALT}}" class="hero__slide-image">
+        </div>
+        <div class="hero__slide">
+          <img src="images/hero-banner-2.jpg" alt="{{HERO_IMAGE_2_ALT}}" class="hero__slide-image">
+        </div>
+        <div class="hero__slide">
+          <img src="images/hero-banner-3.jpg" alt="{{HERO_IMAGE_3_ALT}}" class="hero__slide-image">
+        </div>
+      </div>
+
+      <div class="hero__overlay"></div>
+
+      <div class="hero__content fade-in">
+        <h1 class="hero__headline">{{HERO_HEADLINE}}</h1>
+        <p class="hero__subheadline">{{HERO_DESCRIPTION}}</p>
+        <div class="hero__cta">
+          <a href="#what-we-do" class="btn">{{SECONDARY_CTA}}</a>
+        </div>
+      </div>
+
+      <div class="hero__dots" aria-label="Slide indicators">
+        <button class="hero__dot active" data-slide="0" aria-label="Go to slide 1"></button>
+        <button class="hero__dot" data-slide="1" aria-label="Go to slide 2"></button>
+        <button class="hero__dot" data-slide="2" aria-label="Go to slide 3"></button>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         ABOUT US SECTION
+         ================================================================ -->
+    <section class="about" id="about">
+      <div class="about__inner">
+        <div class="about__image-wrapper fade-in">
+          <img src="images/about-us.jpg" alt="{{ABOUT_IMAGE_ALT}}" class="about__image">
+        </div>
+        <div class="about__content fade-in">
+          <span class="section-label about__label">{{ABOUT_LABEL}}</span>
+          <span class="section-label-line"></span>
+          <h2 class="about__title">{{ABOUT_TITLE}}</h2>
+          <p class="about__description">{{ABOUT_DESCRIPTION}}</p>
+          <div class="about__cta">
+            <a href="#" class="btn">{{ABOUT_CTA}}</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         OUR FOCUS SECTION
+         ================================================================ -->
+    <section class="focus" id="focus">
+      <h2 class="focus__title fade-in">{{FOCUS_TITLE}}</h2>
+      <div class="focus__grid">
+        <div class="focus__item fade-in">
+          <div class="focus__icon-wrapper">
+            <img src="images/focus-icon-1.png" alt="{{FOCUS_1_ICON_ALT}}" class="focus__icon">
+          </div>
+          <h3 class="focus__item-title">{{FOCUS_1_TITLE}}</h3>
+          <div class="focus__item-line"></div>
+          <p class="focus__item-description">{{FOCUS_1_DESCRIPTION}}</p>
+        </div>
+        <div class="focus__item fade-in">
+          <div class="focus__icon-wrapper">
+            <img src="images/focus-icon-2.png" alt="{{FOCUS_2_ICON_ALT}}" class="focus__icon">
+          </div>
+          <h3 class="focus__item-title">{{FOCUS_2_TITLE}}</h3>
+          <div class="focus__item-line"></div>
+          <p class="focus__item-description">{{FOCUS_2_DESCRIPTION}}</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         WHAT WE DO SECTION
+         ================================================================ -->
+    <section class="what-we-do" id="what-we-do">
+      <img src="images/what-we-do-bg.jpg" alt="" class="what-we-do__bg" aria-hidden="true">
+      <div class="what-we-do__overlay"></div>
+      <div class="what-we-do__gradient"></div>
+      <div class="what-we-do__content fade-in">
+        <span class="section-label what-we-do__label">{{WHAT_WE_DO_LABEL}}</span>
+        <span class="section-label-line"></span>
+        <h2 class="what-we-do__title">{{WHAT_WE_DO_TITLE}}</h2>
+        <p class="what-we-do__description">{{WHAT_WE_DO_DESCRIPTION}}</p>
+        <a href="#" class="btn">{{WHAT_WE_DO_CTA}}</a>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         COMMUNITY / APPLY NOW SECTION
+         ================================================================ -->
+    <section class="community" id="community">
+      <img src="images/community-bg.jpg" alt="" class="community__bg" aria-hidden="true">
+      <div class="community__overlay"></div>
+      <div class="community__content fade-in">
+        <h2 class="community__title">{{COMMUNITY_TITLE}}</h2>
+        <p class="community__description">{{COMMUNITY_DESCRIPTION}}</p>
+        <div class="community__cta">
+          <a href="#" class="btn">{{COMMUNITY_CTA}}</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         OUR TRUSTEES SECTION
+         ================================================================ -->
+    <section class="trustees" id="trustees">
+      <h2 class="trustees__title fade-in">{{TRUSTEES_TITLE}}</h2>
+      <div class="trustees__grid">
+
+        <!-- Trustee 1 -->
+        <div class="trustee fade-in">
+          <div class="trustee__image-wrapper">
+            <div class="trustee__image-bg"></div>
+            <img src="images/trustee-1.png" alt="{{TRUSTEE_1_NAME}}" class="trustee__image">
+          </div>
+          <div class="trustee__info">
+            <h3 class="trustee__name">{{TRUSTEE_1_NAME}}</h3>
+            <p class="trustee__role">{{TRUSTEE_1_ROLE}}</p>
+            <p class="trustee__bio">{{TRUSTEE_1_BIO}}</p>
+            <a href="#" class="read-more-link">{{READ_MORE}}</a>
+          </div>
+        </div>
+
+        <!-- Trustee 2 -->
+        <div class="trustee fade-in">
+          <div class="trustee__image-wrapper">
+            <div class="trustee__image-bg"></div>
+            <img src="images/trustee-2.png" alt="{{TRUSTEE_2_NAME}}" class="trustee__image">
+          </div>
+          <div class="trustee__info">
+            <h3 class="trustee__name">{{TRUSTEE_2_NAME}}</h3>
+            <p class="trustee__role">{{TRUSTEE_2_ROLE}}</p>
+            <p class="trustee__bio">{{TRUSTEE_2_BIO}}</p>
+            <a href="#" class="read-more-link">{{READ_MORE}}</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ================================================================
+       FOOTER
+       ================================================================ -->
+  <footer class="footer" id="contact">
+    <div class="footer__main">
+      <!-- Column 1: Quick Links -->
+      <div class="footer__col">
+        <nav class="footer__links" aria-label="Footer navigation">
+          <a href="#" class="footer__link">{{FOOTER_LINK_1}}</a>
+          <a href="#" class="footer__link">{{FOOTER_LINK_2}}</a>
+          <a href="#" class="footer__link">{{FOOTER_LINK_3}}</a>
+          <a href="#" class="footer__link">{{FOOTER_LINK_4}}</a>
+          <a href="#" class="footer__link">{{FOOTER_LINK_5}}</a>
+        </nav>
+      </div>
+
+      <!-- Column 2: Address -->
+      <div class="footer__col footer__address">
+        <p>{{ADDRESS_LINE_1}}</p>
+        <p>{{ADDRESS_LINE_2}}</p>
+        <p>{{ADDRESS_LINE_3}}</p>
+        <p>{{ADDRESS_LINE_4}}</p>
+        <p>{{ADDRESS_LINE_5}}</p>
+      </div>
+
+      <!-- Column 3: Contact Info -->
+      <div class="footer__col footer__contact-info">
+        <p>{{PHONE}}</p>
+        <p>{{EMAIL}}</p>
+        <div class="footer__social">
+          <a href="{{SOCIAL_LINKEDIN}}" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+            <img src="images/email-icon.png" alt="LinkedIn" class="footer__social-icon">
+          </a>
+        </div>
+      </div>
+
+      <!-- Column 4: Legal -->
+      <div class="footer__col footer__legal">
+        <p><a href="#" class="footer__link">{{LEGAL_LINK_1}}</a></p>
+        <p><a href="#" class="footer__link">{{LEGAL_LINK_2}}</a></p>
+        <p><a href="#" class="footer__link">{{LEGAL_LINK_3}}</a></p>
+      </div>
+    </div>
+
+    <hr class="footer__divider">
+
+    <div class="footer__bottom">
+      <p class="footer__copyright">&copy;{{YEAR}} {{BUSINESS_NAME}}. {{COPYRIGHT_TEXT}}</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

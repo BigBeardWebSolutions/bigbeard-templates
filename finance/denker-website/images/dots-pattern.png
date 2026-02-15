@@ -1,0 +1,7 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 65.1 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="dots">
+<circle id="active" cx="10.5" cy="10.5" r="10.5" fill="var(--fill-0, white)"/>
+<circle id="2" cx="38.8508" cy="10.15" r="4.55" fill="var(--fill-0, white)"/>
+<circle id="3" cx="60.55" cy="10.15" r="4.55" fill="var(--fill-0, white)"/>
+</g>
+</svg>

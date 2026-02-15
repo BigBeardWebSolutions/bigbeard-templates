@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{META_DESCRIPTION}}">
+    <title>{{BUSINESS_NAME}} - {{TAGLINE}}</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- ========== Announcement Bar ========== -->
+    <div class="announcement-bar">
+        <p>
+            {{ANNOUNCEMENT_TEXT}}
+            <a href="#" class="learn-more-link">{{ANNOUNCEMENT_CTA}}</a>
+        </p>
+        <button class="close-btn" aria-label="Dismiss announcement">&times;</button>
+    </div>
+
+    <!-- ========== Navigation ========== -->
+    <header>
+        <nav class="navbar" id="navbar">
+            <div class="container">
+                <a href="#" class="navbar__logo">
+                    <img src="images/logo.png" alt="{{BUSINESS_NAME}} logo">
+                </a>
+
+                <ul class="navbar__links">
+                    <li><a href="#hero" class="active">{{NAV_LINK_1}}</a></li>
+                    <li><a href="#features">{{NAV_LINK_2}}</a></li>
+                    <li><a href="#about">{{NAV_LINK_3}}</a></li>
+                    <li><a href="#sectors">{{NAV_LINK_4}}</a></li>
+                    <li><a href="#news">{{NAV_LINK_5}}</a></li>
+                    <li><a href="#contact">{{NAV_LINK_6}}</a></li>
+                </ul>
+
+                <div class="navbar__actions">
+                    <a href="#contact" class="btn btn-primary">{{NAV_CTA_PRIMARY}}</a>
+                    <a href="#" class="btn btn-outline">{{NAV_CTA_SECONDARY}}</a>
+                    <button class="navbar__mobile-toggle" aria-label="Toggle mobile menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ========== Mobile Navigation Overlay ========== -->
+    <div class="mobile-nav">
+        <button class="mobile-nav__close" aria-label="Close menu">&times;</button>
+        <a href="#hero">{{NAV_LINK_1}}</a>
+        <a href="#features">{{NAV_LINK_2}}</a>
+        <a href="#about">{{NAV_LINK_3}}</a>
+        <a href="#sectors">{{NAV_LINK_4}}</a>
+        <a href="#news">{{NAV_LINK_5}}</a>
+        <a href="#contact">{{NAV_LINK_6}}</a>
+        <a href="#contact" class="btn btn-primary">{{NAV_CTA_PRIMARY}}</a>
+    </div>
+
+    <main>
+
+        <!-- ========== Hero Section ========== -->
+        <section class="hero" id="hero">
+            <div class="hero__background">
+                <img src="images/hero-bg.jpg" alt="{{HERO_BG_ALT}}">
+            </div>
+            <div class="hero__overlay"></div>
+
+            <div class="hero__content">
+                <div class="hero__logo">
+                    <img src="images/hero-wordmark.png" alt="{{BUSINESS_NAME}} wordmark">
+                </div>
+                <h1 class="hero__headline">{{HERO_HEADLINE}}</h1>
+                <p class="hero__subheadline">{{HERO_SUBHEADLINE}}</p>
+                <div class="hero__badges">
+                    <img src="images/badge-1.png" alt="{{BADGE_1_ALT}}">
+                    <img src="images/badge-2.png" alt="{{BADGE_2_ALT}}">
+                </div>
+            </div>
+
+            <a href="#" class="hero__listen-badge">
+                <img src="images/listen-icon.png" alt="{{LISTEN_BADGE_ALT}}">
+                <span>{{LISTEN_BADGE_TEXT}}</span>
+            </a>
+        </section>
+
+        <!-- ========== Audience Section ========== -->
+        <section class="audience" id="audience">
+            <div class="container">
+                <div class="audience__grid">
+                    <div class="audience__card animate-on-scroll">
+                        <h4>{{AUDIENCE_1_TITLE}}</h4>
+                        <p>{{AUDIENCE_1_DESCRIPTION}}</p>
+                        <a href="#" class="btn btn-primary">{{AUDIENCE_1_CTA}}</a>
+                    </div>
+                    <div class="audience__card animate-on-scroll">
+                        <h4>{{AUDIENCE_2_TITLE}}</h4>
+                        <p>{{AUDIENCE_2_DESCRIPTION}}</p>
+                        <a href="#" class="btn btn-primary">{{AUDIENCE_2_CTA}}</a>
+                    </div>
+                    <div class="audience__card animate-on-scroll">
+                        <h4>{{AUDIENCE_3_TITLE}}</h4>
+                        <p>{{AUDIENCE_3_DESCRIPTION}}</p>
+                        <a href="#" class="btn btn-primary">{{AUDIENCE_3_CTA}}</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== Features Section ========== -->
+        <section class="features" id="features">
+            <div class="container">
+                <h3 class="features__title animate-on-scroll">{{FEATURES_TITLE}}</h3>
+                <div class="features__grid">
+                    <div class="feature-item animate-on-scroll">
+                        <div class="feature-item__icon">
+                            <img src="images/feature-icon-1.png" alt="{{FEATURE_1_TITLE}}">
+                        </div>
+                        <h5>{{FEATURE_1_TITLE}}</h5>
+                    </div>
+                    <div class="feature-item animate-on-scroll">
+                        <div class="feature-item__icon">
+                            <img src="images/feature-icon-2.png" alt="{{FEATURE_2_TITLE}}">
+                        </div>
+                        <h5>{{FEATURE_2_TITLE}}</h5>
+                    </div>
+                    <div class="feature-item animate-on-scroll">
+                        <div class="feature-item__icon">
+                            <img src="images/feature-icon-3.png" alt="{{FEATURE_3_TITLE}}">
+                        </div>
+                        <h5>{{FEATURE_3_TITLE}}</h5>
+                    </div>
+                    <div class="feature-item animate-on-scroll">
+                        <div class="feature-item__icon">
+                            <img src="images/feature-icon-4.png" alt="{{FEATURE_4_TITLE}}">
+                        </div>
+                        <h5>{{FEATURE_4_TITLE}}</h5>
+                    </div>
+                    <div class="feature-item animate-on-scroll">
+                        <div class="feature-item__icon">
+                            <img src="images/feature-icon-5.png" alt="{{FEATURE_5_TITLE}}">
+                        </div>
+                        <h5>{{FEATURE_5_TITLE}}</h5>
+                    </div>
+                    <div class="feature-item animate-on-scroll">
+                        <div class="feature-item__icon">
+                            <img src="images/feature-icon-6.png" alt="{{FEATURE_6_TITLE}}">
+                        </div>
+                        <h5>{{FEATURE_6_TITLE}}</h5>
+                    </div>
+                    <div class="feature-item animate-on-scroll">
+                        <div class="feature-item__icon">
+                            <img src="images/feature-icon-7.png" alt="{{FEATURE_7_TITLE}}">
+                        </div>
+                        <h5>{{FEATURE_7_TITLE}}</h5>
+                    </div>
+                    <div class="feature-item animate-on-scroll">
+                        <div class="feature-item__icon">
+                            <img src="images/feature-icon-8.png" alt="{{FEATURE_8_TITLE}}">
+                        </div>
+                        <h5>{{FEATURE_8_TITLE}}</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== Info Section 1: What Is ========== -->
+        <section class="info-section" id="about">
+            <div class="container">
+                <div class="info-section__image animate-on-scroll">
+                    <img src="images/info-what-is.jpg" alt="{{INFO_1_IMAGE_ALT}}">
+                </div>
+                <div class="info-section__content animate-on-scroll">
+                    <h3>{{INFO_1_TITLE}}</h3>
+                    <p class="lead">{{INFO_1_LEAD}}</p>
+                    <p>{{INFO_1_BODY}}</p>
+                    <a href="#" class="btn btn-primary">{{INFO_1_CTA}}</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== Info Section 2: How Does It Work (Reversed) ========== -->
+        <section class="info-section info-section--reversed" id="how-it-works">
+            <div class="container">
+                <div class="info-section__content animate-on-scroll">
+                    <h3>{{INFO_2_TITLE}}</h3>
+                    <p class="lead">{{INFO_2_LEAD}}</p>
+                    <p>{{INFO_2_BODY}}</p>
+                    <a href="#" class="btn btn-primary">{{INFO_2_CTA}}</a>
+                </div>
+                <div class="info-section__image animate-on-scroll">
+                    <img src="images/info-how-works.jpg" alt="{{INFO_2_IMAGE_ALT}}">
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== Indicators Section ========== -->
+        <section class="indicators" id="indicators">
+            <div class="container">
+                <div class="indicators__visual animate-on-scroll">
+                    <div class="pyramid-circle">
+                        <img src="images/pyramid-diagram.png" alt="{{INDICATORS_DIAGRAM_ALT}}">
+                    </div>
+                    <p class="pyramid-label">{{INDICATORS_LABEL}}</p>
+                    <p class="pyramid-caption">{{INDICATORS_CAPTION}}</p>
+                </div>
+                <div class="indicators__content animate-on-scroll">
+                    <h3>{{INDICATORS_TITLE}}</h3>
+                    <p class="lead">{{INDICATORS_LEAD}}</p>
+                    <p>{{INDICATORS_BODY}}</p>
+                    <a href="#" class="btn btn-primary">{{INDICATORS_CTA}}</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== Stats Section ========== -->
+        <section class="stats" id="stats">
+            <div class="container">
+                <div class="stats__grid">
+                    <div class="stat-item animate-on-scroll">
+                        <div class="stat-item__icon">
+                            <img src="images/stat-icon-1.png" alt="{{STAT_1_LABEL}}">
+                        </div>
+                        <div class="stat-item__content">
+                            <span class="stat-item__value">{{STAT_1_VALUE}}</span>
+                            <div class="stat-item__divider"></div>
+                            <span class="stat-item__label">{{STAT_1_LABEL}}</span>
+                        </div>
+                    </div>
+                    <div class="stat-item animate-on-scroll">
+                        <div class="stat-item__icon">
+                            <img src="images/stat-icon-2.png" alt="{{STAT_2_LABEL}}">
+                        </div>
+                        <div class="stat-item__content">
+                            <span class="stat-item__value">{{STAT_2_VALUE}}</span>
+                            <div class="stat-item__divider"></div>
+                            <span class="stat-item__label">{{STAT_2_LABEL}}</span>
+                        </div>
+                    </div>
+                    <div class="stat-item animate-on-scroll">
+                        <div class="stat-item__icon">
+                            <img src="images/stat-icon-3.png" alt="{{STAT_3_LABEL}}">
+                        </div>
+                        <div class="stat-item__content">
+                            <span class="stat-item__value">{{STAT_3_VALUE}}</span>
+                            <div class="stat-item__divider"></div>
+                            <span class="stat-item__label">{{STAT_3_LABEL}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== Quiz / CTA Split Section ========== -->
+        <section class="quiz" id="quiz">
+            <div class="quiz__image">
+                <img src="images/quiz-bg.jpg" alt="{{QUIZ_IMAGE_ALT}}">
+            </div>
+            <div class="quiz__content">
+                <h3>{{QUIZ_TITLE}}</h3>
+                <p>{{QUIZ_DESCRIPTION}}</p>
+                <a href="#" class="btn btn-secondary">{{QUIZ_CTA}}</a>
+            </div>
+        </section>
+
+        <!-- ========== News Section ========== -->
+        <section class="news" id="news">
+            <div class="container">
+                <div class="news__header">
+                    <h2>{{NEWS_TITLE}}</h2>
+                    <a href="#" class="btn btn-secondary">{{NEWS_VIEW_ALL}}</a>
+                </div>
+                <div class="news__grid">
+                    <article class="news-card animate-on-scroll">
+                        <div class="news-card__image">
+                            <img src="images/news-1.jpg" alt="{{NEWS_1_TITLE}}">
+                        </div>
+                        <span class="news-card__category">{{NEWS_1_CATEGORY}}</span>
+                        <h4 class="news-card__title">{{NEWS_1_TITLE}}</h4>
+                        <p class="news-card__excerpt">{{NEWS_1_EXCERPT}}</p>
+                        <span class="news-card__meta">{{NEWS_1_DATE}}</span>
+                    </article>
+                    <article class="news-card animate-on-scroll">
+                        <div class="news-card__image">
+                            <img src="images/news-2.jpg" alt="{{NEWS_2_TITLE}}">
+                            <img src="images/icon-play.png" alt="Play video" class="news-card__play-btn">
+                        </div>
+                        <span class="news-card__category">{{NEWS_2_CATEGORY}}</span>
+                        <h4 class="news-card__title">{{NEWS_2_TITLE}}</h4>
+                        <p class="news-card__excerpt">{{NEWS_2_EXCERPT}}</p>
+                        <span class="news-card__meta">{{NEWS_2_DATE}}</span>
+                    </article>
+                    <article class="news-card animate-on-scroll">
+                        <div class="news-card__image">
+                            <img src="images/news-3.jpg" alt="{{NEWS_3_TITLE}}">
+                        </div>
+                        <span class="news-card__category">{{NEWS_3_CATEGORY}}</span>
+                        <h4 class="news-card__title">{{NEWS_3_TITLE}}</h4>
+                        <p class="news-card__excerpt">{{NEWS_3_EXCERPT}}</p>
+                        <span class="news-card__meta">{{NEWS_3_DATE}}</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== Testimonials Section ========== -->
+        <section class="testimonials" id="testimonials">
+            <div class="testimonials__bg">
+                <img src="images/testimonials-bg.jpg" alt="Background landscape">
+            </div>
+            <div class="container">
+                <h2 class="testimonials__title animate-on-scroll">{{TESTIMONIALS_TITLE}}</h2>
+
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="testimonial-card__stars">
+                        <img src="images/icon-star.svg" alt="Star">
+                        <img src="images/icon-star.svg" alt="Star">
+                        <img src="images/icon-star.svg" alt="Star">
+                        <img src="images/icon-star.svg" alt="Star">
+                        <img src="images/icon-star.svg" alt="Star">
+                    </div>
+                    <p class="testimonial-card__quote">
+                        <strong>{{TESTIMONIAL_1_HIGHLIGHT}}</strong>
+                        {{TESTIMONIAL_1_BODY}}
+                    </p>
+                    <p class="testimonial-card__author">{{TESTIMONIAL_1_AUTHOR}}</p>
+                    <p class="testimonial-card__role">{{TESTIMONIAL_1_ROLE}}</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-card__stars">
+                        <img src="images/icon-star.svg" alt="Star">
+                        <img src="images/icon-star.svg" alt="Star">
+                        <img src="images/icon-star.svg" alt="Star">
+                        <img src="images/icon-star.svg" alt="Star">
+                        <img src="images/icon-star.svg" alt="Star">
+                    </div>
+                    <p class="testimonial-card__quote">
+                        <strong>{{TESTIMONIAL_2_HIGHLIGHT}}</strong>
+                        {{TESTIMONIAL_2_BODY}}
+                    </p>
+                    <p class="testimonial-card__author">{{TESTIMONIAL_2_AUTHOR}}</p>
+                    <p class="testimonial-card__role">{{TESTIMONIAL_2_ROLE}}</p>
+                </div>
+
+                <div class="testimonial-nav">
+                    <button class="prev-btn" aria-label="Previous testimonial">
+                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M10 12L6 8l4-4"/>
+                        </svg>
+                    </button>
+                    <button class="next-btn" aria-label="Next testimonial">
+                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 4l4 4-4 4"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== Partners Section ========== -->
+        <section class="partners" id="partners">
+            <div class="container">
+                <h2 class="partners__title animate-on-scroll">{{PARTNERS_TITLE}}</h2>
+                <div class="partners__logos animate-on-scroll">
+                    <img src="images/partner-1.png" alt="{{PARTNER_1_NAME}}">
+                    <img src="images/partner-2.png" alt="{{PARTNER_2_NAME}}">
+                    <img src="images/partner-3.png" alt="{{PARTNER_3_NAME}}">
+                    <img src="images/partner-4.png" alt="{{PARTNER_4_NAME}}">
+                    <img src="images/partner-5.png" alt="{{PARTNER_5_NAME}}">
+                    <img src="images/partner-6.png" alt="{{PARTNER_6_NAME}}">
+                    <img src="images/partner-7.png" alt="{{PARTNER_7_NAME}}">
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CTA / Community Section ========== -->
+        <section class="cta-section" id="contact">
+            <div class="cta-section__background">
+                <img src="images/cta-bg.jpg" alt="{{CTA_BG_ALT}}">
+            </div>
+            <div class="container">
+                <h2 class="cta-section__title animate-on-scroll">{{CTA_HEADLINE}}</h2>
+                <form class="cta-section__form" action="#" method="post">
+                    <input type="email" placeholder="{{CTA_EMAIL_PLACEHOLDER}}" required>
+                    <button type="submit" class="btn btn-primary btn-large">{{CTA_BUTTON_TEXT}}</button>
+                </form>
+                <p class="cta-section__disclaimer">
+                    {{CTA_DISCLAIMER_PREFIX}} <a href="#">{{CTA_PRIVACY_LINK}}</a> {{CTA_DISCLAIMER_CONJUNCTION}} <a href="#">{{CTA_TERMS_LINK}}</a> {{CTA_DISCLAIMER_SUFFIX}}
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========== Footer ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <div class="footer__brand-logo">
+                        <img src="images/footer-logo.png" alt="{{BUSINESS_NAME}} logo">
+                    </div>
+                    <p>{{FOOTER_DESCRIPTION}}</p>
+                </div>
+                <div class="footer__column">
+                    <h6>{{FOOTER_COL_1_TITLE}}</h6>
+                    <ul>
+                        <li><a href="#">{{FOOTER_COL_1_LINK_1}}</a></li>
+                        <li><a href="#">{{FOOTER_COL_1_LINK_2}}</a></li>
+                        <li><a href="#">{{FOOTER_COL_1_LINK_3}}</a></li>
+                        <li><a href="#">{{FOOTER_COL_1_LINK_4}}</a></li>
+                        <li><a href="#">{{FOOTER_COL_1_LINK_5}}</a></li>
+                        <li><a href="#">{{FOOTER_COL_1_LINK_6}}</a></li>
+                        <li><a href="#">{{FOOTER_COL_1_LINK_7}}</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h6>{{FOOTER_COL_2_TITLE}}</h6>
+                    <ul>
+                        <li><a href="#">{{FOOTER_COL_2_LINK_1}}</a></li>
+                        <li><a href="#">{{FOOTER_COL_2_LINK_2}}</a></li>
+                        <li><a href="#">{{FOOTER_COL_2_LINK_3}}</a></li>
+                    </ul>
+                    <h6 style="margin-top: 24px;">{{FOOTER_COL_2_SUBTITLE}}</h6>
+                    <ul>
+                        <li><a href="#">{{FOOTER_COL_2_LEGAL_1}}</a></li>
+                        <li><a href="#">{{FOOTER_COL_2_LEGAL_2}}</a></li>
+                        <li><a href="#">{{FOOTER_COL_2_LEGAL_3}}</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h6>{{FOOTER_COL_3_TITLE}}</h6>
+                    <ul>
+                        <li><a href="mailto:{{EMAIL}}">{{EMAIL}}</a></li>
+                        <li><a href="tel:{{PHONE}}">{{PHONE}}</a></li>
+                    </ul>
+                    <h6 style="margin-top: 24px;">{{FOOTER_COL_3_SOCIAL_TITLE}}</h6>
+                    <div class="footer__social">
+                        <a href="#" aria-label="LinkedIn"><img src="images/icon-linkedin.svg" alt="LinkedIn"></a>
+                        <a href="#" aria-label="Twitter"><img src="images/icon-twitter.svg" alt="Twitter"></a>
+                        <a href="#" aria-label="Facebook"><img src="images/icon-facebook.svg" alt="Facebook"></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer__divider">
+            <div class="footer__bottom">
+                <p>{{FOOTER_COPYRIGHT}}</p>
+                <p>{{FOOTER_LEGAL_INFO}}</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

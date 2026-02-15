@@ -1,0 +1,759 @@
+{
+  "template_id": "energy-sosimple-v1",
+  "name": "Solar Energy Solutions Website",
+  "placeholders": {
+    "{{BUSINESS_NAME}}": {
+      "default": "SolarEnergy Co",
+      "description": "Company or brand name displayed throughout the site",
+      "required": true
+    },
+    "{{TAGLINE}}": {
+      "default": "Clean Energy Solutions",
+      "description": "Short company tagline used in the page title",
+      "required": true
+    },
+    "{{META_DESCRIPTION}}": {
+      "default": "Cut your electricity bill by 30% or more with clean, reliable solar energy solutions. No upfront investment, no hassles.",
+      "description": "Page meta description for SEO",
+      "required": false
+    },
+    "{{META_KEYWORDS}}": {
+      "default": "solar energy, renewable energy, electricity savings, solar panels, commercial solar, PPA",
+      "description": "Page meta keywords for SEO",
+      "required": false
+    },
+    "{{HERO_HEADLINE}}": {
+      "default": "Cut your electricity bill by 30% or more.<br>The answer is simple.",
+      "description": "Main hero headline (supports <br> for line breaks)",
+      "required": true
+    },
+    "{{HERO_SUBHEADLINE}}": {
+      "default": "No upfront investment, no hassles.\nJust clean, reliable energy from your roof.",
+      "description": "Hero subtitle text below the headline",
+      "required": true
+    },
+    "{{HERO_BG_ALT}}": {
+      "default": "Solar panels on commercial building rooftop",
+      "description": "Alt text for the hero background image",
+      "required": false
+    },
+    "{{CTA_START_SAVING}}": {
+      "default": "Start saving now",
+      "description": "Header CTA button text",
+      "required": true
+    },
+    "{{CTA_SEE_SOLUTIONS}}": {
+      "default": "See our solutions",
+      "description": "Hero primary CTA button text",
+      "required": true
+    },
+    "{{CTA_GET_STARTED}}": {
+      "default": "Get started",
+      "description": "Hero secondary CTA button text",
+      "required": true
+    },
+    "{{CTA_READ_MORE}}": {
+      "default": "Read more",
+      "description": "Read more button text used in content sections",
+      "required": true
+    },
+    "{{CTA_CALCULATE_SAVINGS}}": {
+      "default": "Calculate Your Savings Now",
+      "description": "Button text linking to savings calculator",
+      "required": true
+    },
+    "{{CTA_CALCULATE}}": {
+      "default": "Calculate my savings",
+      "description": "Calculator form submit button text",
+      "required": true
+    },
+    "{{CTA_VIEW_PROJECTS}}": {
+      "default": "View all projects",
+      "description": "Projects section CTA button text",
+      "required": true
+    },
+    "{{NAV_HOME}}": {
+      "default": "Home",
+      "description": "Navigation link text for Home",
+      "required": true
+    },
+    "{{NAV_WHO_BENEFITS}}": {
+      "default": "Who benefits",
+      "description": "Navigation link text for Who Benefits section",
+      "required": true
+    },
+    "{{NAV_PROJECTS}}": {
+      "default": "Projects",
+      "description": "Navigation link text for Projects section",
+      "required": true
+    },
+    "{{NAV_HOW_IT_WORKS}}": {
+      "default": "How It Works",
+      "description": "Navigation link text for How It Works section",
+      "required": true
+    },
+    "{{NAV_BLOG}}": {
+      "default": "Blog",
+      "description": "Navigation link text for Blog page",
+      "required": true
+    },
+    "{{NAV_CONTACT}}": {
+      "default": "Contact us",
+      "description": "Navigation link text for Contact section",
+      "required": true
+    },
+    "{{STAT_1_VALUE}}": {
+      "default": "75",
+      "description": "First statistic value (e.g., number of projects)",
+      "required": true
+    },
+    "{{STAT_1_LABEL}}": {
+      "default": "Successful solar installation projects",
+      "description": "First statistic label/description",
+      "required": true
+    },
+    "{{STAT_2_VALUE}}": {
+      "default": "50,000+",
+      "description": "Second statistic value (e.g., kWh generated)",
+      "required": true
+    },
+    "{{STAT_2_LABEL}}": {
+      "default": "Kwh of electricity generated daily",
+      "description": "Second statistic label/description",
+      "required": true
+    },
+    "{{STAT_3_VALUE}}": {
+      "default": "24/7",
+      "description": "Third statistic value (e.g., customer support availability)",
+      "required": true
+    },
+    "{{STAT_3_LABEL}}": {
+      "default": "Customer support, 7 days a week",
+      "description": "Third statistic label/description",
+      "required": true
+    },
+    "{{STAT_4_VALUE}}": {
+      "default": "4.5/5",
+      "description": "Fourth statistic value (e.g., customer rating)",
+      "required": true
+    },
+    "{{STAT_4_LABEL}}": {
+      "default": "Overall customer satisfaction rating",
+      "description": "Fourth statistic label/description",
+      "required": true
+    },
+    "{{SECTION_ELECTRICITY_COSTS_TITLE}}": {
+      "default": "How can you cut electricity costs?",
+      "description": "Title for the electricity costs explanation section",
+      "required": true
+    },
+    "{{SECTION_ELECTRICITY_COSTS_DESC}}": {
+      "default": "We provide clean, affordable electricity from solar panels on your roof. Zero investment. Zero service costs. Zero maintenance. For uninterrupted energy supply, we offer energy security through battery solutions and diesel generator integration.\n\nWe charge a low energy tariff, and you only pay for what you use. Our transparent 10-year solar power purchase agreement (PPA) has no hidden traps or penalties.",
+      "description": "Detailed description of electricity cost savings offering",
+      "required": true
+    },
+    "{{ELECTRICITY_COSTS_ALT}}": {
+      "default": "Illustration showing how solar energy reduces electricity costs",
+      "description": "Alt text for electricity costs illustration",
+      "required": false
+    },
+    "{{SECTION_HOW_IT_WORKS_TITLE}}": {
+      "default": "How does it work?",
+      "description": "Title for the step-by-step process section",
+      "required": true
+    },
+    "{{SECTION_HOW_IT_WORKS_SUBTITLE}}": {
+      "default": "Get started with 4 easy steps",
+      "description": "Subtitle below the how-it-works title",
+      "required": true
+    },
+    "{{STEP_1_TITLE}}": {
+      "default": "Let's get started",
+      "description": "Step 1 heading",
+      "required": true
+    },
+    "{{STEP_1_ITEM_1}}": {
+      "default": "Tell us about your business.",
+      "description": "Step 1 first bullet point",
+      "required": true
+    },
+    "{{STEP_1_ITEM_2}}": {
+      "default": "Within 48 hours, we tell you how much you can save.",
+      "description": "Step 1 second bullet point",
+      "required": true
+    },
+    "{{STEP_1_ALT}}": {
+      "default": "Business consultation meeting for solar energy",
+      "description": "Alt text for step 1 image",
+      "required": false
+    },
+    "{{STEP_2_TITLE}}": {
+      "default": "Sign-up",
+      "description": "Step 2 heading",
+      "required": true
+    },
+    "{{STEP_2_DESCRIPTION}}": {
+      "default": "Sign a short and transparent agreement detailing all the specifics. We'll conduct a site visit to fine-tune the initial design and project plan.",
+      "description": "Step 2 description paragraph",
+      "required": true
+    },
+    "{{STEP_2_ALT}}": {
+      "default": "Signing solar energy agreement",
+      "description": "Alt text for step 2 image",
+      "required": false
+    },
+    "{{STEP_3_TITLE}}": {
+      "default": "Install",
+      "description": "Step 3 heading",
+      "required": true
+    },
+    "{{STEP_3_ITEM_1}}": {
+      "default": "Metering, detailed engineering and regulatory procedures.",
+      "description": "Step 3 first bullet point",
+      "required": true
+    },
+    "{{STEP_3_ITEM_2}}": {
+      "default": "We procure the solar panels and battery solution (approx. 4 weeks).",
+      "description": "Step 3 second bullet point",
+      "required": true
+    },
+    "{{STEP_3_ITEM_3}}": {
+      "default": "We install the solar system (approx. 4 - 8 weeks).",
+      "description": "Step 3 third bullet point",
+      "required": true
+    },
+    "{{STEP_3_ALT}}": {
+      "default": "Solar panel installation on building rooftop",
+      "description": "Alt text for step 3 image",
+      "required": false
+    },
+    "{{STEP_4_TITLE}}": {
+      "default": "Start Saving",
+      "description": "Step 4 heading",
+      "required": true
+    },
+    "{{STEP_4_ALT}}": {
+      "default": "Happy customer saving with solar energy",
+      "description": "Alt text for step 4 image",
+      "required": false
+    },
+    "{{SECTION_WHO_CAN_SAVE_TITLE}}": {
+      "default": "Who can save?",
+      "description": "Title for the who-can-save section",
+      "required": true
+    },
+    "{{SECTION_WHO_CAN_SAVE_DESC}}": {
+      "default": "We offer commercial solar solutions to deliver energy and cost savings directly to you. Businesses benefit from discounted energy tariffs, while property owners and body corporates can earn through rooftop rentals.",
+      "description": "Description explaining who benefits from the service",
+      "required": true
+    },
+    "{{WHO_CAN_SAVE_ALT}}": {
+      "default": "Illustration of people saving with solar energy",
+      "description": "Alt text for who-can-save illustration",
+      "required": false
+    },
+    "{{SECTION_CALCULATOR_TITLE}}": {
+      "default": "What can I save?",
+      "description": "Title for the savings calculator section",
+      "required": true
+    },
+    "{{SECTION_CALCULATOR_DESC}}": {
+      "default": "Expect to cut your monthly electricity cost by 30% or more. Use our calculator to get an initial estimate of your potential solar energy savings.",
+      "description": "Description text above the calculator form",
+      "required": true
+    },
+    "{{CALC_LABEL_SPEND}}": {
+      "default": "How much do you spend on average, monthly on electricity?",
+      "description": "Label for monthly electricity spend dropdown",
+      "required": true
+    },
+    "{{CALC_PLACEHOLDER_RANGE}}": {
+      "default": "Please select a range",
+      "description": "Placeholder text for spend range dropdown",
+      "required": false
+    },
+    "{{CALC_LABEL_HOURS}}": {
+      "default": "What are your operating hours?",
+      "description": "Label for operating hours dropdown",
+      "required": true
+    },
+    "{{CALC_PLACEHOLDER_SELECT}}": {
+      "default": "Please select one",
+      "description": "Placeholder text for operating hours dropdown",
+      "required": false
+    },
+    "{{CALC_LABEL_NAME}}": {
+      "default": "Your name",
+      "description": "Label for name input field",
+      "required": true
+    },
+    "{{CALC_PLACEHOLDER_NAME}}": {
+      "default": "Name",
+      "description": "Placeholder for name input field",
+      "required": false
+    },
+    "{{CALC_LABEL_EMAIL}}": {
+      "default": "Your email",
+      "description": "Label for email input field",
+      "required": true
+    },
+    "{{CALC_PLACEHOLDER_EMAIL}}": {
+      "default": "name@email.com",
+      "description": "Placeholder for email input field",
+      "required": false
+    },
+    "{{PIGGY_BANK_ALT}}": {
+      "default": "Piggy bank representing savings",
+      "description": "Alt text for piggy bank image",
+      "required": false
+    },
+    "{{CALCULATOR_PERSON_ALT}}": {
+      "default": "Person using solar savings calculator",
+      "description": "Alt text for calculator person image",
+      "required": false
+    },
+    "{{SECTION_PROJECTS_TITLE}}": {
+      "default": "Recent projects",
+      "description": "Title for the projects showcase section",
+      "required": true
+    },
+    "{{PROJECT_1_NAME}}": {
+      "default": "Project Alpha",
+      "description": "First project card name",
+      "required": true
+    },
+    "{{PROJECT_1_LOCATION}}": {
+      "default": "Location, Region",
+      "description": "First project card location",
+      "required": true
+    },
+    "{{PROJECT_1_TAG}}": {
+      "default": "AGRICULTURE",
+      "description": "First project category tag",
+      "required": true
+    },
+    "{{PROJECT_2_NAME}}": {
+      "default": "Project Beta",
+      "description": "Second project card name",
+      "required": true
+    },
+    "{{PROJECT_2_LOCATION}}": {
+      "default": "Location, Region",
+      "description": "Second project card location",
+      "required": true
+    },
+    "{{PROJECT_2_TAG}}": {
+      "default": "HOSPITALITY",
+      "description": "Second project category tag",
+      "required": true
+    },
+    "{{PROJECT_3_NAME}}": {
+      "default": "Project Gamma",
+      "description": "Third project card name",
+      "required": true
+    },
+    "{{PROJECT_3_LOCATION}}": {
+      "default": "Location, Region",
+      "description": "Third project card location",
+      "required": true
+    },
+    "{{PROJECT_3_TAG}}": {
+      "default": "MANUFACTURING",
+      "description": "Third project category tag",
+      "required": true
+    },
+    "{{SECTION_TESTIMONIALS_TITLE}}": {
+      "default": "What our customers are saying",
+      "description": "Title for the testimonials section",
+      "required": true
+    },
+    "{{TESTIMONIAL_1_QUOTE}}": {
+      "default": "We started saving one third of our electricity bill after 2 months.",
+      "description": "Customer testimonial quote text",
+      "required": true
+    },
+    "{{TESTIMONIAL_1_NAME}}": {
+      "default": "John Smith",
+      "description": "Testimonial author name",
+      "required": true
+    },
+    "{{TESTIMONIAL_1_COMPANY}}": {
+      "default": "ABC Body Corporate",
+      "description": "Testimonial author company/organization",
+      "required": true
+    },
+    "{{STARS_ALT}}": {
+      "default": "5 star customer rating",
+      "description": "Alt text for star rating image",
+      "required": false
+    },
+    "{{PARTNER_1_NAME}}": {
+      "default": "Partner 1",
+      "description": "First partner logo alt text",
+      "required": false
+    },
+    "{{PARTNER_2_NAME}}": {
+      "default": "Partner 2",
+      "description": "Second partner logo alt text",
+      "required": false
+    },
+    "{{PARTNER_3_NAME}}": {
+      "default": "Partner 3",
+      "description": "Third partner logo alt text",
+      "required": false
+    },
+    "{{PARTNER_4_NAME}}": {
+      "default": "Partner 4",
+      "description": "Fourth partner logo alt text",
+      "required": false
+    },
+    "{{PARTNER_5_NAME}}": {
+      "default": "Partner 5",
+      "description": "Fifth partner logo alt text",
+      "required": false
+    },
+    "{{PARTNER_6_NAME}}": {
+      "default": "Partner 6",
+      "description": "Sixth partner logo alt text",
+      "required": false
+    },
+    "{{CONTACT_PHONE}}": {
+      "default": "+27 10 001 0000, +27 67 000 0000",
+      "description": "Contact phone numbers",
+      "required": true
+    },
+    "{{CONTACT_EMAIL}}": {
+      "default": "info@example.co.za",
+      "description": "Contact email address",
+      "required": true
+    },
+    "{{CONTACT_ADDRESS}}": {
+      "default": "123 Street Name, Suburb,\nCity, 0000",
+      "description": "Physical office address",
+      "required": true
+    },
+    "{{FOOTER_TAGLINE}}": {
+      "default": "Clean energy solutions for businesses",
+      "description": "Short tagline displayed in the footer",
+      "required": false
+    },
+    "{{FOOTER_FOLLOW_US}}": {
+      "default": "Follow us",
+      "description": "Label above social media links",
+      "required": false
+    },
+    "{{FOOTER_QUICK_LINKS_TITLE}}": {
+      "default": "Quick Links",
+      "description": "Footer quick links column heading",
+      "required": false
+    },
+    "{{FOOTER_LINK_SOLUTIONS}}": {
+      "default": "Solutions",
+      "description": "Footer link text for Solutions page",
+      "required": false
+    },
+    "{{FOOTER_LINK_WHO_WE_ARE}}": {
+      "default": "Who we are",
+      "description": "Footer link text for About page",
+      "required": false
+    },
+    "{{FOOTER_CONTACT_TITLE}}": {
+      "default": "Contact",
+      "description": "Footer contact column heading",
+      "required": false
+    },
+    "{{FOOTER_COPYRIGHT}}": {
+      "default": "2026 Company Name. All Rights Reserved. | Designed and developed by Big Beard Web Solutions",
+      "description": "Copyright notice text in footer",
+      "required": false
+    },
+    "{{FOOTER_PRIVACY}}": {
+      "default": "Privacy Policy",
+      "description": "Privacy policy link text",
+      "required": false
+    },
+    "{{FOOTER_TERMS}}": {
+      "default": "Terms and conditions",
+      "description": "Terms and conditions link text",
+      "required": false
+    },
+    "{{SOCIAL_FACEBOOK}}": {
+      "default": "#",
+      "description": "Facebook page URL",
+      "required": false
+    },
+    "{{SOCIAL_INSTAGRAM}}": {
+      "default": "#",
+      "description": "Instagram profile URL",
+      "required": false
+    },
+    "{{SOCIAL_YOUTUBE}}": {
+      "default": "#",
+      "description": "YouTube channel URL",
+      "required": false
+    },
+    "{{SOCIAL_LINKEDIN}}": {
+      "default": "#",
+      "description": "LinkedIn profile URL",
+      "required": false
+    },
+    "{{CHAT_LABEL}}": {
+      "default": "Chat with us",
+      "description": "Accessible label for the chat widget button",
+      "required": false
+    }
+  },
+  "image_slots": [
+    {
+      "selector": ".hero-background img",
+      "property": "src",
+      "path": "images/hero-bg.png",
+      "keywords": ["hero", "solar", "rooftop", "commercial building"],
+      "aspect_ratio": "16:9",
+      "min_width": 1920
+    },
+    {
+      "selector": ".header-logo img",
+      "property": "src",
+      "path": "images/logo.png",
+      "keywords": ["logo", "brand"],
+      "aspect_ratio": "auto",
+      "min_width": 200
+    },
+    {
+      "selector": ".tree-illustration",
+      "property": "src",
+      "path": "images/electricity-costs.png",
+      "keywords": ["illustration", "tree", "electricity", "costs", "savings"],
+      "aspect_ratio": "auto",
+      "min_width": 400
+    },
+    {
+      "selector": ".step:nth-child(1) .step-image img",
+      "property": "src",
+      "path": "images/step-1.png",
+      "keywords": ["consultation", "meeting", "business", "get started"],
+      "aspect_ratio": "3:2",
+      "min_width": 560
+    },
+    {
+      "selector": ".step:nth-child(2) .step-image img",
+      "property": "src",
+      "path": "images/step-2.png",
+      "keywords": ["sign-up", "agreement", "contract", "handshake"],
+      "aspect_ratio": "3:2",
+      "min_width": 560
+    },
+    {
+      "selector": ".step:nth-child(3) .step-image img",
+      "property": "src",
+      "path": "images/step-3.png",
+      "keywords": ["installation", "solar panels", "construction", "workers"],
+      "aspect_ratio": "3:2",
+      "min_width": 560
+    },
+    {
+      "selector": ".step:nth-child(4) .step-image img",
+      "property": "src",
+      "path": "images/step-4.png",
+      "keywords": ["savings", "happy customer", "results", "solar"],
+      "aspect_ratio": "3:2",
+      "min_width": 560
+    },
+    {
+      "selector": ".farmer-illustration",
+      "property": "src",
+      "path": "images/who-can-save.png",
+      "keywords": ["illustration", "farmer", "people", "save", "solar"],
+      "aspect_ratio": "auto",
+      "min_width": 400
+    },
+    {
+      "selector": ".piggy-bank",
+      "property": "src",
+      "path": "images/piggy-bank.png",
+      "keywords": ["piggy bank", "savings", "money", "finance"],
+      "aspect_ratio": "1:1",
+      "min_width": 300
+    },
+    {
+      "selector": ".calculator-person",
+      "property": "src",
+      "path": "images/calculator-person.png",
+      "keywords": ["person", "calculator", "finance", "solar savings"],
+      "aspect_ratio": "auto",
+      "min_width": 380
+    },
+    {
+      "selector": ".project-card:nth-child(1) .project-card-image img",
+      "property": "src",
+      "path": "images/project-1.png",
+      "keywords": ["project", "solar", "agriculture", "installation"],
+      "aspect_ratio": "3:2",
+      "min_width": 533
+    },
+    {
+      "selector": ".project-card:nth-child(2) .project-card-image img",
+      "property": "src",
+      "path": "images/project-2.png",
+      "keywords": ["project", "solar", "hospitality", "lodge"],
+      "aspect_ratio": "3:2",
+      "min_width": 533
+    },
+    {
+      "selector": ".project-card:nth-child(3) .project-card-image img",
+      "property": "src",
+      "path": "images/project-3.png",
+      "keywords": ["project", "solar", "manufacturing", "industrial"],
+      "aspect_ratio": "3:2",
+      "min_width": 533
+    },
+    {
+      "selector": ".partner-logo:nth-child(1) img",
+      "property": "src",
+      "path": "images/partner-1.png",
+      "keywords": ["partner", "logo"],
+      "aspect_ratio": "auto",
+      "min_width": 100
+    },
+    {
+      "selector": ".partner-logo:nth-child(2) img",
+      "property": "src",
+      "path": "images/partner-2.png",
+      "keywords": ["partner", "logo"],
+      "aspect_ratio": "auto",
+      "min_width": 100
+    },
+    {
+      "selector": ".partner-logo:nth-child(3) img",
+      "property": "src",
+      "path": "images/partner-3.png",
+      "keywords": ["partner", "logo"],
+      "aspect_ratio": "auto",
+      "min_width": 100
+    },
+    {
+      "selector": ".partner-logo:nth-child(4) img",
+      "property": "src",
+      "path": "images/partner-4.png",
+      "keywords": ["partner", "logo"],
+      "aspect_ratio": "auto",
+      "min_width": 100
+    },
+    {
+      "selector": ".partner-logo:nth-child(5) img",
+      "property": "src",
+      "path": "images/partner-5.png",
+      "keywords": ["partner", "logo"],
+      "aspect_ratio": "auto",
+      "min_width": 100
+    },
+    {
+      "selector": ".partner-logo:nth-child(6) img",
+      "property": "src",
+      "path": "images/partner-6.png",
+      "keywords": ["partner", "logo"],
+      "aspect_ratio": "auto",
+      "min_width": 100
+    }
+  ],
+  "sections": {
+    "hero": {
+      "required": true,
+      "customizable": true,
+      "description": "Full-height hero with background image, blue gradient overlay, headline, subheadline, and two CTA buttons"
+    },
+    "stats": {
+      "required": true,
+      "customizable": true,
+      "description": "4-column statistics row showing key business metrics (projects, kWh, support, rating)"
+    },
+    "electricity-costs": {
+      "required": true,
+      "customizable": true,
+      "description": "Two-column section with tree illustration and explanation of electricity cost reduction"
+    },
+    "how-it-works": {
+      "required": true,
+      "customizable": true,
+      "description": "4-step alternating process section with numbered circles, images, and descriptions connected by a vertical timeline"
+    },
+    "who-can-save": {
+      "required": true,
+      "customizable": true,
+      "description": "Two-column section with farmer illustration and description of who benefits from solar solutions"
+    },
+    "calculator": {
+      "required": true,
+      "customizable": true,
+      "description": "Interactive savings calculator with dropdowns for spend/hours, name/email inputs, and submit button on light blue background"
+    },
+    "projects": {
+      "required": true,
+      "customizable": true,
+      "description": "3-column grid of recent project cards with images, category tags, project names, and locations"
+    },
+    "testimonials": {
+      "required": true,
+      "customizable": true,
+      "description": "Customer testimonials section with quote, author details, and star rating alongside partner logos"
+    },
+    "partners": {
+      "required": false,
+      "customizable": true,
+      "description": "Partner logo grid integrated within the testimonials section layout"
+    },
+    "footer": {
+      "required": true,
+      "customizable": true,
+      "description": "Footer with brand logo, social links, quick links, contact info, copyright, and legal links on light blue background"
+    }
+  },
+  "css_variables": {
+    "--primary-color": {
+      "default": "#0b74d7",
+      "description": "Primary brand color (blue)"
+    },
+    "--secondary-color": {
+      "default": "#ffe82c",
+      "description": "Secondary accent color (yellow) used for CTAs and tags"
+    },
+    "--accent-color": {
+      "default": "#97ca46",
+      "description": "Accent color (green) used for chat button and eco elements"
+    },
+    "--background-color": {
+      "default": "#ffffff",
+      "description": "Page background color"
+    },
+    "--text-color": {
+      "default": "#141313",
+      "description": "Primary text color"
+    },
+    "--text-secondary": {
+      "default": "#676767",
+      "description": "Secondary text color for placeholders and muted text"
+    },
+    "--surface-color": {
+      "default": "#cce9f6",
+      "description": "Light blue surface color for calculator and footer backgrounds"
+    },
+    "--surface-light": {
+      "default": "#e9eaf4",
+      "description": "Light surface tint color"
+    },
+    "--green-tint": {
+      "default": "#d9ebc5",
+      "description": "Green tint for eco-themed backgrounds"
+    },
+    "--font-family": {
+      "default": "'Inter', 'Helvetica Neue', Arial, sans-serif",
+      "description": "Primary font family (Axiforma in original design, Inter as web fallback)"
+    }
+  },
+  "responsive_breakpoints": {
+    "tablet": "1024px",
+    "mobile": "768px",
+    "small_mobile": "480px"
+  }
+}

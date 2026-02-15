@@ -1,0 +1,103 @@
+{
+  "embeddings_count": 19,
+  "model": "amazon.titan-embed-text-v2:0",
+  "dimension": 1024,
+  "generated_at": "2026-02-15T17:05:30.872795Z",
+  "templates": [
+    {
+      "template_id": "healthcare-hasa-nhi-v1",
+      "name": "Healthcare NHI Information Portal",
+      "industry": "healthcare"
+    },
+    {
+      "template_id": "healthcare-hasa-gala-event-v1",
+      "name": "Healthcare Gala Awards Event Page",
+      "industry": "healthcare"
+    },
+    {
+      "template_id": "healthcare-hasa-main-site-v1",
+      "name": "Healthcare Association Corporate Website",
+      "industry": "healthcare"
+    },
+    {
+      "template_id": "healthcare-hasa-conference-newsletter-v1",
+      "name": "HASA Conference Newsletter Email Template",
+      "industry": "healthcare"
+    },
+    {
+      "template_id": "technology-bbws-ai-page-builder-v1",
+      "name": "BBWS AI Page Builder Landing Page",
+      "industry": "technology"
+    },
+    {
+      "template_id": "technology-chirrup-v1",
+      "name": "Chirrup SaaS Product Landing Page",
+      "industry": "technology"
+    },
+    {
+      "template_id": "education-capaciti-phase1-v1",
+      "name": "Education Skills Development Landing Page (Phase 1)",
+      "industry": "education"
+    },
+    {
+      "template_id": "education-capaciti-blog-option-1-v1",
+      "name": "Education Blog Listing - Grid Layout",
+      "industry": "education"
+    },
+    {
+      "template_id": "education-capaciti-landing-page-v1",
+      "name": "Education Skills Development Landing Page",
+      "industry": "education"
+    },
+    {
+      "template_id": "education-capaciti-blog-option-2-v1",
+      "name": "Education Blog Listing - Card Layout",
+      "industry": "education"
+    },
+    {
+      "template_id": "nonprofit-amandla-omoya-trust-v1",
+      "name": "Nonprofit Trust Organization Website",
+      "industry": "nonprofit"
+    },
+    {
+      "template_id": "nonprofit-sibona-ilanga-trust-v1",
+      "name": "Nonprofit Community Trust Website",
+      "industry": "nonprofit"
+    },
+    {
+      "template_id": "nonprofit-letsatsi-borutho-trust-v1",
+      "name": "Nonprofit Community Trust Website",
+      "industry": "nonprofit"
+    },
+    {
+      "template_id": "hospitality-experience-madikwe-v1",
+      "name": "Safari Lodge Experience Website",
+      "industry": "hospitality"
+    },
+    {
+      "template_id": "finance-denker-website-v1",
+      "name": "Finance Investment Company Website",
+      "industry": "finance"
+    },
+    {
+      "template_id": "manufacturing-fuse-factory-v1",
+      "name": "Manufacturing Creative Factory Website",
+      "industry": "manufacturing"
+    },
+    {
+      "template_id": "manufacturing-forgeweld-v1",
+      "name": "Manufacturing Industrial Company Website",
+      "industry": "manufacturing"
+    },
+    {
+      "template_id": "energy-sosimple-v1",
+      "name": "Solar Energy Solutions Website",
+      "industry": "energy"
+    },
+    {
+      "template_id": "marketing-metis-v1",
+      "name": "Digital Marketing Agency Website",
+      "industry": "marketing"
+    }
+  ]
+}

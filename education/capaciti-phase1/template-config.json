@@ -1,0 +1,486 @@
+{
+  "template_id": "education-capaciti-phase1-v1",
+  "name": "Education Skills Development Landing Page (Phase 1)",
+  "placeholders": {
+    "{{BUSINESS_NAME}}": {
+      "default": "SkillsAcademy",
+      "description": "Your organization or brand name",
+      "required": true
+    },
+    "{{TAGLINE}}": {
+      "default": "We develop skills, shift mindsets, and build systems for inclusive growth across the continent.",
+      "description": "Footer tagline describing the organization mission",
+      "required": true
+    },
+    "{{HERO_HEADLINE}}": {
+      "default": "Your Path.<br>Our Purpose.<br>Empowered Together.",
+      "description": "Main hero headline (supports <br> for line breaks)",
+      "required": true
+    },
+    "{{PRIMARY_CTA}}": {
+      "default": "Contact Us",
+      "description": "Primary call-to-action button text in navigation",
+      "required": true
+    },
+    "{{SECONDARY_CTA}}": {
+      "default": "LEARN MORE",
+      "description": "Secondary CTA text on solution cards",
+      "required": true
+    },
+    "{{EMAIL}}": {
+      "default": "hello@example.com",
+      "description": "Contact email address",
+      "required": true
+    },
+    "{{YEAR}}": {
+      "default": "2026",
+      "description": "Copyright year",
+      "required": false
+    },
+    "{{NAV_LINK_1}}": {
+      "default": "Our Offering",
+      "description": "First navigation link text",
+      "required": true
+    },
+    "{{NAV_LINK_2}}": {
+      "default": "Our Impact",
+      "description": "Second navigation link text",
+      "required": true
+    },
+    "{{NAV_LINK_3}}": {
+      "default": "Get To Know Us",
+      "description": "Third navigation link text",
+      "required": true
+    },
+    "{{NAV_LINK_4}}": {
+      "default": "Blog",
+      "description": "Fourth navigation link text",
+      "required": true
+    },
+    "{{SECTION_DRIVE_TITLE}}": {
+      "default": "How We Drive Change",
+      "description": "Title for the solutions/drive change section",
+      "required": true
+    },
+    "{{SECTION_DRIVE_DESCRIPTION}}": {
+      "default": "We empower individuals, advise industry, and drive systemic change through innovative programmes, strategic partnerships, and community-driven initiatives that develop talent for inclusive economic growth.",
+      "description": "Description paragraph below the drive change section title",
+      "required": true
+    },
+    "{{SOLUTION_1_TITLE}}": {
+      "default": "Skills Development",
+      "description": "First solution card title",
+      "required": true
+    },
+    "{{SOLUTION_2_TITLE}}": {
+      "default": "Skills Innovation",
+      "description": "Second solution card title",
+      "required": true
+    },
+    "{{SOLUTION_3_TITLE}}": {
+      "default": "Strategic Advisory",
+      "description": "Third solution card title",
+      "required": true
+    },
+    "{{SOLUTION_4_TITLE}}": {
+      "default": "Outsource & Freelance Gig Support",
+      "description": "Fourth solution card title",
+      "required": true
+    },
+    "{{SECTION_IMPACT_TITLE}}": {
+      "default": "Where We're Making a Difference",
+      "description": "Title for impact/statistics section",
+      "required": true
+    },
+    "{{SECTION_IMPACT_DESCRIPTION}}": {
+      "default": "Since launching our first cohort, we've rapidly evolved our approach to redefining talent. Today, we empower individuals, advise industry, and drive systemic change — all to build a future-ready workforce that fuels inclusive economic growth.",
+      "description": "Description paragraph in impact section",
+      "required": true
+    },
+    "{{IMPACT_CTA}}": {
+      "default": "Let's Partner",
+      "description": "CTA button text in the impact stats section",
+      "required": true
+    },
+    "{{STAT_1_VALUE}}": {
+      "default": "6,500+",
+      "description": "First statistic value",
+      "required": true
+    },
+    "{{STAT_1_LABEL}}": {
+      "default": "youth trained in digital & career critical skills",
+      "description": "First statistic label",
+      "required": true
+    },
+    "{{STAT_2_VALUE}}": {
+      "default": "8,000+",
+      "description": "Second statistic value",
+      "required": true
+    },
+    "{{STAT_2_LABEL}}": {
+      "default": "job opportunities created",
+      "description": "Second statistic label",
+      "required": true
+    },
+    "{{STAT_3_VALUE}}": {
+      "default": "R460m+",
+      "description": "Third statistic value",
+      "required": true
+    },
+    "{{STAT_3_LABEL}}": {
+      "default": "in salaries earned and stipends paid",
+      "description": "Third statistic label",
+      "required": true
+    },
+    "{{STAT_4_VALUE}}": {
+      "default": "1000+",
+      "description": "Fourth statistic value",
+      "required": true
+    },
+    "{{STAT_4_LABEL}}": {
+      "default": "business partners in our network",
+      "description": "Fourth statistic label",
+      "required": true
+    },
+    "{{STAT_5_VALUE}}": {
+      "default": "67%",
+      "description": "Fifth statistic value",
+      "required": true
+    },
+    "{{STAT_5_LABEL}}": {
+      "default": "of candidates are female",
+      "description": "Fifth statistic label",
+      "required": true
+    },
+    "{{STAT_6_VALUE}}": {
+      "default": "5000+",
+      "description": "Sixth statistic value",
+      "required": true
+    },
+    "{{STAT_6_LABEL}}": {
+      "default": "micro-credentials unlocked annually",
+      "description": "Sixth statistic label",
+      "required": true
+    },
+    "{{SECTION_TIMELINE_TITLE}}": {
+      "default": "15 Years of Innovation & Impact",
+      "description": "Title for timeline section",
+      "required": true
+    },
+    "{{TIMELINE_1_YEAR}}": {
+      "default": "2011",
+      "description": "First timeline year",
+      "required": false
+    },
+    "{{TIMELINE_2_YEAR}}": {
+      "default": "2015",
+      "description": "Second timeline year",
+      "required": false
+    },
+    "{{TIMELINE_CENTER_YEAR}}": {
+      "default": "2016",
+      "description": "Center (featured) timeline year",
+      "required": false
+    },
+    "{{TIMELINE_4_YEAR}}": {
+      "default": "2023",
+      "description": "Fourth timeline year",
+      "required": false
+    },
+    "{{TIMELINE_5_YEAR}}": {
+      "default": "2024",
+      "description": "Fifth timeline year",
+      "required": false
+    },
+    "{{TIMELINE_6_YEAR}}": {
+      "default": "2025",
+      "description": "Sixth timeline year",
+      "required": false
+    },
+    "{{TIMELINE_DESC_LEFT}}": {
+      "default": "Launched its first Tech Accelerator, expanding its geographical footprint",
+      "description": "Left timeline description",
+      "required": false
+    },
+    "{{TIMELINE_DESC_RIGHT}}": {
+      "default": "Ongoing impact: 6,500 youth trained, achieving 90% placement rate",
+      "description": "Right timeline description",
+      "required": false
+    },
+    "{{SECTION_STORIES_TITLE}}": {
+      "default": "Success Stories",
+      "description": "Title for testimonials section",
+      "required": true
+    },
+    "{{TESTIMONIAL_1_NAME}}": {
+      "default": "Jane Smith",
+      "description": "First testimonial person name",
+      "required": true
+    },
+    "{{TESTIMONIAL_1_ROLE}}": {
+      "default": "Graduate Development Manager",
+      "description": "First testimonial person role/title",
+      "required": true
+    },
+    "{{TESTIMONIAL_1_QUOTE}}": {
+      "default": "I highly recommend this program to other organizations seeking to empower young people through tried and tested bridging programmes...",
+      "description": "First testimonial quote text",
+      "required": true
+    },
+    "{{TESTIMONIAL_2_NAME}}": {
+      "default": "John Doe",
+      "description": "Second testimonial person name",
+      "required": true
+    },
+    "{{TESTIMONIAL_2_ROLE}}": {
+      "default": "Cloud Associate",
+      "description": "Second testimonial person role/title",
+      "required": true
+    },
+    "{{TESTIMONIAL_2_QUOTE}}": {
+      "default": "This program may be one of the greatest things to happen to me. It's giving me support and a platform to challenge myself so that I can grow.",
+      "description": "Second testimonial quote text",
+      "required": true
+    },
+    "{{SECTION_ABOUT_TITLE}}": {
+      "default": "Get To Know Us",
+      "description": "Title for about section",
+      "required": true
+    },
+    "{{SECTION_ABOUT_DESCRIPTION}}": {
+      "default": "We are building Africa's premium future-ready workforce. Through innovative programmes, strategic partnerships, and community-driven initiatives, we develop talent that drives inclusive economic growth across the continent.",
+      "description": "About section description paragraph",
+      "required": true
+    },
+    "{{SECTION_VISIONARY_TITLE}}": {
+      "default": "Our Visionary Partners",
+      "description": "Title for visionary partners section",
+      "required": true
+    },
+    "{{SECTION_COMMUNITY_TITLE}}": {
+      "default": "Join Our Community",
+      "description": "Title for community/newsletter signup section",
+      "required": true
+    },
+    "{{COMMUNITY_CTA}}": {
+      "default": "Sign Me Up!",
+      "description": "Community signup button text",
+      "required": true
+    },
+    "{{LOCATION_1}}": {
+      "default": "Cape Town",
+      "description": "First office location",
+      "required": false
+    },
+    "{{LOCATION_2}}": {
+      "default": "Johannesburg",
+      "description": "Second office location",
+      "required": false
+    },
+    "{{LOCATION_3}}": {
+      "default": "Gqeberha",
+      "description": "Third office location",
+      "required": false
+    },
+    "{{LOCATION_4}}": {
+      "default": "Hazyview",
+      "description": "Fourth office location",
+      "required": false
+    }
+  },
+  "image_slots": [
+    {
+      "selector": ".hero-bg-img",
+      "property": "src",
+      "path": "images/hero-bg.png",
+      "keywords": ["hero", "education", "tech", "motion graphics"],
+      "aspect_ratio": "16:9",
+      "min_width": 1920
+    },
+    {
+      "selector": ".logo-img",
+      "property": "src",
+      "path": "images/logo.png",
+      "keywords": ["logo", "brand"],
+      "aspect_ratio": "auto",
+      "min_width": 200
+    },
+    {
+      "selector": ".footer-logo img",
+      "property": "src",
+      "path": "images/footer-logo.png",
+      "keywords": ["logo", "brand", "footer"],
+      "aspect_ratio": "auto",
+      "min_width": 200
+    },
+    {
+      "selector": ".solution-card:nth-child(1) .solution-bg",
+      "property": "src",
+      "path": "images/solution-1.png",
+      "keywords": ["skills", "development", "training"],
+      "aspect_ratio": "auto",
+      "min_width": 400
+    },
+    {
+      "selector": ".solution-card:nth-child(2) .solution-bg",
+      "property": "src",
+      "path": "images/solution-2.png",
+      "keywords": ["innovation", "technology", "digital"],
+      "aspect_ratio": "auto",
+      "min_width": 400
+    },
+    {
+      "selector": ".solution-card:nth-child(3) .solution-bg",
+      "property": "src",
+      "path": "images/solution-3.png",
+      "keywords": ["advisory", "strategy", "consulting"],
+      "aspect_ratio": "auto",
+      "min_width": 400
+    },
+    {
+      "selector": ".solution-card:nth-child(4) .solution-bg",
+      "property": "src",
+      "path": "images/solution-4.png",
+      "keywords": ["outsource", "freelance", "gig work"],
+      "aspect_ratio": "auto",
+      "min_width": 400
+    },
+    {
+      "selector": ".impact-visual",
+      "property": "src",
+      "path": "images/impact-person.png",
+      "keywords": ["impact", "person", "featured"],
+      "aspect_ratio": "auto",
+      "min_width": 400
+    },
+    {
+      "selector": ".about-img:nth-child(1) img",
+      "property": "src",
+      "path": "images/about-1.png",
+      "keywords": ["team", "group", "community"],
+      "aspect_ratio": "1:1",
+      "min_width": 300
+    },
+    {
+      "selector": ".about-img:nth-child(2) img",
+      "property": "src",
+      "path": "images/about-2.png",
+      "keywords": ["community", "event", "gathering"],
+      "aspect_ratio": "1:1",
+      "min_width": 300
+    },
+    {
+      "selector": ".about-img:nth-child(3) img",
+      "property": "src",
+      "path": "images/about-3.png",
+      "keywords": ["youth", "student", "learning"],
+      "aspect_ratio": "1:1",
+      "min_width": 300
+    },
+    {
+      "selector": ".about-img:nth-child(4) img",
+      "property": "src",
+      "path": "images/about-4.png",
+      "keywords": ["group", "team", "collaboration"],
+      "aspect_ratio": "1:1",
+      "min_width": 300
+    },
+    {
+      "selector": ".testimonial-card:nth-child(1) .testimonial-avatar img",
+      "property": "src",
+      "path": "images/testimonial-1.png",
+      "keywords": ["person", "testimonial", "portrait"],
+      "aspect_ratio": "1:1",
+      "min_width": 200
+    },
+    {
+      "selector": ".testimonial-card:nth-child(2) .testimonial-avatar img",
+      "property": "src",
+      "path": "images/testimonial-2.png",
+      "keywords": ["person", "testimonial", "portrait"],
+      "aspect_ratio": "1:1",
+      "min_width": 200
+    }
+  ],
+  "sections": {
+    "hero": {
+      "required": true,
+      "customizable": true,
+      "description": "Full-height hero with background image and headline"
+    },
+    "how-we-drive-change": {
+      "required": true,
+      "customizable": true,
+      "description": "Section title and description with 4 solution cards featuring background images, titles, and learn more CTAs"
+    },
+    "impact-stats": {
+      "required": true,
+      "customizable": true,
+      "description": "Dark gradient background with 6 statistics, description, person image, and partner CTA button"
+    },
+    "timeline": {
+      "required": false,
+      "customizable": true,
+      "description": "Horizontal timeline with 6 year nodes (one featured center) and descriptions"
+    },
+    "success-stories": {
+      "required": true,
+      "customizable": true,
+      "description": "Testimonial cards on red background with tilted layout"
+    },
+    "get-to-know-us": {
+      "required": true,
+      "customizable": true,
+      "description": "About section with 4-column image grid"
+    },
+    "visionary-partners": {
+      "required": false,
+      "customizable": true,
+      "description": "Partner logos in centered row"
+    },
+    "join-community": {
+      "required": true,
+      "customizable": true,
+      "description": "Email newsletter signup on red background"
+    },
+    "footer": {
+      "required": true,
+      "customizable": true,
+      "description": "Dark navy footer with logo, social links, quick links, locations, and copyright"
+    }
+  },
+  "css_variables": {
+    "--primary-color": {
+      "default": "#1d2951",
+      "description": "Primary brand color (navy)"
+    },
+    "--secondary-color": {
+      "default": "#f25251",
+      "description": "Secondary brand color (red/salmon)"
+    },
+    "--accent-color": {
+      "default": "#6115d0",
+      "description": "Accent color (purple)"
+    },
+    "--surface-color": {
+      "default": "#ffffff",
+      "description": "Surface/card background color"
+    },
+    "--text-color": {
+      "default": "#000000",
+      "description": "Primary text color"
+    },
+    "--background-color": {
+      "default": "#fafafa",
+      "description": "Page background color"
+    },
+    "--gradient": {
+      "default": "linear-gradient(257.69deg, rgb(31, 31, 120) 11.94%, rgb(21, 21, 73) 53.91%, rgb(5, 4, 7) 99.17%)",
+      "description": "Dark gradient for impact section background"
+    }
+  },
+  "responsive_breakpoints": {
+    "tablet": "1024px",
+    "mobile": "768px"
+  }
+}

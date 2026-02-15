@@ -81,11 +81,11 @@ jobs:
           echo "environment=${ENV}" >> $GITHUB_OUTPUT
 
           # Set bucket and IAM role based on environment
-          # Each environment uses a different AWS account
+          # Account IDs: DEV=536580886816, SIT=815856636111, PROD=093646564004
           case $ENV in
             prod)
               echo "s3_bucket=bbws-templates-prod" >> $GITHUB_OUTPUT
-              echo "iam_role=arn:aws:iam::815856636111:role/github-actions-bigbeard-templates-prod" >> $GITHUB_OUTPUT
+              echo "iam_role=arn:aws:iam::093646564004:role/github-actions-bigbeard-templates-prod" >> $GITHUB_OUTPUT
               ;;
             sit)
               echo "s3_bucket=bbws-templates-sit" >> $GITHUB_OUTPUT

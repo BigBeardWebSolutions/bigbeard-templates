@@ -1,0 +1,603 @@
+/* ============================================
+   HASA Conference Newsletter - Email Template CSS
+   ============================================
+   Design Tokens / CSS Custom Properties
+   Email-compatible styles with web fallbacks
+   ============================================ */
+
+:root {
+    /* Brand Colors */
+    --primary-color: #3c3c3c;
+    --secondary-color: #ee3524;
+    --accent-color: #c42837;
+    --background-color: #ffffff;
+    --surface-color: #efefef;
+    --text-color: #3c3c3c;
+
+    /* Typography */
+    --font-family: Arial, Helvetica, sans-serif;
+    --font-size-base: 15px;
+    --font-size-sm: 13px;
+    --font-size-xs: 11px;
+    --font-size-lg: 18px;
+    --font-size-xl: 22px;
+    --font-size-2xl: 26px;
+    --font-size-hero: 28px;
+    --line-height-base: 1.7;
+    --line-height-heading: 1.2;
+
+    /* Spacing */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-2xl: 40px;
+    --spacing-3xl: 48px;
+
+    /* Layout */
+    --email-width: 680px;
+    --border-radius: 4px;
+    --border-radius-lg: 6px;
+    --border-radius-xl: 8px;
+}
+
+/* ============================================
+   BASE / RESET
+   ============================================ */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #f4f4f4;
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    color: var(--text-color);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+    border: 0;
+    height: auto;
+    line-height: 100%;
+    outline: none;
+    text-decoration: none;
+    max-width: 100%;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+a:hover {
+    opacity: 0.85;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td {
+    vertical-align: top;
+}
+
+/* ============================================
+   EMAIL CONTAINER
+   ============================================ */
+
+.email-container {
+    max-width: var(--email-width);
+    width: 100%;
+    background-color: var(--background-color);
+    margin: 0 auto;
+}
+
+/* ============================================
+   HEADER / NAVIGATION
+   ============================================ */
+
+.header nav a {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 0 8px;
+    transition: color 0.2s ease;
+}
+
+.header nav a:hover {
+    color: var(--secondary-color);
+}
+
+.logo-img {
+    display: block;
+    width: 150px;
+    height: auto;
+}
+
+/* ============================================
+   HERO BANNER
+   ============================================ */
+
+.hero-section {
+    position: relative;
+}
+
+.hero-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-banner-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 60%, transparent 100%);
+    padding: 40px 32px 32px;
+}
+
+.hero-overlay h1 {
+    font-family: var(--font-family);
+    font-size: var(--font-size-hero);
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 4px;
+    line-height: var(--line-height-heading);
+}
+
+.hero-overlay p {
+    font-family: var(--font-family);
+    color: #ffffff;
+    margin: 0 0 4px;
+}
+
+/* ============================================
+   BUTTONS
+   ============================================ */
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: #ffffff !important;
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 12px 32px;
+    border-radius: var(--border-radius);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #d42e1e;
+    transform: translateY(-1px);
+    opacity: 1;
+}
+
+.btn-abstract {
+    display: inline-block;
+    background-color: #ffffff;
+    color: var(--accent-color) !important;
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 12px 32px;
+    border-radius: var(--border-radius);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-abstract:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-1px);
+    opacity: 1;
+}
+
+/* ============================================
+   INTRO SECTION
+   ============================================ */
+
+.intro-section p {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    color: var(--text-color);
+    margin: 0;
+}
+
+/* ============================================
+   CALL FOR ABSTRACTS SECTION
+   ============================================ */
+
+.abstracts-section {
+    position: relative;
+}
+
+.abstracts-section table {
+    background-color: var(--accent-color);
+}
+
+.abstracts-watermark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.08;
+    pointer-events: none;
+}
+
+.abstracts-watermark img {
+    width: 300px;
+    height: auto;
+}
+
+.abstracts-section h2 {
+    font-family: var(--font-family);
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ============================================
+   DELEGATE SECTION
+   ============================================ */
+
+.delegate-section {
+    background-color: var(--surface-color);
+}
+
+.delegate-section h2 {
+    font-family: var(--font-family);
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 0 0 16px;
+    line-height: 1.3;
+}
+
+.delegate-section p {
+    font-family: var(--font-family);
+    font-size: 14px;
+    line-height: var(--line-height-base);
+    color: var(--primary-color);
+    margin: 0 0 24px;
+}
+
+.delegate-img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: var(--border-radius-lg);
+}
+
+/* ============================================
+   EXHIBITION SECTION
+   ============================================ */
+
+.exhibition-section {
+    background-color: var(--background-color);
+}
+
+.exhibition-section h2 {
+    font-family: var(--font-family);
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 0 0 16px;
+    line-height: 1.3;
+}
+
+.exhibition-section p {
+    font-family: var(--font-family);
+    font-size: 14px;
+    line-height: var(--line-height-base);
+    color: var(--primary-color);
+    margin: 0 0 24px;
+}
+
+.exhibition-img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: var(--border-radius-lg);
+}
+
+/* ============================================
+   VIDEO HIGHLIGHTS SECTION
+   ============================================ */
+
+.video-section {
+    background-color: var(--surface-color);
+}
+
+.video-section h2 {
+    font-family: var(--font-family);
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 0 0 4px;
+}
+
+.video-section p {
+    font-family: var(--font-family);
+    font-size: 14px;
+    color: var(--primary-color);
+    margin: 0 0 24px;
+}
+
+.video-thumbnail-wrapper {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.video-thumbnail-img {
+    display: block;
+    width: 100%;
+    max-width: 616px;
+    height: auto;
+    border-radius: var(--border-radius-xl);
+}
+
+.play-btn-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.2s ease;
+}
+
+.video-thumbnail-wrapper a:hover .play-btn-overlay {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.play-btn-overlay img {
+    width: 64px;
+    height: auto;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+}
+
+/* ============================================
+   WELCOME / CLOSING SECTION
+   ============================================ */
+
+.welcome-section {
+    background-color: var(--background-color);
+}
+
+.welcome-section h2 {
+    font-family: var(--font-family);
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 0 0 16px;
+    line-height: 1.3;
+}
+
+.welcome-section p {
+    font-family: var(--font-family);
+    font-size: 14px;
+    line-height: var(--line-height-base);
+    color: var(--primary-color);
+    margin: 0 0 24px;
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ============================================
+   SECRETARIAT SECTION
+   ============================================ */
+
+.secretariat-section {
+    background-color: var(--surface-color);
+}
+
+.secretariat-section h3 {
+    font-family: var(--font-family);
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 0 0 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.secretariat-section a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.secretariat-section a:hover {
+    text-decoration: underline;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+.email-footer table {
+    background-color: var(--primary-color);
+}
+
+.email-footer p {
+    font-family: var(--font-family);
+    margin: 0 0 8px;
+}
+
+.email-footer a {
+    color: #999999;
+    text-decoration: underline;
+}
+
+.email-footer a:hover {
+    color: #cccccc;
+}
+
+/* ============================================
+   RESPONSIVE STYLES
+   ============================================ */
+
+@media screen and (max-width: 680px) {
+    .email-container {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .hero-overlay {
+        padding: 24px 20px 20px !important;
+    }
+
+    .hero-overlay h1 {
+        font-size: 22px !important;
+    }
+
+    .hero-overlay p {
+        font-size: 13px !important;
+    }
+
+    /* Stack two-column layouts */
+    .stack-column {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .delegate-img,
+    .exhibition-img {
+        max-width: 100% !important;
+        margin-top: 16px;
+    }
+
+    /* Hide desktop nav links on mobile */
+    td[align="right"] a {
+        display: inline-block;
+        padding: 4px 6px !important;
+        font-size: 10px !important;
+    }
+
+    .logo-img {
+        width: 120px !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-overlay h1 {
+        font-size: 18px !important;
+    }
+
+    .hero-overlay {
+        padding: 16px !important;
+    }
+
+    .btn-primary,
+    .btn-abstract {
+        display: block !important;
+        text-align: center !important;
+        padding: 14px 24px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    td[style*="padding: 40px 32px"],
+    td[style*="padding: 36px 32px"],
+    td[style*="padding: 32px"],
+    td[style*="padding: 48px 32px"] {
+        padding: 24px 16px !important;
+    }
+
+    .abstracts-section h2 {
+        font-size: 20px !important;
+    }
+
+    .delegate-section h2,
+    .exhibition-section h2,
+    .video-section h2,
+    .welcome-section h2 {
+        font-size: 18px !important;
+    }
+
+    .video-thumbnail-img {
+        border-radius: 4px !important;
+    }
+
+    .play-btn-overlay img {
+        width: 48px !important;
+    }
+}
+
+/* ============================================
+   DARK MODE SUPPORT (email clients that support it)
+   ============================================ */
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a !important;
+    }
+
+    .email-container {
+        background-color: #2a2a2a !important;
+    }
+
+    .intro-section p,
+    .delegate-section h2,
+    .delegate-section p,
+    .exhibition-section h2,
+    .exhibition-section p,
+    .video-section h2,
+    .video-section p,
+    .welcome-section h2,
+    .welcome-section p,
+    .secretariat-section h3 {
+        color: #e0e0e0 !important;
+    }
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+
+@media print {
+    body {
+        background-color: #ffffff !important;
+    }
+
+    .btn-primary,
+    .btn-abstract {
+        border: 2px solid var(--secondary-color) !important;
+        color: var(--secondary-color) !important;
+        background-color: transparent !important;
+    }
+}

@@ -1,0 +1,520 @@
+{
+  "template_id": "hospitality-experience-madikwe-v1",
+  "name": "Safari Lodge Experience Website",
+  "placeholders": {
+    "{{BUSINESS_NAME}}": {
+      "default": "Experience Madikwe",
+      "description": "Business or lodge brand name",
+      "required": true
+    },
+    "{{TAGLINE}}": {
+      "default": "Luxury Safari Lodge in the Heart of Madikwe Game Reserve",
+      "description": "Short tagline describing the lodge or experience",
+      "required": true
+    },
+    "{{HERO_HEADLINE}}": {
+      "default": "Where the Wild Meets Luxury",
+      "description": "Main hero banner headline",
+      "required": true
+    },
+    "{{HERO_DESCRIPTION}}": {
+      "default": "Discover an unforgettable African safari experience at Madikwe Game Reserve, where world-class luxury meets pristine wilderness.",
+      "description": "Hero section supporting description text",
+      "required": true
+    },
+    "{{HERO_IMAGE_ALT}}": {
+      "default": "Madikwe Game Reserve landscape at sunset",
+      "description": "Alt text for the hero background image",
+      "required": false
+    },
+    "{{PRIMARY_CTA}}": {
+      "default": "Book Your Stay",
+      "description": "Primary call-to-action button text",
+      "required": true
+    },
+    "{{SECONDARY_CTA}}": {
+      "default": "Explore Lodges",
+      "description": "Secondary call-to-action button text",
+      "required": true
+    },
+    "{{NAV_LINK_1}}": {
+      "default": "About",
+      "description": "First navigation link label",
+      "required": true
+    },
+    "{{NAV_LINK_2}}": {
+      "default": "Lodges",
+      "description": "Second navigation link label",
+      "required": true
+    },
+    "{{NAV_LINK_3}}": {
+      "default": "Experiences",
+      "description": "Third navigation link label",
+      "required": true
+    },
+    "{{NAV_LINK_4}}": {
+      "default": "Getting Here",
+      "description": "Fourth navigation link label",
+      "required": true
+    },
+    "{{NAV_LINK_5}}": {
+      "default": "Contact",
+      "description": "Fifth navigation link label",
+      "required": true
+    },
+    "{{ABOUT_TITLE}}": {
+      "default": "A Place of Natural Wonder",
+      "description": "About section heading",
+      "required": true
+    },
+    "{{ABOUT_DESCRIPTION}}": {
+      "default": "Nestled within the magnificent Madikwe Game Reserve, our collection of luxury lodges offers an authentic African safari experience that balances adventure with indulgence.",
+      "description": "About section first paragraph",
+      "required": true
+    },
+    "{{ABOUT_DESCRIPTION_2}}": {
+      "default": "Home to the Big Five and over 350 bird species, Madikwe is one of South Africa's most exclusive and malaria-free safari destinations. Our lodges are designed to immerse you in the natural splendour of the bush while providing every modern comfort.",
+      "description": "About section second paragraph",
+      "required": false
+    },
+    "{{ABOUT_IMAGE_ALT}}": {
+      "default": "Elephants at a watering hole in Madikwe Game Reserve",
+      "description": "Alt text for the about section image",
+      "required": false
+    },
+    "{{STAT_1_LABEL}}": {
+      "default": "Game Drives",
+      "description": "Label for stat/experience icon 1 (safari icon)",
+      "required": true
+    },
+    "{{STAT_2_LABEL}}": {
+      "default": "Luxury Suites",
+      "description": "Label for stat/experience icon 2 (bed icon)",
+      "required": true
+    },
+    "{{STAT_3_LABEL}}": {
+      "default": "350+ Bird Species",
+      "description": "Label for stat/experience icon 3 (bird icon)",
+      "required": true
+    },
+    "{{STAT_4_LABEL}}": {
+      "default": "75,000 Hectares",
+      "description": "Label for stat/experience icon 4 (landscape icon)",
+      "required": true
+    },
+    "{{STAT_5_LABEL}}": {
+      "default": "Airport Transfers",
+      "description": "Label for stat/experience icon 5 (car icon)",
+      "required": true
+    },
+    "{{LODGES_TITLE}}": {
+      "default": "Our Lodges",
+      "description": "Lodges section heading",
+      "required": true
+    },
+    "{{LODGES_DESCRIPTION}}": {
+      "default": "Choose from nine exceptional lodges, each offering a unique perspective of Madikwe's untamed beauty with unparalleled hospitality and personalised service.",
+      "description": "Lodges section description text",
+      "required": true
+    },
+    "{{LODGE_1_NAME}}": {
+      "default": "Kopano Lodge",
+      "description": "Name of lodge 1",
+      "required": true
+    },
+    "{{LODGE_2_NAME}}": {
+      "default": "Molori Safari Lodge",
+      "description": "Name of lodge 2",
+      "required": true
+    },
+    "{{LODGE_3_NAME}}": {
+      "default": "Jamala Madikwe",
+      "description": "Name of lodge 3",
+      "required": true
+    },
+    "{{LODGE_4_NAME}}": {
+      "default": "Morukuru Family",
+      "description": "Name of lodge 4",
+      "required": true
+    },
+    "{{LODGE_5_NAME}}": {
+      "default": "Madikwe Hills",
+      "description": "Name of lodge 5",
+      "required": true
+    },
+    "{{LODGE_6_NAME}}": {
+      "default": "Impodimo Game Lodge",
+      "description": "Name of lodge 6",
+      "required": true
+    },
+    "{{LODGE_7_NAME}}": {
+      "default": "Tuningi Safari Lodge",
+      "description": "Name of lodge 7",
+      "required": true
+    },
+    "{{LODGE_8_NAME}}": {
+      "default": "Sanctuary Makanyane",
+      "description": "Name of lodge 8",
+      "required": true
+    },
+    "{{LODGE_9_NAME}}": {
+      "default": "Buffalo Ridge Safari Lodge",
+      "description": "Name of lodge 9",
+      "required": true
+    },
+    "{{LODGES_CTA}}": {
+      "default": "View All Lodges",
+      "description": "Button text below the lodges grid",
+      "required": false
+    },
+    "{{DIRECTIONS_TITLE}}": {
+      "default": "Getting Here",
+      "description": "Directions section heading",
+      "required": true
+    },
+    "{{DIRECTIONS_DESCRIPTION}}": {
+      "default": "Madikwe Game Reserve is easily accessible by road from Johannesburg (4 hours) or by a short charter flight to the reserve airstrip.",
+      "description": "Directions section description",
+      "required": true
+    },
+    "{{DIRECTIONS_CTA}}": {
+      "default": "Plan Your Journey",
+      "description": "Directions section CTA button text",
+      "required": false
+    },
+    "{{PHONE}}": {
+      "default": "+27 18 350 9000",
+      "description": "Contact phone number",
+      "required": true
+    },
+    "{{EMAIL}}": {
+      "default": "reservations@experiencemadikwe.co.za",
+      "description": "Contact email address",
+      "required": true
+    },
+    "{{ADDRESS}}": {
+      "default": "Madikwe Game Reserve, North West Province, South Africa",
+      "description": "Physical address or location",
+      "required": false
+    },
+    "{{FOOTER_CONTACT_LABEL}}": {
+      "default": "Contact Us",
+      "description": "Label above the footer contact info",
+      "required": false
+    },
+    "{{FOOTER_COL_2_TITLE}}": {
+      "default": "Quick Links",
+      "description": "Footer column 2 heading",
+      "required": false
+    },
+    "{{FOOTER_COL_3_TITLE}}": {
+      "default": "Explore",
+      "description": "Footer column 3 heading",
+      "required": false
+    },
+    "{{FOOTER_LINK_1}}": {
+      "default": "Reservations",
+      "description": "Footer explore link 1",
+      "required": false
+    },
+    "{{FOOTER_LINK_2}}": {
+      "default": "Gallery",
+      "description": "Footer explore link 2",
+      "required": false
+    },
+    "{{FOOTER_LINK_3}}": {
+      "default": "Specials",
+      "description": "Footer explore link 3",
+      "required": false
+    },
+    "{{FOOTER_LINK_4}}": {
+      "default": "Conservation",
+      "description": "Footer explore link 4",
+      "required": false
+    },
+    "{{FOOTER_COPYRIGHT}}": {
+      "default": "All rights reserved.",
+      "description": "Copyright text following the business name",
+      "required": false
+    },
+    "{{FOOTER_LEGAL_1}}": {
+      "default": "Privacy Policy",
+      "description": "First legal link text",
+      "required": false
+    },
+    "{{FOOTER_LEGAL_2}}": {
+      "default": "Terms & Conditions",
+      "description": "Second legal link text",
+      "required": false
+    },
+    "{{SOCIAL_YOUTUBE}}": {
+      "default": "https://youtube.com",
+      "description": "YouTube channel URL",
+      "required": false
+    },
+    "{{SOCIAL_INSTAGRAM}}": {
+      "default": "https://instagram.com",
+      "description": "Instagram profile URL",
+      "required": false
+    },
+    "{{SOCIAL_FACEBOOK}}": {
+      "default": "https://facebook.com",
+      "description": "Facebook page URL",
+      "required": false
+    },
+    "{{YEAR}}": {
+      "default": "2026",
+      "description": "Copyright year",
+      "required": false
+    }
+  },
+  "image_slots": [
+    {
+      "selector": ".hero-bg img",
+      "property": "src",
+      "path": "images/hero-bg.jpg",
+      "keywords": ["hero", "safari", "landscape", "sunset", "nature", "background"],
+      "aspect_ratio": "16:9",
+      "min_width": 1920
+    },
+    {
+      "selector": ".hero-overlay img",
+      "property": "src",
+      "path": "images/hero-overlay.png",
+      "keywords": ["overlay", "gradient", "decorative"],
+      "aspect_ratio": "16:9",
+      "min_width": 1920
+    },
+    {
+      "selector": ".header-logo img",
+      "property": "src",
+      "path": "images/logo.png",
+      "keywords": ["logo", "brand", "safari"],
+      "aspect_ratio": "auto",
+      "min_width": 200
+    },
+    {
+      "selector": ".about-image img",
+      "property": "src",
+      "path": "images/about-elephants.jpg",
+      "keywords": ["elephants", "wildlife", "nature", "about", "safari"],
+      "aspect_ratio": "4:3",
+      "min_width": 800
+    },
+    {
+      "selector": ".stat-item:nth-child(1) .stat-icon img:last-child",
+      "property": "src",
+      "path": "images/icon-safari.png",
+      "keywords": ["safari", "binoculars", "icon", "game drive"],
+      "aspect_ratio": "1:1",
+      "min_width": 66
+    },
+    {
+      "selector": ".stat-item:nth-child(2) .stat-icon img:last-child",
+      "property": "src",
+      "path": "images/icon-bed.png",
+      "keywords": ["bed", "accommodation", "icon", "suite"],
+      "aspect_ratio": "1:1",
+      "min_width": 66
+    },
+    {
+      "selector": ".stat-item:nth-child(3) .stat-icon img:last-child",
+      "property": "src",
+      "path": "images/icon-bird.png",
+      "keywords": ["bird", "birding", "icon", "species"],
+      "aspect_ratio": "1:1",
+      "min_width": 66
+    },
+    {
+      "selector": ".stat-item:nth-child(4) .stat-icon img:last-child",
+      "property": "src",
+      "path": "images/icon-landscape.png",
+      "keywords": ["landscape", "hectares", "icon", "reserve"],
+      "aspect_ratio": "1:1",
+      "min_width": 66
+    },
+    {
+      "selector": ".stat-item:nth-child(5) .stat-icon img:last-child",
+      "property": "src",
+      "path": "images/icon-car.png",
+      "keywords": ["car", "transfer", "icon", "travel"],
+      "aspect_ratio": "1:1",
+      "min_width": 66
+    },
+    {
+      "selector": ".lodge-card:nth-child(1) img",
+      "property": "src",
+      "path": "images/lodge-1.jpg",
+      "keywords": ["lodge", "accommodation", "safari", "luxury"],
+      "aspect_ratio": "16:9",
+      "min_width": 600
+    },
+    {
+      "selector": ".lodge-card:nth-child(2) img",
+      "property": "src",
+      "path": "images/lodge-2.jpg",
+      "keywords": ["lodge", "accommodation", "safari", "luxury"],
+      "aspect_ratio": "16:9",
+      "min_width": 600
+    },
+    {
+      "selector": ".lodge-card:nth-child(3) img",
+      "property": "src",
+      "path": "images/lodge-3.jpg",
+      "keywords": ["lodge", "accommodation", "safari", "luxury"],
+      "aspect_ratio": "16:9",
+      "min_width": 600
+    },
+    {
+      "selector": ".lodge-card:nth-child(4) img",
+      "property": "src",
+      "path": "images/lodge-4.jpg",
+      "keywords": ["lodge", "accommodation", "safari", "luxury"],
+      "aspect_ratio": "16:9",
+      "min_width": 600
+    },
+    {
+      "selector": ".lodge-card:nth-child(5) img",
+      "property": "src",
+      "path": "images/lodge-5.jpg",
+      "keywords": ["lodge", "accommodation", "safari", "luxury"],
+      "aspect_ratio": "16:9",
+      "min_width": 600
+    },
+    {
+      "selector": ".lodge-card:nth-child(6) img",
+      "property": "src",
+      "path": "images/lodge-6.jpg",
+      "keywords": ["lodge", "accommodation", "safari", "luxury"],
+      "aspect_ratio": "16:9",
+      "min_width": 600
+    },
+    {
+      "selector": ".lodge-card:nth-child(7) img",
+      "property": "src",
+      "path": "images/lodge-7.jpg",
+      "keywords": ["lodge", "accommodation", "safari", "luxury"],
+      "aspect_ratio": "16:9",
+      "min_width": 600
+    },
+    {
+      "selector": ".lodge-card:nth-child(8) img",
+      "property": "src",
+      "path": "images/lodge-8.jpg",
+      "keywords": ["lodge", "accommodation", "safari", "luxury"],
+      "aspect_ratio": "16:9",
+      "min_width": 600
+    },
+    {
+      "selector": ".lodge-card:nth-child(9) img",
+      "property": "src",
+      "path": "images/lodge-9.jpg",
+      "keywords": ["lodge", "accommodation", "safari", "luxury"],
+      "aspect_ratio": "16:9",
+      "min_width": 600
+    },
+    {
+      "selector": ".footer-social a:nth-child(1) img",
+      "property": "src",
+      "path": "images/icon-youtube.png",
+      "keywords": ["youtube", "social", "video", "icon"],
+      "aspect_ratio": "1:1",
+      "min_width": 43
+    },
+    {
+      "selector": ".footer-social a:nth-child(2) img",
+      "property": "src",
+      "path": "images/icon-instagram.png",
+      "keywords": ["instagram", "social", "photo", "icon"],
+      "aspect_ratio": "1:1",
+      "min_width": 43
+    },
+    {
+      "selector": ".footer-social a:nth-child(3) img",
+      "property": "src",
+      "path": "images/icon-facebook.png",
+      "keywords": ["facebook", "social", "icon"],
+      "aspect_ratio": "1:1",
+      "min_width": 43
+    }
+  ],
+  "sections": {
+    "hero": {
+      "required": true,
+      "customizable": true,
+      "description": "Full-viewport hero section with background image, radial gradient overlay, headline, description, and primary CTA button"
+    },
+    "about": {
+      "required": true,
+      "customizable": true,
+      "description": "Two-column about section with text content on the left and large wildlife image on the right"
+    },
+    "stats": {
+      "required": true,
+      "customizable": true,
+      "description": "Five icon-based stat/experience items in a horizontal grid with circular icon backgrounds and labels"
+    },
+    "lodges": {
+      "required": true,
+      "customizable": true,
+      "description": "3x3 lodge gallery grid with image cards, hover zoom effect, gradient overlay with lodge name, and CTA button"
+    },
+    "directions": {
+      "required": false,
+      "customizable": true,
+      "description": "Centered getting-here section with heading, description, and secondary CTA button"
+    },
+    "footer": {
+      "required": true,
+      "customizable": true,
+      "description": "Golden-toned footer with logo, contact info, navigation columns, social media icons, legal links, and copyright"
+    }
+  },
+  "css_variables": {
+    "--primary-color": {
+      "default": "#760906",
+      "description": "Primary brand color (deep burgundy/maroon)"
+    },
+    "--secondary-color": {
+      "default": "#ae7c3f",
+      "description": "Secondary brand color (warm gold)"
+    },
+    "--accent-color": {
+      "default": "#333333",
+      "description": "Accent color for stat labels and subtle text"
+    },
+    "--surface-color": {
+      "default": "#ffffff",
+      "description": "Surface/card background color (white)"
+    },
+    "--text-color": {
+      "default": "#1d1d1d",
+      "description": "Primary text color (near-black)"
+    },
+    "--background-color": {
+      "default": "#fdfbf7",
+      "description": "Page background color (warm off-white)"
+    },
+    "--lodge-card-bg": {
+      "default": "#e1d9d1",
+      "description": "Lodge section background color (warm beige)"
+    },
+    "--footer-bg": {
+      "default": "#ae7c3f",
+      "description": "Footer background color (warm gold)"
+    },
+    "--font-heading": {
+      "default": "'Marcellus', serif",
+      "description": "Heading font family"
+    },
+    "--font-body": {
+      "default": "'Avenir', 'Nunito Sans', sans-serif",
+      "description": "Body text font family"
+    }
+  },
+  "responsive_breakpoints": {
+    "tablet": "1024px",
+    "mobile": "768px",
+    "small_mobile": "480px"
+  }
+}

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{BUSINESS_NAME}} - {{TAGLINE}}</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="#home" class="nav__logo">
+                <img src="images/logo-gold.png" alt="{{BUSINESS_NAME}}">
+            </a>
+            <div class="nav__actions">
+                <a href="tel:{{CONTACT_PHONE_1}}" aria-label="{{PHONE_ARIA_LABEL}}">
+                    <img src="images/icon-phone.png" alt="{{PHONE_ICON_ALT}}" class="nav__icon">
+                </a>
+                <a href="mailto:{{CONTACT_EMAIL_1}}" aria-label="{{EMAIL_ARIA_LABEL}}">
+                    <img src="images/icon-mail.png" alt="{{EMAIL_ICON_ALT}}" class="nav__icon">
+                </a>
+                <button class="nav__menu-toggle" id="menuToggle" aria-label="{{MENU_ARIA_LABEL}}">
+                    <span class="nav__menu-label">{{NAV_MENU_LABEL}}</span>
+                    <span class="nav__menu-line"></span>
+                    <span class="nav__menu-line"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu__close" id="menuClose" aria-label="{{MENU_CLOSE_LABEL}}">
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="mobile-menu__links">
+            <li><a href="#home">{{NAV_LINK_1}}</a></li>
+            <li><a href="#about">{{NAV_LINK_2}}</a></li>
+            <li><a href="#services">{{NAV_LINK_3}}</a></li>
+            <li><a href="#approach">{{NAV_LINK_4}}</a></li>
+            <li><a href="#case-studies">{{NAV_LINK_5}}</a></li>
+            <li><a href="#contact">{{NAV_LINK_6}}</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero__content">
+                <h1 class="hero__headline">{{HERO_HEADLINE}}</h1>
+            </div>
+            <div class="hero__image-wrapper">
+                <img src="images/hero-image.jpg" alt="{{HERO_IMAGE_ALT}}" class="hero__image">
+                <img src="images/gold-triangles-2.png" alt="" class="hero__decorative-triangles" aria-hidden="true">
+                <button class="hero__video-btn" id="videoPlayBtn" aria-label="{{VIDEO_PLAY_LABEL}}">
+                    <img src="images/video-play-btn.png" alt="{{VIDEO_PLAY_ALT}}">
+                </button>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="about__top">
+                <div class="about__title-block">
+                    <h2 class="about__title">{{ABOUT_TITLE}}</h2>
+                    <a href="#about-detail" class="btn-outline">
+                        {{ABOUT_CTA}}
+                        <img src="images/icon-east.png" alt="" class="btn-outline__arrow" aria-hidden="true">
+                    </a>
+                </div>
+                <div class="about__content-block">
+                    <h3 class="about__subtitle">{{ABOUT_SUBTITLE}}</h3>
+                    <div class="about__description">
+                        <p>{{ABOUT_PARAGRAPH_1}}</p>
+                        <p>{{ABOUT_PARAGRAPH_2}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-divider"></div>
+        </section>
+
+        <!-- Services / Specialities Section -->
+        <section id="services" class="services">
+            <div class="services__header">
+                <h2 class="services__title">{{SERVICES_TITLE}}</h2>
+            </div>
+
+            <div class="services__list">
+                <!-- Service Item 1 -->
+                <div class="service-item active" data-service="1">
+                    <div class="service-item__header">
+                        <img src="images/icon-social-media.png" alt="{{SERVICE_1_ICON_ALT}}" class="service-item__icon">
+                        <span class="service-item__name">{{SERVICE_1_NAME}}</span>
+                        <img src="images/icon-arrow-back.png" alt="" class="service-item__toggle" aria-hidden="true">
+                    </div>
+                    <div class="service-item__content">
+                        <p class="service-item__description">{{SERVICE_1_DESCRIPTION}}</p>
+                    </div>
+                </div>
+
+                <!-- Service Item 2 -->
+                <div class="service-item" data-service="2">
+                    <div class="service-item__header">
+                        <span class="service-item__name">{{SERVICE_2_NAME}}</span>
+                        <img src="images/icon-arrow-back.png" alt="" class="service-item__toggle" aria-hidden="true">
+                    </div>
+                    <div class="service-item__content">
+                        <p class="service-item__description">{{SERVICE_2_DESCRIPTION}}</p>
+                    </div>
+                </div>
+
+                <!-- Service Item 3 -->
+                <div class="service-item" data-service="3">
+                    <div class="service-item__header">
+                        <span class="service-item__name">{{SERVICE_3_NAME}}</span>
+                        <img src="images/icon-arrow-back.png" alt="" class="service-item__toggle" aria-hidden="true">
+                    </div>
+                    <div class="service-item__content">
+                        <p class="service-item__description">{{SERVICE_3_DESCRIPTION}}</p>
+                    </div>
+                </div>
+
+                <!-- Service Item 4 -->
+                <div class="service-item" data-service="4">
+                    <div class="service-item__header">
+                        <span class="service-item__name">{{SERVICE_4_NAME}}</span>
+                        <img src="images/icon-arrow-back.png" alt="" class="service-item__toggle" aria-hidden="true">
+                    </div>
+                    <div class="service-item__content">
+                        <p class="service-item__description">{{SERVICE_4_DESCRIPTION}}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <div class="services__cta">
+                <a href="#services-detail" class="btn-outline">
+                    {{SERVICES_CTA}}
+                    <img src="images/icon-east.png" alt="" class="btn-outline__arrow" aria-hidden="true">
+                </a>
+            </div>
+        </section>
+
+        <!-- Approach / Process Section -->
+        <section id="approach" class="approach">
+            <div class="approach__inner">
+                <div class="approach__left">
+                    <div class="approach__label">
+                        {{APPROACH_LABEL}}
+                        <img src="images/icon-east.png" alt="" class="btn-outline__arrow" aria-hidden="true">
+                    </div>
+                    <h2 class="approach__title">{{APPROACH_TITLE}}</h2>
+                </div>
+                <div class="approach__divider"></div>
+                <div class="approach__right">
+                    <div class="approach__step-label" id="stepLabel">{{APPROACH_STEP_1_LABEL}}</div>
+                    <p class="approach__step-description" id="stepDescription">{{APPROACH_STEP_1_DESCRIPTION}}</p>
+
+                    <div class="approach__steps-nav">
+                        <button class="approach__step-indicator active" data-step="1">{{STEP_1_TAB}}</button>
+                        <button class="approach__step-indicator" data-step="2">{{STEP_2_TAB}}</button>
+                        <button class="approach__step-indicator" data-step="3">{{STEP_3_TAB}}</button>
+                        <button class="approach__step-indicator" data-step="4">{{STEP_4_TAB}}</button>
+                        <button class="approach__step-indicator" data-step="5">{{STEP_5_TAB}}</button>
+                        <div class="approach__step-arrows">
+                            <button class="approach__step-arrow" id="stepPrev" aria-label="{{STEP_PREV_LABEL}}">
+                                <img src="images/icon-arrow-back.png" alt="{{STEP_PREV_ALT}}">
+                            </button>
+                            <button class="approach__step-arrow" id="stepNext" aria-label="{{STEP_NEXT_LABEL}}">
+                                <img src="images/icon-arrow-forward.png" alt="{{STEP_NEXT_ALT}}">
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="approach__separator"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partnerships Section -->
+        <section id="partners" class="partners">
+            <h2 class="partners__title">{{PARTNERS_TITLE}}</h2>
+            <div class="partners__carousel-wrapper">
+                <img src="images/icon-arrow-back.png" alt="{{CAROUSEL_PREV_ALT}}" class="partners__arrow partners__arrow--prev" id="partnersPrev">
+                <div class="partners__carousel" id="partnersCarousel">
+                    <img src="images/partner-klaviyo.png" alt="{{PARTNER_1_NAME}}" class="partners__logo">
+                    <img src="images/partner-shopcreative.png" alt="{{PARTNER_2_NAME}}" class="partners__logo">
+                    <img src="images/partner-google.png" alt="{{PARTNER_3_NAME}}" class="partners__logo">
+                    <img src="images/partner-meta.png" alt="{{PARTNER_4_NAME}}" class="partners__logo">
+                    <img src="images/partner-youtube.png" alt="{{PARTNER_5_NAME}}" class="partners__logo">
+                    <img src="images/partner-whatagraph.png" alt="{{PARTNER_6_NAME}}" class="partners__logo">
+                </div>
+                <img src="images/icon-arrow-forward.png" alt="{{CAROUSEL_NEXT_ALT}}" class="partners__arrow partners__arrow--next" id="partnersNext">
+            </div>
+        </section>
+
+        <!-- Case Studies Section -->
+        <section id="case-studies" class="case-studies">
+            <img src="images/gold-triangles-1.png" alt="" class="case-studies__decorative" aria-hidden="true">
+
+            <div class="case-studies__grid">
+                <!-- Case Study 1 -->
+                <article class="case-study-card">
+                    <div class="case-study-card__header">
+                        <h3 class="case-study-card__title">{{CASE_STUDY_1_TITLE}}</h3>
+                        <span class="case-study-card__date">{{CASE_STUDY_1_DATE}}</span>
+                    </div>
+                    <div class="case-study-card__divider"></div>
+                    <img src="images/case-study-1.jpg" alt="{{CASE_STUDY_1_IMAGE_ALT}}" class="case-study-card__image">
+                    <div class="case-study-card__tags">
+                        <span class="case-study-card__tag">{{CASE_STUDY_1_TAG_1}}</span>
+                        <span class="case-study-card__tag">{{CASE_STUDY_1_TAG_2}}</span>
+                    </div>
+                </article>
+
+                <!-- Case Study 2 -->
+                <article class="case-study-card">
+                    <div class="case-study-card__header">
+                        <h3 class="case-study-card__title">{{CASE_STUDY_2_TITLE}}</h3>
+                        <span class="case-study-card__date">{{CASE_STUDY_2_DATE}}</span>
+                    </div>
+                    <div class="case-study-card__divider"></div>
+                    <img src="images/case-study-2.jpg" alt="{{CASE_STUDY_2_IMAGE_ALT}}" class="case-study-card__image">
+                    <div class="case-study-card__tags">
+                        <span class="case-study-card__tag">{{CASE_STUDY_2_TAG_1}}</span>
+                        <span class="case-study-card__tag">{{CASE_STUDY_2_TAG_2}}</span>
+                    </div>
+                </article>
+            </div>
+
+            <div class="case-studies__cta">
+                <a href="#case-studies-all" class="btn-outline">
+                    {{CASE_STUDIES_CTA}}
+                    <img src="images/icon-east.png" alt="" class="btn-outline__arrow" aria-hidden="true">
+                </a>
+            </div>
+        </section>
+
+        <!-- Clients Section -->
+        <section id="clients" class="clients">
+            <h2 class="clients__title">{{CLIENTS_TITLE}}</h2>
+            <div class="clients__carousel-wrapper">
+                <img src="images/icon-arrow-back.png" alt="{{CAROUSEL_PREV_ALT}}" class="clients__arrow clients__arrow--prev" id="clientsPrev">
+                <div class="clients__carousel" id="clientsCarousel">
+                    <img src="images/client-wingfield.png" alt="{{CLIENT_1_NAME}}" class="clients__logo">
+                    <img src="images/client-ofco.png" alt="{{CLIENT_2_NAME}}" class="clients__logo">
+                    <img src="images/client-logo-1.png" alt="{{CLIENT_3_NAME}}" class="clients__logo">
+                    <img src="images/client-laurica.png" alt="{{CLIENT_4_NAME}}" class="clients__logo">
+                </div>
+                <img src="images/icon-arrow-forward.png" alt="{{CAROUSEL_NEXT_ALT}}" class="clients__arrow clients__arrow--next" id="clientsNext">
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="footer__content">
+            <!-- Column 1: Newsletter -->
+            <div class="footer__col footer__col--newsletter">
+                <p class="footer__newsletter-intro">{{FOOTER_NEWSLETTER_INTRO}}</p>
+                <div class="footer__subscribe-form">
+                    <label class="footer__email-label" for="footerEmail">{{FOOTER_EMAIL_LABEL}}</label>
+                    <div class="footer__email-row">
+                        <input type="email" id="footerEmail" class="footer__email-input" placeholder="{{FOOTER_EMAIL_PLACEHOLDER}}">
+                        <button class="footer__subscribe-btn">{{FOOTER_SUBSCRIBE_BTN}}</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 2: Contact Info -->
+            <div class="footer__col footer__col--contact">
+                <div class="footer__contact-group">
+                    <p class="footer__contact-label">{{FOOTER_ENQUIRIES_LABEL}}</p>
+                    <p class="footer__contact-email"><a href="mailto:{{CONTACT_EMAIL_1}}">{{CONTACT_EMAIL_1}}</a></p>
+                    <p class="footer__contact-phone"><a href="tel:{{CONTACT_PHONE_1}}">{{CONTACT_PHONE_1}}</a></p>
+                </div>
+                <div class="footer__contact-group">
+                    <p class="footer__contact-label">{{FOOTER_CAREERS_LABEL}}</p>
+                    <p class="footer__contact-email"><a href="mailto:{{CONTACT_EMAIL_2}}">{{CONTACT_EMAIL_2}}</a></p>
+                    <p class="footer__contact-phone"><a href="tel:{{CONTACT_PHONE_2}}">{{CONTACT_PHONE_2}}</a></p>
+                </div>
+            </div>
+
+            <!-- Column 3: Navigation Links -->
+            <div class="footer__col footer__col--nav">
+                <nav class="footer__nav-links" aria-label="{{FOOTER_NAV_ARIA_LABEL}}">
+                    <a href="#about" class="footer__nav-link">{{FOOTER_LINK_1}}</a>
+                    <a href="#services" class="footer__nav-link">{{FOOTER_LINK_2}}</a>
+                    <a href="#case-studies" class="footer__nav-link">{{FOOTER_LINK_3}}</a>
+                    <a href="#team" class="footer__nav-link">{{FOOTER_LINK_4}}</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="footer__bottom-divider"></div>
+        <div class="footer__bottom">
+            <p class="footer__copyright">{{COPYRIGHT_TEXT}}</p>
+            <a href="{{SOCIAL_LINKEDIN}}" class="footer__social-link" aria-label="{{LINKEDIN_ARIA_LABEL}}">
+                <img src="images/icon-linkedin.png" alt="{{LINKEDIN_ICON_ALT}}">
+            </a>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

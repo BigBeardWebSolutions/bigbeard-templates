@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{BUSINESS_NAME}} - {{TAGLINE}}</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="#" class="nav-logo">
+                <img src="images/logo.png" alt="{{BUSINESS_NAME}}" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#updates" class="active">{{NAV_LINK_1}}</a></li>
+                <li><a href="#featured">{{NAV_LINK_2}}</a></li>
+                <li><a href="#archive">{{NAV_LINK_3}}</a></li>
+                <li><a href="#faq">{{NAV_LINK_4}}</a></li>
+                <li><a href="#contact">{{NAV_LINK_5}}</a></li>
+            </ul>
+            <a href="#contact" class="btn btn-primary">{{PRIMARY_CTA}}</a>
+            <button class="mobile-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg">
+            <img src="images/hero-bg.png" alt="" class="hero-bg-img">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-headline">{{HERO_HEADLINE}}</h1>
+                <p class="hero-description">{{HERO_DESCRIPTION}}</p>
+                <a href="#updates" class="btn btn-secondary">{{PRIMARY_CTA}}</a>
+            </div>
+            <div class="hero-person">
+                <img src="images/hero-person.png" alt="{{BUSINESS_NAME}} representative" class="hero-person-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Latest Updates Section -->
+        <section id="updates" class="updates-section">
+            <div class="container">
+                <h2 class="section-title">{{SECTION_UPDATES_TITLE}}</h2>
+                <div class="updates-grid">
+                    <!-- Featured Article (Large Left Card) -->
+                    <article class="article-featured">
+                        <div class="article-image">
+                            <img src="images/article-featured.png" alt="{{FEATURED_ARTICLE_TITLE}}">
+                        </div>
+                        <div class="article-body">
+                            <span class="article-category">{{FEATURED_ARTICLE_CATEGORY}}</span>
+                            <h3 class="article-title">{{FEATURED_ARTICLE_TITLE}}</h3>
+                            <p class="article-excerpt">{{FEATURED_ARTICLE_EXCERPT}}</p>
+                            <div class="article-meta">
+                                <span class="article-date">{{FEATURED_ARTICLE_DATE}}</span>
+                                <a href="#" class="article-link">Continue Reading <img src="images/icon-arrow.png" alt="" class="icon-arrow"></a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Smaller Articles Grid (2x2) -->
+                    <div class="articles-grid">
+                        <article class="article-card">
+                            <div class="article-card-image">
+                                <img src="images/article-1.png" alt="{{ARTICLE_1_TITLE}}">
+                            </div>
+                            <div class="article-card-body">
+                                <span class="article-category">{{ARTICLE_1_CATEGORY}}</span>
+                                <h4 class="article-card-title">{{ARTICLE_1_TITLE}}</h4>
+                                <div class="article-meta">
+                                    <span class="article-date">{{ARTICLE_1_DATE}}</span>
+                                    <a href="#" class="article-link">Continue Reading <img src="images/icon-arrow.png" alt="" class="icon-arrow"></a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="article-card">
+                            <div class="article-card-image">
+                                <img src="images/article-2.png" alt="{{ARTICLE_2_TITLE}}">
+                            </div>
+                            <div class="article-card-body">
+                                <span class="article-category">{{ARTICLE_2_CATEGORY}}</span>
+                                <h4 class="article-card-title">{{ARTICLE_2_TITLE}}</h4>
+                                <div class="article-meta">
+                                    <span class="article-date">{{ARTICLE_2_DATE}}</span>
+                                    <a href="#" class="article-link">Continue Reading <img src="images/icon-arrow.png" alt="" class="icon-arrow"></a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="article-card">
+                            <div class="article-card-image">
+                                <img src="images/article-3.png" alt="{{ARTICLE_3_TITLE}}">
+                            </div>
+                            <div class="article-card-body">
+                                <span class="article-category">{{ARTICLE_3_CATEGORY}}</span>
+                                <h4 class="article-card-title">{{ARTICLE_3_TITLE}}</h4>
+                                <div class="article-meta">
+                                    <span class="article-date">{{ARTICLE_3_DATE}}</span>
+                                    <a href="#" class="article-link">Continue Reading <img src="images/icon-arrow.png" alt="" class="icon-arrow"></a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="article-card">
+                            <div class="article-card-image">
+                                <img src="images/article-4.png" alt="{{ARTICLE_4_TITLE}}">
+                            </div>
+                            <div class="article-card-body">
+                                <span class="article-category">{{ARTICLE_4_CATEGORY}}</span>
+                                <h4 class="article-card-title">{{ARTICLE_4_TITLE}}</h4>
+                                <div class="article-meta">
+                                    <span class="article-date">{{ARTICLE_4_DATE}}</span>
+                                    <a href="#" class="article-link">Continue Reading <img src="images/icon-arrow.png" alt="" class="icon-arrow"></a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Q&A Section -->
+        <section id="featured" class="featured-section">
+            <div class="featured-bg">
+                <img src="images/qa-bg.png" alt="" class="featured-bg-img">
+            </div>
+            <div class="featured-overlay"></div>
+            <div class="container featured-content">
+                <span class="featured-label">{{SECTION_FEATURED_LABEL}}</span>
+                <h2 class="featured-title">{{FEATURED_QA_TITLE}}</h2>
+                <p class="featured-subtitle">{{FEATURED_QA_SUBTITLE}}</p>
+                <a href="#" class="btn btn-secondary">{{SECONDARY_CTA}}</a>
+            </div>
+        </section>
+
+        <!-- View Archive / Resource Cards Section -->
+        <section id="archive" class="archive-section">
+            <div class="container">
+                <h2 class="section-title">{{SECTION_ARCHIVE_TITLE}}</h2>
+                <div class="archive-grid">
+                    <div class="archive-card">
+                        <div class="archive-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                        </div>
+                        <h3 class="archive-card-title">{{ARCHIVE_1_TITLE}}</h3>
+                        <p class="archive-card-description">{{ARCHIVE_1_DESCRIPTION}}</p>
+                        <a href="#" class="archive-link">Learn More <img src="images/icon-arrow.png" alt="" class="icon-arrow"></a>
+                    </div>
+                    <div class="archive-card">
+                        <div class="archive-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                        </div>
+                        <h3 class="archive-card-title">{{ARCHIVE_2_TITLE}}</h3>
+                        <p class="archive-card-description">{{ARCHIVE_2_DESCRIPTION}}</p>
+                        <a href="#" class="archive-link">Learn More <img src="images/icon-arrow.png" alt="" class="icon-arrow"></a>
+                    </div>
+                    <div class="archive-card">
+                        <div class="archive-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                        </div>
+                        <h3 class="archive-card-title">{{ARCHIVE_3_TITLE}}</h3>
+                        <p class="archive-card-description">{{ARCHIVE_3_DESCRIPTION}}</p>
+                        <a href="#" class="archive-link">Learn More <img src="images/icon-arrow.png" alt="" class="icon-arrow"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <p class="faq-subtitle">{{SECTION_FAQ_SUBTITLE}}</p>
+                <h2 class="faq-title">{{SECTION_FAQ_TITLE}}</h2>
+                <p class="faq-description">{{SECTION_FAQ_DESCRIPTION}}</p>
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>{{FAQ_1_QUESTION}}</span>
+                            <span class="faq-toggle" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer" role="region">
+                            <p>{{FAQ_1_ANSWER}}</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>{{FAQ_2_QUESTION}}</span>
+                            <span class="faq-toggle" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer" role="region">
+                            <p>{{FAQ_2_ANSWER}}</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>{{FAQ_3_QUESTION}}</span>
+                            <span class="faq-toggle" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer" role="region">
+                            <p>{{FAQ_3_ANSWER}}</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>{{FAQ_4_QUESTION}}</span>
+                            <span class="faq-toggle" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer" role="region">
+                            <p>{{FAQ_4_ANSWER}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-cta">
+                    <a href="#contact" class="btn btn-secondary">{{FAQ_CTA}}</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container footer-content">
+            <div class="footer-col footer-brand">
+                <a href="#" class="footer-logo">
+                    <img src="images/logo.png" alt="{{BUSINESS_NAME}}">
+                </a>
+                <p class="footer-tagline">{{TAGLINE}}</p>
+                <div class="footer-contact-info">
+                    <p><a href="mailto:{{EMAIL}}">{{EMAIL}}</a></p>
+                    <p><a href="tel:{{PHONE}}">{{PHONE}}</a></p>
+                    <p>{{ADDRESS}}</p>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Our Position</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Policy Statement</a></li>
+                    <li><a href="#">Key Concerns</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Understanding NHI</h4>
+                <ul class="footer-links">
+                    <li><a href="#">What is NHI?</a></li>
+                    <li><a href="#faq">FAQs</a></li>
+                    <li><a href="#">Timeline</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Media Centre</h4>
+                <ul class="footer-links">
+                    <li><a href="#updates">Latest News</a></li>
+                    <li><a href="#">Press Releases</a></li>
+                    <li><a href="#">Publications</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Resource Centre</h4>
+                <ul class="footer-links">
+                    <li><a href="#archive">Policy Submissions</a></li>
+                    <li><a href="#archive">Presentations</a></li>
+                    <li><a href="#archive">White Papers</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-content">
+                <p>Copyright &copy; {{YEAR}} {{BUSINESS_NAME}}. All Rights Reserved.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Social Media">
+                        <img src="images/social-icons.png" alt="Social Media" class="social-icons-img">
+                    </a>
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

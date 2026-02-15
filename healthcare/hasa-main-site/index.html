@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{BUSINESS_NAME}} - {{TAGLINE}}</title>
+  <meta name="description" content="{{BUSINESS_NAME}} - {{TAGLINE}}">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ======== UTILITY BAR ======== -->
+  <div class="utility-bar">
+    <div class="container utility-bar__inner">
+      <div class="utility-bar__left">
+        <a href="#" class="utility-bar__item">
+          <img src="images/icon-location.png" alt="Location" class="utility-icon">
+          <span>{{ADDRESS}}</span>
+        </a>
+        <a href="mailto:{{EMAIL}}" class="utility-bar__item">
+          <img src="images/icon-mail.png" alt="Email" class="utility-icon">
+          <span>{{EMAIL}}</span>
+        </a>
+        <a href="tel:{{PHONE}}" class="utility-bar__item">
+          <img src="images/icon-phone.png" alt="Phone" class="utility-icon">
+          <span>{{PHONE}}</span>
+        </a>
+      </div>
+      <div class="utility-bar__right">
+        <a href="{{MEMBERS_CENTRE_LINK}}" class="utility-bar__item">
+          <img src="images/icon-members.png" alt="Members" class="utility-icon">
+          <span>Members Centre</span>
+        </a>
+        <a href="{{MEMBERS_LOGIN_LINK}}" class="utility-bar__item">
+          <img src="images/icon-person.png" alt="Login" class="utility-icon">
+          <span>Members Login</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======== HEADER / MAIN NAV ======== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="/" class="header__logo">
+        <img src="images/logo.png" alt="{{BUSINESS_NAME}} Logo" class="logo-img">
+      </a>
+
+      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <nav class="header__nav" id="mainNav" role="navigation" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#" class="nav-link nav-link--active">{{NAV_LINK_1}}</a></li>
+          <li><a href="#about" class="nav-link">{{NAV_LINK_2}}</a></li>
+          <li><a href="#news" class="nav-link">{{NAV_LINK_3}}</a></li>
+          <li><a href="#research" class="nav-link">{{NAV_LINK_4}}</a></li>
+          <li><a href="#podcast" class="nav-link">{{NAV_LINK_5}}</a></li>
+          <li><a href="#conference" class="nav-link">{{NAV_LINK_6}}</a></li>
+          <li><a href="#nhi" class="nav-link">{{NAV_LINK_7}}</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button class="search-btn" aria-label="Search">
+          <img src="images/icon-search.png" alt="Search" class="search-icon">
+        </button>
+        <a href="#contact" class="btn btn--primary">{{PRIMARY_CTA}}</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ======== HERO SECTION ======== -->
+    <section class="hero" id="hero">
+      <div class="hero__bg">
+        <img src="images/hero-bg.png" alt="Hospital interior" class="hero__bg-img">
+        <div class="hero__overlay"></div>
+      </div>
+      <div class="container hero__content">
+        <h1 class="hero__headline">{{HERO_HEADLINE}}</h1>
+      </div>
+    </section>
+
+    <!-- ======== QUICK LINKS SECTION ======== -->
+    <section class="quick-links" id="quick-links">
+      <div class="container">
+        <h2 class="section-title section-title--center">{{SECTION_QUICKLINKS_TITLE}}</h2>
+        <div class="quick-links__grid">
+
+          <a href="#research" class="quick-link-card">
+            <div class="quick-link-card__image-wrap">
+              <img src="images/quicklink-1.png" alt="{{QUICKLINK_1_TITLE}}" class="quick-link-card__img">
+              <div class="quick-link-card__gradient"></div>
+            </div>
+            <div class="quick-link-card__content">
+              <span class="quick-link-card__accent"></span>
+              <h3 class="quick-link-card__title">{{QUICKLINK_1_TITLE}}</h3>
+              <p class="quick-link-card__subtitle">{{QUICKLINK_1_SUBTITLE}}</p>
+              <span class="quick-link-card__arrow">
+                <img src="images/icon-arrow.png" alt="Go" class="arrow-icon">
+              </span>
+            </div>
+          </a>
+
+          <a href="{{MEMBERS_CENTRE_LINK}}" class="quick-link-card">
+            <div class="quick-link-card__image-wrap">
+              <img src="images/quicklink-2.png" alt="{{QUICKLINK_2_TITLE}}" class="quick-link-card__img">
+              <div class="quick-link-card__gradient"></div>
+            </div>
+            <div class="quick-link-card__content">
+              <span class="quick-link-card__accent"></span>
+              <h3 class="quick-link-card__title">{{QUICKLINK_2_TITLE}}</h3>
+              <p class="quick-link-card__subtitle">{{QUICKLINK_2_SUBTITLE}}</p>
+              <span class="quick-link-card__arrow">
+                <img src="images/icon-arrow.png" alt="Go" class="arrow-icon">
+              </span>
+            </div>
+          </a>
+
+          <a href="#podcast" class="quick-link-card">
+            <div class="quick-link-card__image-wrap">
+              <img src="images/quicklink-3.png" alt="{{QUICKLINK_3_TITLE}}" class="quick-link-card__img">
+              <div class="quick-link-card__gradient"></div>
+            </div>
+            <div class="quick-link-card__content">
+              <span class="quick-link-card__accent"></span>
+              <h3 class="quick-link-card__title">{{QUICKLINK_3_TITLE}}</h3>
+              <p class="quick-link-card__subtitle">{{QUICKLINK_3_SUBTITLE}}</p>
+              <span class="quick-link-card__arrow">
+                <img src="images/icon-arrow.png" alt="Go" class="arrow-icon">
+              </span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== MEMBERS SECTION ======== -->
+    <section class="members" id="members">
+      <div class="container">
+        <h2 class="section-title">{{SECTION_MEMBERS_TITLE}}</h2>
+        <p class="members__description">{{SECTION_MEMBERS_DESCRIPTION}}</p>
+
+        <div class="members__carousel" id="membersCarousel">
+          <div class="members__track">
+            <div class="member-logo">
+              <img src="images/member-1.png" alt="Member hospital 1" class="member-logo__img">
+            </div>
+            <div class="member-logo">
+              <img src="images/member-2.png" alt="Member hospital 2" class="member-logo__img">
+            </div>
+            <div class="member-logo">
+              <img src="images/member-3.png" alt="Member hospital 3" class="member-logo__img">
+            </div>
+            <div class="member-logo">
+              <img src="images/member-4.png" alt="Member hospital 4" class="member-logo__img">
+            </div>
+            <div class="member-logo">
+              <img src="images/member-5.png" alt="Member hospital 5" class="member-logo__img">
+            </div>
+            <div class="member-logo">
+              <img src="images/member-6.png" alt="Member hospital 6" class="member-logo__img">
+            </div>
+          </div>
+          <div class="members__dots" id="membersDots">
+            <button class="dot dot--active" aria-label="Slide 1"></button>
+            <button class="dot" aria-label="Slide 2"></button>
+            <button class="dot" aria-label="Slide 3"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== INDUSTRY NEWS SECTION ======== -->
+    <section class="news" id="news">
+      <div class="container">
+        <h2 class="section-title section-title--center">{{SECTION_NEWS_TITLE}}</h2>
+        <div class="news__grid">
+
+          <article class="news-card">
+            <div class="news-card__image-wrap">
+              <img src="images/news-1.png" alt="{{NEWS_1_TITLE}}" class="news-card__img">
+            </div>
+            <div class="news-card__content">
+              <h3 class="news-card__title">{{NEWS_1_TITLE}}</h3>
+              <p class="news-card__excerpt">{{NEWS_1_EXCERPT}}</p>
+              <a href="#" class="news-card__link">{{SECONDARY_CTA}} <img src="images/icon-arrow.png" alt="" class="arrow-icon arrow-icon--small"></a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-card__image-wrap">
+              <img src="images/news-2.png" alt="{{NEWS_2_TITLE}}" class="news-card__img">
+            </div>
+            <div class="news-card__content">
+              <h3 class="news-card__title">{{NEWS_2_TITLE}}</h3>
+              <p class="news-card__excerpt">{{NEWS_2_EXCERPT}}</p>
+              <a href="#" class="news-card__link">{{SECONDARY_CTA}} <img src="images/icon-arrow.png" alt="" class="arrow-icon arrow-icon--small"></a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-card__image-wrap">
+              <img src="images/news-3.png" alt="{{NEWS_3_TITLE}}" class="news-card__img">
+            </div>
+            <div class="news-card__content">
+              <h3 class="news-card__title">{{NEWS_3_TITLE}}</h3>
+              <p class="news-card__excerpt">{{NEWS_3_EXCERPT}}</p>
+              <a href="#" class="news-card__link">{{SECONDARY_CTA}} <img src="images/icon-arrow.png" alt="" class="arrow-icon arrow-icon--small"></a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer" id="contact">
+    <div class="container footer__inner">
+
+      <div class="footer__col">
+        <h4 class="footer__heading">{{FOOTER_COL1_TITLE}}</h4>
+        <ul class="footer__links">
+          <li><a href="#">{{NAV_LINK_1}}</a></li>
+          <li><a href="#about">{{NAV_LINK_2}}</a></li>
+          <li><a href="#news">{{NAV_LINK_3}}</a></li>
+          <li><a href="#research">{{NAV_LINK_4}}</a></li>
+          <li><a href="#podcast">{{NAV_LINK_5}}</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__heading">{{FOOTER_COL2_TITLE}}</h4>
+        <ul class="footer__links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">PAIA Manual</a></li>
+          <li><a href="#">Disclaimer</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__heading">{{FOOTER_COL3_TITLE}}</h4>
+        <ul class="footer__links">
+          <li><a href="#">Annual Reports</a></li>
+          <li><a href="#">Publications</a></li>
+          <li><a href="#">Submissions</a></li>
+          <li><a href="#">Media Releases</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__heading">{{FOOTER_COL4_TITLE}}</h4>
+        <ul class="footer__links footer__links--contact">
+          <li>
+            <img src="images/icon-location.png" alt="" class="utility-icon">
+            <span>{{ADDRESS}}</span>
+          </li>
+          <li>
+            <img src="images/icon-mail.png" alt="" class="utility-icon">
+            <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>
+          </li>
+          <li>
+            <img src="images/icon-phone.png" alt="" class="utility-icon">
+            <a href="tel:{{PHONE}}">{{PHONE}}</a>
+          </li>
+        </ul>
+        <div class="footer__social">
+          <img src="images/social-icons.png" alt="Follow us on social media" class="social-icons-img">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer__copyright">
+      <div class="container">
+        <p>&copy; {{YEAR}} {{BUSINESS_NAME}}. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

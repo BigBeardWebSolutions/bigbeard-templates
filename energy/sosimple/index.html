@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{META_DESCRIPTION}}">
+  <meta name="keywords" content="{{META_KEYWORDS}}">
+  <title>{{BUSINESS_NAME}} - {{TAGLINE}}</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ============================================
+       HEADER / NAVIGATION
+       ============================================ -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="#" class="header-logo">
+        <img src="images/logo.png" alt="{{BUSINESS_NAME}} logo">
+      </a>
+      <nav class="nav">
+        <div class="nav-links" id="nav-links">
+          <a href="#hero" class="active">{{NAV_HOME}}</a>
+          <a href="#who-can-save">{{NAV_WHO_BENEFITS}}</a>
+          <a href="#projects">{{NAV_PROJECTS}}</a>
+          <a href="#how-it-works">{{NAV_HOW_IT_WORKS}}</a>
+          <a href="#testimonials">{{NAV_BLOG}}</a>
+          <a href="#footer">{{NAV_CONTACT}}</a>
+        </div>
+        <div class="nav-cta">
+          <a href="#calculator" class="btn btn-primary">{{CTA_START_SAVING}}</a>
+        </div>
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============================================
+       HERO SECTION
+       ============================================ -->
+  <section class="hero" id="hero">
+    <div class="hero-background">
+      <img src="images/hero-bg.png" alt="{{HERO_BG_ALT}}">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content animate-on-scroll">
+        <h1>{{HERO_HEADLINE}}</h1>
+        <p>{{HERO_SUBHEADLINE}}</p>
+        <div class="hero-buttons">
+          <a href="#how-it-works" class="btn btn-primary">{{CTA_SEE_SOLUTIONS}}</a>
+          <a href="#calculator" class="btn btn-secondary">{{CTA_GET_STARTED}}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       STATS SECTION
+       ============================================ -->
+  <section class="stats" id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item animate-on-scroll">
+          <div class="stat-value">{{STAT_1_VALUE}}</div>
+          <p class="stat-label">{{STAT_1_LABEL}}</p>
+        </div>
+        <div class="stat-item animate-on-scroll animate-delay-1">
+          <div class="stat-value">{{STAT_2_VALUE}}</div>
+          <p class="stat-label">{{STAT_2_LABEL}}</p>
+        </div>
+        <div class="stat-item animate-on-scroll animate-delay-2">
+          <div class="stat-value">{{STAT_3_VALUE}}</div>
+          <p class="stat-label">{{STAT_3_LABEL}}</p>
+        </div>
+        <div class="stat-item animate-on-scroll animate-delay-3">
+          <div class="stat-value">{{STAT_4_VALUE}}</div>
+          <p class="stat-label">{{STAT_4_LABEL}}</p>
+        </div>
+      </div>
+    </div>
+    <button class="stats-chat-btn" id="chat-trigger" aria-label="{{CHAT_LABEL}}">
+      <img src="images/chat-icon.png" alt="{{CHAT_LABEL}}">
+    </button>
+  </section>
+
+  <!-- ============================================
+       HOW CAN YOU CUT ELECTRICITY COSTS
+       ============================================ -->
+  <section class="electricity-costs" id="electricity-costs">
+    <div class="container">
+      <div class="electricity-costs-illustration animate-on-scroll">
+        <img src="images/electricity-costs.png" alt="{{ELECTRICITY_COSTS_ALT}}" class="tree-illustration">
+      </div>
+      <div class="electricity-costs-content animate-on-scroll">
+        <h2>{{SECTION_ELECTRICITY_COSTS_TITLE}}</h2>
+        <div class="section-line section-line-left"></div>
+        <p>{{SECTION_ELECTRICITY_COSTS_DESC}}</p>
+        <div class="electricity-costs-cta">
+          <a href="#how-it-works" class="btn btn-outline">{{CTA_READ_MORE}}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       HOW DOES IT WORK (4 Steps)
+       ============================================ -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="how-it-works-header animate-on-scroll">
+        <h2>{{SECTION_HOW_IT_WORKS_TITLE}}</h2>
+        <div class="section-line"></div>
+      </div>
+      <p class="how-it-works-subtitle animate-on-scroll">{{SECTION_HOW_IT_WORKS_SUBTITLE}}</p>
+
+      <div class="steps-container">
+        <div class="steps-timeline"></div>
+
+        <!-- Step 1 -->
+        <div class="step animate-on-scroll">
+          <div class="step-image">
+            <img src="images/step-1.png" alt="{{STEP_1_ALT}}">
+          </div>
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h4>{{STEP_1_TITLE}}</h4>
+            <ol>
+              <li>{{STEP_1_ITEM_1}}</li>
+              <li>{{STEP_1_ITEM_2}}</li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step step-reverse animate-on-scroll">
+          <div class="step-image">
+            <img src="images/step-2.png" alt="{{STEP_2_ALT}}">
+          </div>
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h4>{{STEP_2_TITLE}}</h4>
+            <p>{{STEP_2_DESCRIPTION}}</p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step animate-on-scroll">
+          <div class="step-image">
+            <img src="images/step-3.png" alt="{{STEP_3_ALT}}">
+          </div>
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h4>{{STEP_3_TITLE}}</h4>
+            <ol>
+              <li>{{STEP_3_ITEM_1}}</li>
+              <li>{{STEP_3_ITEM_2}}</li>
+              <li>{{STEP_3_ITEM_3}}</li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="step step-reverse animate-on-scroll">
+          <div class="step-image">
+            <img src="images/step-4.png" alt="{{STEP_4_ALT}}">
+          </div>
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h4>{{STEP_4_TITLE}}</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="how-it-works-cta animate-on-scroll">
+        <a href="#calculator" class="btn btn-blue">{{CTA_CALCULATE_SAVINGS}}</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       WHO CAN SAVE SECTION
+       ============================================ -->
+  <section class="who-can-save" id="who-can-save">
+    <div class="container">
+      <div class="who-can-save-illustration animate-on-scroll">
+        <img src="images/who-can-save.png" alt="{{WHO_CAN_SAVE_ALT}}" class="farmer-illustration">
+      </div>
+      <div class="who-can-save-content animate-on-scroll">
+        <h2>{{SECTION_WHO_CAN_SAVE_TITLE}}</h2>
+        <div class="section-line section-line-left"></div>
+        <p>{{SECTION_WHO_CAN_SAVE_DESC}}</p>
+        <div class="who-can-save-cta">
+          <a href="#how-it-works" class="btn btn-outline">{{CTA_READ_MORE}}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SAVINGS CALCULATOR SECTION
+       ============================================ -->
+  <section class="calculator" id="calculator">
+    <div class="container">
+      <div class="calculator-form-side animate-on-scroll">
+        <h2>{{SECTION_CALCULATOR_TITLE}}</h2>
+        <div class="section-line section-line-left"></div>
+        <p>{{SECTION_CALCULATOR_DESC}}</p>
+
+        <form class="calculator-form" id="savings-calculator">
+          <div class="form-group">
+            <label>{{CALC_LABEL_SPEND}} <span class="required">*</span></label>
+            <div class="select-wrapper">
+              <select name="monthly_spend" required>
+                <option value="" disabled selected>{{CALC_PLACEHOLDER_RANGE}}</option>
+                <option value="5000-10000">R5,000 - R10,000</option>
+                <option value="10000-25000">R10,000 - R25,000</option>
+                <option value="25000-50000">R25,000 - R50,000</option>
+                <option value="50000-100000">R50,000 - R100,000</option>
+                <option value="100000+">R100,000+</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>{{CALC_LABEL_HOURS}} <span class="required">*</span></label>
+            <div class="select-wrapper">
+              <select name="operating_hours" required>
+                <option value="" disabled selected>{{CALC_PLACEHOLDER_SELECT}}</option>
+                <option value="8-12">8 - 12 hours</option>
+                <option value="12-16">12 - 16 hours</option>
+                <option value="16-24">16 - 24 hours</option>
+                <option value="24">24 hours</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>{{CALC_LABEL_NAME}} <span class="required">*</span></label>
+              <input type="text" name="name" placeholder="{{CALC_PLACEHOLDER_NAME}}" required>
+            </div>
+            <div class="form-group">
+              <label>{{CALC_LABEL_EMAIL}} <span class="required">*</span></label>
+              <input type="email" name="email" placeholder="{{CALC_PLACEHOLDER_EMAIL}}" required>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-blue">{{CTA_CALCULATE}}</button>
+        </form>
+      </div>
+      <div class="calculator-visual animate-on-scroll">
+        <img src="images/piggy-bank.png" alt="{{PIGGY_BANK_ALT}}" class="piggy-bank">
+        <img src="images/calculator-person.png" alt="{{CALCULATOR_PERSON_ALT}}" class="calculator-person">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       RECENT PROJECTS SECTION
+       ============================================ -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="projects-header animate-on-scroll">
+        <h3>{{SECTION_PROJECTS_TITLE}}</h3>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card animate-on-scroll">
+          <div class="project-card-image">
+            <img src="images/project-1.png" alt="{{PROJECT_1_NAME}}">
+            <span class="project-tag">{{PROJECT_1_TAG}}</span>
+          </div>
+          <div class="project-card-content">
+            <h4>{{PROJECT_1_NAME}}</h4>
+            <p class="project-location">{{PROJECT_1_LOCATION}}</p>
+          </div>
+        </div>
+
+        <div class="project-card animate-on-scroll animate-delay-1">
+          <div class="project-card-image">
+            <img src="images/project-2.png" alt="{{PROJECT_2_NAME}}">
+            <span class="project-tag">{{PROJECT_2_TAG}}</span>
+          </div>
+          <div class="project-card-content">
+            <h4>{{PROJECT_2_NAME}}</h4>
+            <p class="project-location">{{PROJECT_2_LOCATION}}</p>
+          </div>
+        </div>
+
+        <div class="project-card animate-on-scroll animate-delay-2">
+          <div class="project-card-image">
+            <img src="images/project-3.png" alt="{{PROJECT_3_NAME}}">
+            <span class="project-tag">{{PROJECT_3_TAG}}</span>
+          </div>
+          <div class="project-card-content">
+            <h4>{{PROJECT_3_NAME}}</h4>
+            <p class="project-location">{{PROJECT_3_LOCATION}}</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" class="btn btn-blue">{{CTA_VIEW_PROJECTS}}</a>
+    </div>
+  </section>
+
+  <!-- ============================================
+       TESTIMONIALS / PARTNERS SECTION
+       ============================================ -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="partners-column">
+        <div class="partners" id="partners">
+          <div class="partners-grid animate-on-scroll">
+            <div class="partner-logo"><img src="images/partner-1.png" alt="{{PARTNER_1_NAME}}"></div>
+            <div class="partner-logo"><img src="images/partner-2.png" alt="{{PARTNER_2_NAME}}"></div>
+            <div class="partner-logo"><img src="images/partner-3.png" alt="{{PARTNER_3_NAME}}"></div>
+            <div class="partner-logo"><img src="images/partner-4.png" alt="{{PARTNER_4_NAME}}"></div>
+            <div class="partner-logo"><img src="images/partner-5.png" alt="{{PARTNER_5_NAME}}"></div>
+            <div class="partner-logo"><img src="images/partner-6.png" alt="{{PARTNER_6_NAME}}"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonials-content animate-on-scroll">
+        <h2>{{SECTION_TESTIMONIALS_TITLE}}</h2>
+        <div class="section-line section-line-left"></div>
+        <div class="testimonials-stars">
+          <img src="images/stars.png" alt="{{STARS_ALT}}">
+        </div>
+        <blockquote class="testimonial-quote">
+          {{TESTIMONIAL_1_QUOTE}}
+        </blockquote>
+        <div class="testimonial-author">
+          <span class="author-name">{{TESTIMONIAL_1_NAME}}</span>
+          <span class="author-company">{{TESTIMONIAL_1_COMPANY}}</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="{{BUSINESS_NAME}} logo">
+          </div>
+          <p class="footer-tagline">{{FOOTER_TAGLINE}}</p>
+          <p class="footer-follow-label">{{FOOTER_FOLLOW_US}}</p>
+          <div class="footer-social">
+            <a href="{{SOCIAL_FACEBOOK}}" aria-label="Facebook"><img src="images/icon-facebook.svg" alt="Facebook"></a>
+            <a href="{{SOCIAL_INSTAGRAM}}" aria-label="Instagram"><img src="images/icon-instagram.svg" alt="Instagram"></a>
+            <a href="{{SOCIAL_YOUTUBE}}" aria-label="YouTube"><img src="images/icon-youtube.svg" alt="YouTube"></a>
+            <a href="{{SOCIAL_LINKEDIN}}" aria-label="LinkedIn"><img src="images/icon-linkedin.svg" alt="LinkedIn"></a>
+          </div>
+        </div>
+
+        <div class="footer-quick-links">
+          <h5 class="footer-heading">{{FOOTER_QUICK_LINKS_TITLE}}</h5>
+          <div class="footer-links">
+            <a href="#who-can-save">{{NAV_WHO_BENEFITS}}</a>
+            <a href="#how-it-works">{{FOOTER_LINK_SOLUTIONS}}</a>
+            <a href="#how-it-works">{{NAV_HOW_IT_WORKS}}</a>
+            <a href="#testimonials">{{FOOTER_LINK_WHO_WE_ARE}}</a>
+            <a href="#projects">{{NAV_PROJECTS}}</a>
+          </div>
+        </div>
+
+        <div class="footer-contact-info">
+          <h5 class="footer-heading">{{FOOTER_CONTACT_TITLE}}</h5>
+          <div class="footer-contact">
+            <p>{{CONTACT_PHONE}}</p>
+            <p>{{CONTACT_EMAIL}}</p>
+            <p class="footer-address">{{CONTACT_ADDRESS}}</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">{{FOOTER_COPYRIGHT}}</p>
+        <div class="footer-legal">
+          <a href="#">{{FOOTER_PRIVACY}}</a>
+          <a href="#">{{FOOTER_TERMS}}</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Chat Widget -->
+  <div class="chat-widget" id="chat-widget">
+    <button class="chat-widget-btn" aria-label="{{CHAT_LABEL}}">
+      <img src="images/chat-icon.png" alt="{{CHAT_LABEL}}">
+    </button>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

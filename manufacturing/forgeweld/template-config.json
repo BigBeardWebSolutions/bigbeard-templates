@@ -1,0 +1,736 @@
+{
+  "template_id": "manufacturing-forgeweld-v1",
+  "name": "Manufacturing Industrial Company Website",
+  "placeholders": {
+    "{{BUSINESS_NAME}}": {
+      "default": "Forgeweld",
+      "description": "Business or brand name displayed in header, footer, title, and copyright",
+      "required": true
+    },
+    "{{TAGLINE}}": {
+      "default": "Engineering Excellence Since 1962",
+      "description": "Short tagline displayed next to the logo in the navigation bar",
+      "required": true
+    },
+    "{{HERO_HEADLINE}}": {
+      "default": "Innovative Solutions for Safe Fuel and Hazardous Liquid Storage",
+      "description": "Main hero section headline in large white text over the background image",
+      "required": true
+    },
+    "{{HERO_DESCRIPTION}}": {
+      "default": "Industry-leading manufacturing of steel tanks, pressure vessels, and storage solutions for the energy, mining, and industrial sectors.",
+      "description": "Supporting description text below the hero headline",
+      "required": true
+    },
+    "{{HERO_IMAGE_ALT}}": {
+      "default": "Industrial welding and manufacturing facility",
+      "description": "Alt text for the hero background image",
+      "required": false
+    },
+    "{{PRIMARY_CTA}}": {
+      "default": "Get A Quote",
+      "description": "Primary call-to-action button text used in hero and header",
+      "required": true
+    },
+    "{{SECONDARY_CTA}}": {
+      "default": "Learn More",
+      "description": "Secondary call-to-action link text used in the about section",
+      "required": true
+    },
+    "{{PHONE}}": {
+      "default": "+27 11 000 0000",
+      "description": "Business phone number displayed in top bar and footer",
+      "required": true
+    },
+    "{{EMAIL}}": {
+      "default": "info@example.co.za",
+      "description": "Business contact email displayed in top bar and footer",
+      "required": true
+    },
+    "{{ADDRESS}}": {
+      "default": "Johannesburg, Gauteng, South Africa",
+      "description": "Physical business address displayed in top bar and footer",
+      "required": true
+    },
+    "{{YEAR}}": {
+      "default": "2026",
+      "description": "Copyright year in the footer",
+      "required": false
+    },
+    "{{NAV_LINK_1}}": {
+      "default": "Home",
+      "description": "First navigation menu item",
+      "required": true
+    },
+    "{{NAV_LINK_2}}": {
+      "default": "About Us",
+      "description": "Second navigation menu item",
+      "required": true
+    },
+    "{{NAV_LINK_3}}": {
+      "default": "Services",
+      "description": "Third navigation menu item",
+      "required": true
+    },
+    "{{NAV_LINK_4}}": {
+      "default": "Products",
+      "description": "Fourth navigation menu item",
+      "required": true
+    },
+    "{{NAV_LINK_5}}": {
+      "default": "News",
+      "description": "Fifth navigation menu item",
+      "required": true
+    },
+    "{{NAV_LINK_6}}": {
+      "default": "Contact",
+      "description": "Sixth navigation menu item",
+      "required": true
+    },
+    "{{SCROLL_TEXT}}": {
+      "default": "SCROLL DOWN",
+      "description": "Vertical scroll indicator text on the right side of the hero",
+      "required": false
+    },
+    "{{ABOUT_SUBTITLE}}": {
+      "default": "WHAT WE DO",
+      "description": "Uppercase subtitle label above the about section title",
+      "required": true
+    },
+    "{{ABOUT_TITLE}}": {
+      "default": "Leaders in Steel Fabrication and Manufacturing Since 1962",
+      "description": "Main heading for the about section",
+      "required": true
+    },
+    "{{ABOUT_DESCRIPTION}}": {
+      "default": "Since 1962, we have been at the forefront of manufacturing excellence, delivering quality steel tanks, pressure vessels, and storage solutions to clients across Africa and beyond. Our commitment to innovation and safety standards has made us a trusted partner in the industrial sector.",
+      "description": "Paragraph description for the about section",
+      "required": true
+    },
+    "{{ABOUT_IMAGE_ALT}}": {
+      "default": "Manufacturing facility and production process",
+      "description": "Alt text for the about section image",
+      "required": false
+    },
+    "{{STAT_LABEL_TOP}}": {
+      "default": "Over",
+      "description": "Text label above the stat counter number",
+      "required": true
+    },
+    "{{STAT_VALUE}}": {
+      "default": "60",
+      "description": "Numeric value for the animated stat counter (years of experience, projects, etc.)",
+      "required": true
+    },
+    "{{STAT_LABEL_BOTTOM}}": {
+      "default": "YEARS",
+      "description": "Uppercase text label below the stat counter number",
+      "required": true
+    },
+    "{{SERVICES_SUBTITLE}}": {
+      "default": "OUR SERVICES",
+      "description": "Uppercase subtitle label above the services section title",
+      "required": true
+    },
+    "{{SERVICES_TITLE}}": {
+      "default": "Comprehensive Manufacturing Solutions",
+      "description": "Main heading for the services grid section",
+      "required": true
+    },
+    "{{SERVICE_1_TITLE}}": {
+      "default": "Crude Oil Mounted Tanks",
+      "description": "First service card title",
+      "required": true
+    },
+    "{{SERVICE_1_DESCRIPTION}}": {
+      "default": "Custom-engineered crude oil storage tanks designed to meet rigorous industry standards and ensure safe, efficient storage for the petroleum sector.",
+      "description": "First service card description paragraph",
+      "required": true
+    },
+    "{{SERVICE_2_TITLE}}": {
+      "default": "Wrapped Vessels",
+      "description": "Second service card title",
+      "required": true
+    },
+    "{{SERVICE_2_DESCRIPTION}}": {
+      "default": "High-quality wrapped pressure vessels manufactured with precision engineering for safe storage of gases and pressurized liquids.",
+      "description": "Second service card description paragraph",
+      "required": true
+    },
+    "{{SERVICE_3_TITLE}}": {
+      "default": "Double Skinned Tanks",
+      "description": "Third service card title",
+      "required": true
+    },
+    "{{SERVICE_3_DESCRIPTION}}": {
+      "default": "Environmentally compliant double-wall storage tanks providing an extra layer of protection against leaks and spills.",
+      "description": "Third service card description paragraph",
+      "required": true
+    },
+    "{{SERVICE_4_TITLE}}": {
+      "default": "Installation Services",
+      "description": "Fourth service card title",
+      "required": true
+    },
+    "{{SERVICE_4_DESCRIPTION}}": {
+      "default": "Professional on-site installation, commissioning, and maintenance services delivered by experienced engineering teams.",
+      "description": "Fourth service card description paragraph",
+      "required": true
+    },
+    "{{LEARN_MORE_TEXT}}": {
+      "default": "LEARN MORE",
+      "description": "Uppercase link text used on service cards, product slides, and news cards",
+      "required": true
+    },
+    "{{PRODUCTS_SUBTITLE}}": {
+      "default": "OUR PRODUCTS",
+      "description": "Uppercase subtitle label on the products banner overlay",
+      "required": true
+    },
+    "{{PRODUCTS_TITLE}}": {
+      "default": "Engineered for Performance and Safety",
+      "description": "Main heading displayed on the products banner",
+      "required": true
+    },
+    "{{PRODUCTS_DESCRIPTION}}": {
+      "default": "Browse our comprehensive range of manufactured storage tanks, pressure vessels, and industrial equipment built to the highest international standards.",
+      "description": "Description text on the products banner",
+      "required": true
+    },
+    "{{PRODUCTS_BANNER_IMAGE_ALT}}": {
+      "default": "Industrial products and storage tanks",
+      "description": "Alt text for the products banner background image",
+      "required": false
+    },
+    "{{PRODUCT_1_CATEGORY}}": {
+      "default": "Storage Tanks",
+      "description": "Category label for the first product slide",
+      "required": true
+    },
+    "{{PRODUCT_1_NAME}}": {
+      "default": "Horizontal Storage Tank",
+      "description": "Product name for the first carousel slide",
+      "required": true
+    },
+    "{{PRODUCT_2_CATEGORY}}": {
+      "default": "Pressure Vessels",
+      "description": "Category label for the second product slide",
+      "required": true
+    },
+    "{{PRODUCT_2_NAME}}": {
+      "default": "Vertical Pressure Vessel",
+      "description": "Product name for the second carousel slide",
+      "required": true
+    },
+    "{{PRODUCT_3_CATEGORY}}": {
+      "default": "Fuel Storage",
+      "description": "Category label for the third product slide",
+      "required": true
+    },
+    "{{PRODUCT_3_NAME}}": {
+      "default": "Underground Fuel Tank",
+      "description": "Product name for the third carousel slide",
+      "required": true
+    },
+    "{{PRODUCT_4_CATEGORY}}": {
+      "default": "Transport Tanks",
+      "description": "Category label for the fourth product slide",
+      "required": true
+    },
+    "{{PRODUCT_4_NAME}}": {
+      "default": "Road Tanker",
+      "description": "Product name for the fourth carousel slide",
+      "required": true
+    },
+    "{{PRODUCT_5_CATEGORY}}": {
+      "default": "Custom Solutions",
+      "description": "Category label for the fifth product slide",
+      "required": true
+    },
+    "{{PRODUCT_5_NAME}}": {
+      "default": "Bespoke Industrial Tank",
+      "description": "Product name for the fifth carousel slide",
+      "required": true
+    },
+    "{{CERTIFICATIONS_SUBTITLE}}": {
+      "default": "QUALITY ASSURANCE",
+      "description": "Uppercase subtitle label above the certifications section",
+      "required": true
+    },
+    "{{CERTIFICATIONS_TITLE}}": {
+      "default": "Certifications and Standards",
+      "description": "Main heading for the certifications section",
+      "required": true
+    },
+    "{{CERTIFICATIONS_DESCRIPTION}}": {
+      "default": "Our manufacturing processes are certified to the highest international standards, ensuring quality, safety, and compliance across every product we deliver.",
+      "description": "Description paragraph for the certifications section",
+      "required": true
+    },
+    "{{CERT_1_NAME}}": {
+      "default": "ISO 9001",
+      "description": "Alt text and name for the first certification logo",
+      "required": false
+    },
+    "{{CERT_2_NAME}}": {
+      "default": "ISO 14001",
+      "description": "Alt text and name for the second certification logo",
+      "required": false
+    },
+    "{{CERT_3_NAME}}": {
+      "default": "ASME",
+      "description": "Alt text and name for the third certification logo",
+      "required": false
+    },
+    "{{CERT_4_NAME}}": {
+      "default": "SABS",
+      "description": "Alt text and name for the fourth certification logo",
+      "required": false
+    },
+    "{{CERT_5_NAME}}": {
+      "default": "B-BBEE",
+      "description": "Alt text and name for the fifth certification logo",
+      "required": false
+    },
+    "{{SHOWCASE_SUBTITLE}}": {
+      "default": "OUR WORK",
+      "description": "Uppercase subtitle label above the showcase gallery section",
+      "required": true
+    },
+    "{{SHOWCASE_TITLE}}": {
+      "default": "Project Showcase",
+      "description": "Main heading for the showcase/gallery section",
+      "required": true
+    },
+    "{{SHOWCASE_1_ALT}}": {
+      "default": "Completed tank installation project",
+      "description": "Alt text for the first showcase gallery image",
+      "required": false
+    },
+    "{{SHOWCASE_2_ALT}}": {
+      "default": "Industrial fabrication in progress",
+      "description": "Alt text for the second showcase gallery image",
+      "required": false
+    },
+    "{{SHOWCASE_3_ALT}}": {
+      "default": "Storage tank delivery and logistics",
+      "description": "Alt text for the third showcase gallery image",
+      "required": false
+    },
+    "{{SHOWCASE_4_ALT}}": {
+      "default": "On-site engineering and assembly",
+      "description": "Alt text for the fourth showcase gallery image",
+      "required": false
+    },
+    "{{NEWS_TITLE}}": {
+      "default": "Latest News",
+      "description": "Heading for the news section",
+      "required": true
+    },
+    "{{NEWS_1_TITLE}}": {
+      "default": "Expanding Operations to Meet Growing Demand",
+      "description": "First news card headline",
+      "required": true
+    },
+    "{{NEWS_1_EXCERPT}}": {
+      "default": "We are investing in new production capacity to serve the increasing demand for industrial storage solutions across the African continent.",
+      "description": "First news card excerpt text",
+      "required": true
+    },
+    "{{NEWS_2_TITLE}}": {
+      "default": "New Certification Achieved for Pressure Vessel Manufacturing",
+      "description": "Second news card headline",
+      "required": true
+    },
+    "{{NEWS_2_EXCERPT}}": {
+      "default": "Our facility has achieved international accreditation for the design and manufacture of high-pressure vessels, expanding our service offering.",
+      "description": "Second news card excerpt text",
+      "required": true
+    },
+    "{{NEWS_3_TITLE}}": {
+      "default": "Partnership Announcement with Leading Energy Provider",
+      "description": "Third news card headline",
+      "required": true
+    },
+    "{{NEWS_3_EXCERPT}}": {
+      "default": "A new strategic partnership to deliver fuel storage infrastructure for renewable energy installations across Southern Africa.",
+      "description": "Third news card excerpt text",
+      "required": true
+    },
+    "{{VIEW_ALL_NEWS_TEXT}}": {
+      "default": "View All News",
+      "description": "Button text to view all news articles",
+      "required": false
+    },
+    "{{NEWSLETTER_TEXT}}": {
+      "default": "Sign up to our newsletter for the latest industry news and updates",
+      "description": "Newsletter section heading text",
+      "required": true
+    },
+    "{{NEWSLETTER_PLACEHOLDER}}": {
+      "default": "Enter your email address",
+      "description": "Placeholder text for the newsletter email input field",
+      "required": false
+    },
+    "{{NEWSLETTER_CTA}}": {
+      "default": "Subscribe",
+      "description": "Newsletter submit button text",
+      "required": true
+    },
+    "{{FOOTER_DESCRIPTION}}": {
+      "default": "A leading manufacturer of steel storage tanks, pressure vessels, and industrial equipment serving clients across Africa and beyond since 1962.",
+      "description": "Description paragraph in the footer brand column",
+      "required": true
+    },
+    "{{FOOTER_COL1_TITLE}}": {
+      "default": "Quick Links",
+      "description": "Title for the first footer navigation column",
+      "required": true
+    },
+    "{{FOOTER_COL2_TITLE}}": {
+      "default": "Our Services",
+      "description": "Title for the second footer navigation column",
+      "required": true
+    },
+    "{{FOOTER_COL3_TITLE}}": {
+      "default": "Contact Us",
+      "description": "Title for the footer contact information column",
+      "required": true
+    },
+    "{{COPYRIGHT_TEXT}}": {
+      "default": "All Rights Reserved.",
+      "description": "Copyright notice text after the year and business name",
+      "required": false
+    },
+    "{{LEGAL_LINK_1}}": {
+      "default": "Privacy Policy",
+      "description": "First legal/policy link in the footer bottom bar",
+      "required": false
+    },
+    "{{LEGAL_LINK_2}}": {
+      "default": "Terms of Service",
+      "description": "Second legal/policy link in the footer bottom bar",
+      "required": false
+    }
+  },
+  "image_slots": [
+    {
+      "selector": ".nav-logo img",
+      "property": "src",
+      "path": "images/logo.png",
+      "keywords": ["logo", "brand", "manufacturing"],
+      "aspect_ratio": "auto",
+      "min_width": 200
+    },
+    {
+      "selector": ".hero-bg img",
+      "property": "src",
+      "path": "images/hero-bg.jpg",
+      "keywords": ["hero", "industrial", "manufacturing", "welding", "factory"],
+      "aspect_ratio": "16:9",
+      "min_width": 1920
+    },
+    {
+      "selector": ".about-image img",
+      "property": "src",
+      "path": "images/about.jpg",
+      "keywords": ["about", "facility", "production", "manufacturing"],
+      "aspect_ratio": "4:3",
+      "min_width": 800
+    },
+    {
+      "selector": ".service-card:nth-child(1) .service-icon img",
+      "property": "src",
+      "path": "images/service-icon-1.svg",
+      "keywords": ["icon", "tank", "storage", "service"],
+      "aspect_ratio": "auto",
+      "min_width": 80
+    },
+    {
+      "selector": ".service-card:nth-child(2) .service-icon img",
+      "property": "src",
+      "path": "images/service-icon-2.svg",
+      "keywords": ["icon", "vessel", "pressure", "service"],
+      "aspect_ratio": "auto",
+      "min_width": 80
+    },
+    {
+      "selector": ".service-card:nth-child(3) .service-icon img",
+      "property": "src",
+      "path": "images/service-icon-3.svg",
+      "keywords": ["icon", "double", "skinned", "tank", "service"],
+      "aspect_ratio": "auto",
+      "min_width": 80
+    },
+    {
+      "selector": ".service-card:nth-child(4) .service-icon img",
+      "property": "src",
+      "path": "images/service-icon-4.svg",
+      "keywords": ["icon", "installation", "engineering", "service"],
+      "aspect_ratio": "auto",
+      "min_width": 80
+    },
+    {
+      "selector": ".products-banner-bg",
+      "property": "src",
+      "path": "images/products-banner-bg.jpg",
+      "keywords": ["products", "banner", "industrial", "tanks"],
+      "aspect_ratio": "16:5",
+      "min_width": 1920
+    },
+    {
+      "selector": ".product-slide:nth-child(1) .product-slide-image img",
+      "property": "src",
+      "path": "images/product-1.jpg",
+      "keywords": ["product", "tank", "horizontal", "storage"],
+      "aspect_ratio": "4:3",
+      "min_width": 500
+    },
+    {
+      "selector": ".product-slide:nth-child(2) .product-slide-image img",
+      "property": "src",
+      "path": "images/product-2.jpg",
+      "keywords": ["product", "vessel", "pressure", "vertical"],
+      "aspect_ratio": "4:3",
+      "min_width": 500
+    },
+    {
+      "selector": ".product-slide:nth-child(3) .product-slide-image img",
+      "property": "src",
+      "path": "images/product-3.jpg",
+      "keywords": ["product", "fuel", "underground", "tank"],
+      "aspect_ratio": "4:3",
+      "min_width": 500
+    },
+    {
+      "selector": ".product-slide:nth-child(4) .product-slide-image img",
+      "property": "src",
+      "path": "images/product-4.jpg",
+      "keywords": ["product", "transport", "tanker", "road"],
+      "aspect_ratio": "4:3",
+      "min_width": 500
+    },
+    {
+      "selector": ".product-slide:nth-child(5) .product-slide-image img",
+      "property": "src",
+      "path": "images/product-5.jpg",
+      "keywords": ["product", "custom", "bespoke", "industrial"],
+      "aspect_ratio": "4:3",
+      "min_width": 500
+    },
+    {
+      "selector": ".certifications-logos img:nth-child(1)",
+      "property": "src",
+      "path": "images/cert-logo-1.png",
+      "keywords": ["certification", "ISO", "9001", "quality"],
+      "aspect_ratio": "auto",
+      "min_width": 100
+    },
+    {
+      "selector": ".certifications-logos img:nth-child(2)",
+      "property": "src",
+      "path": "images/cert-logo-2.png",
+      "keywords": ["certification", "ISO", "14001", "environmental"],
+      "aspect_ratio": "auto",
+      "min_width": 100
+    },
+    {
+      "selector": ".certifications-logos img:nth-child(3)",
+      "property": "src",
+      "path": "images/cert-logo-3.png",
+      "keywords": ["certification", "ASME", "pressure", "vessels"],
+      "aspect_ratio": "auto",
+      "min_width": 100
+    },
+    {
+      "selector": ".certifications-logos img:nth-child(4)",
+      "property": "src",
+      "path": "images/cert-logo-4.png",
+      "keywords": ["certification", "SABS", "standards", "south africa"],
+      "aspect_ratio": "auto",
+      "min_width": 100
+    },
+    {
+      "selector": ".certifications-logos img:nth-child(5)",
+      "property": "src",
+      "path": "images/cert-logo-5.png",
+      "keywords": ["certification", "B-BBEE", "empowerment"],
+      "aspect_ratio": "auto",
+      "min_width": 100
+    },
+    {
+      "selector": ".showcase-grid img:nth-child(1)",
+      "property": "src",
+      "path": "images/showcase-1.jpg",
+      "keywords": ["showcase", "gallery", "project", "installation"],
+      "aspect_ratio": "16:9",
+      "min_width": 800
+    },
+    {
+      "selector": ".showcase-grid img:nth-child(2)",
+      "property": "src",
+      "path": "images/showcase-2.jpg",
+      "keywords": ["showcase", "gallery", "fabrication", "welding"],
+      "aspect_ratio": "16:9",
+      "min_width": 800
+    },
+    {
+      "selector": ".showcase-grid img:nth-child(3)",
+      "property": "src",
+      "path": "images/showcase-3.jpg",
+      "keywords": ["showcase", "gallery", "delivery", "logistics"],
+      "aspect_ratio": "16:9",
+      "min_width": 800
+    },
+    {
+      "selector": ".showcase-grid img:nth-child(4)",
+      "property": "src",
+      "path": "images/showcase-4.jpg",
+      "keywords": ["showcase", "gallery", "engineering", "assembly"],
+      "aspect_ratio": "16:9",
+      "min_width": 800
+    },
+    {
+      "selector": ".news-card:nth-child(1) .news-card-image img",
+      "property": "src",
+      "path": "images/news-1.jpg",
+      "keywords": ["news", "article", "expansion", "operations"],
+      "aspect_ratio": "16:9",
+      "min_width": 500
+    },
+    {
+      "selector": ".news-card:nth-child(2) .news-card-image img",
+      "property": "src",
+      "path": "images/news-2.jpg",
+      "keywords": ["news", "article", "certification", "quality"],
+      "aspect_ratio": "16:9",
+      "min_width": 500
+    },
+    {
+      "selector": ".news-card:nth-child(3) .news-card-image img",
+      "property": "src",
+      "path": "images/news-3.jpg",
+      "keywords": ["news", "article", "partnership", "energy"],
+      "aspect_ratio": "16:9",
+      "min_width": 500
+    },
+    {
+      "selector": ".footer-brand img",
+      "property": "src",
+      "path": "images/logo.png",
+      "keywords": ["logo", "brand", "footer"],
+      "aspect_ratio": "auto",
+      "min_width": 200
+    }
+  ],
+  "sections": {
+    "top-bar": {
+      "required": false,
+      "customizable": true,
+      "description": "Navy blue top bar with phone, email, and address contact details"
+    },
+    "header": {
+      "required": true,
+      "customizable": true,
+      "description": "Sticky header with logo, tagline, navigation links, CTA button, and mobile hamburger toggle"
+    },
+    "hero": {
+      "required": true,
+      "customizable": true,
+      "description": "Full-width hero section with background image, dark gradient overlay, headline, description, CTA button, and scroll indicator"
+    },
+    "about": {
+      "required": true,
+      "customizable": true,
+      "description": "Two-column about section with image on left, subtitle, title, divider, description, animated stat badge counter, and learn more link"
+    },
+    "services": {
+      "required": true,
+      "customizable": true,
+      "description": "Four-column services grid with icon, title, description, and learn more link per card"
+    },
+    "products-banner": {
+      "required": true,
+      "customizable": true,
+      "description": "Full-width products banner with background image, dark overlay, subtitle, title, divider, and description"
+    },
+    "products-carousel": {
+      "required": true,
+      "customizable": true,
+      "description": "Horizontally scrolling product carousel with 5 slides showing image, category, product name, and learn more link. Navigated with prev/next arrow buttons"
+    },
+    "certifications": {
+      "required": false,
+      "customizable": true,
+      "description": "Centered certifications section with subtitle, title, description, and a row of accreditation/certification logos"
+    },
+    "showcase": {
+      "required": false,
+      "customizable": true,
+      "description": "2x2 image gallery grid showcasing completed projects with full-bleed images"
+    },
+    "news": {
+      "required": true,
+      "customizable": true,
+      "description": "Three-column news card grid with image, title, excerpt, learn more link, and a centered view all button below"
+    },
+    "newsletter": {
+      "required": false,
+      "customizable": true,
+      "description": "Navy blue newsletter subscription bar with descriptive text, email input, and subscribe button"
+    },
+    "footer": {
+      "required": true,
+      "customizable": true,
+      "description": "Multi-column footer with brand logo/description, quick links, services links, contact info, copyright, and legal links"
+    }
+  },
+  "css_variables": {
+    "--primary-color": {
+      "default": "#BF2120",
+      "description": "Primary brand color (bold red) used for buttons, accents, dividers, and hover states"
+    },
+    "--secondary-color": {
+      "default": "#083A60",
+      "description": "Secondary brand color (navy blue) used for top bar, newsletter section background"
+    },
+    "--accent-color": {
+      "default": "#E9EAF4",
+      "description": "Accent/surface color (light lavender grey) used for service card and footer backgrounds"
+    },
+    "--surface-color": {
+      "default": "#FFFFFF",
+      "description": "Surface color (white) for card backgrounds"
+    },
+    "--text-color": {
+      "default": "#181818",
+      "description": "Primary text color (near-black)"
+    },
+    "--text-secondary": {
+      "default": "#454646",
+      "description": "Secondary text color (dark grey)"
+    },
+    "--background-color": {
+      "default": "#FFFFFF",
+      "description": "Page background color (white)"
+    },
+    "--border-color": {
+      "default": "#181818",
+      "description": "Border color for news cards and dividers"
+    },
+    "--font-family-heading": {
+      "default": "'Montserrat', sans-serif",
+      "description": "Heading font family"
+    },
+    "--font-family-body": {
+      "default": "'Noto Sans', sans-serif",
+      "description": "Body text font family"
+    }
+  },
+  "responsive_breakpoints": {
+    "desktop": "1200px",
+    "tablet": "992px",
+    "mobile": "768px",
+    "small": "480px"
+  }
+}

@@ -42,7 +42,8 @@ REQUIRED_CSS_VARIABLES = [
 VALID_INDUSTRIES = [
     "restaurant", "healthcare", "technology", "ecommerce", "real_estate",
     "professional_services", "creative_agency", "education", "nonprofit",
-    "fitness", "hospitality", "finance", "retail", "automotive", "beauty_spa", "other"
+    "fitness", "hospitality", "finance", "retail", "automotive", "beauty_spa",
+    "manufacturing", "energy", "marketing", "other"
 ]
 
 # Valid CTA intents
@@ -52,7 +53,8 @@ VALID_CTA_INTENTS = [
 
 # Valid design styles
 VALID_DESIGN_STYLES = [
-    "modern", "classic", "minimal", "bold", "elegant", "playful", "corporate", "warm"
+    "modern", "classic", "minimal", "bold", "elegant", "playful", "corporate", "warm",
+    "modern-industrial", "dark"
 ]
 
 

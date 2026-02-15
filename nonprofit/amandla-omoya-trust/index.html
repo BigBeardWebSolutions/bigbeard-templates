@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{META_DESCRIPTION}}">
+  <title>{{BUSINESS_NAME}} - {{TAGLINE}}</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="top-bar__contact">
+      <a href="tel:{{PHONE}}" class="top-bar__item">
+        <img src="images/phone-icon.png" alt="Phone" class="top-bar__icon">
+        <span>{{PHONE}}</span>
+      </a>
+      <a href="mailto:{{EMAIL}}" class="top-bar__item">
+        <img src="images/email-icon.png" alt="Email" class="top-bar__icon">
+        <span>{{EMAIL}}</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#" class="header__logo">
+        <img src="images/logo.png" alt="{{BUSINESS_NAME}} Logo">
+      </a>
+
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+        <span class="mobile-toggle__bar"></span>
+        <span class="mobile-toggle__bar"></span>
+        <span class="mobile-toggle__bar"></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#hero" class="nav__link nav__link--active">{{NAV_HOME}}</a></li>
+          <li><a href="#about" class="nav__link">{{NAV_ABOUT}}</a></li>
+          <li>
+            <a href="#focus" class="nav__link nav__link--dropdown">
+              {{NAV_OPPORTUNITIES}}
+              <svg class="nav__dropdown-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M7 10l5 5 5-5z"/>
+              </svg>
+            </a>
+          </li>
+          <li><a href="#focus" class="nav__link">{{NAV_PROGRAMMES}}</a></li>
+          <li><a href="#what-we-do" class="nav__link">{{NAV_PARTNERSHIP}}</a></li>
+          <li><a href="#contact" class="nav__link">{{NAV_NEWS}}</a></li>
+        </ul>
+        <a href="#contact" class="nav__cta">{{PRIMARY_CTA}}</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero__slider" id="hero-slider">
+        <div class="hero__slide active">
+          <img src="images/hero-bg.jpg" alt="{{HERO_IMAGE_1_ALT}}" class="hero__slide-image">
+          <div class="hero__overlay"></div>
+        </div>
+        <div class="hero__slide">
+          <img src="images/hero-slide-2.jpg" alt="{{HERO_IMAGE_2_ALT}}" class="hero__slide-image">
+          <div class="hero__overlay"></div>
+        </div>
+        <div class="hero__slide">
+          <img src="images/hero-slide-3.jpg" alt="{{HERO_IMAGE_3_ALT}}" class="hero__slide-image">
+          <div class="hero__overlay"></div>
+        </div>
+      </div>
+      <div class="hero__content">
+        <h1 class="hero__title">{{HERO_HEADLINE}}</h1>
+        <p class="hero__subtitle">{{HERO_SUBHEADLINE}}</p>
+        <a href="#about" class="hero__cta">{{HERO_CTA}}</a>
+      </div>
+      <div class="hero__dots" id="hero-dots">
+        <button class="hero__dot active" data-slide="0" aria-label="Slide 1"></button>
+        <button class="hero__dot" data-slide="1" aria-label="Slide 2"></button>
+        <button class="hero__dot" data-slide="2" aria-label="Slide 3"></button>
+      </div>
+    </section>
+
+    <!-- About / Who We Are Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__image-wrapper animate-on-scroll">
+            <img src="images/about-image.jpg" alt="{{ABOUT_IMAGE_ALT}}" class="about__image">
+          </div>
+          <div class="about__content animate-on-scroll">
+            <span class="section-label">{{ABOUT_LABEL}}</span>
+            <h2 class="about__title">{{ABOUT_TITLE}}</h2>
+            <p class="about__text">{{ABOUT_DESCRIPTION}}</p>
+            <a href="#" class="btn-primary">{{ABOUT_CTA}}</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Focus Section -->
+    <section class="focus" id="focus">
+      <div class="container">
+        <h2 class="focus__title animate-on-scroll">{{FOCUS_TITLE}}</h2>
+        <div class="focus__grid">
+
+          <div class="focus__card animate-on-scroll">
+            <div class="focus__icon-wrapper">
+              <img src="images/focus-circle.png" alt="" class="focus__icon-bg">
+              <img src="images/focus-icon-1.png" alt="{{FOCUS_1_TITLE}}" class="focus__icon-img">
+            </div>
+            <h3 class="focus__card-title">{{FOCUS_1_TITLE}}</h3>
+            <div class="focus__card-divider"></div>
+            <p class="focus__card-text">{{FOCUS_1_DESCRIPTION}}</p>
+          </div>
+
+          <div class="focus__card animate-on-scroll">
+            <div class="focus__icon-wrapper">
+              <img src="images/focus-circle.png" alt="" class="focus__icon-bg">
+              <img src="images/focus-icon-2.png" alt="{{FOCUS_2_TITLE}}" class="focus__icon-img">
+            </div>
+            <h3 class="focus__card-title">{{FOCUS_2_TITLE}}</h3>
+            <div class="focus__card-divider"></div>
+            <p class="focus__card-text">{{FOCUS_2_DESCRIPTION}}</p>
+          </div>
+
+          <div class="focus__card animate-on-scroll">
+            <div class="focus__icon-wrapper">
+              <img src="images/focus-circle-2.png" alt="" class="focus__icon-bg">
+              <img src="images/focus-icon-3.png" alt="{{FOCUS_3_TITLE}}" class="focus__icon-img">
+            </div>
+            <h3 class="focus__card-title">{{FOCUS_3_TITLE}}</h3>
+            <div class="focus__card-divider"></div>
+            <p class="focus__card-text">{{FOCUS_3_DESCRIPTION}}</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- What We Do Section -->
+    <section class="what-we-do" id="what-we-do">
+      <img src="images/what-we-do-bg.jpg" alt="" class="what-we-do__bg" aria-hidden="true">
+      <div class="what-we-do__overlay"></div>
+      <div class="what-we-do__gradient"></div>
+      <div class="what-we-do__content animate-on-scroll">
+        <span class="section-label">{{WHAT_WE_DO_LABEL}}</span>
+        <h2 class="what-we-do__title">{{WHAT_WE_DO_TITLE}}</h2>
+        <p class="what-we-do__text">{{WHAT_WE_DO_DESCRIPTION}}</p>
+        <a href="#" class="btn-primary">{{WHAT_WE_DO_CTA}}</a>
+      </div>
+    </section>
+
+    <!-- Our Trustees Section -->
+    <section class="trustees" id="trustees">
+      <div class="container">
+        <h2 class="trustees__title animate-on-scroll">{{TRUSTEES_TITLE}}</h2>
+        <div class="trustees__grid">
+
+          <div class="trustee-card animate-on-scroll">
+            <div class="trustee-card__image-wrapper">
+              <div class="trustee-card__bg"></div>
+              <img src="images/trustee-1.png" alt="{{TRUSTEE_1_NAME}}" class="trustee-card__image">
+            </div>
+            <div class="trustee-card__info">
+              <h3 class="trustee-card__name">{{TRUSTEE_1_NAME}}</h3>
+              <p class="trustee-card__role">{{TRUSTEE_1_ROLE}}</p>
+              <p class="trustee-card__bio">{{TRUSTEE_1_BIO}}</p>
+              <a href="#" class="trustee-card__link">{{TRUSTEE_READ_MORE}}</a>
+            </div>
+          </div>
+
+          <div class="trustee-card animate-on-scroll">
+            <div class="trustee-card__image-wrapper">
+              <div class="trustee-card__bg"></div>
+              <img src="images/trustee-2.png" alt="{{TRUSTEE_2_NAME}}" class="trustee-card__image">
+            </div>
+            <div class="trustee-card__info">
+              <h3 class="trustee-card__name">{{TRUSTEE_2_NAME}}</h3>
+              <p class="trustee-card__role">{{TRUSTEE_2_ROLE}}</p>
+              <p class="trustee-card__bio">{{TRUSTEE_2_BIO}}</p>
+              <a href="#" class="trustee-card__link">{{TRUSTEE_READ_MORE}}</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Apply Now / CTA Section -->
+    <section class="apply-cta" id="apply">
+      <img src="images/apply-now-bg.jpg" alt="" class="apply-cta__bg" aria-hidden="true">
+      <div class="apply-cta__overlay"></div>
+      <div class="apply-cta__content animate-on-scroll">
+        <h2 class="apply-cta__title">{{APPLY_TITLE}}</h2>
+        <p class="apply-cta__subtitle">{{APPLY_SUBTITLE}}</p>
+        <a href="#" class="btn-primary">{{APPLY_CTA}}</a>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact__inner">
+          <div class="contact__info animate-on-scroll">
+            <h2 class="contact__info-title">{{CONTACT_TITLE}}</h2>
+            <p class="contact__info-text">{{CONTACT_DESCRIPTION}}</p>
+            <div class="contact__details">
+              <div class="contact__detail-item">
+                <img src="images/email-icon.png" alt="Email" class="contact__detail-icon">
+                <span>{{EMAIL}}</span>
+              </div>
+              <div class="contact__detail-item">
+                <img src="images/phone-icon.png" alt="Phone" class="contact__detail-icon">
+                <span>{{PHONE}}</span>
+              </div>
+              <div class="contact__detail-item">
+                <svg class="contact__detail-icon" viewBox="0 0 24 24" fill="var(--primary-color)">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+                <span>{{ADDRESS}}</span>
+              </div>
+            </div>
+            <h3 class="contact__social-title">{{SOCIAL_TITLE}}</h3>
+            <div class="contact__social-links">
+              <a href="{{LINKEDIN_URL}}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <img src="images/linkedin-icon.png" alt="LinkedIn" class="contact__social-icon">
+              </a>
+            </div>
+          </div>
+          <div class="contact__form-wrapper animate-on-scroll">
+            <h2 class="contact__form-title">{{FORM_TITLE}}</h2>
+            <form class="contact__form" id="contact-form">
+              <div class="contact__form-row">
+                <div class="contact__form-group">
+                  <label for="name" class="contact__form-label">{{FORM_NAME_LABEL}}</label>
+                  <input type="text" id="name" name="name" class="contact__form-input" required>
+                </div>
+                <div class="contact__form-group">
+                  <label for="email" class="contact__form-label">{{FORM_EMAIL_LABEL}}</label>
+                  <input type="email" id="email" name="email" class="contact__form-input" required>
+                </div>
+              </div>
+              <div class="contact__form-group">
+                <label for="message" class="contact__form-label">{{FORM_MESSAGE_LABEL}}</label>
+                <textarea id="message" name="message" class="contact__form-textarea" required></textarea>
+              </div>
+              <div class="contact__form-checkbox">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">{{FORM_TERMS_LABEL}}</label>
+              </div>
+              <div class="contact__form-radio">
+                <label class="contact__form-label">{{FORM_MARKETING_LABEL}}</label>
+                <div class="contact__form-radio-options">
+                  <label class="contact__form-radio-label">
+                    <input type="radio" name="marketing" value="yes"> {{FORM_YES}}
+                  </label>
+                  <label class="contact__form-radio-label">
+                    <input type="radio" name="marketing" value="no"> {{FORM_NO}}
+                  </label>
+                </div>
+              </div>
+              <button type="submit" class="contact__form-submit">{{FORM_SUBMIT}}</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Speak Out Section -->
+    <section class="speak-out" id="speak-out">
+      <div class="speak-out__content">
+        <h2 class="speak-out__title">{{SPEAK_OUT_TITLE}}</h2>
+        <p class="speak-out__text">{{SPEAK_OUT_SUBTITLE}}</p>
+        <a href="#" class="btn-primary">{{SPEAK_OUT_CTA}}</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="footer__inner">
+      <div class="footer__col">
+        <nav class="footer__links" aria-label="Quick links">
+          <a href="#about" class="footer__link">{{FOOTER_LINK_GOVERNANCE}}</a>
+          <a href="#focus" class="footer__link">{{FOOTER_LINK_OPPORTUNITIES}}</a>
+          <a href="#" class="footer__link">{{FOOTER_LINK_PROGRAMMES}}</a>
+          <a href="#" class="footer__link">{{FOOTER_LINK_PARTNERSHIPS}}</a>
+          <a href="#" class="footer__link">{{FOOTER_LINK_NEWS}}</a>
+        </nav>
+      </div>
+      <div class="footer__col">
+        <div class="footer__address">
+          <span class="footer__address-line">{{ADDRESS_LINE_1}}</span>
+          <span class="footer__address-line">{{ADDRESS_LINE_2}}</span>
+          <span class="footer__address-line">{{ADDRESS_LINE_3}}</span>
+          <span class="footer__address-line">{{ADDRESS_LINE_4}}</span>
+          <span class="footer__address-line">{{ADDRESS_LINE_5}}</span>
+        </div>
+      </div>
+      <div class="footer__col">
+        <div class="footer__contact-info">
+          <span class="footer__contact-item">{{PHONE}}</span>
+          <a href="mailto:{{EMAIL}}" class="footer__contact-item">{{EMAIL}}</a>
+          <div class="footer__social">
+            <a href="{{LINKEDIN_URL}}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <img src="images/linkedin-icon.png" alt="LinkedIn" class="footer__social-icon">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__col">
+        <nav class="footer__legal" aria-label="Legal links">
+          <a href="#" class="footer__legal-link">{{FOOTER_TERMS}}</a>
+          <a href="#" class="footer__legal-link">{{FOOTER_PRIVACY}}</a>
+          <a href="#" class="footer__legal-link">{{FOOTER_LEGAL_NOTICES}}</a>
+        </nav>
+      </div>
+    </div>
+    <div class="footer__bottom-bar">
+      <p class="footer__copyright">{{COPYRIGHT}}</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

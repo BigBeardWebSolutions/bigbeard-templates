@@ -1,0 +1,826 @@
+/* ============================================
+   Experience Madikwe - Safari Lodge Template
+   Hospitality / Safari / Luxury Lodge
+   ============================================ */
+
+/* --- CSS Variables (Theme Customization) --- */
+:root {
+    --primary-color: #760906;
+    --secondary-color: #ae7c3f;
+    --accent-color: #333333;
+    --surface-color: #ffffff;
+    --text-color: #1d1d1d;
+    --background-color: #fdfbf7;
+    --lodge-card-bg: #e1d9d1;
+    --footer-bg: #ae7c3f;
+    --font-heading: 'Marcellus', serif;
+    --font-body: 'Avenir', 'Nunito Sans', sans-serif;
+    --border-radius: 4px;
+    --max-width: 1440px;
+    --section-padding: 80px 0;
+}
+
+/* --- Reset & Base --- */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* --- Typography --- */
+h1, h2, h3, h4 {
+    font-family: var(--font-heading);
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 64px;
+    line-height: 72px;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 49px;
+}
+
+h3 {
+    font-size: 30px;
+    line-height: 40px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+/* --- Buttons --- */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 32px;
+    border-radius: var(--border-radius);
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+    text-align: center;
+    min-width: 195px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--surface-color);
+}
+
+.btn-primary:hover {
+    background-color: #5a0705;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(118, 9, 6, 0.3);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-color);
+    color: var(--surface-color);
+}
+
+/* ============================================
+   HEADER / NAVIGATION
+   ============================================ */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 15px 0;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: transparent;
+}
+
+.header.scrolled {
+    background-color: var(--background-color);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-logo img {
+    height: 80px;
+    width: auto;
+}
+
+.header-logo .logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-menu a {
+    font-family: var(--font-body);
+    font-size: 18px;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.nav-menu a:hover::after,
+.nav-menu a.active::after {
+    width: 100%;
+}
+
+.nav-menu a.active {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.nav-cta {
+    margin-left: 20px;
+}
+
+/* Mobile nav toggle */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 5px;
+}
+
+.nav-toggle span {
+    width: 28px;
+    height: 3px;
+    background-color: var(--text-color);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+.hero {
+    position: relative;
+    height: 100vh;
+    min-height: 700px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: radial-gradient(ellipse at center bottom, rgba(0, 0, 0, 0.5) 0%, transparent 70%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 700px;
+    padding: 0 40px;
+}
+
+.hero-content h1 {
+    color: var(--surface-color);
+    margin-bottom: 30px;
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content p {
+    color: var(--surface-color);
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 40px;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content .btn-primary {
+    font-size: 16px;
+    min-width: 266px;
+}
+
+/* ============================================
+   ABOUT SECTION
+   ============================================ */
+.about {
+    padding: 100px 0;
+    background-color: var(--background-color);
+}
+
+.about .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.about-content h2 {
+    color: var(--text-color);
+    margin-bottom: 30px;
+}
+
+.about-content p {
+    color: var(--text-color);
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.about-content .btn-primary {
+    margin-top: 20px;
+}
+
+.about-image {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.about-image img {
+    width: 100%;
+    height: 576px;
+    object-fit: cover;
+}
+
+/* ============================================
+   STATS SECTION
+   ============================================ */
+.stats {
+    padding: 60px 0 80px;
+    background-color: var(--background-color);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+    text-align: center;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.stat-icon {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-icon img {
+    width: 66px;
+    height: 66px;
+    object-fit: contain;
+}
+
+.stat-label {
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--accent-color);
+    line-height: 23px;
+    max-width: 240px;
+}
+
+/* ============================================
+   LODGES / ACCOMMODATIONS SECTION
+   ============================================ */
+.lodges {
+    padding: var(--section-padding);
+    background-color: var(--lodge-card-bg);
+}
+
+.lodges-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.lodges-header h2 {
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.lodges-header p {
+    max-width: 900px;
+    margin: 0 auto;
+    color: var(--text-color);
+}
+
+.lodges-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.lodge-card {
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+    height: 356px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lodge-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.lodge-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.lodge-card:hover img {
+    transform: scale(1.05);
+}
+
+.lodge-card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to bottom, rgba(29, 29, 29, 0), #1d1d1d);
+    display: flex;
+    align-items: flex-end;
+    padding: 25px;
+}
+
+.lodge-card-overlay h3 {
+    color: var(--surface-color);
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.lodges-cta {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* ============================================
+   GETTING HERE / DIRECTIONS SECTION
+   ============================================ */
+.directions {
+    padding: var(--section-padding);
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+.directions h2 {
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.directions p {
+    max-width: 500px;
+    margin: 0 auto 30px;
+    color: var(--text-color);
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+.footer {
+    background-color: var(--footer-bg);
+    padding: 60px 0 30px;
+    color: var(--surface-color);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) auto;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-links h4 {
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.footer-links a {
+    display: block;
+    font-size: 16px;
+    line-height: 37px;
+    color: var(--surface-color);
+    text-transform: uppercase;
+    transition: opacity 0.3s ease;
+}
+
+.footer-links a:hover {
+    opacity: 0.8;
+}
+
+.footer-contact p {
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--surface-color);
+}
+
+.footer-contact strong {
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.footer-social {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding-top: 10px;
+}
+
+.footer-social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.footer-social a:hover {
+    transform: scale(1.1);
+    opacity: 0.85;
+}
+
+.footer-social img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-bottom p {
+    font-size: 16px;
+    color: var(--surface-color);
+    letter-spacing: 0.96px;
+}
+
+.footer-legal {
+    display: flex;
+    gap: 40px;
+}
+
+.footer-legal a {
+    font-size: 16px;
+    color: var(--surface-color);
+    letter-spacing: 0.96px;
+    text-transform: uppercase;
+    transition: opacity 0.3s ease;
+}
+
+.footer-legal a:hover {
+    opacity: 0.8;
+}
+
+/* Footer logo section */
+.footer-logo-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo-section img {
+    height: 70px;
+    width: auto;
+}
+
+/* ============================================
+   RESPONSIVE: TABLET (max-width: 1024px)
+   ============================================ */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .about .container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-image img {
+        height: 400px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .lodges-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+/* ============================================
+   RESPONSIVE: MOBILE (max-width: 768px)
+   ============================================ */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    h1 {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    h2 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    h3 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    /* Header mobile */
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 360px;
+        height: 100vh;
+        background-color: var(--background-color);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 100px 40px 40px;
+        gap: 24px;
+        transition: right 0.4s ease;
+        box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .nav-menu.open {
+        right: 0;
+    }
+
+    .nav-cta {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    /* Hero mobile */
+    .hero {
+        min-height: 600px;
+    }
+
+    .hero-content {
+        padding: 0 20px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    /* About mobile */
+    .about {
+        padding: 60px 0;
+    }
+
+    .about-image img {
+        height: 300px;
+    }
+
+    /* Stats mobile */
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .stat-icon {
+        width: 90px;
+        height: 90px;
+    }
+
+    .stat-icon img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .stat-label {
+        font-size: 14px;
+    }
+
+    /* Lodges mobile */
+    .lodges {
+        padding: 60px 0;
+    }
+
+    .lodges-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .lodge-card {
+        height: 280px;
+    }
+
+    /* Directions mobile */
+    .directions {
+        padding: 60px 0;
+    }
+
+    /* Footer mobile */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+
+    .footer-legal {
+        gap: 20px;
+    }
+}
+
+/* ============================================
+   RESPONSIVE: SMALL MOBILE (max-width: 480px)
+   ============================================ */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+    .hero-content .btn-primary {
+        min-width: auto;
+        width: 100%;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .btn {
+        min-width: auto;
+        width: 100%;
+    }
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Scroll animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

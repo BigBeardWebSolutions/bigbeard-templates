@@ -1,0 +1,453 @@
+{
+  "template_id": "finance-denker-website-v1",
+  "name": "Finance Investment Company Website",
+  "placeholders": {
+    "{{BUSINESS_NAME}}": {
+      "default": "Capital Investments",
+      "description": "Your business or brand name displayed in the header logo alt text, footer, and page title",
+      "required": true
+    },
+    "{{TAGLINE}}": {
+      "default": "Independent Thinking, Shared Prosperity",
+      "description": "Short tagline displayed in the page title alongside the business name",
+      "required": true
+    },
+    "{{HERO_HEADLINE}}": {
+      "default": "Independent thinking, shared prosperity",
+      "description": "Main hero section headline in large bold white text",
+      "required": true
+    },
+    "{{HERO_DESCRIPTION}}": {
+      "default": "We are a specialist investment management company that offers a range of funds for South African investors. Our investment philosophy is centred on independent, long-term thinking to grow your wealth.",
+      "description": "Hero section description paragraph below the headline",
+      "required": true
+    },
+    "{{PRIMARY_CTA}}": {
+      "default": "View Our Funds",
+      "description": "Primary call-to-action button text used in the hero and navigation",
+      "required": true
+    },
+    "{{SECONDARY_CTA}}": {
+      "default": "Find Out More",
+      "description": "Secondary underlined link text used in each fund section",
+      "required": true
+    },
+    "{{NAV_LINK_1}}": {
+      "default": "Home",
+      "description": "First navigation menu item",
+      "required": true
+    },
+    "{{NAV_LINK_2}}": {
+      "default": "About Us",
+      "description": "Second navigation menu item (has dropdown chevron)",
+      "required": true
+    },
+    "{{NAV_LINK_3}}": {
+      "default": "Our Team",
+      "description": "Third navigation menu item (has dropdown chevron)",
+      "required": true
+    },
+    "{{NAV_LINK_4}}": {
+      "default": "Our Investments",
+      "description": "Fourth navigation menu item (has dropdown chevron)",
+      "required": true
+    },
+    "{{NAV_LINK_5}}": {
+      "default": "Insights",
+      "description": "Fifth navigation menu item",
+      "required": false
+    },
+    "{{NAV_LINK_6}}": {
+      "default": "Contact",
+      "description": "Sixth navigation menu item",
+      "required": true
+    },
+    "{{SECTION_FUNDS_TITLE}}": {
+      "default": "OUR FUNDS",
+      "description": "Label text displayed above each fund section title",
+      "required": true
+    },
+    "{{FUND_1_NAME}}": {
+      "default": "Multi-Asset Fund",
+      "description": "Name of the first fund (light background section)",
+      "required": true
+    },
+    "{{FUND_1_DESCRIPTION}}": {
+      "default": "A diversified multi-asset fund that aims to deliver consistent long-term returns by investing across a range of asset classes including equities, bonds, and property.",
+      "description": "Description paragraph for the first fund",
+      "required": true
+    },
+    "{{FUND_2_NAME}}": {
+      "default": "SA Equity Fund",
+      "description": "Name of the second fund (dark background section)",
+      "required": true
+    },
+    "{{FUND_2_DESCRIPTION}}": {
+      "default": "A concentrated South African equity fund that invests in high-conviction opportunities across the JSE, seeking above-market returns through fundamental analysis.",
+      "description": "Description paragraph for the second fund",
+      "required": true
+    },
+    "{{FUND_3_NAME}}": {
+      "default": "Global Equity Fund",
+      "description": "Name of the third fund (light background section)",
+      "required": true
+    },
+    "{{FUND_3_DESCRIPTION}}": {
+      "default": "A global equity fund that provides diversified international exposure by investing in leading companies across developed and emerging markets worldwide.",
+      "description": "Description paragraph for the third fund",
+      "required": true
+    },
+    "{{FUND_4_NAME}}": {
+      "default": "SA & Global Financials Fund",
+      "description": "Name of the fourth fund (dark background section)",
+      "required": true
+    },
+    "{{FUND_4_DESCRIPTION}}": {
+      "default": "A specialist fund focused on financial sector opportunities both locally and globally, investing in banks, insurers, and financial services companies.",
+      "description": "Description paragraph for the fourth fund",
+      "required": true
+    },
+    "{{FUND_5_NAME}}": {
+      "default": "Partner Fund",
+      "description": "Name of the fifth fund (light background section with partner logo)",
+      "required": true
+    },
+    "{{FUND_5_DESCRIPTION}}": {
+      "default": "A collaborative fund managed in partnership with a leading international investment house, combining local expertise with global research capabilities.",
+      "description": "Description paragraph for the fifth fund",
+      "required": true
+    },
+    "{{TEAM_MEMBER_1_NAME}}": {
+      "default": "Fund Manager 1",
+      "description": "Name of the first team member shown in fund section 1",
+      "required": true
+    },
+    "{{TEAM_MEMBER_2_NAME}}": {
+      "default": "Fund Manager 2",
+      "description": "Name of the second team member shown in fund sections 1 and 2",
+      "required": true
+    },
+    "{{TEAM_MEMBER_3_NAME}}": {
+      "default": "Fund Manager 3",
+      "description": "Name of the third team member shown in fund section 2",
+      "required": true
+    },
+    "{{TEAM_MEMBER_4_NAME}}": {
+      "default": "Fund Manager 4",
+      "description": "Name of the fourth team member shown in fund section 2",
+      "required": true
+    },
+    "{{TEAM_MEMBER_5_NAME}}": {
+      "default": "Fund Manager 5",
+      "description": "Name of the fifth team member shown in fund section 3",
+      "required": true
+    },
+    "{{TEAM_MEMBER_6_NAME}}": {
+      "default": "Fund Manager 6",
+      "description": "Name of the sixth team member shown in fund section 4",
+      "required": true
+    },
+    "{{PARTNER_NAME}}": {
+      "default": "Investment Partner",
+      "description": "Partner company name used as alt text for the partner logo in fund section 5",
+      "required": false
+    },
+    "{{SOCIAL_TWITTER}}": {
+      "default": "#",
+      "description": "URL for the Twitter/X social media profile",
+      "required": false
+    },
+    "{{SOCIAL_FACEBOOK}}": {
+      "default": "#",
+      "description": "URL for the Facebook social media profile",
+      "required": false
+    },
+    "{{SOCIAL_LINKEDIN}}": {
+      "default": "#",
+      "description": "URL for the LinkedIn social media profile",
+      "required": false
+    },
+    "{{FOOTER_LINKS_TITLE}}": {
+      "default": "Quick Links",
+      "description": "Heading text for the footer links column",
+      "required": true
+    },
+    "{{FOOTER_LINK_1}}": {
+      "default": "About Us",
+      "description": "First footer navigation link text",
+      "required": true
+    },
+    "{{FOOTER_LINK_2}}": {
+      "default": "Our Funds",
+      "description": "Second footer navigation link text",
+      "required": true
+    },
+    "{{FOOTER_LINK_3}}": {
+      "default": "Insights",
+      "description": "Third footer navigation link text",
+      "required": false
+    },
+    "{{FOOTER_LINK_4}}": {
+      "default": "Careers",
+      "description": "Fourth footer navigation link text",
+      "required": false
+    },
+    "{{FOOTER_LINK_5}}": {
+      "default": "Contact Us",
+      "description": "Fifth footer navigation link text",
+      "required": true
+    },
+    "{{LEGAL_LINK_1}}": {
+      "default": "Terms of Use",
+      "description": "First legal/compliance footer link",
+      "required": true
+    },
+    "{{LEGAL_LINK_2}}": {
+      "default": "Privacy Policy",
+      "description": "Second legal/compliance footer link",
+      "required": true
+    },
+    "{{LEGAL_LINK_3}}": {
+      "default": "PAIA Manual",
+      "description": "Third legal/compliance footer link",
+      "required": false
+    },
+    "{{LEGAL_LINK_4}}": {
+      "default": "Conflicts of Interest Policy",
+      "description": "Fourth legal/compliance footer link",
+      "required": false
+    },
+    "{{LEGAL_LINK_5}}": {
+      "default": "Disclaimer",
+      "description": "Fifth legal/compliance footer link",
+      "required": false
+    },
+    "{{SUBSCRIBE_TITLE}}": {
+      "default": "Stay Informed",
+      "description": "Heading text for the newsletter subscribe section in the footer",
+      "required": true
+    },
+    "{{SUBSCRIBE_DESCRIPTION}}": {
+      "default": "Subscribe to receive our latest investment insights and fund updates.",
+      "description": "Description text for the newsletter subscribe section",
+      "required": true
+    },
+    "{{SUBSCRIBE_PLACEHOLDER}}": {
+      "default": "Enter your email",
+      "description": "Placeholder text inside the email subscription input field",
+      "required": false
+    },
+    "{{COPYRIGHT_TEXT}}": {
+      "default": "Copyright 2026 Capital Investments. All Rights Reserved.",
+      "description": "Copyright notice displayed at the bottom of the footer",
+      "required": true
+    }
+  },
+  "image_slots": [
+    {
+      "selector": ".logo-img",
+      "property": "src",
+      "path": "images/logo.png",
+      "keywords": ["logo", "brand", "header"],
+      "aspect_ratio": "auto",
+      "min_width": 200
+    },
+    {
+      "selector": ".hero-bg-img",
+      "property": "src",
+      "path": "images/hero-bg.jpg",
+      "keywords": ["hero", "background", "investment", "cityscape"],
+      "aspect_ratio": "16:9",
+      "min_width": 1920
+    },
+    {
+      "selector": ".dots-pattern",
+      "property": "src",
+      "path": "images/dots-pattern.png",
+      "keywords": ["decorative", "pattern", "dots"],
+      "aspect_ratio": "auto",
+      "min_width": 100
+    },
+    {
+      "selector": ".fund-section__bg img",
+      "property": "src",
+      "path": "images/section-bg.jpg",
+      "keywords": ["section", "background", "texture"],
+      "aspect_ratio": "16:9",
+      "min_width": 1920
+    },
+    {
+      "selector": ".team-member:nth-child(1) img (fund-1)",
+      "property": "src",
+      "path": "images/team-member-1.png",
+      "keywords": ["team", "portrait", "fund manager"],
+      "aspect_ratio": "7:10",
+      "min_width": 280
+    },
+    {
+      "selector": ".team-member:nth-child(2) img (fund-1, fund-2)",
+      "property": "src",
+      "path": "images/team-member-2.png",
+      "keywords": ["team", "portrait", "fund manager"],
+      "aspect_ratio": "7:10",
+      "min_width": 280
+    },
+    {
+      "selector": ".team-member:nth-child(1) img (fund-2)",
+      "property": "src",
+      "path": "images/team-member-3.png",
+      "keywords": ["team", "portrait", "fund manager"],
+      "aspect_ratio": "7:10",
+      "min_width": 280
+    },
+    {
+      "selector": ".team-member:nth-child(1) img (fund-3)",
+      "property": "src",
+      "path": "images/team-member-4.png",
+      "keywords": ["team", "portrait", "fund manager"],
+      "aspect_ratio": "7:10",
+      "min_width": 280
+    },
+    {
+      "selector": ".team-member:nth-child(1) img (fund-4)",
+      "property": "src",
+      "path": "images/team-member-5.png",
+      "keywords": ["team", "portrait", "fund manager"],
+      "aspect_ratio": "7:10",
+      "min_width": 280
+    },
+    {
+      "selector": ".partner-logo",
+      "property": "src",
+      "path": "images/partner-logo.png",
+      "keywords": ["partner", "logo", "brand", "collaboration"],
+      "aspect_ratio": "auto",
+      "min_width": 300
+    },
+    {
+      "selector": ".footer__logo",
+      "property": "src",
+      "path": "images/footer-logo.png",
+      "keywords": ["logo", "footer", "brand"],
+      "aspect_ratio": "auto",
+      "min_width": 200
+    },
+    {
+      "selector": ".social-icon (twitter)",
+      "property": "svg",
+      "path": "images/social-twitter.svg",
+      "keywords": ["social", "twitter", "icon"],
+      "aspect_ratio": "1:1",
+      "min_width": 24
+    },
+    {
+      "selector": ".social-icon (facebook)",
+      "property": "svg",
+      "path": "images/social-facebook.svg",
+      "keywords": ["social", "facebook", "icon"],
+      "aspect_ratio": "1:1",
+      "min_width": 24
+    },
+    {
+      "selector": ".fund-section__label (decorative)",
+      "property": "svg",
+      "path": "images/accent-line.svg",
+      "keywords": ["decorative", "accent", "line"],
+      "aspect_ratio": "auto",
+      "min_width": 50
+    },
+    {
+      "selector": ".nav (decorative)",
+      "property": "svg",
+      "path": "images/nav-line.svg",
+      "keywords": ["decorative", "navigation", "line"],
+      "aspect_ratio": "auto",
+      "min_width": 50
+    }
+  ],
+  "sections": {
+    "hero": {
+      "required": true,
+      "customizable": true,
+      "description": "Full-width hero with background image, left-aligned gradient overlay, headline, description, primary CTA button, and pagination dots"
+    },
+    "fund-1-multi-asset": {
+      "required": true,
+      "customizable": true,
+      "description": "Light-background fund showcase section with fund name, description, underlined CTA link, and two team member portraits"
+    },
+    "fund-2-sa-equity": {
+      "required": true,
+      "customizable": true,
+      "description": "Dark-background fund showcase section with white text, fund details, and two team member portraits"
+    },
+    "fund-3-global-equity": {
+      "required": false,
+      "customizable": true,
+      "description": "Light-background fund showcase section with a single team member portrait"
+    },
+    "fund-4-sa-global-financials": {
+      "required": false,
+      "customizable": true,
+      "description": "Dark-background fund showcase section with a single team member portrait"
+    },
+    "fund-5-partner-fund": {
+      "required": false,
+      "customizable": true,
+      "description": "Light-background fund section with partner logo instead of team members"
+    },
+    "footer": {
+      "required": true,
+      "customizable": true,
+      "description": "Dark footer with four-column grid: brand logo with social icons, quick links, legal links, and newsletter subscribe form with copyright bar"
+    }
+  },
+  "css_variables": {
+    "--primary-color": {
+      "default": "#FE5000",
+      "description": "Primary brand color (vibrant orange) used for CTAs, links, and accents"
+    },
+    "--secondary-color": {
+      "default": "#262626",
+      "description": "Secondary brand color (near-black) used for dark section backgrounds"
+    },
+    "--accent-color": {
+      "default": "#F45905",
+      "description": "Accent color (darker orange) used for hover states and the subscribe button"
+    },
+    "--surface-color": {
+      "default": "#FFFFFF",
+      "description": "Surface/card color (white) used for header background and light text on dark"
+    },
+    "--text-color": {
+      "default": "#1E2222",
+      "description": "Primary text color (dark charcoal) for body text on light backgrounds"
+    },
+    "--text-light": {
+      "default": "#D4D7DD",
+      "description": "Light text color used for footer body text and input borders"
+    },
+    "--background-color": {
+      "default": "#FFFFFF",
+      "description": "Page background color (white)"
+    },
+    "--background-dark": {
+      "default": "#262626",
+      "description": "Dark background for alternating fund sections and footer"
+    },
+    "--background-overlay-light": {
+      "default": "#EBECEE",
+      "description": "Light overlay applied to alternating light fund sections"
+    },
+    "--font-family": {
+      "default": "'Open Sans', sans-serif",
+      "description": "Primary font family used for all text throughout the template"
+    }
+  },
+  "responsive_breakpoints": {
+    "desktop": "1280px",
+    "tablet": "1024px",
+    "mobile": "768px",
+    "small": "480px"
+  }
+}

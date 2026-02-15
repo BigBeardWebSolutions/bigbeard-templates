@@ -1,0 +1,54 @@
+{
+  "template_id": "healthcare-hasa-conference-newsletter-v1",
+  "name": "HASA Conference Newsletter Email Template",
+  "figma_source": "figma-mcp-export",
+  "industry": "healthcare",
+  "type": "newsletter",
+  "cta_intent": "signup",
+  "design_style": "modern",
+  "color_palette": {
+    "primary": "#3c3c3c",
+    "secondary": "#ee3524",
+    "accent": "#c42837",
+    "background": "#ffffff",
+    "surface": "#efefef",
+    "text_primary": "#3c3c3c",
+    "text_secondary": "#ffffff"
+  },
+  "typography": {
+    "heading_font": "Arial",
+    "body_font": "Arial",
+    "base_size": "15px"
+  },
+  "sections": [
+    "header",
+    "hero",
+    "intro",
+    "abstracts",
+    "delegate",
+    "exhibition",
+    "video",
+    "welcome",
+    "secretariat",
+    "footer"
+  ],
+  "description": "A professional 680px-wide email newsletter template for the HASA healthcare conference. Features a hero banner with gradient overlay, call-for-abstracts section with dark red background and watermark, delegate registration and exhibition booking sections with split layouts, video highlights with play button overlay, conference secretariat contact details, and a dark footer. Uses Arial for email-safe typography with red/charcoal/grey color scheme. Ideal for healthcare conferences, medical events, and professional association communications.",
+  "keywords": [
+    "healthcare",
+    "conference",
+    "newsletter",
+    "email template",
+    "event registration",
+    "abstracts",
+    "exhibition",
+    "delegate",
+    "medical conference",
+    "CPD",
+    "HASA",
+    "sustainable healthcare",
+    "email marketing",
+    "event promotion"
+  ],
+  "created_at": "2026-02-15T18:00:00Z",
+  "source": "figma-mcp"
+}

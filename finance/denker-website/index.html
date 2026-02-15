@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{BUSINESS_NAME}} - {{TAGLINE}}</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <a href="#home">
+                    <img src="images/logo.png" alt="{{BUSINESS_NAME}}" class="logo-img">
+                </a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home">{{NAV_LINK_1}}</a></li>
+                <li class="has-dropdown">
+                    <a href="#about">{{NAV_LINK_2}} <i class="fas fa-chevron-down"></i></a>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#team">{{NAV_LINK_3}} <i class="fas fa-chevron-down"></i></a>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#investments">{{NAV_LINK_4}} <i class="fas fa-chevron-down"></i></a>
+                </li>
+                <li><a href="#insights">{{NAV_LINK_5}}</a></li>
+                <li><a href="#contact">{{NAV_LINK_6}}</a></li>
+            </ul>
+            <a href="#funds" class="btn btn-primary nav-cta">{{PRIMARY_CTA}}</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-bg">
+                <img src="images/hero-bg.jpg" alt="Hero background" class="hero-bg-img">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-headline">{{HERO_HEADLINE}}</h1>
+                <div class="hero-description">
+                    <p>{{HERO_DESCRIPTION}}</p>
+                </div>
+                <a href="#funds" class="btn btn-primary hero-cta">{{PRIMARY_CTA}}</a>
+                <div class="hero-pagination">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+            <div class="hero-decorative">
+                <img src="images/dots-pattern.png" alt="" class="dots-pattern" aria-hidden="true">
+            </div>
+        </section>
+
+        <!-- Fund Section 1: Multi-Asset -->
+        <section id="fund-1" class="fund-section fund-section--light">
+            <div class="fund-section__inner">
+                <div class="fund-section__content">
+                    <span class="fund-section__label">{{SECTION_FUNDS_TITLE}}</span>
+                    <h2 class="fund-section__title">{{FUND_1_NAME}}</h2>
+                    <p class="fund-section__description">{{FUND_1_DESCRIPTION}}</p>
+                    <a href="#" class="link-underline">{{SECONDARY_CTA}}</a>
+                </div>
+                <div class="fund-section__team">
+                    <div class="team-member">
+                        <div class="team-member__photo">
+                            <img src="images/team-member-1.png" alt="{{TEAM_MEMBER_1_NAME}}">
+                        </div>
+                        <p class="team-member__name">{{TEAM_MEMBER_1_NAME}}</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-member__photo">
+                            <img src="images/team-member-2.png" alt="{{TEAM_MEMBER_2_NAME}}">
+                        </div>
+                        <p class="team-member__name">{{TEAM_MEMBER_2_NAME}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="fund-section__bg">
+                <img src="images/section-bg.jpg" alt="" aria-hidden="true">
+                <div class="fund-section__bg-overlay fund-section__bg-overlay--light"></div>
+            </div>
+        </section>
+
+        <!-- Fund Section 2: SA Equity -->
+        <section id="fund-2" class="fund-section fund-section--dark">
+            <div class="fund-section__inner">
+                <div class="fund-section__content">
+                    <span class="fund-section__label fund-section__label--white">{{SECTION_FUNDS_TITLE}}</span>
+                    <h2 class="fund-section__title fund-section__title--white">{{FUND_2_NAME}}</h2>
+                    <p class="fund-section__description fund-section__description--white">{{FUND_2_DESCRIPTION}}</p>
+                    <a href="#" class="link-underline">{{SECONDARY_CTA}}</a>
+                </div>
+                <div class="fund-section__team">
+                    <div class="team-member">
+                        <div class="team-member__photo">
+                            <img src="images/team-member-3.png" alt="{{TEAM_MEMBER_3_NAME}}">
+                        </div>
+                        <p class="team-member__name team-member__name--white">{{TEAM_MEMBER_3_NAME}}</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-member__photo">
+                            <img src="images/team-member-2.png" alt="{{TEAM_MEMBER_4_NAME}}">
+                        </div>
+                        <p class="team-member__name team-member__name--white">{{TEAM_MEMBER_4_NAME}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="fund-section__bg">
+                <img src="images/section-bg.jpg" alt="" aria-hidden="true">
+                <div class="fund-section__bg-overlay fund-section__bg-overlay--dark"></div>
+            </div>
+        </section>
+
+        <!-- Fund Section 3: Global Equity -->
+        <section id="fund-3" class="fund-section fund-section--light">
+            <div class="fund-section__inner">
+                <div class="fund-section__content">
+                    <span class="fund-section__label">{{SECTION_FUNDS_TITLE}}</span>
+                    <h2 class="fund-section__title">{{FUND_3_NAME}}</h2>
+                    <p class="fund-section__description">{{FUND_3_DESCRIPTION}}</p>
+                    <a href="#" class="link-underline">{{SECONDARY_CTA}}</a>
+                </div>
+                <div class="fund-section__team">
+                    <div class="team-member">
+                        <div class="team-member__photo">
+                            <img src="images/team-member-4.png" alt="{{TEAM_MEMBER_5_NAME}}">
+                        </div>
+                        <p class="team-member__name">{{TEAM_MEMBER_5_NAME}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="fund-section__bg">
+                <img src="images/section-bg.jpg" alt="" aria-hidden="true">
+                <div class="fund-section__bg-overlay fund-section__bg-overlay--light"></div>
+            </div>
+        </section>
+
+        <!-- Fund Section 4: SA & Global Financials -->
+        <section id="fund-4" class="fund-section fund-section--dark">
+            <div class="fund-section__inner">
+                <div class="fund-section__content">
+                    <span class="fund-section__label fund-section__label--white">{{SECTION_FUNDS_TITLE}}</span>
+                    <h2 class="fund-section__title fund-section__title--white">{{FUND_4_NAME}}</h2>
+                    <p class="fund-section__description fund-section__description--white">{{FUND_4_DESCRIPTION}}</p>
+                    <a href="#" class="link-underline">{{SECONDARY_CTA}}</a>
+                </div>
+                <div class="fund-section__team">
+                    <div class="team-member">
+                        <div class="team-member__photo">
+                            <img src="images/team-member-5.png" alt="{{TEAM_MEMBER_6_NAME}}">
+                        </div>
+                        <p class="team-member__name team-member__name--white">{{TEAM_MEMBER_6_NAME}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="fund-section__bg">
+                <img src="images/section-bg.jpg" alt="" aria-hidden="true">
+                <div class="fund-section__bg-overlay fund-section__bg-overlay--dark"></div>
+            </div>
+        </section>
+
+        <!-- Fund Section 5: Partner Fund -->
+        <section id="fund-5" class="fund-section fund-section--light">
+            <div class="fund-section__inner">
+                <div class="fund-section__content">
+                    <span class="fund-section__label">{{SECTION_FUNDS_TITLE}}</span>
+                    <h2 class="fund-section__title">{{FUND_5_NAME}}</h2>
+                    <p class="fund-section__description">{{FUND_5_DESCRIPTION}}</p>
+                    <a href="#" class="link-underline">{{SECONDARY_CTA}}</a>
+                </div>
+                <div class="fund-section__partner">
+                    <img src="images/partner-logo.png" alt="{{PARTNER_NAME}}" class="partner-logo">
+                </div>
+            </div>
+            <div class="fund-section__bg">
+                <img src="images/section-bg.jpg" alt="" aria-hidden="true">
+                <div class="fund-section__bg-overlay fund-section__bg-overlay--light"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__brand">
+                <img src="images/footer-logo.png" alt="{{BUSINESS_NAME}}" class="footer__logo">
+                <div class="footer__social">
+                    <a href="{{SOCIAL_TWITTER}}" class="social-icon" aria-label="Twitter/X">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a href="{{SOCIAL_FACEBOOK}}" class="social-icon" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="{{SOCIAL_LINKEDIN}}" class="social-icon" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer__links">
+                <h3 class="footer__heading">{{FOOTER_LINKS_TITLE}}</h3>
+                <ul class="footer__list">
+                    <li><a href="#about">{{FOOTER_LINK_1}}</a></li>
+                    <li><a href="#funds">{{FOOTER_LINK_2}}</a></li>
+                    <li><a href="#insights">{{FOOTER_LINK_3}}</a></li>
+                    <li><a href="#careers">{{FOOTER_LINK_4}}</a></li>
+                    <li><a href="#contact">{{FOOTER_LINK_5}}</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__legal">
+                <ul class="footer__legal-list">
+                    <li><a href="#">{{LEGAL_LINK_1}}</a></li>
+                    <li><a href="#">{{LEGAL_LINK_2}}</a></li>
+                    <li><a href="#">{{LEGAL_LINK_3}}</a></li>
+                    <li><a href="#">{{LEGAL_LINK_4}}</a></li>
+                    <li><a href="#">{{LEGAL_LINK_5}}</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__subscribe">
+                <h3 class="footer__heading">{{SUBSCRIBE_TITLE}}</h3>
+                <p class="footer__subscribe-text">{{SUBSCRIBE_DESCRIPTION}}</p>
+                <form class="subscribe-form" aria-label="Subscribe to newsletter">
+                    <input type="email" placeholder="{{SUBSCRIBE_PLACEHOLDER}}" required>
+                    <button type="submit" class="subscribe-btn" aria-label="Subscribe">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p class="footer__copyright">{{COPYRIGHT_TEXT}}</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
