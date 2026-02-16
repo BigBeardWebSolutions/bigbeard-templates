@@ -1,6 +1,6 @@
 /**
  * Finance Investment Company Website - Main JavaScript
- * Template: finance-denker-website-v1
+ * Template: finance-investment-company-v1
  *
  * Vanilla JavaScript for interactive elements:
  * - Mobile hamburger menu toggle

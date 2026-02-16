@@ -3,7 +3,7 @@
   "name": "Finance Investment Company Website",
   "placeholders": {
     "{{BUSINESS_NAME}}": {
-      "default": "Capital Investments",
+      "default": "Your Company Name",
       "description": "Your business or brand name displayed in the header logo alt text, footer, and page title",
       "required": true
     },
@@ -238,7 +238,7 @@
       "required": false
     },
     "{{COPYRIGHT_TEXT}}": {
-      "default": "Copyright 2026 Capital Investments. All Rights Reserved.",
+      "default": "Copyright (c) Your Company 2026. All Rights Reserved",
       "description": "Copyright notice displayed at the bottom of the footer",
       "required": true
     }
@@ -248,7 +248,11 @@
       "selector": ".logo-img",
       "property": "src",
       "path": "images/logo.png",
-      "keywords": ["logo", "brand", "header"],
+      "keywords": [
+        "logo",
+        "brand",
+        "header"
+      ],
       "aspect_ratio": "auto",
       "min_width": 200
     },
@@ -256,7 +260,12 @@
       "selector": ".hero-bg-img",
       "property": "src",
       "path": "images/hero-bg.jpg",
-      "keywords": ["hero", "background", "investment", "cityscape"],
+      "keywords": [
+        "hero",
+        "background",
+        "investment",
+        "cityscape"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 1920
     },
@@ -264,7 +273,11 @@
       "selector": ".dots-pattern",
       "property": "src",
       "path": "images/dots-pattern.png",
-      "keywords": ["decorative", "pattern", "dots"],
+      "keywords": [
+        "decorative",
+        "pattern",
+        "dots"
+      ],
       "aspect_ratio": "auto",
       "min_width": 100
     },
@@ -272,7 +285,11 @@
       "selector": ".fund-section__bg img",
       "property": "src",
       "path": "images/section-bg.jpg",
-      "keywords": ["section", "background", "texture"],
+      "keywords": [
+        "section",
+        "background",
+        "texture"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 1920
     },
@@ -280,7 +297,11 @@
       "selector": ".team-member:nth-child(1) img (fund-1)",
       "property": "src",
       "path": "images/team-member-1.png",
-      "keywords": ["team", "portrait", "fund manager"],
+      "keywords": [
+        "team",
+        "portrait",
+        "fund manager"
+      ],
       "aspect_ratio": "7:10",
       "min_width": 280
     },
@@ -288,7 +309,11 @@
       "selector": ".team-member:nth-child(2) img (fund-1, fund-2)",
       "property": "src",
       "path": "images/team-member-2.png",
-      "keywords": ["team", "portrait", "fund manager"],
+      "keywords": [
+        "team",
+        "portrait",
+        "fund manager"
+      ],
       "aspect_ratio": "7:10",
       "min_width": 280
     },
@@ -296,7 +321,11 @@
       "selector": ".team-member:nth-child(1) img (fund-2)",
       "property": "src",
       "path": "images/team-member-3.png",
-      "keywords": ["team", "portrait", "fund manager"],
+      "keywords": [
+        "team",
+        "portrait",
+        "fund manager"
+      ],
       "aspect_ratio": "7:10",
       "min_width": 280
     },
@@ -304,7 +333,11 @@
       "selector": ".team-member:nth-child(1) img (fund-3)",
       "property": "src",
       "path": "images/team-member-4.png",
-      "keywords": ["team", "portrait", "fund manager"],
+      "keywords": [
+        "team",
+        "portrait",
+        "fund manager"
+      ],
       "aspect_ratio": "7:10",
       "min_width": 280
     },
@@ -312,7 +345,11 @@
       "selector": ".team-member:nth-child(1) img (fund-4)",
       "property": "src",
       "path": "images/team-member-5.png",
-      "keywords": ["team", "portrait", "fund manager"],
+      "keywords": [
+        "team",
+        "portrait",
+        "fund manager"
+      ],
       "aspect_ratio": "7:10",
       "min_width": 280
     },
@@ -320,7 +357,12 @@
       "selector": ".partner-logo",
       "property": "src",
       "path": "images/partner-logo.png",
-      "keywords": ["partner", "logo", "brand", "collaboration"],
+      "keywords": [
+        "partner",
+        "logo",
+        "brand",
+        "collaboration"
+      ],
       "aspect_ratio": "auto",
       "min_width": 300
     },
@@ -328,7 +370,11 @@
       "selector": ".footer__logo",
       "property": "src",
       "path": "images/footer-logo.png",
-      "keywords": ["logo", "footer", "brand"],
+      "keywords": [
+        "logo",
+        "footer",
+        "brand"
+      ],
       "aspect_ratio": "auto",
       "min_width": 200
     },
@@ -336,7 +382,11 @@
       "selector": ".social-icon (twitter)",
       "property": "svg",
       "path": "images/social-twitter.svg",
-      "keywords": ["social", "twitter", "icon"],
+      "keywords": [
+        "social",
+        "twitter",
+        "icon"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 24
     },
@@ -344,7 +394,11 @@
       "selector": ".social-icon (facebook)",
       "property": "svg",
       "path": "images/social-facebook.svg",
-      "keywords": ["social", "facebook", "icon"],
+      "keywords": [
+        "social",
+        "facebook",
+        "icon"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 24
     },
@@ -352,7 +406,11 @@
       "selector": ".fund-section__label (decorative)",
       "property": "svg",
       "path": "images/accent-line.svg",
-      "keywords": ["decorative", "accent", "line"],
+      "keywords": [
+        "decorative",
+        "accent",
+        "line"
+      ],
       "aspect_ratio": "auto",
       "min_width": 50
     },
@@ -360,7 +418,11 @@
       "selector": ".nav (decorative)",
       "property": "svg",
       "path": "images/nav-line.svg",
-      "keywords": ["decorative", "navigation", "line"],
+      "keywords": [
+        "decorative",
+        "navigation",
+        "line"
+      ],
       "aspect_ratio": "auto",
       "min_width": 50
     }

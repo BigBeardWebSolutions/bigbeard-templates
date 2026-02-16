@@ -3,7 +3,7 @@
   "name": "Nonprofit Community Trust Website",
   "placeholders": {
     "{{BUSINESS_NAME}}": {
-      "default": "Community Trust",
+      "default": "Your Company Name",
       "description": "Organization or trust name displayed in header, footer, and copyright",
       "required": true
     },
@@ -218,12 +218,12 @@
       "required": false
     },
     "{{PHONE}}": {
-      "default": "+27 21 001 3693",
+      "default": "+1 (555) 000-0000",
       "description": "Organization contact phone number",
       "required": true
     },
     "{{EMAIL}}": {
-      "default": "info@example.org",
+      "default": "info@example.com",
       "description": "Organization contact email address",
       "required": true
     },
@@ -303,7 +303,7 @@
       "required": false
     },
     "{{COPYRIGHT_TEXT}}": {
-      "default": "All Rights Reserved.",
+      "default": "Copyright (c) Your Company 2026. All Rights Reserved",
       "description": "Copyright notice text following the year and business name",
       "required": false
     }
@@ -313,7 +313,13 @@
       "selector": ".hero__slide:nth-child(1) .hero__slide-image",
       "property": "src",
       "path": "images/hero-banner.jpg",
-      "keywords": ["hero", "community", "people", "sunset", "silhouette"],
+      "keywords": [
+        "hero",
+        "community",
+        "people",
+        "sunset",
+        "silhouette"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 1920
     },
@@ -321,7 +327,12 @@
       "selector": ".hero__slide:nth-child(2) .hero__slide-image",
       "property": "src",
       "path": "images/hero-banner-2.jpg",
-      "keywords": ["hero", "nature", "sunset", "landscape"],
+      "keywords": [
+        "hero",
+        "nature",
+        "sunset",
+        "landscape"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 1920
     },
@@ -329,7 +340,13 @@
       "selector": ".hero__slide:nth-child(3) .hero__slide-image",
       "property": "src",
       "path": "images/hero-banner-3.jpg",
-      "keywords": ["hero", "community", "celebration", "people", "sunset"],
+      "keywords": [
+        "hero",
+        "community",
+        "celebration",
+        "people",
+        "sunset"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 1920
     },
@@ -337,7 +354,13 @@
       "selector": ".about__image",
       "property": "src",
       "path": "images/about-us.jpg",
-      "keywords": ["about", "solar", "energy", "renewable", "development"],
+      "keywords": [
+        "about",
+        "solar",
+        "energy",
+        "renewable",
+        "development"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 795
     },
@@ -345,7 +368,13 @@
       "selector": ".what-we-do__bg",
       "property": "src",
       "path": "images/what-we-do-bg.jpg",
-      "keywords": ["background", "nature", "community", "landscape", "savanna"],
+      "keywords": [
+        "background",
+        "nature",
+        "community",
+        "landscape",
+        "savanna"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 1920
     },
@@ -353,7 +382,12 @@
       "selector": ".community__bg",
       "property": "src",
       "path": "images/community-bg.jpg",
-      "keywords": ["background", "community", "landscape", "africa"],
+      "keywords": [
+        "background",
+        "community",
+        "landscape",
+        "africa"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 1920
     },
@@ -361,7 +395,12 @@
       "selector": ".trustee:nth-child(1) .trustee__image",
       "property": "src",
       "path": "images/trustee-1.png",
-      "keywords": ["trustee", "portrait", "professional", "person"],
+      "keywords": [
+        "trustee",
+        "portrait",
+        "professional",
+        "person"
+      ],
       "aspect_ratio": "auto",
       "min_width": 407
     },
@@ -369,7 +408,12 @@
       "selector": ".trustee:nth-child(2) .trustee__image",
       "property": "src",
       "path": "images/trustee-2.png",
-      "keywords": ["trustee", "portrait", "professional", "person"],
+      "keywords": [
+        "trustee",
+        "portrait",
+        "professional",
+        "person"
+      ],
       "aspect_ratio": "auto",
       "min_width": 407
     },
@@ -377,7 +421,11 @@
       "selector": ".header__logo img",
       "property": "src",
       "path": "images/logo.png",
-      "keywords": ["logo", "brand", "identity"],
+      "keywords": [
+        "logo",
+        "brand",
+        "identity"
+      ],
       "aspect_ratio": "auto",
       "min_width": 200
     },
@@ -385,7 +433,12 @@
       "selector": ".focus__item:nth-child(1) .focus__icon",
       "property": "src",
       "path": "images/focus-icon-1.png",
-      "keywords": ["icon", "enterprise", "business", "development"],
+      "keywords": [
+        "icon",
+        "enterprise",
+        "business",
+        "development"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 86
     },
@@ -393,7 +446,12 @@
       "selector": ".focus__item:nth-child(2) .focus__icon",
       "property": "src",
       "path": "images/focus-icon-2.png",
-      "keywords": ["icon", "education", "youth", "learning"],
+      "keywords": [
+        "icon",
+        "education",
+        "youth",
+        "learning"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 86
     },
@@ -401,7 +459,11 @@
       "selector": ".top-bar__contact:first-child img",
       "property": "src",
       "path": "images/phone-icon.png",
-      "keywords": ["icon", "phone", "contact"],
+      "keywords": [
+        "icon",
+        "phone",
+        "contact"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 22
     },
@@ -409,7 +471,11 @@
       "selector": ".top-bar__contact:last-child img",
       "property": "src",
       "path": "images/email-icon.png",
-      "keywords": ["icon", "email", "contact"],
+      "keywords": [
+        "icon",
+        "email",
+        "contact"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 22
     }

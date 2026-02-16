@@ -18,11 +18,33 @@
     "heading_font": "Myriad Pro",
     "body_font": "Myriad Pro",
     "base_size": "20px",
-    "h1": { "size": "64px", "weight": 700, "lineHeight": "70px" },
-    "h2": { "size": "48px", "weight": 600, "lineHeight": "100%" },
-    "h3": { "size": "25px", "weight": 600, "lineHeight": "100%" },
-    "h4": { "size": "20px", "weight": 300, "lineHeight": "0.15", "letterSpacing": "1.5px", "textTransform": "uppercase" },
-    "body": { "size": "20px", "weight": 400, "lineHeight": "1.5" }
+    "h1": {
+      "size": "64px",
+      "weight": 700,
+      "lineHeight": "70px"
+    },
+    "h2": {
+      "size": "48px",
+      "weight": 600,
+      "lineHeight": "100%"
+    },
+    "h3": {
+      "size": "25px",
+      "weight": 600,
+      "lineHeight": "100%"
+    },
+    "h4": {
+      "size": "20px",
+      "weight": 300,
+      "lineHeight": "0.15",
+      "letterSpacing": "1.5px",
+      "textTransform": "uppercase"
+    },
+    "body": {
+      "size": "20px",
+      "weight": 400,
+      "lineHeight": "1.5"
+    }
   },
   "sections": [
     "topbar",

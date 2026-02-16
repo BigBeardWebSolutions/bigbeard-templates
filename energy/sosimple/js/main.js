@@ -1,5 +1,5 @@
 /**
- * Sosimple Energy Template - Main JavaScript
+ * Solar Energy Template - Main JavaScript
  * Handles interactivity, navigation, scroll effects, and animations
  */
 

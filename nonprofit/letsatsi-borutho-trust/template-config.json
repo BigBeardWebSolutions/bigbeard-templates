@@ -3,7 +3,7 @@
   "name": "Nonprofit Community Trust Website",
   "placeholders": {
     "{{BUSINESS_NAME}}": {
-      "default": "Community Trust",
+      "default": "Your Company Name",
       "description": "Organization or trust name",
       "required": true
     },
@@ -23,12 +23,12 @@
       "required": false
     },
     "{{PHONE}}": {
-      "default": "+27 21 000 0000",
+      "default": "+1 (555) 000-0000",
       "description": "Organization phone number",
       "required": true
     },
     "{{EMAIL}}": {
-      "default": "info@communitytrust.org",
+      "default": "info@example.com",
       "description": "Organization email address",
       "required": true
     },
@@ -438,7 +438,7 @@
       "required": true
     },
     "{{COPYRIGHT_TEXT}}": {
-      "default": "2026 Community Trust. All Rights Reserved.",
+      "default": "Copyright (c) Your Company 2026. All Rights Reserved",
       "description": "Footer copyright text",
       "required": true
     }
@@ -448,7 +448,11 @@
       "selector": ".header__logo",
       "property": "src",
       "path": "images/logo.png",
-      "keywords": ["logo", "brand", "trust"],
+      "keywords": [
+        "logo",
+        "brand",
+        "trust"
+      ],
       "aspect_ratio": "auto",
       "min_width": 91
     },
@@ -456,7 +460,13 @@
       "selector": ".hero__slide:nth-child(1) .hero__slide-image",
       "property": "src",
       "path": "images/hero-slide-1.jpg",
-      "keywords": ["hero", "community", "people", "sunset", "silhouette"],
+      "keywords": [
+        "hero",
+        "community",
+        "people",
+        "sunset",
+        "silhouette"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 1920
     },
@@ -464,7 +474,12 @@
       "selector": ".hero__slide:nth-child(2) .hero__slide-image",
       "property": "src",
       "path": "images/hero-slide-2.jpg",
-      "keywords": ["hero", "youth", "education", "program"],
+      "keywords": [
+        "hero",
+        "youth",
+        "education",
+        "program"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 1920
     },
@@ -472,7 +487,12 @@
       "selector": ".hero__slide:nth-child(3) .hero__slide-image",
       "property": "src",
       "path": "images/hero-slide-3.jpg",
-      "keywords": ["hero", "energy", "solar", "renewable"],
+      "keywords": [
+        "hero",
+        "energy",
+        "solar",
+        "renewable"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 1920
     },
@@ -480,7 +500,13 @@
       "selector": ".about__image",
       "property": "src",
       "path": "images/about-image.jpg",
-      "keywords": ["about", "solar", "renewable", "energy", "project"],
+      "keywords": [
+        "about",
+        "solar",
+        "renewable",
+        "energy",
+        "project"
+      ],
       "aspect_ratio": "4:3",
       "min_width": 800
     },
@@ -488,7 +514,12 @@
       "selector": ".focus__card:nth-child(1) .focus__card-icon img",
       "property": "src",
       "path": "images/icon-enterprise.png",
-      "keywords": ["icon", "enterprise", "business", "development"],
+      "keywords": [
+        "icon",
+        "enterprise",
+        "business",
+        "development"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 140
     },
@@ -496,7 +527,12 @@
       "selector": ".focus__card:nth-child(2) .focus__card-icon img",
       "property": "src",
       "path": "images/icon-education.png",
-      "keywords": ["icon", "education", "youth", "skills"],
+      "keywords": [
+        "icon",
+        "education",
+        "youth",
+        "skills"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 140
     },
@@ -504,7 +540,12 @@
       "selector": ".focus__card:nth-child(3) .focus__card-icon img",
       "property": "src",
       "path": "images/icon-food.png",
-      "keywords": ["icon", "food", "nutrition", "security"],
+      "keywords": [
+        "icon",
+        "food",
+        "nutrition",
+        "security"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 140
     },
@@ -512,7 +553,13 @@
       "selector": ".impact__bg",
       "property": "src",
       "path": "images/impact-bg.jpg",
-      "keywords": ["landscape", "africa", "savanna", "sunset", "nature"],
+      "keywords": [
+        "landscape",
+        "africa",
+        "savanna",
+        "sunset",
+        "nature"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 1920
     },
@@ -520,7 +567,12 @@
       "selector": ".trustee-card:nth-child(1) .trustee-card__image",
       "property": "src",
       "path": "images/trustee-1.png",
-      "keywords": ["trustee", "person", "portrait", "professional"],
+      "keywords": [
+        "trustee",
+        "person",
+        "portrait",
+        "professional"
+      ],
       "aspect_ratio": "auto",
       "min_width": 380
     },
@@ -528,7 +580,12 @@
       "selector": ".trustee-card:nth-child(2) .trustee-card__image",
       "property": "src",
       "path": "images/trustee-2.png",
-      "keywords": ["trustee", "person", "portrait", "professional"],
+      "keywords": [
+        "trustee",
+        "person",
+        "portrait",
+        "professional"
+      ],
       "aspect_ratio": "auto",
       "min_width": 380
     },
@@ -536,7 +593,12 @@
       "selector": ".apply-banner__bg",
       "property": "src",
       "path": "images/apply-bg.jpg",
-      "keywords": ["background", "community", "gathering", "people"],
+      "keywords": [
+        "background",
+        "community",
+        "gathering",
+        "people"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 1920
     },
@@ -544,7 +606,12 @@
       "selector": ".speak-out__image",
       "property": "src",
       "path": "images/speak-out-image.jpg",
-      "keywords": ["community", "engagement", "people", "meeting"],
+      "keywords": [
+        "community",
+        "engagement",
+        "people",
+        "meeting"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 1920
     },
@@ -552,7 +619,12 @@
       "selector": ".speak-out-banner__bg",
       "property": "src",
       "path": "images/speak-out-bg.jpg",
-      "keywords": ["background", "dark", "abstract", "overlay"],
+      "keywords": [
+        "background",
+        "dark",
+        "abstract",
+        "overlay"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 1920
     }

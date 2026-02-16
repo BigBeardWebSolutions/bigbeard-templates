@@ -3,7 +3,7 @@
   "name": "Manufacturing Creative Factory Website",
   "placeholders": {
     "{{BUSINESS_NAME}}": {
-      "default": "Fuse Factory",
+      "default": "Your Company Name",
       "description": "Your business or brand name displayed in the header, footer, and copyright",
       "required": true
     },
@@ -33,17 +33,17 @@
       "required": false
     },
     "{{PHONE}}": {
-      "default": "087 897 6494",
+      "default": "+1 (555) 000-0000",
       "description": "Business phone number displayed in footer",
       "required": true
     },
     "{{EMAIL}}": {
-      "default": "info@example.co.za",
+      "default": "info@example.com",
       "description": "Business contact email address",
       "required": true
     },
     "{{ADDRESS}}": {
-      "default": "17 Glenhove Rd, Melrose Estate, Johannesburg, 2196",
+      "default": "17 Glenhove Rd, Melrose Estate, Anytown, 2196",
       "description": "Physical business address",
       "required": false
     },
@@ -163,7 +163,7 @@
       "required": true
     },
     "{{TESTIMONIAL_1_AUTHOR}}": {
-      "default": "Client Team A",
+      "default": "Jane Doe",
       "description": "First testimonial author or company name",
       "required": true
     },
@@ -178,7 +178,7 @@
       "required": true
     },
     "{{TESTIMONIAL_2_AUTHOR}}": {
-      "default": "Client Team B",
+      "default": "John Smith",
       "description": "Second testimonial author or company name",
       "required": true
     },
@@ -213,7 +213,7 @@
       "required": true
     },
     "{{FOOTER_ADDRESS}}": {
-      "default": "Rooted in South Africa, with a presence in both Cape Town and Johannesburg",
+      "default": "Rooted in South Africa, with a presence in both Anytown and Anytown",
       "description": "Location description in the footer",
       "required": false
     },
@@ -253,7 +253,10 @@
       "selector": ".logo-img",
       "property": "src",
       "path": "images/logo.png",
-      "keywords": ["logo", "brand"],
+      "keywords": [
+        "logo",
+        "brand"
+      ],
       "aspect_ratio": "auto",
       "min_width": 383
     },
@@ -261,7 +264,12 @@
       "selector": ".hero-bg",
       "property": "background-image",
       "path": "images/hero-bg.png",
-      "keywords": ["hero", "factory", "industrial", "creative"],
+      "keywords": [
+        "hero",
+        "factory",
+        "industrial",
+        "creative"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 1920
     },
@@ -269,7 +277,11 @@
       "selector": ".service-card-bg",
       "property": "background-image",
       "path": "images/service-card-bg.png",
-      "keywords": ["glassmorphism", "card", "service"],
+      "keywords": [
+        "glassmorphism",
+        "card",
+        "service"
+      ],
       "aspect_ratio": "auto",
       "min_width": 543
     },
@@ -277,7 +289,12 @@
       "selector": ".services-bg",
       "property": "background-image",
       "path": "images/services-bg.png",
-      "keywords": ["services", "background", "purple", "gradient"],
+      "keywords": [
+        "services",
+        "background",
+        "purple",
+        "gradient"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 1920
     },
@@ -285,7 +302,11 @@
       "selector": ".case-study-1 img",
       "property": "src",
       "path": "images/case-study-1.png",
-      "keywords": ["case study", "portfolio", "project"],
+      "keywords": [
+        "case study",
+        "portfolio",
+        "project"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 947
     },
@@ -293,7 +314,11 @@
       "selector": ".case-study-2 img",
       "property": "src",
       "path": "images/case-study-2.png",
-      "keywords": ["case study", "portfolio", "project"],
+      "keywords": [
+        "case study",
+        "portfolio",
+        "project"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 951
     },
@@ -301,7 +326,11 @@
       "selector": ".testimonial-image",
       "property": "src",
       "path": "images/testimonial-image.png",
-      "keywords": ["testimonial", "review", "google"],
+      "keywords": [
+        "testimonial",
+        "review",
+        "google"
+      ],
       "aspect_ratio": "auto",
       "min_width": 247
     },
@@ -309,7 +338,11 @@
       "selector": ".subscribe-image",
       "property": "src",
       "path": "images/subscribe-image.png",
-      "keywords": ["subscribe", "newsletter", "devices"],
+      "keywords": [
+        "subscribe",
+        "newsletter",
+        "devices"
+      ],
       "aspect_ratio": "3:2",
       "min_width": 765
     },
@@ -317,7 +350,10 @@
       "selector": ".partner-logo-1",
       "property": "src",
       "path": "images/partner-1.png",
-      "keywords": ["partner", "logo"],
+      "keywords": [
+        "partner",
+        "logo"
+      ],
       "aspect_ratio": "auto",
       "min_width": 200
     },
@@ -325,7 +361,10 @@
       "selector": ".partner-logo-2",
       "property": "src",
       "path": "images/partner-2.png",
-      "keywords": ["partner", "logo"],
+      "keywords": [
+        "partner",
+        "logo"
+      ],
       "aspect_ratio": "auto",
       "min_width": 200
     },
@@ -333,7 +372,10 @@
       "selector": ".partner-logo-3",
       "property": "src",
       "path": "images/partner-3.png",
-      "keywords": ["partner", "logo"],
+      "keywords": [
+        "partner",
+        "logo"
+      ],
       "aspect_ratio": "auto",
       "min_width": 200
     },
@@ -341,7 +383,10 @@
       "selector": ".partner-logo-4",
       "property": "src",
       "path": "images/partner-4.png",
-      "keywords": ["partner", "logo"],
+      "keywords": [
+        "partner",
+        "logo"
+      ],
       "aspect_ratio": "auto",
       "min_width": 97
     },
@@ -349,7 +394,10 @@
       "selector": ".partner-logo-5",
       "property": "src",
       "path": "images/partner-5.png",
-      "keywords": ["partner", "logo"],
+      "keywords": [
+        "partner",
+        "logo"
+      ],
       "aspect_ratio": "auto",
       "min_width": 200
     }

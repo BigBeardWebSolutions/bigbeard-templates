@@ -1,5 +1,5 @@
 /**
- * HASA Main Site - JavaScript
+ * Healthcare Association Main Site - JavaScript
  * Mobile menu, smooth scroll, header scroll effect, members carousel
  */
 (function () {

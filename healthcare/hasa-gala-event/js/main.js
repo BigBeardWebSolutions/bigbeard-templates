@@ -1,5 +1,5 @@
 /**
- * HASA Gala Event Template - Main JavaScript
+ * Healthcare Gala Event Template - Main JavaScript
  * Handles: mobile menu, smooth scroll, accordion, scroll-based header
  */
 

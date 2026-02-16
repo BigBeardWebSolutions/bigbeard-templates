@@ -1,5 +1,5 @@
 /**
- * HASA NHI Healthcare Template - Main JavaScript
+ * Healthcare NHI Template - Main JavaScript
  *
  * Features:
  * - Mobile menu toggle

@@ -3,7 +3,7 @@
   "name": "Education Blog Listing - Card Layout",
   "placeholders": {
     "{{BUSINESS_NAME}}": {
-      "default": "SkillsAcademy",
+      "default": "Your Company Name",
       "description": "Your organization or brand name",
       "required": true
     },
@@ -198,12 +198,12 @@
       "required": true
     },
     "{{EMAIL}}": {
-      "default": "hello@example.com",
+      "default": "info@example.com",
       "description": "Contact email address displayed in footer",
       "required": true
     },
     "{{ADDRESS}}": {
-      "default": "Johannesburg, Cape Town, Durban",
+      "default": "Anytown, Anytown, Durban",
       "description": "Office locations (comma-separated)",
       "required": false
     },
@@ -218,7 +218,10 @@
       "selector": ".logo-img",
       "property": "src",
       "path": "images/logo.png",
-      "keywords": ["logo", "brand"],
+      "keywords": [
+        "logo",
+        "brand"
+      ],
       "aspect_ratio": "auto",
       "min_width": 200
     },
@@ -226,7 +229,11 @@
       "selector": ".footer-logo img",
       "property": "src",
       "path": "images/footer-logo.png",
-      "keywords": ["logo", "brand", "footer"],
+      "keywords": [
+        "logo",
+        "brand",
+        "footer"
+      ],
       "aspect_ratio": "auto",
       "min_width": 200
     },
@@ -234,7 +241,12 @@
       "selector": ".featured-image",
       "property": "src",
       "path": "images/featured-story.png",
-      "keywords": ["featured", "story", "hero", "leadership"],
+      "keywords": [
+        "featured",
+        "story",
+        "hero",
+        "leadership"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 600
     },
@@ -242,7 +254,11 @@
       "selector": ".article-card:nth-child(1) .article-image",
       "property": "src",
       "path": "images/article-1.png",
-      "keywords": ["article", "blog", "education"],
+      "keywords": [
+        "article",
+        "blog",
+        "education"
+      ],
       "aspect_ratio": "4:3",
       "min_width": 400
     },
@@ -250,7 +266,11 @@
       "selector": ".article-card:nth-child(2) .article-image",
       "property": "src",
       "path": "images/article-2.png",
-      "keywords": ["article", "blog", "mentorship"],
+      "keywords": [
+        "article",
+        "blog",
+        "mentorship"
+      ],
       "aspect_ratio": "4:3",
       "min_width": 400
     },
@@ -258,7 +278,11 @@
       "selector": ".article-card:nth-child(3) .article-image",
       "property": "src",
       "path": "images/article-3.png",
-      "keywords": ["article", "blog", "skills"],
+      "keywords": [
+        "article",
+        "blog",
+        "skills"
+      ],
       "aspect_ratio": "4:3",
       "min_width": 400
     },
@@ -266,7 +290,11 @@
       "selector": ".article-card:nth-child(4) .article-image",
       "property": "src",
       "path": "images/article-4.png",
-      "keywords": ["article", "blog", "hiring"],
+      "keywords": [
+        "article",
+        "blog",
+        "hiring"
+      ],
       "aspect_ratio": "4:3",
       "min_width": 400
     },
@@ -274,7 +302,11 @@
       "selector": ".article-card:nth-child(5) .article-image",
       "property": "src",
       "path": "images/article-5.png",
-      "keywords": ["article", "blog", "success"],
+      "keywords": [
+        "article",
+        "blog",
+        "success"
+      ],
       "aspect_ratio": "4:3",
       "min_width": 400
     },
@@ -282,7 +314,11 @@
       "selector": ".article-card:nth-child(6) .article-image",
       "property": "src",
       "path": "images/article-6.png",
-      "keywords": ["article", "blog", "learning"],
+      "keywords": [
+        "article",
+        "blog",
+        "learning"
+      ],
       "aspect_ratio": "4:3",
       "min_width": 400
     },
@@ -290,7 +326,11 @@
       "selector": ".article-card:nth-child(7) .article-image",
       "property": "src",
       "path": "images/article-7.png",
-      "keywords": ["article", "blog", "technology"],
+      "keywords": [
+        "article",
+        "blog",
+        "technology"
+      ],
       "aspect_ratio": "4:3",
       "min_width": 400
     },
@@ -298,7 +338,11 @@
       "selector": ".article-card:nth-child(8) .article-image",
       "property": "src",
       "path": "images/article-8.png",
-      "keywords": ["article", "blog", "entrepreneurship"],
+      "keywords": [
+        "article",
+        "blog",
+        "entrepreneurship"
+      ],
       "aspect_ratio": "4:3",
       "min_width": 400
     }

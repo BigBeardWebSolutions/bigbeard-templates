@@ -3,7 +3,7 @@
   "name": "Education Skills Development Landing Page",
   "placeholders": {
     "{{BUSINESS_NAME}}": {
-      "default": "SkillsAcademy",
+      "default": "Your Company Name",
       "description": "Your organization or brand name",
       "required": true
     },
@@ -28,7 +28,7 @@
       "required": true
     },
     "{{EMAIL}}": {
-      "default": "hello@example.com",
+      "default": "info@example.com",
       "description": "Contact email address",
       "required": true
     },
@@ -238,7 +238,7 @@
       "required": true
     },
     "{{TESTIMONIAL_1_ROLE}}": {
-      "default": "Graduate Development Manager",
+      "default": "Director of Operations",
       "description": "First testimonial person role/title",
       "required": true
     },
@@ -253,7 +253,7 @@
       "required": true
     },
     "{{TESTIMONIAL_2_ROLE}}": {
-      "default": "Cloud Associate",
+      "default": "Director of Operations",
       "description": "Second testimonial person role/title",
       "required": true
     },
@@ -293,7 +293,12 @@
       "selector": ".hero-bg-img",
       "property": "src",
       "path": "images/hero-bg.png",
-      "keywords": ["hero", "education", "tech", "motion graphics"],
+      "keywords": [
+        "hero",
+        "education",
+        "tech",
+        "motion graphics"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 1920
     },
@@ -301,7 +306,10 @@
       "selector": ".logo-img",
       "property": "src",
       "path": "images/logo.png",
-      "keywords": ["logo", "brand"],
+      "keywords": [
+        "logo",
+        "brand"
+      ],
       "aspect_ratio": "auto",
       "min_width": 200
     },
@@ -309,7 +317,11 @@
       "selector": ".footer-logo img",
       "property": "src",
       "path": "images/footer-logo.png",
-      "keywords": ["logo", "brand", "footer"],
+      "keywords": [
+        "logo",
+        "brand",
+        "footer"
+      ],
       "aspect_ratio": "auto",
       "min_width": 200
     },
@@ -317,7 +329,11 @@
       "selector": ".card-image-become",
       "property": "src",
       "path": "images/card-become.png",
-      "keywords": ["person", "champion", "featured"],
+      "keywords": [
+        "person",
+        "champion",
+        "featured"
+      ],
       "aspect_ratio": "auto",
       "min_width": 400
     },
@@ -325,7 +341,11 @@
       "selector": ".card-image-hire",
       "property": "src",
       "path": "images/card-hire.png",
-      "keywords": ["person", "talent", "professional"],
+      "keywords": [
+        "person",
+        "talent",
+        "professional"
+      ],
       "aspect_ratio": "auto",
       "min_width": 400
     },
@@ -333,7 +353,11 @@
       "selector": ".card-image-amplify",
       "property": "src",
       "path": "images/card-amplify.png",
-      "keywords": ["person", "impact", "community"],
+      "keywords": [
+        "person",
+        "impact",
+        "community"
+      ],
       "aspect_ratio": "auto",
       "min_width": 400
     },
@@ -341,7 +365,11 @@
       "selector": ".impact-visual",
       "property": "src",
       "path": "images/removal-bg.png",
-      "keywords": ["impact", "visual", "featured"],
+      "keywords": [
+        "impact",
+        "visual",
+        "featured"
+      ],
       "aspect_ratio": "auto",
       "min_width": 400
     }

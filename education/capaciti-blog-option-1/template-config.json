@@ -3,7 +3,7 @@
   "name": "Education Blog Listing - Grid Layout",
   "placeholders": {
     "{{BUSINESS_NAME}}": {
-      "default": "SkillsAcademy",
+      "default": "Your Company Name",
       "description": "Your organization or brand name",
       "required": true
     },
@@ -228,12 +228,12 @@
       "required": true
     },
     "{{EMAIL}}": {
-      "default": "hello@example.com",
+      "default": "info@example.com",
       "description": "Contact email address",
       "required": true
     },
     "{{ADDRESS}}": {
-      "default": "Johannesburg, Cape Town, Durban",
+      "default": "Anytown, Anytown, Durban",
       "description": "Office locations (comma-separated or list items)",
       "required": false
     },
@@ -248,7 +248,10 @@
       "selector": ".logo-img",
       "property": "src",
       "path": "images/logo.png",
-      "keywords": ["logo", "brand"],
+      "keywords": [
+        "logo",
+        "brand"
+      ],
       "aspect_ratio": "auto",
       "min_width": 200
     },
@@ -256,7 +259,11 @@
       "selector": ".footer-logo img",
       "property": "src",
       "path": "images/footer-logo.png",
-      "keywords": ["logo", "brand", "footer"],
+      "keywords": [
+        "logo",
+        "brand",
+        "footer"
+      ],
       "aspect_ratio": "auto",
       "min_width": 200
     },
@@ -264,7 +271,13 @@
       "selector": ".featured-image",
       "property": "src",
       "path": "images/featured-story.png",
-      "keywords": ["featured", "blog", "hero", "story", "leadership"],
+      "keywords": [
+        "featured",
+        "blog",
+        "hero",
+        "story",
+        "leadership"
+      ],
       "aspect_ratio": "16:7",
       "min_width": 1280
     },
@@ -272,7 +285,12 @@
       "selector": ".article-card:nth-child(1) .article-image",
       "property": "src",
       "path": "images/article-1.png",
-      "keywords": ["blog", "article", "education", "skills"],
+      "keywords": [
+        "blog",
+        "article",
+        "education",
+        "skills"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 360
     },
@@ -280,7 +298,12 @@
       "selector": ".article-card:nth-child(2) .article-image",
       "property": "src",
       "path": "images/article-2.png",
-      "keywords": ["blog", "article", "mentorship", "career"],
+      "keywords": [
+        "blog",
+        "article",
+        "mentorship",
+        "career"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 360
     },
@@ -288,7 +311,12 @@
       "selector": ".article-card:nth-child(3) .article-image",
       "property": "src",
       "path": "images/article-3.png",
-      "keywords": ["blog", "article", "graduates", "workplace"],
+      "keywords": [
+        "blog",
+        "article",
+        "graduates",
+        "workplace"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 360
     },
@@ -296,7 +324,12 @@
       "selector": ".article-card:nth-child(5) .article-image",
       "property": "src",
       "path": "images/article-4.png",
-      "keywords": ["blog", "article", "women", "tech"],
+      "keywords": [
+        "blog",
+        "article",
+        "women",
+        "tech"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 360
     },
@@ -304,7 +337,12 @@
       "selector": ".article-card:nth-child(6) .article-image",
       "property": "src",
       "path": "images/article-5.png",
-      "keywords": ["blog", "article", "cloud", "computing"],
+      "keywords": [
+        "blog",
+        "article",
+        "cloud",
+        "computing"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 360
     },
@@ -312,7 +350,12 @@
       "selector": ".article-card:nth-child(7) .article-image",
       "property": "src",
       "path": "images/article-6.png",
-      "keywords": ["blog", "article", "community", "impact"],
+      "keywords": [
+        "blog",
+        "article",
+        "community",
+        "impact"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 360
     },
@@ -320,7 +363,12 @@
       "selector": ".article-card:nth-child(9) .article-image",
       "property": "src",
       "path": "images/article-7.png",
-      "keywords": ["blog", "article", "data", "literacy"],
+      "keywords": [
+        "blog",
+        "article",
+        "data",
+        "literacy"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 360
     },
@@ -328,7 +376,12 @@
       "selector": ".article-card:nth-child(10) .article-image",
       "property": "src",
       "path": "images/article-8.png",
-      "keywords": ["blog", "article", "entrepreneurship", "digital"],
+      "keywords": [
+        "blog",
+        "article",
+        "entrepreneurship",
+        "digital"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 360
     },
@@ -336,7 +389,12 @@
       "selector": ".article-card:nth-child(11) .article-image",
       "property": "src",
       "path": "images/article-9.png",
-      "keywords": ["blog", "article", "partnerships", "change"],
+      "keywords": [
+        "blog",
+        "article",
+        "partnerships",
+        "change"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 360
     }

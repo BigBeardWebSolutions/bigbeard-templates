@@ -1,5 +1,5 @@
 /**
- * HASA Conference Newsletter - Main JavaScript
+ * Healthcare Conference Newsletter - Main JavaScript
  *
  * Minimal script for web-viewing of the email template.
  * Email clients strip JavaScript, so this only enhances

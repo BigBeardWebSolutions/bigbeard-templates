@@ -1,5 +1,5 @@
 {
-  "template_id": "finance-denker-website-v1",
+  "template_id": "finance-Your Company Name-website-v1",
   "name": "Finance Investment Company Website",
   "figma_source": "https://www.figma.com/design/oVr0KjvNH6e17ZjBelrPWo",
   "industry": "finance",
@@ -20,7 +20,11 @@
     "heading_font": "Open Sans",
     "body_font": "Open Sans",
     "base_size": "18px",
-    "font_weights": ["400", "600", "700"]
+    "font_weights": [
+      "400",
+      "600",
+      "700"
+    ]
   },
   "sections": [
     "hero",

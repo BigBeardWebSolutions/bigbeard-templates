@@ -3,7 +3,7 @@
   "name": "Education Skills Development Landing Page (Phase 1)",
   "placeholders": {
     "{{BUSINESS_NAME}}": {
-      "default": "SkillsAcademy",
+      "default": "Your Company Name",
       "description": "Your organization or brand name",
       "required": true
     },
@@ -28,7 +28,7 @@
       "required": true
     },
     "{{EMAIL}}": {
-      "default": "hello@example.com",
+      "default": "info@example.com",
       "description": "Contact email address",
       "required": true
     },
@@ -218,7 +218,7 @@
       "required": true
     },
     "{{TESTIMONIAL_1_ROLE}}": {
-      "default": "Graduate Development Manager",
+      "default": "Director of Operations",
       "description": "First testimonial person role/title",
       "required": true
     },
@@ -233,7 +233,7 @@
       "required": true
     },
     "{{TESTIMONIAL_2_ROLE}}": {
-      "default": "Cloud Associate",
+      "default": "Director of Operations",
       "description": "Second testimonial person role/title",
       "required": true
     },
@@ -268,12 +268,12 @@
       "required": true
     },
     "{{LOCATION_1}}": {
-      "default": "Cape Town",
+      "default": "Anytown",
       "description": "First office location",
       "required": false
     },
     "{{LOCATION_2}}": {
-      "default": "Johannesburg",
+      "default": "Anytown",
       "description": "Second office location",
       "required": false
     },
@@ -293,7 +293,12 @@
       "selector": ".hero-bg-img",
       "property": "src",
       "path": "images/hero-bg.png",
-      "keywords": ["hero", "education", "tech", "motion graphics"],
+      "keywords": [
+        "hero",
+        "education",
+        "tech",
+        "motion graphics"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 1920
     },
@@ -301,7 +306,10 @@
       "selector": ".logo-img",
       "property": "src",
       "path": "images/logo.png",
-      "keywords": ["logo", "brand"],
+      "keywords": [
+        "logo",
+        "brand"
+      ],
       "aspect_ratio": "auto",
       "min_width": 200
     },
@@ -309,7 +317,11 @@
       "selector": ".footer-logo img",
       "property": "src",
       "path": "images/footer-logo.png",
-      "keywords": ["logo", "brand", "footer"],
+      "keywords": [
+        "logo",
+        "brand",
+        "footer"
+      ],
       "aspect_ratio": "auto",
       "min_width": 200
     },
@@ -317,7 +329,11 @@
       "selector": ".solution-card:nth-child(1) .solution-bg",
       "property": "src",
       "path": "images/solution-1.png",
-      "keywords": ["skills", "development", "training"],
+      "keywords": [
+        "skills",
+        "development",
+        "training"
+      ],
       "aspect_ratio": "auto",
       "min_width": 400
     },
@@ -325,7 +341,11 @@
       "selector": ".solution-card:nth-child(2) .solution-bg",
       "property": "src",
       "path": "images/solution-2.png",
-      "keywords": ["innovation", "technology", "digital"],
+      "keywords": [
+        "innovation",
+        "technology",
+        "digital"
+      ],
       "aspect_ratio": "auto",
       "min_width": 400
     },
@@ -333,7 +353,11 @@
       "selector": ".solution-card:nth-child(3) .solution-bg",
       "property": "src",
       "path": "images/solution-3.png",
-      "keywords": ["advisory", "strategy", "consulting"],
+      "keywords": [
+        "advisory",
+        "strategy",
+        "consulting"
+      ],
       "aspect_ratio": "auto",
       "min_width": 400
     },
@@ -341,7 +365,11 @@
       "selector": ".solution-card:nth-child(4) .solution-bg",
       "property": "src",
       "path": "images/solution-4.png",
-      "keywords": ["outsource", "freelance", "gig work"],
+      "keywords": [
+        "outsource",
+        "freelance",
+        "gig work"
+      ],
       "aspect_ratio": "auto",
       "min_width": 400
     },
@@ -349,7 +377,11 @@
       "selector": ".impact-visual",
       "property": "src",
       "path": "images/impact-person.png",
-      "keywords": ["impact", "person", "featured"],
+      "keywords": [
+        "impact",
+        "person",
+        "featured"
+      ],
       "aspect_ratio": "auto",
       "min_width": 400
     },
@@ -357,7 +389,11 @@
       "selector": ".about-img:nth-child(1) img",
       "property": "src",
       "path": "images/about-1.png",
-      "keywords": ["team", "group", "community"],
+      "keywords": [
+        "team",
+        "group",
+        "community"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 300
     },
@@ -365,7 +401,11 @@
       "selector": ".about-img:nth-child(2) img",
       "property": "src",
       "path": "images/about-2.png",
-      "keywords": ["community", "event", "gathering"],
+      "keywords": [
+        "community",
+        "event",
+        "gathering"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 300
     },
@@ -373,7 +413,11 @@
       "selector": ".about-img:nth-child(3) img",
       "property": "src",
       "path": "images/about-3.png",
-      "keywords": ["youth", "student", "learning"],
+      "keywords": [
+        "youth",
+        "student",
+        "learning"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 300
     },
@@ -381,7 +425,11 @@
       "selector": ".about-img:nth-child(4) img",
       "property": "src",
       "path": "images/about-4.png",
-      "keywords": ["group", "team", "collaboration"],
+      "keywords": [
+        "group",
+        "team",
+        "collaboration"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 300
     },
@@ -389,7 +437,11 @@
       "selector": ".testimonial-card:nth-child(1) .testimonial-avatar img",
       "property": "src",
       "path": "images/testimonial-1.png",
-      "keywords": ["person", "testimonial", "portrait"],
+      "keywords": [
+        "person",
+        "testimonial",
+        "portrait"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 200
     },
@@ -397,7 +449,11 @@
       "selector": ".testimonial-card:nth-child(2) .testimonial-avatar img",
       "property": "src",
       "path": "images/testimonial-2.png",
-      "keywords": ["person", "testimonial", "portrait"],
+      "keywords": [
+        "person",
+        "testimonial",
+        "portrait"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 200
     }

@@ -1,5 +1,5 @@
 /**
- * Experience Madikwe - Safari Lodge Template - Main JavaScript
+ * Safari Lodge Experience Template - Main JavaScript
  *
  * Features:
  * - Mobile hamburger menu toggle

@@ -1,5 +1,5 @@
 /* ============================================================
-   Chirrup - Technology / SaaS Product Landing Page Template
+   Technology SaaS Product Landing Page Template
    Vanilla JavaScript - No Frameworks
    ============================================================ */
 

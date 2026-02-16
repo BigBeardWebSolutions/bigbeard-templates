@@ -85,7 +85,7 @@
     "--background-color"
   ],
   "description": "A modern blog listing page with split-layout featured story (text + image) and 4-column article card grid. Each card features an image, date, read time, title, and read more link. Includes pagination and matching dark footer. Poppins font with navy/red color scheme.",
-  "figma_source": "https://www.figma.com/design/v3grhAxg6DsWUmudC5HneW/Blog-Capaciti-Opt-2?node-id=75-48",
+  "figma_source": "https://www.figma.com/design/v3grhAxg6DsWUmudC5HneW/Blog-Education Provider-Opt-2?node-id=75-48",
   "s3_path": "website-templates/education/capaciti-blog-option-2/",
   "preview_url": "https://bbws-templates-dev.s3.eu-west-1.amazonaws.com/website-templates/education/capaciti-blog-option-2/preview.png",
   "embedding_text": "Industry: education CTA Intent: learn_more Design Style: modern Sections: header, page-title, featured-story, article-grid, pagination, footer Color Palette: #1d2951 primary Tags: education, blog, articles, card layout, 4-column grid, featured story, content, modern, corporate, pagination A modern blog listing page with split-layout featured story (text + image) and 4-column article card grid. Each card features an image, date, read time, title, and read more link. Includes pagination and matchi",

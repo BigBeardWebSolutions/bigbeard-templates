@@ -3,7 +3,7 @@
   "name": "Manufacturing Industrial Company Website",
   "placeholders": {
     "{{BUSINESS_NAME}}": {
-      "default": "Forgeweld",
+      "default": "Your Company Name",
       "description": "Business or brand name displayed in header, footer, title, and copyright",
       "required": true
     },
@@ -38,17 +38,17 @@
       "required": true
     },
     "{{PHONE}}": {
-      "default": "+27 11 000 0000",
+      "default": "+1 (555) 000-0000",
       "description": "Business phone number displayed in top bar and footer",
       "required": true
     },
     "{{EMAIL}}": {
-      "default": "info@example.co.za",
+      "default": "info@example.com",
       "description": "Business contact email displayed in top bar and footer",
       "required": true
     },
     "{{ADDRESS}}": {
-      "default": "Johannesburg, Gauteng, South Africa",
+      "default": "Anytown, Anytown, South Africa",
       "description": "Physical business address displayed in top bar and footer",
       "required": true
     },
@@ -398,7 +398,7 @@
       "required": true
     },
     "{{COPYRIGHT_TEXT}}": {
-      "default": "All Rights Reserved.",
+      "default": "Copyright (c) Your Company 2026. All Rights Reserved",
       "description": "Copyright notice text after the year and business name",
       "required": false
     },
@@ -418,7 +418,11 @@
       "selector": ".nav-logo img",
       "property": "src",
       "path": "images/logo.png",
-      "keywords": ["logo", "brand", "manufacturing"],
+      "keywords": [
+        "logo",
+        "brand",
+        "manufacturing"
+      ],
       "aspect_ratio": "auto",
       "min_width": 200
     },
@@ -426,7 +430,13 @@
       "selector": ".hero-bg img",
       "property": "src",
       "path": "images/hero-bg.jpg",
-      "keywords": ["hero", "industrial", "manufacturing", "welding", "factory"],
+      "keywords": [
+        "hero",
+        "industrial",
+        "manufacturing",
+        "welding",
+        "factory"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 1920
     },
@@ -434,7 +444,12 @@
       "selector": ".about-image img",
       "property": "src",
       "path": "images/about.jpg",
-      "keywords": ["about", "facility", "production", "manufacturing"],
+      "keywords": [
+        "about",
+        "facility",
+        "production",
+        "manufacturing"
+      ],
       "aspect_ratio": "4:3",
       "min_width": 800
     },
@@ -442,7 +457,12 @@
       "selector": ".service-card:nth-child(1) .service-icon img",
       "property": "src",
       "path": "images/service-icon-1.svg",
-      "keywords": ["icon", "tank", "storage", "service"],
+      "keywords": [
+        "icon",
+        "tank",
+        "storage",
+        "service"
+      ],
       "aspect_ratio": "auto",
       "min_width": 80
     },
@@ -450,7 +470,12 @@
       "selector": ".service-card:nth-child(2) .service-icon img",
       "property": "src",
       "path": "images/service-icon-2.svg",
-      "keywords": ["icon", "vessel", "pressure", "service"],
+      "keywords": [
+        "icon",
+        "vessel",
+        "pressure",
+        "service"
+      ],
       "aspect_ratio": "auto",
       "min_width": 80
     },
@@ -458,7 +483,13 @@
       "selector": ".service-card:nth-child(3) .service-icon img",
       "property": "src",
       "path": "images/service-icon-3.svg",
-      "keywords": ["icon", "double", "skinned", "tank", "service"],
+      "keywords": [
+        "icon",
+        "double",
+        "skinned",
+        "tank",
+        "service"
+      ],
       "aspect_ratio": "auto",
       "min_width": 80
     },
@@ -466,7 +497,12 @@
       "selector": ".service-card:nth-child(4) .service-icon img",
       "property": "src",
       "path": "images/service-icon-4.svg",
-      "keywords": ["icon", "installation", "engineering", "service"],
+      "keywords": [
+        "icon",
+        "installation",
+        "engineering",
+        "service"
+      ],
       "aspect_ratio": "auto",
       "min_width": 80
     },
@@ -474,7 +510,12 @@
       "selector": ".products-banner-bg",
       "property": "src",
       "path": "images/products-banner-bg.jpg",
-      "keywords": ["products", "banner", "industrial", "tanks"],
+      "keywords": [
+        "products",
+        "banner",
+        "industrial",
+        "tanks"
+      ],
       "aspect_ratio": "16:5",
       "min_width": 1920
     },
@@ -482,7 +523,12 @@
       "selector": ".product-slide:nth-child(1) .product-slide-image img",
       "property": "src",
       "path": "images/product-1.jpg",
-      "keywords": ["product", "tank", "horizontal", "storage"],
+      "keywords": [
+        "product",
+        "tank",
+        "horizontal",
+        "storage"
+      ],
       "aspect_ratio": "4:3",
       "min_width": 500
     },
@@ -490,7 +536,12 @@
       "selector": ".product-slide:nth-child(2) .product-slide-image img",
       "property": "src",
       "path": "images/product-2.jpg",
-      "keywords": ["product", "vessel", "pressure", "vertical"],
+      "keywords": [
+        "product",
+        "vessel",
+        "pressure",
+        "vertical"
+      ],
       "aspect_ratio": "4:3",
       "min_width": 500
     },
@@ -498,7 +549,12 @@
       "selector": ".product-slide:nth-child(3) .product-slide-image img",
       "property": "src",
       "path": "images/product-3.jpg",
-      "keywords": ["product", "fuel", "underground", "tank"],
+      "keywords": [
+        "product",
+        "fuel",
+        "underground",
+        "tank"
+      ],
       "aspect_ratio": "4:3",
       "min_width": 500
     },
@@ -506,7 +562,12 @@
       "selector": ".product-slide:nth-child(4) .product-slide-image img",
       "property": "src",
       "path": "images/product-4.jpg",
-      "keywords": ["product", "transport", "tanker", "road"],
+      "keywords": [
+        "product",
+        "transport",
+        "tanker",
+        "road"
+      ],
       "aspect_ratio": "4:3",
       "min_width": 500
     },
@@ -514,7 +575,12 @@
       "selector": ".product-slide:nth-child(5) .product-slide-image img",
       "property": "src",
       "path": "images/product-5.jpg",
-      "keywords": ["product", "custom", "bespoke", "industrial"],
+      "keywords": [
+        "product",
+        "custom",
+        "bespoke",
+        "industrial"
+      ],
       "aspect_ratio": "4:3",
       "min_width": 500
     },
@@ -522,7 +588,12 @@
       "selector": ".certifications-logos img:nth-child(1)",
       "property": "src",
       "path": "images/cert-logo-1.png",
-      "keywords": ["certification", "ISO", "9001", "quality"],
+      "keywords": [
+        "certification",
+        "ISO",
+        "9001",
+        "quality"
+      ],
       "aspect_ratio": "auto",
       "min_width": 100
     },
@@ -530,7 +601,12 @@
       "selector": ".certifications-logos img:nth-child(2)",
       "property": "src",
       "path": "images/cert-logo-2.png",
-      "keywords": ["certification", "ISO", "14001", "environmental"],
+      "keywords": [
+        "certification",
+        "ISO",
+        "14001",
+        "environmental"
+      ],
       "aspect_ratio": "auto",
       "min_width": 100
     },
@@ -538,7 +614,12 @@
       "selector": ".certifications-logos img:nth-child(3)",
       "property": "src",
       "path": "images/cert-logo-3.png",
-      "keywords": ["certification", "ASME", "pressure", "vessels"],
+      "keywords": [
+        "certification",
+        "ASME",
+        "pressure",
+        "vessels"
+      ],
       "aspect_ratio": "auto",
       "min_width": 100
     },
@@ -546,7 +627,12 @@
       "selector": ".certifications-logos img:nth-child(4)",
       "property": "src",
       "path": "images/cert-logo-4.png",
-      "keywords": ["certification", "SABS", "standards", "south africa"],
+      "keywords": [
+        "certification",
+        "SABS",
+        "standards",
+        "south africa"
+      ],
       "aspect_ratio": "auto",
       "min_width": 100
     },
@@ -554,7 +640,11 @@
       "selector": ".certifications-logos img:nth-child(5)",
       "property": "src",
       "path": "images/cert-logo-5.png",
-      "keywords": ["certification", "B-BBEE", "empowerment"],
+      "keywords": [
+        "certification",
+        "B-BBEE",
+        "empowerment"
+      ],
       "aspect_ratio": "auto",
       "min_width": 100
     },
@@ -562,7 +652,12 @@
       "selector": ".showcase-grid img:nth-child(1)",
       "property": "src",
       "path": "images/showcase-1.jpg",
-      "keywords": ["showcase", "gallery", "project", "installation"],
+      "keywords": [
+        "showcase",
+        "gallery",
+        "project",
+        "installation"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 800
     },
@@ -570,7 +665,12 @@
       "selector": ".showcase-grid img:nth-child(2)",
       "property": "src",
       "path": "images/showcase-2.jpg",
-      "keywords": ["showcase", "gallery", "fabrication", "welding"],
+      "keywords": [
+        "showcase",
+        "gallery",
+        "fabrication",
+        "welding"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 800
     },
@@ -578,7 +678,12 @@
       "selector": ".showcase-grid img:nth-child(3)",
       "property": "src",
       "path": "images/showcase-3.jpg",
-      "keywords": ["showcase", "gallery", "delivery", "logistics"],
+      "keywords": [
+        "showcase",
+        "gallery",
+        "delivery",
+        "logistics"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 800
     },
@@ -586,7 +691,12 @@
       "selector": ".showcase-grid img:nth-child(4)",
       "property": "src",
       "path": "images/showcase-4.jpg",
-      "keywords": ["showcase", "gallery", "engineering", "assembly"],
+      "keywords": [
+        "showcase",
+        "gallery",
+        "engineering",
+        "assembly"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 800
     },
@@ -594,7 +704,12 @@
       "selector": ".news-card:nth-child(1) .news-card-image img",
       "property": "src",
       "path": "images/news-1.jpg",
-      "keywords": ["news", "article", "expansion", "operations"],
+      "keywords": [
+        "news",
+        "article",
+        "expansion",
+        "operations"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 500
     },
@@ -602,7 +717,12 @@
       "selector": ".news-card:nth-child(2) .news-card-image img",
       "property": "src",
       "path": "images/news-2.jpg",
-      "keywords": ["news", "article", "certification", "quality"],
+      "keywords": [
+        "news",
+        "article",
+        "certification",
+        "quality"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 500
     },
@@ -610,7 +730,12 @@
       "selector": ".news-card:nth-child(3) .news-card-image img",
       "property": "src",
       "path": "images/news-3.jpg",
-      "keywords": ["news", "article", "partnership", "energy"],
+      "keywords": [
+        "news",
+        "article",
+        "partnership",
+        "energy"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 500
     },
@@ -618,7 +743,11 @@
       "selector": ".footer-brand img",
       "property": "src",
       "path": "images/logo.png",
-      "keywords": ["logo", "brand", "footer"],
+      "keywords": [
+        "logo",
+        "brand",
+        "footer"
+      ],
       "aspect_ratio": "auto",
       "min_width": 200
     }

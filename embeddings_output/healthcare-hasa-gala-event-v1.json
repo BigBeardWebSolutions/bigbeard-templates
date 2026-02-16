@@ -80,7 +80,7 @@
     "--footer-bg"
   ],
   "description": "An elegant dark-themed gala awards event page designed for healthcare conferences. Features a dramatic hero section with gold gradient text, event details with venue/date/dress code cards, expandable conference secretariat accordion, and a compact footer with contact links. Uses Poppins font with a black/charcoal/red color scheme. Ideal for formal healthcare events, award ceremonies, gala dinners, and conference social functions.",
-  "figma_source": "https://www.figma.com/design/HASA-Gala-Event",
+  "figma_source": "https://www.figma.com/design/Healthcare Association-Gala-Event",
   "s3_path": "website-templates/healthcare/hasa-gala-event/",
   "preview_url": "https://bbws-templates-dev.s3.eu-west-1.amazonaws.com/website-templates/healthcare/hasa-gala-event/preview.png",
   "embedding_text": "Industry: healthcare CTA Intent: signup Design Style: elegant Sections: announcement-bar, navigation, hero, event-details, secretariat, footer Color Palette: #3c3c3c primary Tags: healthcare, gala, awards, event, conference, ceremony, elegant, dark theme, hollywood, registration, medical, black tie An elegant dark-themed gala awards event page designed for healthcare conferences. Features a dramatic hero section with gold gradient text, event details with venue/date/dress code cards, expandable ",

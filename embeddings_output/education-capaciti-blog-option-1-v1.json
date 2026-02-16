@@ -90,7 +90,7 @@
     "--background-color"
   ],
   "description": "A modern blog listing page with featured story banner and 3-column article grid. Each article card features an image, publication date, read time, title, and excerpt. Includes pagination and matching footer. Poppins font with navy/red color scheme.",
-  "figma_source": "https://www.figma.com/design/viH5HRCWleSJgKJxoGw8MK/Blog-Capaciti-Opt-1?node-id=0-8",
+  "figma_source": "https://www.figma.com/design/viH5HRCWleSJgKJxoGw8MK/Blog-Education Provider-Opt-1?node-id=0-8",
   "s3_path": "website-templates/education/capaciti-blog-option-1/",
   "preview_url": "https://bbws-templates-dev.s3.eu-west-1.amazonaws.com/website-templates/education/capaciti-blog-option-1/preview.png",
   "embedding_text": "Industry: education CTA Intent: learn_more Design Style: modern Sections: header, page-title, featured-story, article-grid, pagination, footer Color Palette: #1d2951 primary Tags: education, blog, articles, grid layout, featured story, content, modern, corporate, pagination A modern blog listing page with featured story banner and 3-column article grid. Each article card features an image, publication date, read time, title, and excerpt. Includes pagination and matching footer. Poppins font with",

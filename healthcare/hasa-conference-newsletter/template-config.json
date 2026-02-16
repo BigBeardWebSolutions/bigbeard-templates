@@ -1,14 +1,14 @@
 {
   "template_id": "healthcare-hasa-conference-newsletter-v1",
-  "name": "HASA Conference Newsletter Email Template",
+  "name": "Your Company Name Conference Newsletter Email Template",
   "placeholders": {
     "{{BUSINESS_NAME}}": {
-      "default": "HASA",
+      "default": "Your Company Name",
       "description": "Organization or association name",
       "required": true
     },
     "{{CONFERENCE_NAME}}": {
-      "default": "HASA 2025 Conference",
+      "default": "ANNUAL CONFERENCE 2026 - INNOVATION TOGETHER",
       "description": "Full conference name",
       "required": true
     },
@@ -18,22 +18,22 @@
       "required": true
     },
     "{{CONFERENCE_DATE}}": {
-      "default": "12 - 15 August 2025",
+      "default": "Coming Soon",
       "description": "Conference dates",
       "required": true
     },
     "{{CONFERENCE_VENUE}}": {
-      "default": "Cape Town International Convention Centre",
+      "default": "Conference Center, City",
       "description": "Conference venue name",
       "required": true
     },
     "{{CONFERENCE_CITY}}": {
-      "default": "Cape Town",
+      "default": "Anytown",
       "description": "Conference city",
       "required": true
     },
     "{{HERO_TITLE}}": {
-      "default": "HASA 2025 Conference",
+      "default": "Your Company Name 2025 Conference",
       "description": "Hero banner main title",
       "required": true
     },
@@ -68,7 +68,7 @@
       "required": true
     },
     "{{INTRO_TEXT}}": {
-      "default": "The <strong style=\"color: #ee3524;\">HASA 2025 Conference</strong> brings together healthcare professionals, policymakers, and innovators to explore <strong style=\"color: #ee3524;\">sustainable healthcare</strong> solutions. Join us for thought-provoking sessions, workshops, and networking opportunities that shape the future of healthcare in South Africa and beyond.",
+      "default": "The <strong style=\"color: #ee3524;\">Your Company Name 2025 Conference</strong> brings together healthcare professionals, policymakers, and innovators to explore <strong style=\"color: #ee3524;\">sustainable healthcare</strong> solutions. Join us for thought-provoking sessions, workshops, and networking opportunities that shape the future of healthcare in South Africa and beyond.",
       "description": "Main introduction paragraph (supports HTML for bold/colored text)",
       "required": true
     },
@@ -123,7 +123,7 @@
       "required": true
     },
     "{{SECTION_DELEGATE_DESCRIPTION}}": {
-      "default": "Whether you are a healthcare professional, researcher, policymaker, or student, the HASA 2025 Conference offers a unique platform to engage with leading minds in healthcare. Register as a delegate and gain access to all conference sessions, workshops, and networking events.",
+      "default": "Whether you are a healthcare professional, researcher, policymaker, or student, the Your Company Name 2025 Conference offers a unique platform to engage with leading minds in healthcare. Register as a delegate and gain access to all conference sessions, workshops, and networking events.",
       "description": "Delegate section body text",
       "required": true
     },
@@ -133,12 +133,12 @@
       "required": true
     },
     "{{SECTION_EXHIBITION_DESCRIPTION}}": {
-      "default": "The HASA 2025 Exhibition offers an unparalleled opportunity to showcase your products, services, and innovations to a targeted audience of healthcare decision-makers. Secure your exhibition space and connect with potential clients and partners.",
+      "default": "The Your Company Name 2025 Exhibition offers an unparalleled opportunity to showcase your products, services, and innovations to a targeted audience of healthcare decision-makers. Secure your exhibition space and connect with potential clients and partners.",
       "description": "Exhibition section body text",
       "required": true
     },
     "{{SECTION_VIDEO_TITLE}}": {
-      "default": "Watch Highlights from HASA 2024",
+      "default": "Watch Highlights from Your Company Name 2024",
       "description": "Video highlights section heading",
       "required": true
     },
@@ -148,12 +148,12 @@
       "required": false
     },
     "{{SECTION_WELCOME_TITLE}}": {
-      "default": "We Look Forward to Welcoming You at HASA 2025",
+      "default": "We Look Forward to Welcoming You at Your Company Name 2025",
       "description": "Welcome/closing section heading",
       "required": true
     },
     "{{SECTION_WELCOME_DESCRIPTION}}": {
-      "default": "Join us in Cape Town for an inspiring programme of keynote addresses, panel discussions, interactive workshops, and ample networking opportunities. Together, we can build a sustainable healthcare future.",
+      "default": "Join us in Anytown for an inspiring programme of keynote addresses, panel discussions, interactive workshops, and ample networking opportunities. Together, we can build a sustainable healthcare future.",
       "description": "Welcome/closing section body text",
       "required": true
     },
@@ -163,32 +163,32 @@
       "required": true
     },
     "{{SECRETARIAT_NAME}}": {
-      "default": "Jane Smith",
+      "default": "Event Coordinator",
       "description": "Secretariat contact person name",
       "required": true
     },
     "{{SECRETARIAT_COMPANY}}": {
-      "default": "Conference Management Services",
+      "default": "EVENT MANAGEMENT COMPANY",
       "description": "Secretariat company or organization name",
       "required": true
     },
     "{{SECRETARIAT_PHONE}}": {
-      "default": "+27 21 123 4567",
+      "default": "+1 (555) 000-0000",
       "description": "Secretariat phone number",
       "required": true
     },
     "{{SECRETARIAT_EMAIL}}": {
-      "default": "info@hasaconference.co.za",
+      "default": "info@example.com",
       "description": "Secretariat email address",
       "required": true
     },
     "{{EMAIL}}": {
-      "default": "info@hasaconference.co.za",
+      "default": "info@example.com",
       "description": "General contact email (used in footer)",
       "required": true
     },
     "{{PHONE}}": {
-      "default": "+27 21 123 4567",
+      "default": "+1 (555) 000-0000",
       "description": "General contact phone number",
       "required": false
     },
@@ -203,7 +203,12 @@
       "selector": ".logo-img",
       "property": "src",
       "path": "images/logo.png",
-      "keywords": ["logo", "brand", "conference", "HASA"],
+      "keywords": [
+        "logo",
+        "brand",
+        "conference",
+        "healthcare"
+      ],
       "aspect_ratio": "auto",
       "min_width": 150
     },
@@ -211,7 +216,13 @@
       "selector": ".hero-banner-img",
       "property": "src",
       "path": "images/hero-banner.png",
-      "keywords": ["hero", "conference", "crowd", "event", "banner"],
+      "keywords": [
+        "hero",
+        "conference",
+        "crowd",
+        "event",
+        "banner"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 680
     },
@@ -219,7 +230,12 @@
       "selector": ".delegate-img",
       "property": "src",
       "path": "images/delegate-photo.png",
-      "keywords": ["delegate", "person", "conference", "attendee"],
+      "keywords": [
+        "delegate",
+        "person",
+        "conference",
+        "attendee"
+      ],
       "aspect_ratio": "4:3",
       "min_width": 300
     },
@@ -227,7 +243,12 @@
       "selector": ".exhibition-img",
       "property": "src",
       "path": "images/exhibition.png",
-      "keywords": ["exhibition", "booth", "showcase", "event"],
+      "keywords": [
+        "exhibition",
+        "booth",
+        "showcase",
+        "event"
+      ],
       "aspect_ratio": "4:3",
       "min_width": 300
     },
@@ -235,7 +256,12 @@
       "selector": ".video-thumbnail-img",
       "property": "src",
       "path": "images/video-thumbnail.png",
-      "keywords": ["video", "thumbnail", "highlights", "conference"],
+      "keywords": [
+        "video",
+        "thumbnail",
+        "highlights",
+        "conference"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 616
     },
@@ -243,7 +269,12 @@
       "selector": ".abstracts-watermark img",
       "property": "src",
       "path": "images/conference-logo.png",
-      "keywords": ["logo", "watermark", "conference", "emblem"],
+      "keywords": [
+        "logo",
+        "watermark",
+        "conference",
+        "emblem"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 300
     },
@@ -251,7 +282,12 @@
       "selector": ".play-btn-overlay img",
       "property": "src",
       "path": "images/play-button.png",
-      "keywords": ["play", "button", "video", "icon"],
+      "keywords": [
+        "play",
+        "button",
+        "video",
+        "icon"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 64
     }

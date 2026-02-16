@@ -3,7 +3,7 @@
   "name": "Digital Marketing Agency Website",
   "placeholders": {
     "{{BUSINESS_NAME}}": {
-      "default": "Performance Agency",
+      "default": "Your Company Name",
       "description": "Business or brand name displayed in the header logo alt text, footer, and page title",
       "required": true
     },
@@ -48,12 +48,12 @@
       "required": false
     },
     "{{PHONE_ARIA_LABEL}}": {
-      "default": "Call us",
+      "default": "+1 (555) 000-0000",
       "description": "Aria label for the phone icon in the header",
       "required": false
     },
     "{{PHONE_ICON_ALT}}": {
-      "default": "Phone",
+      "default": "+1 (555) 000-0000",
       "description": "Alt text for the phone icon",
       "required": false
     },
@@ -398,7 +398,7 @@
       "required": true
     },
     "{{CONTACT_PHONE_1}}": {
-      "default": "+27 00 000 0000",
+      "default": "+1 (555) 000-0000",
       "description": "Primary business phone number",
       "required": true
     },
@@ -408,12 +408,12 @@
       "required": false
     },
     "{{CONTACT_EMAIL_2}}": {
-      "default": "careers@example.com",
+      "default": "info@example.com",
       "description": "Careers/recruitment email address",
       "required": false
     },
     "{{CONTACT_PHONE_2}}": {
-      "default": "+27 00 000 0000",
+      "default": "+1 (555) 000-0000",
       "description": "Secondary phone number (careers/recruitment)",
       "required": false
     },
@@ -443,7 +443,7 @@
       "required": false
     },
     "{{COPYRIGHT_TEXT}}": {
-      "default": "All Rights Reserved. Rooted in South Africa, Connecting Worldwide.",
+      "default": "Copyright (c) Your Company 2026. All Rights Reserved",
       "description": "Copyright notice displayed at the bottom of the footer",
       "required": true
     },
@@ -468,7 +468,12 @@
       "selector": ".nav__logo img",
       "property": "src",
       "path": "images/logo-gold.png",
-      "keywords": ["logo", "brand", "header", "gold"],
+      "keywords": [
+        "logo",
+        "brand",
+        "header",
+        "gold"
+      ],
       "aspect_ratio": "auto",
       "min_width": 200
     },
@@ -476,7 +481,12 @@
       "selector": ".hero__image",
       "property": "src",
       "path": "images/hero-image.jpg",
-      "keywords": ["hero", "team", "collaboration", "workspace"],
+      "keywords": [
+        "hero",
+        "team",
+        "collaboration",
+        "workspace"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 1640
     },
@@ -484,7 +494,12 @@
       "selector": ".hero__decorative-triangles",
       "property": "src",
       "path": "images/gold-triangles-2.png",
-      "keywords": ["decorative", "gold", "triangles", "geometric"],
+      "keywords": [
+        "decorative",
+        "gold",
+        "triangles",
+        "geometric"
+      ],
       "aspect_ratio": "auto",
       "min_width": 400
     },
@@ -492,7 +507,12 @@
       "selector": ".hero__video-btn img",
       "property": "src",
       "path": "images/video-play-btn.png",
-      "keywords": ["video", "play", "button", "icon"],
+      "keywords": [
+        "video",
+        "play",
+        "button",
+        "icon"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 80
     },
@@ -500,7 +520,11 @@
       "selector": ".service-item__icon",
       "property": "src",
       "path": "images/icon-social-media.png",
-      "keywords": ["service", "icon", "social media"],
+      "keywords": [
+        "service",
+        "icon",
+        "social media"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 40
     },
@@ -508,7 +532,11 @@
       "selector": ".case-study-card:nth-child(1) img",
       "property": "src",
       "path": "images/case-study-1.jpg",
-      "keywords": ["case study", "project", "portfolio"],
+      "keywords": [
+        "case study",
+        "project",
+        "portfolio"
+      ],
       "aspect_ratio": "7:8",
       "min_width": 733
     },
@@ -516,7 +544,11 @@
       "selector": ".case-study-card:nth-child(2) img",
       "property": "src",
       "path": "images/case-study-2.jpg",
-      "keywords": ["case study", "project", "portfolio"],
+      "keywords": [
+        "case study",
+        "project",
+        "portfolio"
+      ],
       "aspect_ratio": "7:8",
       "min_width": 733
     },
@@ -524,7 +556,11 @@
       "selector": ".partners__logo (klaviyo)",
       "property": "src",
       "path": "images/partner-klaviyo.png",
-      "keywords": ["partner", "logo", "klaviyo"],
+      "keywords": [
+        "partner",
+        "logo",
+        "klaviyo"
+      ],
       "aspect_ratio": "auto",
       "min_width": 100
     },
@@ -532,7 +568,11 @@
       "selector": ".partners__logo (shopcreative)",
       "property": "src",
       "path": "images/partner-shopcreative.png",
-      "keywords": ["partner", "logo", "shopcreative"],
+      "keywords": [
+        "partner",
+        "logo",
+        "shopcreative"
+      ],
       "aspect_ratio": "auto",
       "min_width": 100
     },
@@ -540,7 +580,11 @@
       "selector": ".partners__logo (google)",
       "property": "src",
       "path": "images/partner-google.png",
-      "keywords": ["partner", "logo", "google"],
+      "keywords": [
+        "partner",
+        "logo",
+        "google"
+      ],
       "aspect_ratio": "auto",
       "min_width": 100
     },
@@ -548,7 +592,11 @@
       "selector": ".partners__logo (meta)",
       "property": "src",
       "path": "images/partner-meta.png",
-      "keywords": ["partner", "logo", "meta"],
+      "keywords": [
+        "partner",
+        "logo",
+        "meta"
+      ],
       "aspect_ratio": "auto",
       "min_width": 100
     },
@@ -556,7 +604,11 @@
       "selector": ".partners__logo (youtube)",
       "property": "src",
       "path": "images/partner-youtube.png",
-      "keywords": ["partner", "logo", "youtube"],
+      "keywords": [
+        "partner",
+        "logo",
+        "youtube"
+      ],
       "aspect_ratio": "auto",
       "min_width": 100
     },
@@ -564,7 +616,11 @@
       "selector": ".partners__logo (whatagraph)",
       "property": "src",
       "path": "images/partner-whatagraph.png",
-      "keywords": ["partner", "logo", "whatagraph"],
+      "keywords": [
+        "partner",
+        "logo",
+        "whatagraph"
+      ],
       "aspect_ratio": "auto",
       "min_width": 100
     },
@@ -572,7 +628,10 @@
       "selector": ".clients__logo (wingfield)",
       "property": "src",
       "path": "images/client-wingfield.png",
-      "keywords": ["client", "logo"],
+      "keywords": [
+        "client",
+        "logo"
+      ],
       "aspect_ratio": "auto",
       "min_width": 100
     },
@@ -580,7 +639,10 @@
       "selector": ".clients__logo (ofco)",
       "property": "src",
       "path": "images/client-ofco.png",
-      "keywords": ["client", "logo"],
+      "keywords": [
+        "client",
+        "logo"
+      ],
       "aspect_ratio": "auto",
       "min_width": 100
     },
@@ -588,7 +650,10 @@
       "selector": ".clients__logo (logo-1)",
       "property": "src",
       "path": "images/client-logo-1.png",
-      "keywords": ["client", "logo"],
+      "keywords": [
+        "client",
+        "logo"
+      ],
       "aspect_ratio": "auto",
       "min_width": 100
     },
@@ -596,7 +661,10 @@
       "selector": ".clients__logo (laurica)",
       "property": "src",
       "path": "images/client-laurica.png",
-      "keywords": ["client", "logo"],
+      "keywords": [
+        "client",
+        "logo"
+      ],
       "aspect_ratio": "auto",
       "min_width": 100
     },
@@ -604,7 +672,11 @@
       "selector": ".case-studies__decorative",
       "property": "src",
       "path": "images/gold-triangles-1.png",
-      "keywords": ["decorative", "gold", "triangles"],
+      "keywords": [
+        "decorative",
+        "gold",
+        "triangles"
+      ],
       "aspect_ratio": "auto",
       "min_width": 400
     },
@@ -612,7 +684,11 @@
       "selector": ".footer__social-link img",
       "property": "src",
       "path": "images/icon-linkedin.png",
-      "keywords": ["social", "linkedin", "icon"],
+      "keywords": [
+        "social",
+        "linkedin",
+        "icon"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 24
     }

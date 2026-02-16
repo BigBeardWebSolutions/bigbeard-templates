@@ -1,5 +1,5 @@
 {
-  "template_id": "energy-sosimple-v1",
+  "template_id": "energy-Energy Solutions-v1",
   "name": "Solar Energy Solutions Website",
   "industry": "energy",
   "cta_intent": "contact",
@@ -123,8 +123,8 @@
   ],
   "description": "A modern solar energy and renewable solutions website template with 10 sections including hero with blue gradient overlay, company statistics, electricity cost savings explanation, 4-step process guide, who-can-save information, interactive savings calculator with form, recent project showcase cards, customer testimonials, partner logos, and footer. Features Axiforma typography with a blue/yellow/green color scheme. Designed for solar energy companies, renewable energy providers, and commercial solar installation businesses.",
   "figma_source": "https://www.figma.com/design/7mL5yd7JmNs3UFqUgxqlmI",
-  "s3_path": "website-templates/energy/sosimple/",
-  "preview_url": "https://bbws-templates-dev.s3.eu-west-1.amazonaws.com/website-templates/energy/sosimple/preview.png",
+  "s3_path": "website-templates/energy/Energy Solutions/",
+  "preview_url": "https://bbws-templates-dev.s3.eu-west-1.amazonaws.com/website-templates/energy/Energy Solutions/preview.png",
   "embedding_text": "Industry: energy CTA Intent: contact Design Style: modern Sections: hero, stats, electricity-costs, how-it-works, who-can-save, calculator, projects, testimonials, partners, footer Color Palette: #0b74d7 primary Tags: energy, solar, renewable, green, savings, calculator, eco-friendly, electricity, solar panels, PPA, power purchase agreement, commercial solar, rooftop solar, battery storage, sustainable energy A modern solar energy and renewable solutions website template with 10 sections includi",
   "embedding": [
     -0.025238193571567535,

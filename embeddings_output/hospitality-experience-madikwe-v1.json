@@ -21,7 +21,7 @@
     "booking",
     "nature",
     "wildlife",
-    "Madikwe",
+    "Safari Reserve",
     "South Africa",
     "accommodation",
     "bush",
@@ -113,7 +113,7 @@
   "figma_source": "https://www.figma.com/design/w8Qtdxpc6i6aOgcha3dllW",
   "s3_path": "website-templates/hospitality/experience-madikwe/",
   "preview_url": "https://bbws-templates-dev.s3.eu-west-1.amazonaws.com/website-templates/hospitality/experience-madikwe/preview.png",
-  "embedding_text": "Industry: hospitality CTA Intent: booking Design Style: elegant Sections: hero, about, stats, lodges, directions, footer Color Palette: #760906 primary Tags: hospitality, safari, lodge, game reserve, luxury, booking, nature, wildlife, Madikwe, South Africa, accommodation, bush, elephant, elegant, earth tones An elegant safari lodge website template featuring a full-viewport hero with nature overlay, about section with wildlife imagery, icon-based stats/experience highlights, a 3x3 lodge gallery ",
+  "embedding_text": "Industry: hospitality CTA Intent: booking Design Style: elegant Sections: hero, about, stats, lodges, directions, footer Color Palette: #760906 primary Tags: hospitality, safari, lodge, game reserve, luxury, booking, nature, wildlife, Safari Reserve, South Africa, accommodation, bush, elephant, elegant, earth tones An elegant safari lodge website template featuring a full-viewport hero with nature overlay, about section with wildlife imagery, icon-based stats/experience highlights, a 3x3 lodge gallery ",
   "embedding": [
     -0.08673793077468872,
     0.0061573670245707035,

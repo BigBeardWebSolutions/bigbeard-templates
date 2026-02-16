@@ -3,7 +3,7 @@
   "name": "Healthcare Gala Awards Event Page",
   "placeholders": {
     "{{BUSINESS_NAME}}": {
-      "default": "HASA Conference",
+      "default": "Your Company Name",
       "description": "Organization or conference brand name",
       "required": true
     },
@@ -18,22 +18,22 @@
       "required": true
     },
     "{{EVENT_HOST}}": {
-      "default": "Riaad Moosa",
+      "default": "Guest Speaker",
       "description": "Name of the event host, entertainer, or MC",
       "required": false
     },
     "{{CONFERENCE_NAME}}": {
-      "default": "HASA CONFERENCE 2025 - SUSTAINABLE HEALTHCARE TOGETHER",
+      "default": "ANNUAL CONFERENCE 2026 - INNOVATION TOGETHER",
       "description": "Full conference name for the announcement bar",
       "required": true
     },
     "{{CONFERENCE_DATE}}": {
-      "default": "6 - 7 October 2025",
+      "default": "Coming Soon",
       "description": "Conference dates displayed in the announcement bar",
       "required": true
     },
     "{{CONFERENCE_VENUE}}": {
-      "default": "Sandton Convention Centre, Johannesburg",
+      "default": "Conference Center, City",
       "description": "Conference venue for the announcement bar",
       "required": true
     },
@@ -58,7 +58,7 @@
       "required": true
     },
     "{{HERO_SUBTITLE}}": {
-      "default": "With Riaad Moosa",
+      "default": "With Guest Speaker",
       "description": "Subtitle below the hero title (e.g., host name)",
       "required": false
     },
@@ -73,22 +73,22 @@
       "required": true
     },
     "{{VENUE_NAME}}": {
-      "default": "The Ballroom at the Sandton Convention Centre",
+      "default": "Conference Center, City",
       "description": "Specific venue name for the event",
       "required": true
     },
     "{{EVENT_DATE_FULL}}": {
-      "default": "Tuesday, 7th October 2025",
+      "default": "Coming Soon",
       "description": "Full date of the gala event",
       "required": true
     },
     "{{EVENT_TIME}}": {
-      "default": "18:45 for 19h00",
+      "default": "18:00 for 18:30",
       "description": "Event arrival and start time",
       "required": true
     },
     "{{DRESS_CODE}}": {
-      "default": "Black Tie or Hollywood Glam",
+      "default": "Formal Attire",
       "description": "Dress code for the event",
       "required": true
     },
@@ -98,32 +98,32 @@
       "required": true
     },
     "{{SECRETARIAT_NAME}}": {
-      "default": "Candice Christians",
+      "default": "Event Coordinator",
       "description": "Name of the conference secretariat contact person",
       "required": true
     },
     "{{SECRETARIAT_COMPANY}}": {
-      "default": "INHOUSE CONFERENCE SOLUTIONS",
+      "default": "EVENT MANAGEMENT COMPANY",
       "description": "Company name of the conference organizer",
       "required": true
     },
     "{{SECRETARIAT_PHONE}}": {
-      "default": "+27 (0)83 292 3006",
+      "default": "+1 (555) 000-0000",
       "description": "Phone number for the conference secretariat",
       "required": true
     },
     "{{SECRETARIAT_EMAIL}}": {
-      "default": "info@conferencehasa.co.za",
+      "default": "info@example.com",
       "description": "Email address for the conference secretariat",
       "required": true
     },
     "{{EMAIL}}": {
-      "default": "info@conferencehasa.co.za",
+      "default": "info@example.com",
       "description": "General contact email displayed in footer",
       "required": true
     },
     "{{PHONE}}": {
-      "default": "+27 (0) 83 292 3006",
+      "default": "+1 (555) 000-0000",
       "description": "General contact phone displayed in footer",
       "required": true
     },
@@ -168,7 +168,14 @@
       "selector": ".hero-bg-img",
       "property": "src",
       "path": "images/hero-bg.jpg",
-      "keywords": ["dark", "bokeh", "lights", "dramatic", "event", "stage"],
+      "keywords": [
+        "dark",
+        "bokeh",
+        "lights",
+        "dramatic",
+        "event",
+        "stage"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 1920
     },
@@ -176,7 +183,12 @@
       "selector": ".logo-img",
       "property": "src",
       "path": "images/logo.png",
-      "keywords": ["logo", "brand", "conference", "circular"],
+      "keywords": [
+        "logo",
+        "brand",
+        "conference",
+        "circular"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 128
     },
@@ -184,7 +196,13 @@
       "selector": ".chandelier-img",
       "property": "src",
       "path": "images/chandelier.png",
-      "keywords": ["chandelier", "decoration", "elegant", "illustration", "gold"],
+      "keywords": [
+        "chandelier",
+        "decoration",
+        "elegant",
+        "illustration",
+        "gold"
+      ],
       "aspect_ratio": "auto",
       "min_width": 400
     }

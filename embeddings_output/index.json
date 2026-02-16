@@ -21,17 +21,17 @@
     },
     {
       "template_id": "healthcare-hasa-conference-newsletter-v1",
-      "name": "HASA Conference Newsletter Email Template",
+      "name": "Healthcare Conference Newsletter Email Template",
       "industry": "healthcare"
     },
     {
       "template_id": "technology-bbws-ai-page-builder-v1",
-      "name": "BBWS AI Page Builder Landing Page",
+      "name": "AI Page Builder Landing Page",
       "industry": "technology"
     },
     {
       "template_id": "technology-chirrup-v1",
-      "name": "Chirrup SaaS Product Landing Page",
+      "name": "SaaS Product Landing Page",
       "industry": "technology"
     },
     {
@@ -85,12 +85,12 @@
       "industry": "manufacturing"
     },
     {
-      "template_id": "manufacturing-forgeweld-v1",
+      "template_id": "manufacturing-Manufacturing Company-v1",
       "name": "Manufacturing Industrial Company Website",
       "industry": "manufacturing"
     },
     {
-      "template_id": "energy-sosimple-v1",
+      "template_id": "energy-Energy Solutions-v1",
       "name": "Solar Energy Solutions Website",
       "industry": "energy"
     },

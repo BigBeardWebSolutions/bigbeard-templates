@@ -1,5 +1,5 @@
 {
-  "template_id": "manufacturing-forgeweld-v1",
+  "template_id": "manufacturing-Manufacturing Company-v1",
   "name": "Manufacturing Industrial Company Website",
   "industry": "manufacturing",
   "cta_intent": "contact",
@@ -21,7 +21,7 @@
   "keywords": [
     "manufacturing",
     "industrial",
-    "forgeweld",
+    "Manufacturing Company",
     "corporate",
     "engineering",
     "steel",
@@ -140,9 +140,9 @@
   ],
   "description": "A corporate manufacturing/industrial company website template with a bold red (#BF2120) and navy blue (#083A60) color scheme. Features a full-width hero with dark overlay, about section with animated stat counter badge, 4-column service cards grid, full-width products banner, product carousel with navigation arrows, certifications/accreditations logo bar, 2x2 showcase gallery, 3-column news cards grid, newsletter subscription bar, and a multi-column footer. Built with Montserrat and Noto Sans typography, responsive design across 4 breakpoints, scroll-triggered animations, sticky header with top-bar hide on scroll, and mobile hamburger menu. Ideal for manufacturing companies, industrial fabricators, steel works, engineering firms, and heavy industry businesses.",
   "figma_source": "https://www.figma.com/design/EF5ayUwdHLWd0G8Wd7yEC3",
-  "s3_path": "website-templates/manufacturing/forgeweld/",
-  "preview_url": "https://bbws-templates-dev.s3.eu-west-1.amazonaws.com/website-templates/manufacturing/forgeweld/preview.png",
-  "embedding_text": "Industry: manufacturing CTA Intent: contact Design Style: corporate Sections: top-bar, header, hero, about, services, products-banner, products-carousel, certifications, showcase, news, newsletter, footer Color Palette: #BF2120 primary Tags: manufacturing, industrial, forgeweld, corporate, engineering, steel, fabrication, welding, tanks, storage, products, services, heavy industry, liquid storage, fuel storage, pressure vessels, red and blue, professional, landing page A corporate manufacturing/",
+  "s3_path": "website-templates/manufacturing/Manufacturing Company/",
+  "preview_url": "https://bbws-templates-dev.s3.eu-west-1.amazonaws.com/website-templates/manufacturing/Manufacturing Company/preview.png",
+  "embedding_text": "Industry: manufacturing CTA Intent: contact Design Style: corporate Sections: top-bar, header, hero, about, services, products-banner, products-carousel, certifications, showcase, news, newsletter, footer Color Palette: #BF2120 primary Tags: manufacturing, industrial, Manufacturing Company, corporate, engineering, steel, fabrication, welding, tanks, storage, products, services, heavy industry, liquid storage, fuel storage, pressure vessels, red and blue, professional, landing page A corporate manufacturing/",
   "embedding": [
     -0.0481269508600235,
     0.011122231371700764,

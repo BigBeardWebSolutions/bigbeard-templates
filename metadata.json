@@ -1,16 +1,16 @@
 {
-  "repository": "bigbeard-templates",
+  "repository": "Your Company Name-templates",
   "version": "2.0.0",
-  "description": "Template repository for BigBeard Website Builder - 19 white-label website templates across 9 industries",
+  "description": "Template repository for Your Company Name Website Builder - 19 white-label website templates across 9 industries",
   "templates": [
     {
-      "template_id": "education-capaciti-blog-option-1-v1",
+      "template_id": "education-Your Company Name-blog-option-1-v1",
       "name": "Education Blog Listing - Grid Layout",
-      "path": "education/capaciti-blog-option-1",
+      "path": "education/Your Company Name-blog-option-1",
       "industry": "education",
       "cta_intent": "learn_more",
       "design_style": "modern",
-      "figma_source": "https://www.figma.com/design/viH5HRCWleSJgKJxoGw8MK/Blog-Capaciti-Opt-1?node-id=0-8",
+      "figma_source": "https://www.figma.com/design/viH5HRCWleSJgKJxoGw8MK/Blog-Your Company Name-Opt-1?node-id=0-8",
       "keywords": [
         "education",
         "blog",
@@ -25,13 +25,13 @@
       "created_at": "2026-02-15T16:00:00Z"
     },
     {
-      "template_id": "education-capaciti-blog-option-2-v1",
+      "template_id": "education-Your Company Name-blog-option-2-v1",
       "name": "Education Blog Listing - Card Layout",
-      "path": "education/capaciti-blog-option-2",
+      "path": "education/Your Company Name-blog-option-2",
       "industry": "education",
       "cta_intent": "learn_more",
       "design_style": "modern",
-      "figma_source": "https://www.figma.com/design/v3grhAxg6DsWUmudC5HneW/Blog-Capaciti-Opt-2?node-id=75-48",
+      "figma_source": "https://www.figma.com/design/v3grhAxg6DsWUmudC5HneW/Blog-Your Company Name-Opt-2?node-id=75-48",
       "keywords": [
         "education",
         "blog",
@@ -47,13 +47,13 @@
       "created_at": "2026-02-15T16:00:00Z"
     },
     {
-      "template_id": "education-capaciti-landing-page-v1",
+      "template_id": "education-Your Company Name-landing-page-v1",
       "name": "Education Skills Development Landing Page",
-      "path": "education/capaciti-landing-page",
+      "path": "education/Your Company Name-landing-page",
       "industry": "education",
       "cta_intent": "lead_generation",
       "design_style": "modern",
-      "figma_source": "https://www.figma.com/design/YCkggAfrxrn1EATvGFWSfj/CAPACITI-Phase-2?node-id=0-1&m=dev",
+      "figma_source": "https://www.figma.com/design/YCkggAfrxrn1EATvGFWSfj/Your Company Name-Phase-2?node-id=0-1&m=dev",
       "keywords": [
         "education",
         "skills development",
@@ -71,13 +71,13 @@
       "created_at": "2026-02-15T14:00:00Z"
     },
     {
-      "template_id": "education-capaciti-phase1-v1",
+      "template_id": "education-Your Company Name-phase1-v1",
       "name": "Education Skills Development Landing Page (Phase 1)",
-      "path": "education/capaciti-phase1",
+      "path": "education/Your Company Name-phase1",
       "industry": "education",
       "cta_intent": "lead_generation",
       "design_style": "modern",
-      "figma_source": "https://www.figma.com/design/mS6hSPClkqlfRRWvTeTjDW/CAPACITI-Phase-1?node-id=1-2",
+      "figma_source": "https://www.figma.com/design/mS6hSPClkqlfRRWvTeTjDW/Your Company Name-Phase-1?node-id=1-2",
       "keywords": [
         "education",
         "skills development",
@@ -95,9 +95,9 @@
       "created_at": "2026-02-15T16:00:00Z"
     },
     {
-      "template_id": "energy-sosimple-v1",
+      "template_id": "energy-Your Company Name-v1",
       "name": "Solar Energy Solutions Website",
-      "path": "energy/sosimple",
+      "path": "energy/Your Company Name",
       "industry": "energy",
       "cta_intent": "contact",
       "design_style": "modern",
@@ -122,9 +122,9 @@
       "created_at": "2026-02-15T16:00:00Z"
     },
     {
-      "template_id": "finance-denker-website-v1",
+      "template_id": "finance-Your Company Name-website-v1",
       "name": "Finance Investment Company Website",
-      "path": "finance/denker-website",
+      "path": "finance/Your Company Name-website",
       "industry": "finance",
       "cta_intent": "contact",
       "design_style": "corporate",
@@ -150,9 +150,9 @@
       "created_at": "2026-02-15T16:00:00Z"
     },
     {
-      "template_id": "healthcare-hasa-conference-newsletter-v1",
-      "name": "HASA Conference Newsletter Email Template",
-      "path": "healthcare/hasa-conference-newsletter",
+      "template_id": "healthcare-Your Company Name-conference-newsletter-v1",
+      "name": "Your Company Name Conference Newsletter Email Template",
+      "path": "healthcare/Your Company Name-conference-newsletter",
       "industry": "healthcare",
       "cta_intent": "signup",
       "design_style": "modern",
@@ -168,7 +168,7 @@
         "delegate",
         "medical conference",
         "CPD",
-        "HASA",
+        "Your Company Name",
         "sustainable healthcare",
         "email marketing",
         "event promotion"
@@ -176,13 +176,13 @@
       "created_at": "2026-02-15T18:00:00Z"
     },
     {
-      "template_id": "healthcare-hasa-gala-event-v1",
+      "template_id": "healthcare-Your Company Name-gala-event-v1",
       "name": "Healthcare Gala Awards Event Page",
-      "path": "healthcare/hasa-gala-event",
+      "path": "healthcare/Your Company Name-gala-event",
       "industry": "healthcare",
       "cta_intent": "signup",
       "design_style": "elegant",
-      "figma_source": "https://www.figma.com/design/HASA-Gala-Event",
+      "figma_source": "https://www.figma.com/design/Your Company Name-Gala-Event",
       "keywords": [
         "healthcare",
         "gala",
@@ -200,9 +200,9 @@
       "created_at": "2026-02-15T16:00:00Z"
     },
     {
-      "template_id": "healthcare-hasa-main-site-v1",
+      "template_id": "healthcare-Your Company Name-main-site-v1",
       "name": "Healthcare Association Corporate Website",
-      "path": "healthcare/hasa-main-site",
+      "path": "healthcare/Your Company Name-main-site",
       "industry": "healthcare",
       "cta_intent": "lead_generation",
       "design_style": "corporate",
@@ -225,9 +225,9 @@
       "created_at": "2026-02-15T18:00:00Z"
     },
     {
-      "template_id": "healthcare-hasa-nhi-v1",
+      "template_id": "healthcare-Your Company Name-nhi-v1",
       "name": "Healthcare NHI Information Portal",
-      "path": "healthcare/hasa-nhi",
+      "path": "healthcare/Your Company Name-nhi",
       "industry": "healthcare",
       "cta_intent": "lead_generation",
       "design_style": "modern",
@@ -250,9 +250,9 @@
       "created_at": "2026-02-15T18:00:00Z"
     },
     {
-      "template_id": "hospitality-experience-madikwe-v1",
+      "template_id": "hospitality-experience-Your Company Name-v1",
       "name": "Safari Lodge Experience Website",
-      "path": "hospitality/experience-madikwe",
+      "path": "hospitality/experience-Your Company Name",
       "industry": "hospitality",
       "cta_intent": "booking",
       "design_style": "elegant",
@@ -266,7 +266,7 @@
         "booking",
         "nature",
         "wildlife",
-        "Madikwe",
+        "Your Company Name",
         "South Africa",
         "accommodation",
         "bush",
@@ -277,9 +277,9 @@
       "created_at": "2026-02-15T16:00:00Z"
     },
     {
-      "template_id": "manufacturing-forgeweld-v1",
+      "template_id": "manufacturing-Your Company Name-v1",
       "name": "Manufacturing Industrial Company Website",
-      "path": "manufacturing/forgeweld",
+      "path": "manufacturing/Your Company Name",
       "industry": "manufacturing",
       "cta_intent": "contact",
       "design_style": "corporate",
@@ -287,7 +287,7 @@
       "keywords": [
         "manufacturing",
         "industrial",
-        "forgeweld",
+        "Your Company Name",
         "corporate",
         "engineering",
         "steel",
@@ -334,9 +334,9 @@
       "created_at": "2026-02-15T16:00:00Z"
     },
     {
-      "template_id": "marketing-metis-v1",
+      "template_id": "marketing-Your Company Name-v1",
       "name": "Digital Marketing Agency Website",
-      "path": "marketing/metis",
+      "path": "marketing/Your Company Name",
       "industry": "marketing",
       "cta_intent": "contact",
       "design_style": "elegant",
@@ -442,13 +442,13 @@
       "created_at": "2026-02-15T16:00:00Z"
     },
     {
-      "template_id": "technology-bbws-ai-page-builder-v1",
-      "name": "BBWS AI Page Builder Landing Page",
-      "path": "technology/bbws-ai-page-builder",
+      "template_id": "technology-Your Company Name-ai-page-builder-v1",
+      "name": "Your Company Name Your Company Name Landing Page",
+      "path": "technology/Your Company Name-ai-page-builder",
       "industry": "technology",
       "cta_intent": "signup",
       "design_style": "modern",
-      "figma_source": "https://figma.com/design/mwrrjDHxuCCap3Sg2i5EXW/BBWS-AI-Page-Builder-Landing-Page?node-id=89:13",
+      "figma_source": "https://figma.com/design/mwrrjDHxuCCap3Sg2i5EXW/Your Company Name-AI-Page-Builder-Landing-Page?node-id=89:13",
       "keywords": [
         "technology",
         "saas",
@@ -461,9 +461,9 @@
       "created_at": "2026-02-01T16:00:00Z"
     },
     {
-      "template_id": "technology-chirrup-v1",
-      "name": "Chirrup SaaS Product Landing Page",
-      "path": "technology/chirrup",
+      "template_id": "technology-Your Company Name-v1",
+      "name": "Your Company Name SaaS Product Landing Page",
+      "path": "technology/Your Company Name",
       "industry": "technology",
       "cta_intent": "signup",
       "design_style": "modern",

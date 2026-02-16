@@ -17,11 +17,32 @@
     "heading_font": "Myriad Pro",
     "body_font": "Myriad Pro",
     "base_size": "20px",
-    "h1": { "size": "64px", "weight": 700, "line_height": "70px" },
-    "h2": { "size": "48px", "weight": 600, "line_height": "100%" },
-    "h3": { "size": "25px", "weight": 600, "line_height": "100%" },
-    "body": { "size": "20px", "weight": 400, "line_height": "1.5" },
-    "label": { "size": "20px", "weight": 300, "letter_spacing": "1.5px", "transform": "uppercase" }
+    "h1": {
+      "size": "64px",
+      "weight": 700,
+      "line_height": "70px"
+    },
+    "h2": {
+      "size": "48px",
+      "weight": 600,
+      "line_height": "100%"
+    },
+    "h3": {
+      "size": "25px",
+      "weight": 600,
+      "line_height": "100%"
+    },
+    "body": {
+      "size": "20px",
+      "weight": 400,
+      "line_height": "1.5"
+    },
+    "label": {
+      "size": "20px",
+      "weight": 300,
+      "letter_spacing": "1.5px",
+      "transform": "uppercase"
+    }
   },
   "sections": [
     "hero",

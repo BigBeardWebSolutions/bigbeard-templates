@@ -1,9 +1,9 @@
 {
   "template_id": "technology-chirrup-v1",
-  "name": "Chirrup SaaS Product Landing Page",
+  "name": "Your Company Name SaaS Product Landing Page",
   "placeholders": {
     "{{BUSINESS_NAME}}": {
-      "default": "Chirrup.ai",
+      "default": "Your Company Name",
       "description": "Company or product name displayed in navigation, hero, and footer",
       "required": true
     },
@@ -403,42 +403,42 @@
       "required": true
     },
     "{{TESTIMONIAL_1_HIGHLIGHT}}": {
-      "default": "The data on the platform is very easy to understand.",
+      "default": "An excellent experience from start to finish.",
       "description": "First testimonial bold highlight text",
       "required": true
     },
     "{{TESTIMONIAL_1_BODY}}": {
-      "default": "If there's birds of prey, there's smaller birds, and if there's smaller birds there's insects, and that tells the farmer that their hedgerows, grass margins or catch crops are working as biodiversity measures.",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
       "description": "First testimonial body text",
       "required": true
     },
     "{{TESTIMONIAL_1_AUTHOR}}": {
-      "default": "Ross Robertson",
+      "default": "Jane Doe",
       "description": "First testimonial author name",
       "required": true
     },
     "{{TESTIMONIAL_1_ROLE}}": {
-      "default": "Head of Mixed Farming - Agri-EPI Center",
+      "default": "Director of Operations",
       "description": "First testimonial author role/title",
       "required": true
     },
     "{{TESTIMONIAL_2_HIGHLIGHT}}": {
-      "default": "A game-changer for our sustainability reporting.",
+      "default": "An excellent experience from start to finish.",
       "description": "Second testimonial bold highlight text",
       "required": false
     },
     "{{TESTIMONIAL_2_BODY}}": {
-      "default": "The insights we get from biodiversity monitoring have transformed how we approach environmental compliance across our portfolio of farms.",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
       "description": "Second testimonial body text",
       "required": false
     },
     "{{TESTIMONIAL_2_AUTHOR}}": {
-      "default": "Sarah Mitchell",
+      "default": "John Smith",
       "description": "Second testimonial author name",
       "required": false
     },
     "{{TESTIMONIAL_2_ROLE}}": {
-      "default": "Sustainability Director",
+      "default": "Director of Operations",
       "description": "Second testimonial author role/title",
       "required": false
     },
@@ -623,22 +623,22 @@
       "required": false
     },
     "{{EMAIL}}": {
-      "default": "hello@example.com",
+      "default": "info@example.com",
       "description": "Contact email address",
       "required": true
     },
     "{{PHONE}}": {
-      "default": "+44 (0)000 000 0000",
+      "default": "+1 (555) 000-0000",
       "description": "Contact phone number",
       "required": true
     },
     "{{FOOTER_COPYRIGHT}}": {
-      "default": "Copyright (c) Company Ltd 2025. All Rights Reserved",
+      "default": "Copyright (c) Your Company 2026. All Rights Reserved",
       "description": "Footer copyright text",
       "required": true
     },
     "{{FOOTER_LEGAL_INFO}}": {
-      "default": "Company Ltd is a private limited company, registered in England and Wales",
+      "default": "Company Ltd is a registered company",
       "description": "Footer company registration information",
       "required": false
     }
@@ -648,7 +648,11 @@
       "selector": ".navbar__logo img",
       "property": "src",
       "path": "images/logo.png",
-      "keywords": ["logo", "brand", "navigation"],
+      "keywords": [
+        "logo",
+        "brand",
+        "navigation"
+      ],
       "aspect_ratio": "auto",
       "min_width": 200
     },
@@ -656,7 +660,12 @@
       "selector": ".hero__background img",
       "property": "src",
       "path": "images/hero-bg.jpg",
-      "keywords": ["hero", "background", "landscape", "nature"],
+      "keywords": [
+        "hero",
+        "background",
+        "landscape",
+        "nature"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 1920
     },
@@ -664,7 +673,12 @@
       "selector": ".hero__logo img",
       "property": "src",
       "path": "images/hero-wordmark.png",
-      "keywords": ["wordmark", "logo", "hero", "brand"],
+      "keywords": [
+        "wordmark",
+        "logo",
+        "hero",
+        "brand"
+      ],
       "aspect_ratio": "auto",
       "min_width": 400
     },
@@ -672,7 +686,11 @@
       "selector": ".hero__badges img:nth-child(1)",
       "property": "src",
       "path": "images/badge-1.png",
-      "keywords": ["badge", "award", "certification"],
+      "keywords": [
+        "badge",
+        "award",
+        "certification"
+      ],
       "aspect_ratio": "auto",
       "min_width": 100
     },
@@ -680,7 +698,11 @@
       "selector": ".hero__badges img:nth-child(2)",
       "property": "src",
       "path": "images/badge-2.png",
-      "keywords": ["badge", "award", "certification"],
+      "keywords": [
+        "badge",
+        "award",
+        "certification"
+      ],
       "aspect_ratio": "auto",
       "min_width": 100
     },
@@ -688,7 +710,12 @@
       "selector": ".hero__listen-badge img",
       "property": "src",
       "path": "images/listen-icon.png",
-      "keywords": ["listen", "audio", "icon", "product"],
+      "keywords": [
+        "listen",
+        "audio",
+        "icon",
+        "product"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 85
     },
@@ -696,7 +723,11 @@
       "selector": ".feature-item:nth-child(n) .feature-item__icon img",
       "property": "src",
       "path": "images/feature-icon-{n}.png",
-      "keywords": ["feature", "icon", "product"],
+      "keywords": [
+        "feature",
+        "icon",
+        "product"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 80
     },
@@ -704,7 +735,12 @@
       "selector": ".info-section:first-of-type .info-section__image img",
       "property": "src",
       "path": "images/info-what-is.jpg",
-      "keywords": ["product", "device", "nature", "monitoring"],
+      "keywords": [
+        "product",
+        "device",
+        "nature",
+        "monitoring"
+      ],
       "aspect_ratio": "4:3",
       "min_width": 800
     },
@@ -712,7 +748,12 @@
       "selector": ".info-section--reversed .info-section__image img",
       "property": "src",
       "path": "images/info-how-works.jpg",
-      "keywords": ["farm", "landscape", "agriculture", "technology"],
+      "keywords": [
+        "farm",
+        "landscape",
+        "agriculture",
+        "technology"
+      ],
       "aspect_ratio": "4:3",
       "min_width": 800
     },
@@ -720,7 +761,12 @@
       "selector": ".indicators__visual .pyramid-circle img",
       "property": "src",
       "path": "images/pyramid-diagram.png",
-      "keywords": ["pyramid", "diagram", "trophic", "ecosystem"],
+      "keywords": [
+        "pyramid",
+        "diagram",
+        "trophic",
+        "ecosystem"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 400
     },
@@ -728,7 +774,11 @@
       "selector": ".stat-item:nth-child(n) .stat-item__icon img",
       "property": "src",
       "path": "images/stat-icon-{n}.png",
-      "keywords": ["stat", "icon", "metric"],
+      "keywords": [
+        "stat",
+        "icon",
+        "metric"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 100
     },
@@ -736,7 +786,12 @@
       "selector": ".quiz__image img",
       "property": "src",
       "path": "images/quiz-bg.jpg",
-      "keywords": ["quiz", "nature", "interactive", "bird"],
+      "keywords": [
+        "quiz",
+        "nature",
+        "interactive",
+        "bird"
+      ],
       "aspect_ratio": "4:3",
       "min_width": 800
     },
@@ -744,7 +799,11 @@
       "selector": ".news-card:nth-child(1) .news-card__image img",
       "property": "src",
       "path": "images/news-1.jpg",
-      "keywords": ["news", "article", "funding"],
+      "keywords": [
+        "news",
+        "article",
+        "funding"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 536
     },
@@ -752,7 +811,11 @@
       "selector": ".news-card:nth-child(2) .news-card__image img:first-child",
       "property": "src",
       "path": "images/news-2.jpg",
-      "keywords": ["news", "video", "agriculture"],
+      "keywords": [
+        "news",
+        "video",
+        "agriculture"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 536
     },
@@ -760,7 +823,11 @@
       "selector": ".news-card:nth-child(3) .news-card__image img",
       "property": "src",
       "path": "images/news-3.jpg",
-      "keywords": ["news", "article", "biodiversity"],
+      "keywords": [
+        "news",
+        "article",
+        "biodiversity"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 536
     },
@@ -768,7 +835,11 @@
       "selector": ".news-card__play-btn",
       "property": "src",
       "path": "images/icon-play.png",
-      "keywords": ["play", "video", "icon"],
+      "keywords": [
+        "play",
+        "video",
+        "icon"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 80
     },
@@ -776,7 +847,12 @@
       "selector": ".testimonials__bg img",
       "property": "src",
       "path": "images/testimonials-bg.jpg",
-      "keywords": ["background", "landscape", "nature", "testimonial"],
+      "keywords": [
+        "background",
+        "landscape",
+        "nature",
+        "testimonial"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 1920
     },
@@ -784,7 +860,11 @@
       "selector": ".testimonial-card__stars img",
       "property": "src",
       "path": "images/icon-star.svg",
-      "keywords": ["star", "rating", "icon"],
+      "keywords": [
+        "star",
+        "rating",
+        "icon"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 20
     },
@@ -792,7 +872,11 @@
       "selector": ".partners__logos img",
       "property": "src",
       "path": "images/partner-{n}.png",
-      "keywords": ["partner", "client", "logo"],
+      "keywords": [
+        "partner",
+        "client",
+        "logo"
+      ],
       "aspect_ratio": "auto",
       "min_width": 100
     },
@@ -800,7 +884,12 @@
       "selector": ".cta-section__background img",
       "property": "src",
       "path": "images/cta-bg.jpg",
-      "keywords": ["community", "landscape", "background", "CTA"],
+      "keywords": [
+        "community",
+        "landscape",
+        "background",
+        "CTA"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 1920
     },
@@ -808,7 +897,11 @@
       "selector": ".footer__brand-logo img",
       "property": "src",
       "path": "images/footer-logo.png",
-      "keywords": ["logo", "footer", "brand"],
+      "keywords": [
+        "logo",
+        "footer",
+        "brand"
+      ],
       "aspect_ratio": "auto",
       "min_width": 200
     },
@@ -816,7 +909,13 @@
       "selector": ".footer__social img",
       "property": "src",
       "path": "images/icon-{social}.svg",
-      "keywords": ["social", "icon", "linkedin", "twitter", "facebook"],
+      "keywords": [
+        "social",
+        "icon",
+        "linkedin",
+        "twitter",
+        "facebook"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 32
     }

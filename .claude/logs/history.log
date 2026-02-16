@@ -1,0 +1,15 @@
+[2026-02-15T19:30:00Z] [command:1] TBT initialization for bigbeard-templates repository
+  - Created CLAUDE.md with root inheritance
+  - Created .claude/ TBT folder structure (logs, plans, staging, snapshots, state)
+  - Created TODO.md, docs/logs/, docs/plans/, docs/screenshots/
+  - Committed 18 templates across 8 industries with embeddings and tooling
+
+[2026-02-16T14:30:00Z] [command:2] Strip proprietary data from all 19 templates
+  Phase 1: Generated ~180 placeholder images (logos, people, heroes, partners, articles)
+  Phase 2: Cleaned 19 template-config.json files (names, emails, phones, addresses)
+  Phase 3: Regenerated 19 preview.html files from index.html + cleaned defaults
+  Phase 4: Cleaned 20 metadata.json files (root + per-template)
+  Phase 5: Removed .claude/staging/chirrup/ (Piet Pompies Barber Shop data)
+  Phase 6: Cleaned _preview_index.html, 20 embeddings_output/*.json, 19 CSS/JS files
+  Verification: ZERO proprietary strings found in HTML/JSON/CSS/JS
+  Scripts: scripts/generate_placeholders.py, scripts/clean_configs.py

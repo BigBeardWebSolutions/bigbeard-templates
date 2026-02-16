@@ -1,6 +1,6 @@
 {
   "template_id": "technology-bbws-ai-page-builder-v1",
-  "name": "BBWS AI Page Builder Landing Page",
+  "name": "AI Page Builder Landing Page",
   "industry": "technology",
   "cta_intent": "signup",
   "design_style": "modern",
@@ -44,7 +44,7 @@
     "--text-color"
   ],
   "description": "A modern technology landing page for AI-powered website builder. Features gradient buttons, feature cards, example prompts section, and call-to-action. Uses Inter font family with blue/cyan gradient accent colors.",
-  "figma_source": "https://figma.com/design/mwrrjDHxuCCap3Sg2i5EXW/BBWS-AI-Page-Builder-Landing-Page?node-id=89:13",
+  "figma_source": "https://figma.com/design/mwrrjDHxuCCap3Sg2i5EXW/Platform-AI-Page-Builder-Landing-Page?node-id=89:13",
   "s3_path": "website-templates/technology/bbws-ai-page-builder/",
   "preview_url": "https://bbws-templates-dev.s3.eu-west-1.amazonaws.com/website-templates/technology/bbws-ai-page-builder/preview.png",
   "embedding_text": "Industry: technology CTA Intent: signup Design Style: modern Sections: hero, features, examples, cta, footer Color Palette: #0090FF primary Tags: technology, saas, ai, website builder, landing page, modern, gradient A modern technology landing page for AI-powered website builder. Features gradient buttons, feature cards, example prompts section, and call-to-action. Uses Inter font family with blue/cyan gradient accent colors. \n        This is a modern website template for the technology industry",

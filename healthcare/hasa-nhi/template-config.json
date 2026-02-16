@@ -3,7 +3,7 @@
   "name": "Healthcare NHI Information Portal",
   "placeholders": {
     "{{BUSINESS_NAME}}": {
-      "default": "HASA",
+      "default": "Your Company Name",
       "description": "Organization or brand name",
       "required": true
     },
@@ -253,17 +253,17 @@
       "required": false
     },
     "{{EMAIL}}": {
-      "default": "info@hasa.co.za",
+      "default": "info@example.com",
       "description": "Organization contact email address",
       "required": true
     },
     "{{PHONE}}": {
-      "default": "+27 11 000 0000",
+      "default": "+1 (555) 000-0000",
       "description": "Organization contact phone number",
       "required": true
     },
     "{{ADDRESS}}": {
-      "default": "Johannesburg, South Africa",
+      "default": "Anytown, South Africa",
       "description": "Physical address or location",
       "required": false
     },
@@ -278,7 +278,13 @@
       "selector": ".hero-bg-img",
       "property": "src",
       "path": "images/hero-bg.png",
-      "keywords": ["hero", "healthcare", "hospital", "medical", "background"],
+      "keywords": [
+        "hero",
+        "healthcare",
+        "hospital",
+        "medical",
+        "background"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 1920
     },
@@ -286,7 +292,12 @@
       "selector": ".hero-person-img",
       "property": "src",
       "path": "images/hero-person.png",
-      "keywords": ["person", "professional", "healthcare", "representative"],
+      "keywords": [
+        "person",
+        "professional",
+        "healthcare",
+        "representative"
+      ],
       "aspect_ratio": "auto",
       "min_width": 400
     },
@@ -294,7 +305,10 @@
       "selector": ".logo-img",
       "property": "src",
       "path": "images/logo.png",
-      "keywords": ["logo", "brand"],
+      "keywords": [
+        "logo",
+        "brand"
+      ],
       "aspect_ratio": "auto",
       "min_width": 200
     },
@@ -302,7 +316,12 @@
       "selector": ".article-featured .article-image img",
       "property": "src",
       "path": "images/article-featured.png",
-      "keywords": ["article", "featured", "news", "healthcare"],
+      "keywords": [
+        "article",
+        "featured",
+        "news",
+        "healthcare"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 600
     },
@@ -310,7 +329,12 @@
       "selector": ".article-card:nth-child(1) .article-card-image img",
       "property": "src",
       "path": "images/article-1.png",
-      "keywords": ["article", "news", "healthcare", "legal"],
+      "keywords": [
+        "article",
+        "news",
+        "healthcare",
+        "legal"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 400
     },
@@ -318,7 +342,12 @@
       "selector": ".article-card:nth-child(2) .article-card-image img",
       "property": "src",
       "path": "images/article-2.png",
-      "keywords": ["article", "news", "healthcare", "finance"],
+      "keywords": [
+        "article",
+        "news",
+        "healthcare",
+        "finance"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 400
     },
@@ -326,7 +355,12 @@
       "selector": ".article-card:nth-child(3) .article-card-image img",
       "property": "src",
       "path": "images/article-3.png",
-      "keywords": ["article", "news", "healthcare", "Q&A"],
+      "keywords": [
+        "article",
+        "news",
+        "healthcare",
+        "Q&A"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 400
     },
@@ -334,7 +368,12 @@
       "selector": ".article-card:nth-child(4) .article-card-image img",
       "property": "src",
       "path": "images/article-4.png",
-      "keywords": ["article", "news", "healthcare", "rural"],
+      "keywords": [
+        "article",
+        "news",
+        "healthcare",
+        "rural"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 400
     },
@@ -342,7 +381,12 @@
       "selector": ".featured-bg-img",
       "property": "src",
       "path": "images/qa-bg.png",
-      "keywords": ["background", "Q&A", "featured", "dark"],
+      "keywords": [
+        "background",
+        "Q&A",
+        "featured",
+        "dark"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 1920
     },
@@ -350,7 +394,11 @@
       "selector": ".social-icons-img",
       "property": "src",
       "path": "images/social-icons.png",
-      "keywords": ["social", "icons", "media"],
+      "keywords": [
+        "social",
+        "icons",
+        "media"
+      ],
       "aspect_ratio": "auto",
       "min_width": 100
     },
@@ -358,7 +406,11 @@
       "selector": ".icon-arrow",
       "property": "src",
       "path": "images/icon-arrow.png",
-      "keywords": ["arrow", "icon", "navigation"],
+      "keywords": [
+        "arrow",
+        "icon",
+        "navigation"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 16
     }

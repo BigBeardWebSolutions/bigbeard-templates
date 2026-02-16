@@ -3,7 +3,7 @@
   "name": "Nonprofit Trust Organization Website",
   "placeholders": {
     "{{BUSINESS_NAME}}": {
-      "default": "Community Trust",
+      "default": "Your Company Name",
       "description": "Your organization or trust name",
       "required": true
     },
@@ -18,12 +18,12 @@
       "required": false
     },
     "{{PHONE}}": {
-      "default": "021 001 3693",
+      "default": "+1 (555) 000-0000",
       "description": "Contact phone number",
       "required": true
     },
     "{{EMAIL}}": {
-      "default": "info@example.org",
+      "default": "info@example.com",
       "description": "Contact email address",
       "required": true
     },
@@ -378,7 +378,7 @@
       "required": true
     },
     "{{COPYRIGHT}}": {
-      "default": "2026 Community Trust. All Rights Reserved.",
+      "default": "Copyright (c) Your Company 2026. All Rights Reserved",
       "description": "Copyright text in footer bottom bar",
       "required": true
     }
@@ -388,7 +388,12 @@
       "selector": ".hero__slide-image:nth-child(1)",
       "property": "src",
       "path": "images/hero-bg.jpg",
-      "keywords": ["hero", "community", "sunset", "people"],
+      "keywords": [
+        "hero",
+        "community",
+        "sunset",
+        "people"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 1920
     },
@@ -396,7 +401,11 @@
       "selector": ".hero__slide-image:nth-child(2)",
       "property": "src",
       "path": "images/hero-slide-2.jpg",
-      "keywords": ["hero", "community", "development"],
+      "keywords": [
+        "hero",
+        "community",
+        "development"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 1920
     },
@@ -404,7 +413,11 @@
       "selector": ".hero__slide-image:nth-child(3)",
       "property": "src",
       "path": "images/hero-slide-3.jpg",
-      "keywords": ["hero", "renewable energy", "solar"],
+      "keywords": [
+        "hero",
+        "renewable energy",
+        "solar"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 1920
     },
@@ -412,7 +425,11 @@
       "selector": ".header__logo img",
       "property": "src",
       "path": "images/logo.png",
-      "keywords": ["logo", "brand", "trust"],
+      "keywords": [
+        "logo",
+        "brand",
+        "trust"
+      ],
       "aspect_ratio": "auto",
       "min_width": 124
     },
@@ -420,7 +437,12 @@
       "selector": ".about__image",
       "property": "src",
       "path": "images/about-image.jpg",
-      "keywords": ["about", "solar", "renewable energy", "plant"],
+      "keywords": [
+        "about",
+        "solar",
+        "renewable energy",
+        "plant"
+      ],
       "aspect_ratio": "3:2",
       "min_width": 795
     },
@@ -428,7 +450,12 @@
       "selector": ".focus__icon-img:nth-of-type(1)",
       "property": "src",
       "path": "images/focus-icon-1.png",
-      "keywords": ["icon", "enterprise", "market", "development"],
+      "keywords": [
+        "icon",
+        "enterprise",
+        "market",
+        "development"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 86
     },
@@ -436,7 +463,12 @@
       "selector": ".focus__icon-img:nth-of-type(2)",
       "property": "src",
       "path": "images/focus-icon-2.png",
-      "keywords": ["icon", "education", "youth", "skills"],
+      "keywords": [
+        "icon",
+        "education",
+        "youth",
+        "skills"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 86
     },
@@ -444,7 +476,12 @@
       "selector": ".focus__icon-img:nth-of-type(3)",
       "property": "src",
       "path": "images/focus-icon-3.png",
-      "keywords": ["icon", "food", "security", "nutrition"],
+      "keywords": [
+        "icon",
+        "food",
+        "security",
+        "nutrition"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 86
     },
@@ -452,7 +489,12 @@
       "selector": ".what-we-do__bg",
       "property": "src",
       "path": "images/what-we-do-bg.jpg",
-      "keywords": ["landscape", "african", "savanna", "community"],
+      "keywords": [
+        "landscape",
+        "african",
+        "savanna",
+        "community"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 1920
     },
@@ -460,7 +502,12 @@
       "selector": ".trustee-card__image:nth-child(1)",
       "property": "src",
       "path": "images/trustee-1.png",
-      "keywords": ["trustee", "portrait", "person", "leader"],
+      "keywords": [
+        "trustee",
+        "portrait",
+        "person",
+        "leader"
+      ],
       "aspect_ratio": "auto",
       "min_width": 379
     },
@@ -468,7 +515,12 @@
       "selector": ".trustee-card__image:nth-child(2)",
       "property": "src",
       "path": "images/trustee-2.png",
-      "keywords": ["trustee", "portrait", "person", "leader"],
+      "keywords": [
+        "trustee",
+        "portrait",
+        "person",
+        "leader"
+      ],
       "aspect_ratio": "auto",
       "min_width": 379
     },
@@ -476,7 +528,12 @@
       "selector": ".apply-cta__bg",
       "property": "src",
       "path": "images/apply-now-bg.jpg",
-      "keywords": ["landscape", "mountains", "nature", "scenic"],
+      "keywords": [
+        "landscape",
+        "mountains",
+        "nature",
+        "scenic"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 1920
     }

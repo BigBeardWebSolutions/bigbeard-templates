@@ -3,12 +3,12 @@
   "name": "Safari Lodge Experience Website",
   "placeholders": {
     "{{BUSINESS_NAME}}": {
-      "default": "Experience Madikwe",
+      "default": "Your Company Name",
       "description": "Business or lodge brand name",
       "required": true
     },
     "{{TAGLINE}}": {
-      "default": "Luxury Safari Lodge in the Heart of Madikwe Game Reserve",
+      "default": "Luxury Safari Lodge in the Heart of Your Company Name Game Reserve",
       "description": "Short tagline describing the lodge or experience",
       "required": true
     },
@@ -18,12 +18,12 @@
       "required": true
     },
     "{{HERO_DESCRIPTION}}": {
-      "default": "Discover an unforgettable African safari experience at Madikwe Game Reserve, where world-class luxury meets pristine wilderness.",
+      "default": "Discover an unforgettable African safari experience at Your Company Name Game Reserve, where world-class luxury meets pristine wilderness.",
       "description": "Hero section supporting description text",
       "required": true
     },
     "{{HERO_IMAGE_ALT}}": {
-      "default": "Madikwe Game Reserve landscape at sunset",
+      "default": "Your Company Name Game Reserve landscape at sunset",
       "description": "Alt text for the hero background image",
       "required": false
     },
@@ -68,17 +68,17 @@
       "required": true
     },
     "{{ABOUT_DESCRIPTION}}": {
-      "default": "Nestled within the magnificent Madikwe Game Reserve, our collection of luxury lodges offers an authentic African safari experience that balances adventure with indulgence.",
+      "default": "Nestled within the magnificent Your Company Name Game Reserve, our collection of luxury lodges offers an authentic African safari experience that balances adventure with indulgence.",
       "description": "About section first paragraph",
       "required": true
     },
     "{{ABOUT_DESCRIPTION_2}}": {
-      "default": "Home to the Big Five and over 350 bird species, Madikwe is one of South Africa's most exclusive and malaria-free safari destinations. Our lodges are designed to immerse you in the natural splendour of the bush while providing every modern comfort.",
+      "default": "Home to the Big Five and over 350 bird species, Your Company Name is one of South Africa's most exclusive and malaria-free safari destinations. Our lodges are designed to immerse you in the natural splendour of the bush while providing every modern comfort.",
       "description": "About section second paragraph",
       "required": false
     },
     "{{ABOUT_IMAGE_ALT}}": {
-      "default": "Elephants at a watering hole in Madikwe Game Reserve",
+      "default": "Elephants at a watering hole in Your Company Name Game Reserve",
       "description": "Alt text for the about section image",
       "required": false
     },
@@ -113,7 +113,7 @@
       "required": true
     },
     "{{LODGES_DESCRIPTION}}": {
-      "default": "Choose from nine exceptional lodges, each offering a unique perspective of Madikwe's untamed beauty with unparalleled hospitality and personalised service.",
+      "default": "Choose from nine exceptional lodges, each offering a unique perspective of Your Company Name's untamed beauty with unparalleled hospitality and personalised service.",
       "description": "Lodges section description text",
       "required": true
     },
@@ -128,7 +128,7 @@
       "required": true
     },
     "{{LODGE_3_NAME}}": {
-      "default": "Jamala Madikwe",
+      "default": "Jamala Your Company Name",
       "description": "Name of lodge 3",
       "required": true
     },
@@ -138,7 +138,7 @@
       "required": true
     },
     "{{LODGE_5_NAME}}": {
-      "default": "Madikwe Hills",
+      "default": "Your Company Name Hills",
       "description": "Name of lodge 5",
       "required": true
     },
@@ -173,7 +173,7 @@
       "required": true
     },
     "{{DIRECTIONS_DESCRIPTION}}": {
-      "default": "Madikwe Game Reserve is easily accessible by road from Johannesburg (4 hours) or by a short charter flight to the reserve airstrip.",
+      "default": "Your Company Name Game Reserve is easily accessible by road from Anytown (4 hours) or by a short charter flight to the reserve airstrip.",
       "description": "Directions section description",
       "required": true
     },
@@ -183,17 +183,17 @@
       "required": false
     },
     "{{PHONE}}": {
-      "default": "+27 18 350 9000",
+      "default": "+1 (555) 000-0000",
       "description": "Contact phone number",
       "required": true
     },
     "{{EMAIL}}": {
-      "default": "reservations@experiencemadikwe.co.za",
+      "default": "info@example.com",
       "description": "Contact email address",
       "required": true
     },
     "{{ADDRESS}}": {
-      "default": "Madikwe Game Reserve, North West Province, South Africa",
+      "default": "Your Company Name Game Reserve, North West Province, South Africa",
       "description": "Physical address or location",
       "required": false
     },
@@ -233,7 +233,7 @@
       "required": false
     },
     "{{FOOTER_COPYRIGHT}}": {
-      "default": "All rights reserved.",
+      "default": "Copyright (c) Your Company 2026. All Rights Reserved",
       "description": "Copyright text following the business name",
       "required": false
     },
@@ -273,7 +273,14 @@
       "selector": ".hero-bg img",
       "property": "src",
       "path": "images/hero-bg.jpg",
-      "keywords": ["hero", "safari", "landscape", "sunset", "nature", "background"],
+      "keywords": [
+        "hero",
+        "safari",
+        "landscape",
+        "sunset",
+        "nature",
+        "background"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 1920
     },
@@ -281,7 +288,11 @@
       "selector": ".hero-overlay img",
       "property": "src",
       "path": "images/hero-overlay.png",
-      "keywords": ["overlay", "gradient", "decorative"],
+      "keywords": [
+        "overlay",
+        "gradient",
+        "decorative"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 1920
     },
@@ -289,7 +300,11 @@
       "selector": ".header-logo img",
       "property": "src",
       "path": "images/logo.png",
-      "keywords": ["logo", "brand", "safari"],
+      "keywords": [
+        "logo",
+        "brand",
+        "safari"
+      ],
       "aspect_ratio": "auto",
       "min_width": 200
     },
@@ -297,7 +312,13 @@
       "selector": ".about-image img",
       "property": "src",
       "path": "images/about-elephants.jpg",
-      "keywords": ["elephants", "wildlife", "nature", "about", "safari"],
+      "keywords": [
+        "elephants",
+        "wildlife",
+        "nature",
+        "about",
+        "safari"
+      ],
       "aspect_ratio": "4:3",
       "min_width": 800
     },
@@ -305,7 +326,12 @@
       "selector": ".stat-item:nth-child(1) .stat-icon img:last-child",
       "property": "src",
       "path": "images/icon-safari.png",
-      "keywords": ["safari", "binoculars", "icon", "game drive"],
+      "keywords": [
+        "safari",
+        "binoculars",
+        "icon",
+        "game drive"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 66
     },
@@ -313,7 +339,12 @@
       "selector": ".stat-item:nth-child(2) .stat-icon img:last-child",
       "property": "src",
       "path": "images/icon-bed.png",
-      "keywords": ["bed", "accommodation", "icon", "suite"],
+      "keywords": [
+        "bed",
+        "accommodation",
+        "icon",
+        "suite"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 66
     },
@@ -321,7 +352,12 @@
       "selector": ".stat-item:nth-child(3) .stat-icon img:last-child",
       "property": "src",
       "path": "images/icon-bird.png",
-      "keywords": ["bird", "birding", "icon", "species"],
+      "keywords": [
+        "bird",
+        "birding",
+        "icon",
+        "species"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 66
     },
@@ -329,7 +365,12 @@
       "selector": ".stat-item:nth-child(4) .stat-icon img:last-child",
       "property": "src",
       "path": "images/icon-landscape.png",
-      "keywords": ["landscape", "hectares", "icon", "reserve"],
+      "keywords": [
+        "landscape",
+        "hectares",
+        "icon",
+        "reserve"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 66
     },
@@ -337,7 +378,12 @@
       "selector": ".stat-item:nth-child(5) .stat-icon img:last-child",
       "property": "src",
       "path": "images/icon-car.png",
-      "keywords": ["car", "transfer", "icon", "travel"],
+      "keywords": [
+        "car",
+        "transfer",
+        "icon",
+        "travel"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 66
     },
@@ -345,7 +391,12 @@
       "selector": ".lodge-card:nth-child(1) img",
       "property": "src",
       "path": "images/lodge-1.jpg",
-      "keywords": ["lodge", "accommodation", "safari", "luxury"],
+      "keywords": [
+        "lodge",
+        "accommodation",
+        "safari",
+        "luxury"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 600
     },
@@ -353,7 +404,12 @@
       "selector": ".lodge-card:nth-child(2) img",
       "property": "src",
       "path": "images/lodge-2.jpg",
-      "keywords": ["lodge", "accommodation", "safari", "luxury"],
+      "keywords": [
+        "lodge",
+        "accommodation",
+        "safari",
+        "luxury"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 600
     },
@@ -361,7 +417,12 @@
       "selector": ".lodge-card:nth-child(3) img",
       "property": "src",
       "path": "images/lodge-3.jpg",
-      "keywords": ["lodge", "accommodation", "safari", "luxury"],
+      "keywords": [
+        "lodge",
+        "accommodation",
+        "safari",
+        "luxury"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 600
     },
@@ -369,7 +430,12 @@
       "selector": ".lodge-card:nth-child(4) img",
       "property": "src",
       "path": "images/lodge-4.jpg",
-      "keywords": ["lodge", "accommodation", "safari", "luxury"],
+      "keywords": [
+        "lodge",
+        "accommodation",
+        "safari",
+        "luxury"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 600
     },
@@ -377,7 +443,12 @@
       "selector": ".lodge-card:nth-child(5) img",
       "property": "src",
       "path": "images/lodge-5.jpg",
-      "keywords": ["lodge", "accommodation", "safari", "luxury"],
+      "keywords": [
+        "lodge",
+        "accommodation",
+        "safari",
+        "luxury"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 600
     },
@@ -385,7 +456,12 @@
       "selector": ".lodge-card:nth-child(6) img",
       "property": "src",
       "path": "images/lodge-6.jpg",
-      "keywords": ["lodge", "accommodation", "safari", "luxury"],
+      "keywords": [
+        "lodge",
+        "accommodation",
+        "safari",
+        "luxury"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 600
     },
@@ -393,7 +469,12 @@
       "selector": ".lodge-card:nth-child(7) img",
       "property": "src",
       "path": "images/lodge-7.jpg",
-      "keywords": ["lodge", "accommodation", "safari", "luxury"],
+      "keywords": [
+        "lodge",
+        "accommodation",
+        "safari",
+        "luxury"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 600
     },
@@ -401,7 +482,12 @@
       "selector": ".lodge-card:nth-child(8) img",
       "property": "src",
       "path": "images/lodge-8.jpg",
-      "keywords": ["lodge", "accommodation", "safari", "luxury"],
+      "keywords": [
+        "lodge",
+        "accommodation",
+        "safari",
+        "luxury"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 600
     },
@@ -409,7 +495,12 @@
       "selector": ".lodge-card:nth-child(9) img",
       "property": "src",
       "path": "images/lodge-9.jpg",
-      "keywords": ["lodge", "accommodation", "safari", "luxury"],
+      "keywords": [
+        "lodge",
+        "accommodation",
+        "safari",
+        "luxury"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 600
     },
@@ -417,7 +508,12 @@
       "selector": ".footer-social a:nth-child(1) img",
       "property": "src",
       "path": "images/icon-youtube.png",
-      "keywords": ["youtube", "social", "video", "icon"],
+      "keywords": [
+        "youtube",
+        "social",
+        "video",
+        "icon"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 43
     },
@@ -425,7 +521,12 @@
       "selector": ".footer-social a:nth-child(2) img",
       "property": "src",
       "path": "images/icon-instagram.png",
-      "keywords": ["instagram", "social", "photo", "icon"],
+      "keywords": [
+        "instagram",
+        "social",
+        "photo",
+        "icon"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 43
     },
@@ -433,7 +534,11 @@
       "selector": ".footer-social a:nth-child(3) img",
       "property": "src",
       "path": "images/icon-facebook.png",
-      "keywords": ["facebook", "social", "icon"],
+      "keywords": [
+        "facebook",
+        "social",
+        "icon"
+      ],
       "aspect_ratio": "1:1",
       "min_width": 43
     }

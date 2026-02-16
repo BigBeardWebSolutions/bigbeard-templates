@@ -3,7 +3,7 @@
   "name": "Healthcare Association Corporate Website",
   "placeholders": {
     "{{BUSINESS_NAME}}": {
-      "default": "HASA",
+      "default": "Your Company Name",
       "description": "Organization or brand name",
       "required": true
     },
@@ -28,12 +28,12 @@
       "required": true
     },
     "{{EMAIL}}": {
-      "default": "info@hasa.co.za",
+      "default": "info@example.com",
       "description": "Contact email address",
       "required": true
     },
     "{{PHONE}}": {
-      "default": "+27 11 450 1029",
+      "default": "+1 (555) 000-0000",
       "description": "Contact phone number",
       "required": true
     },
@@ -113,7 +113,7 @@
       "required": true
     },
     "{{QUICKLINK_2_SUBTITLE}}": {
-      "default": "Exclusive resources for HASA members",
+      "default": "Exclusive resources for Your Company Name members",
       "description": "Second quick link card subtitle",
       "required": true
     },
@@ -128,12 +128,12 @@
       "required": true
     },
     "{{SECTION_MEMBERS_TITLE}}": {
-      "default": "HASA Members",
+      "default": "Your Company Name Members",
       "description": "Title for the members logo section",
       "required": true
     },
     "{{SECTION_MEMBERS_DESCRIPTION}}": {
-      "default": "HASA represents the owners and managers of the majority of private sector hospital beds in South Africa. Our members include leading hospital groups committed to delivering quality healthcare to all South Africans.",
+      "default": "Your Company Name represents the owners and managers of the majority of private sector hospital beds in South Africa. Our members include leading hospital groups committed to delivering quality healthcare to all South Africans.",
       "description": "Description paragraph in the members section",
       "required": true
     },
@@ -148,7 +148,7 @@
       "required": true
     },
     "{{NEWS_1_EXCERPT}}": {
-      "default": "HASA members have released a joint statement outlining their commitment to working with government on the implementation of the National Health Insurance.",
+      "default": "Your Company Name members have released a joint statement outlining their commitment to working with government on the implementation of the National Health Insurance.",
       "description": "First news article excerpt",
       "required": true
     },
@@ -163,12 +163,12 @@
       "required": true
     },
     "{{NEWS_3_TITLE}}": {
-      "default": "HASA Conference 2026: Registration Now Open",
+      "default": "Your Company Name Conference 2026: Registration Now Open",
       "description": "Third news article title",
       "required": true
     },
     "{{NEWS_3_EXCERPT}}": {
-      "default": "Join healthcare leaders and policymakers at the annual HASA Conference to discuss the future of private healthcare in South Africa.",
+      "default": "Join healthcare leaders and policymakers at the annual Your Company Name Conference to discuss the future of private healthcare in South Africa.",
       "description": "Third news article excerpt",
       "required": true
     },
@@ -183,7 +183,7 @@
       "required": true
     },
     "{{FOOTER_COL3_TITLE}}": {
-      "default": "HASA Archive",
+      "default": "Your Company Name Archive",
       "description": "Footer third column heading",
       "required": true
     },
@@ -198,7 +198,12 @@
       "selector": ".hero__bg-img",
       "property": "src",
       "path": "images/hero-bg.png",
-      "keywords": ["hero", "hospital", "healthcare", "interior"],
+      "keywords": [
+        "hero",
+        "hospital",
+        "healthcare",
+        "interior"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 1920
     },
@@ -206,7 +211,11 @@
       "selector": ".logo-img",
       "property": "src",
       "path": "images/logo.png",
-      "keywords": ["logo", "brand", "healthcare"],
+      "keywords": [
+        "logo",
+        "brand",
+        "healthcare"
+      ],
       "aspect_ratio": "auto",
       "min_width": 200
     },
@@ -214,7 +223,11 @@
       "selector": ".quick-link-card:nth-child(1) .quick-link-card__img",
       "property": "src",
       "path": "images/quicklink-1.png",
-      "keywords": ["research", "healthcare", "data"],
+      "keywords": [
+        "research",
+        "healthcare",
+        "data"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 400
     },
@@ -222,7 +235,11 @@
       "selector": ".quick-link-card:nth-child(2) .quick-link-card__img",
       "property": "src",
       "path": "images/quicklink-2.png",
-      "keywords": ["members", "people", "collaboration"],
+      "keywords": [
+        "members",
+        "people",
+        "collaboration"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 400
     },
@@ -230,7 +247,11 @@
       "selector": ".quick-link-card:nth-child(3) .quick-link-card__img",
       "property": "src",
       "path": "images/quicklink-3.png",
-      "keywords": ["podcast", "microphone", "discussion"],
+      "keywords": [
+        "podcast",
+        "microphone",
+        "discussion"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 400
     },
@@ -238,7 +259,11 @@
       "selector": ".member-logo:nth-child(1) .member-logo__img",
       "property": "src",
       "path": "images/member-1.png",
-      "keywords": ["hospital", "member", "logo"],
+      "keywords": [
+        "hospital",
+        "member",
+        "logo"
+      ],
       "aspect_ratio": "auto",
       "min_width": 140
     },
@@ -246,7 +271,11 @@
       "selector": ".member-logo:nth-child(2) .member-logo__img",
       "property": "src",
       "path": "images/member-2.png",
-      "keywords": ["hospital", "member", "logo"],
+      "keywords": [
+        "hospital",
+        "member",
+        "logo"
+      ],
       "aspect_ratio": "auto",
       "min_width": 140
     },
@@ -254,7 +283,11 @@
       "selector": ".member-logo:nth-child(3) .member-logo__img",
       "property": "src",
       "path": "images/member-3.png",
-      "keywords": ["hospital", "member", "logo"],
+      "keywords": [
+        "hospital",
+        "member",
+        "logo"
+      ],
       "aspect_ratio": "auto",
       "min_width": 140
     },
@@ -262,7 +295,11 @@
       "selector": ".member-logo:nth-child(4) .member-logo__img",
       "property": "src",
       "path": "images/member-4.png",
-      "keywords": ["hospital", "member", "logo"],
+      "keywords": [
+        "hospital",
+        "member",
+        "logo"
+      ],
       "aspect_ratio": "auto",
       "min_width": 140
     },
@@ -270,7 +307,11 @@
       "selector": ".member-logo:nth-child(5) .member-logo__img",
       "property": "src",
       "path": "images/member-5.png",
-      "keywords": ["hospital", "member", "logo"],
+      "keywords": [
+        "hospital",
+        "member",
+        "logo"
+      ],
       "aspect_ratio": "auto",
       "min_width": 140
     },
@@ -278,7 +319,11 @@
       "selector": ".member-logo:nth-child(6) .member-logo__img",
       "property": "src",
       "path": "images/member-6.png",
-      "keywords": ["hospital", "member", "logo"],
+      "keywords": [
+        "hospital",
+        "member",
+        "logo"
+      ],
       "aspect_ratio": "auto",
       "min_width": 140
     },
@@ -286,7 +331,11 @@
       "selector": ".news-card:nth-child(1) .news-card__img",
       "property": "src",
       "path": "images/news-1.png",
-      "keywords": ["news", "healthcare", "article"],
+      "keywords": [
+        "news",
+        "healthcare",
+        "article"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 400
     },
@@ -294,7 +343,11 @@
       "selector": ".news-card:nth-child(2) .news-card__img",
       "property": "src",
       "path": "images/news-2.png",
-      "keywords": ["news", "healthcare", "article"],
+      "keywords": [
+        "news",
+        "healthcare",
+        "article"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 400
     },
@@ -302,7 +355,11 @@
       "selector": ".news-card:nth-child(3) .news-card__img",
       "property": "src",
       "path": "images/news-3.png",
-      "keywords": ["news", "healthcare", "article"],
+      "keywords": [
+        "news",
+        "healthcare",
+        "article"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 400
     }

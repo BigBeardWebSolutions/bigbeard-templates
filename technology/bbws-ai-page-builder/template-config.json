@@ -1,9 +1,9 @@
 {
   "template_id": "technology-bbws-ai-page-builder-v1",
-  "name": "BBWS AI Page Builder Landing Page",
+  "name": "Your Company Name Your Company Name Landing Page",
   "placeholders": {
     "{{BUSINESS_NAME}}": {
-      "default": "AI Page Builder",
+      "default": "Your Company Name",
       "description": "Your company or product name",
       "required": true
     },
@@ -38,7 +38,12 @@
       "selector": ".hero",
       "property": "background-image",
       "path": "images/hero-bg.jpg",
-      "keywords": ["technology", "abstract", "gradient", "dark"],
+      "keywords": [
+        "technology",
+        "abstract",
+        "gradient",
+        "dark"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 1920
     },
@@ -46,7 +51,12 @@
       "selector": ".examples",
       "property": "background-image",
       "path": "images/examples-bg.jpg",
-      "keywords": ["technology", "abstract", "dark", "pattern"],
+      "keywords": [
+        "technology",
+        "abstract",
+        "dark",
+        "pattern"
+      ],
       "aspect_ratio": "16:9",
       "min_width": 1920
     },
@@ -54,7 +64,10 @@
       "selector": ".logo-img",
       "property": "src",
       "path": "images/logo.png",
-      "keywords": ["logo", "brand"],
+      "keywords": [
+        "logo",
+        "brand"
+      ],
       "aspect_ratio": "auto",
       "min_width": 200
     },
@@ -62,7 +75,11 @@
       "selector": ".footer-logo",
       "property": "src",
       "path": "images/logo-white.png",
-      "keywords": ["logo", "brand", "white"],
+      "keywords": [
+        "logo",
+        "brand",
+        "white"
+      ],
       "aspect_ratio": "auto",
       "min_width": 200
     }
@@ -71,37 +88,65 @@
     {
       "path": "images/icon-language.png",
       "alt": "Natural Language",
-      "keywords": ["language", "text", "chat"]
+      "keywords": [
+        "language",
+        "text",
+        "chat"
+      ]
     },
     {
       "path": "images/icon-flash.png",
       "alt": "Instant Generation",
-      "keywords": ["speed", "fast", "lightning"]
+      "keywords": [
+        "speed",
+        "fast",
+        "lightning"
+      ]
     },
     {
       "path": "images/icon-design.png",
       "alt": "Beautiful Design",
-      "keywords": ["design", "palette", "art"]
+      "keywords": [
+        "design",
+        "palette",
+        "art"
+      ]
     },
     {
       "path": "images/icon-custom.png",
       "alt": "Full Customisation",
-      "keywords": ["settings", "customize", "gear"]
+      "keywords": [
+        "settings",
+        "customize",
+        "gear"
+      ]
     },
     {
       "path": "images/icon-mobile.png",
       "alt": "Mobile First",
-      "keywords": ["mobile", "phone", "responsive"]
+      "keywords": [
+        "mobile",
+        "phone",
+        "responsive"
+      ]
     },
     {
       "path": "images/icon-performance.png",
       "alt": "Fast Performance",
-      "keywords": ["performance", "speed", "rocket"]
+      "keywords": [
+        "performance",
+        "speed",
+        "rocket"
+      ]
     },
     {
       "path": "images/icon-ai.png",
       "alt": "AI",
-      "keywords": ["ai", "artificial intelligence", "robot"]
+      "keywords": [
+        "ai",
+        "artificial intelligence",
+        "robot"
+      ]
     }
   ],
   "sections": {

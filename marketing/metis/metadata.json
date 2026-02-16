@@ -1,5 +1,5 @@
 {
-  "template_id": "marketing-metis-v1",
+  "template_id": "marketing-Your Company Name-v1",
   "name": "Digital Marketing Agency Website",
   "figma_source": "https://www.figma.com/design/kFAqZfGpRIwFyFLAKk2GoJ",
   "industry": "marketing",
@@ -20,7 +20,11 @@
     "heading_font": "Roboto",
     "body_font": "Roboto",
     "base_size": "16px",
-    "font_weights": ["300", "400", "600"]
+    "font_weights": [
+      "300",
+      "400",
+      "600"
+    ]
   },
   "sections": [
     "hero",

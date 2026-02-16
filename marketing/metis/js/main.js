@@ -1,5 +1,5 @@
 /**
- * Metis Marketing Agency Template - Main JavaScript
+ * Digital Marketing Agency Template - Main JavaScript
  * Handles: Mobile menu, smooth scroll, header scroll effect,
  * service accordion, approach step navigation, partner/client carousels,
  * video play button handler.

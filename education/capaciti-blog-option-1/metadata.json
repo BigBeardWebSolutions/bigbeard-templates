@@ -1,7 +1,7 @@
 {
-  "template_id": "education-capaciti-blog-option-1-v1",
+  "template_id": "education-Your Company Name-blog-option-1-v1",
   "name": "Education Blog Listing - Grid Layout",
-  "figma_source": "https://www.figma.com/design/viH5HRCWleSJgKJxoGw8MK/Blog-Capaciti-Opt-1?node-id=0-8",
+  "figma_source": "https://www.figma.com/design/viH5HRCWleSJgKJxoGw8MK/Blog-Your Company Name-Opt-1?node-id=0-8",
   "industry": "education",
   "cta_intent": "learn_more",
   "design_style": "modern",
@@ -18,7 +18,14 @@
     "body_font": "Poppins",
     "base_size": "16px"
   },
-  "sections": ["header", "page-title", "featured-story", "article-grid", "pagination", "footer"],
+  "sections": [
+    "header",
+    "page-title",
+    "featured-story",
+    "article-grid",
+    "pagination",
+    "footer"
+  ],
   "customizable_fields": [
     "{{BUSINESS_NAME}}",
     "{{PRIMARY_CTA}}",
@@ -69,8 +76,25 @@
     "{{ADDRESS}}",
     "{{YEAR}}"
   ],
-  "css_variables": ["--primary-color", "--secondary-color", "--accent-color", "--surface-color", "--text-color", "--background-color"],
-  "keywords": ["education", "blog", "articles", "grid layout", "featured story", "content", "modern", "corporate", "pagination"],
+  "css_variables": [
+    "--primary-color",
+    "--secondary-color",
+    "--accent-color",
+    "--surface-color",
+    "--text-color",
+    "--background-color"
+  ],
+  "keywords": [
+    "education",
+    "blog",
+    "articles",
+    "grid layout",
+    "featured story",
+    "content",
+    "modern",
+    "corporate",
+    "pagination"
+  ],
   "description": "A modern blog listing page with featured story banner and 3-column article grid. Each article card features an image, publication date, read time, title, and excerpt. Includes pagination and matching footer. Poppins font with navy/red color scheme.",
   "created_at": "2026-02-15T16:00:00Z",
   "source": "figma-mcp"
