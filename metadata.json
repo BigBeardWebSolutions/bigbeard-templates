@@ -1,16 +1,36 @@
 {
-  "repository": "Your Company Name-templates",
-  "version": "2.0.0",
-  "description": "Template repository for Your Company Name Website Builder - 19 white-label website templates across 9 industries",
+  "repository": "site-builder-templates",
+  "version": "2.1.0",
+  "description": "Template repository for Site Builder - 20 white-label website templates across 10 industries",
   "templates": [
     {
-      "template_id": "education-Your Company Name-blog-option-1-v1",
+      "template_id": "blank-site-v1",
+      "name": "Blank Site",
+      "path": "blank/blank-site",
+      "industry": "general",
+      "cta_intent": "contact",
+      "design_style": "minimal",
+      "figma_source": "none",
+      "keywords": [
+        "blank",
+        "starter",
+        "empty",
+        "minimal",
+        "clean",
+        "scratch",
+        "custom",
+        "general"
+      ],
+      "created_at": "2026-02-18T10:00:00Z"
+    },
+    {
+      "template_id": "education-skills-training-blog-1-v1",
       "name": "Education Blog Listing - Grid Layout",
-      "path": "education/Your Company Name-blog-option-1",
+      "path": "education/skills-training-blog-1",
       "industry": "education",
       "cta_intent": "learn_more",
       "design_style": "modern",
-      "figma_source": "https://www.figma.com/design/viH5HRCWleSJgKJxoGw8MK/Blog-Your Company Name-Opt-1?node-id=0-8",
+      "figma_source": "figma-mcp-design",
       "keywords": [
         "education",
         "blog",
@@ -25,13 +45,13 @@
       "created_at": "2026-02-15T16:00:00Z"
     },
     {
-      "template_id": "education-Your Company Name-blog-option-2-v1",
+      "template_id": "education-skills-training-blog-2-v1",
       "name": "Education Blog Listing - Card Layout",
-      "path": "education/Your Company Name-blog-option-2",
+      "path": "education/skills-training-blog-2",
       "industry": "education",
       "cta_intent": "learn_more",
       "design_style": "modern",
-      "figma_source": "https://www.figma.com/design/v3grhAxg6DsWUmudC5HneW/Blog-Your Company Name-Opt-2?node-id=75-48",
+      "figma_source": "figma-mcp-design",
       "keywords": [
         "education",
         "blog",
@@ -47,13 +67,13 @@
       "created_at": "2026-02-15T16:00:00Z"
     },
     {
-      "template_id": "education-Your Company Name-landing-page-v1",
+      "template_id": "education-skills-training-landing-v1",
       "name": "Education Skills Development Landing Page",
-      "path": "education/Your Company Name-landing-page",
+      "path": "education/skills-training-landing",
       "industry": "education",
       "cta_intent": "lead_generation",
       "design_style": "modern",
-      "figma_source": "https://www.figma.com/design/YCkggAfrxrn1EATvGFWSfj/Your Company Name-Phase-2?node-id=0-1&m=dev",
+      "figma_source": "figma-mcp-design",
       "keywords": [
         "education",
         "skills development",
@@ -71,13 +91,13 @@
       "created_at": "2026-02-15T14:00:00Z"
     },
     {
-      "template_id": "education-Your Company Name-phase1-v1",
-      "name": "Education Skills Development Landing Page (Phase 1)",
-      "path": "education/Your Company Name-phase1",
+      "template_id": "education-skills-training-corporate-v1",
+      "name": "Education Skills Development Landing Page (Corporate)",
+      "path": "education/skills-training-corporate",
       "industry": "education",
       "cta_intent": "lead_generation",
       "design_style": "modern",
-      "figma_source": "https://www.figma.com/design/mS6hSPClkqlfRRWvTeTjDW/Your Company Name-Phase-1?node-id=1-2",
+      "figma_source": "figma-mcp-design",
       "keywords": [
         "education",
         "skills development",
@@ -95,13 +115,13 @@
       "created_at": "2026-02-15T16:00:00Z"
     },
     {
-      "template_id": "energy-Your Company Name-v1",
+      "template_id": "energy-solar-provider-v1",
       "name": "Solar Energy Solutions Website",
-      "path": "energy/Your Company Name",
+      "path": "energy/solar-provider",
       "industry": "energy",
       "cta_intent": "contact",
       "design_style": "modern",
-      "figma_source": "https://www.figma.com/design/7mL5yd7JmNs3UFqUgxqlmI",
+      "figma_source": "figma-mcp-design",
       "keywords": [
         "energy",
         "solar",
@@ -122,13 +142,13 @@
       "created_at": "2026-02-15T16:00:00Z"
     },
     {
-      "template_id": "finance-Your Company Name-website-v1",
+      "template_id": "finance-investment-company-v1",
       "name": "Finance Investment Company Website",
-      "path": "finance/Your Company Name-website",
+      "path": "finance/investment-company",
       "industry": "finance",
       "cta_intent": "contact",
       "design_style": "corporate",
-      "figma_source": "https://www.figma.com/design/oVr0KjvNH6e17ZjBelrPWo",
+      "figma_source": "figma-mcp-design",
       "keywords": [
         "finance",
         "investment",
@@ -150,13 +170,13 @@
       "created_at": "2026-02-15T16:00:00Z"
     },
     {
-      "template_id": "healthcare-Your Company Name-conference-newsletter-v1",
-      "name": "Your Company Name Conference Newsletter Email Template",
-      "path": "healthcare/Your Company Name-conference-newsletter",
+      "template_id": "healthcare-association-newsletter-v1",
+      "name": "Healthcare Conference Newsletter Email Template",
+      "path": "healthcare/association-newsletter",
       "industry": "healthcare",
       "cta_intent": "signup",
       "design_style": "modern",
-      "figma_source": "figma-mcp-export",
+      "figma_source": "figma-mcp-design",
       "keywords": [
         "healthcare",
         "conference",
@@ -168,7 +188,6 @@
         "delegate",
         "medical conference",
         "CPD",
-        "Your Company Name",
         "sustainable healthcare",
         "email marketing",
         "event promotion"
@@ -176,13 +195,13 @@
       "created_at": "2026-02-15T18:00:00Z"
     },
     {
-      "template_id": "healthcare-Your Company Name-gala-event-v1",
+      "template_id": "healthcare-association-gala-event-v1",
       "name": "Healthcare Gala Awards Event Page",
-      "path": "healthcare/Your Company Name-gala-event",
+      "path": "healthcare/association-gala-event",
       "industry": "healthcare",
       "cta_intent": "signup",
       "design_style": "elegant",
-      "figma_source": "https://www.figma.com/design/Your Company Name-Gala-Event",
+      "figma_source": "figma-mcp-design",
       "keywords": [
         "healthcare",
         "gala",
@@ -192,7 +211,6 @@
         "ceremony",
         "elegant",
         "dark theme",
-        "hollywood",
         "registration",
         "medical",
         "black tie"
@@ -200,13 +218,13 @@
       "created_at": "2026-02-15T16:00:00Z"
     },
     {
-      "template_id": "healthcare-Your Company Name-main-site-v1",
+      "template_id": "healthcare-association-corporate-v1",
       "name": "Healthcare Association Corporate Website",
-      "path": "healthcare/Your Company Name-main-site",
+      "path": "healthcare/association-corporate",
       "industry": "healthcare",
       "cta_intent": "lead_generation",
       "design_style": "corporate",
-      "figma_source": "figma-mcp-export",
+      "figma_source": "figma-mcp-design",
       "keywords": [
         "healthcare",
         "hospital association",
@@ -214,7 +232,6 @@
         "corporate",
         "medical",
         "hospital",
-        "NHI",
         "research",
         "podcast",
         "members",
@@ -225,38 +242,36 @@
       "created_at": "2026-02-15T18:00:00Z"
     },
     {
-      "template_id": "healthcare-Your Company Name-nhi-v1",
-      "name": "Healthcare NHI Information Portal",
-      "path": "healthcare/Your Company Name-nhi",
+      "template_id": "healthcare-association-policy-v1",
+      "name": "Healthcare Policy Information Portal",
+      "path": "healthcare/association-policy",
       "industry": "healthcare",
       "cta_intent": "lead_generation",
       "design_style": "modern",
       "figma_source": "figma-mcp-design",
       "keywords": [
         "healthcare",
-        "NHI",
+        "health policy",
         "national health insurance",
         "medical",
-        "health policy",
         "news portal",
         "FAQ",
         "resource centre",
         "information portal",
         "teal",
         "modern",
-        "lead generation",
-        "South Africa"
+        "lead generation"
       ],
       "created_at": "2026-02-15T18:00:00Z"
     },
     {
-      "template_id": "hospitality-experience-Your Company Name-v1",
+      "template_id": "hospitality-safari-lodge-v1",
       "name": "Safari Lodge Experience Website",
-      "path": "hospitality/experience-Your Company Name",
+      "path": "hospitality/safari-lodge",
       "industry": "hospitality",
       "cta_intent": "booking",
       "design_style": "elegant",
-      "figma_source": "https://www.figma.com/design/w8Qtdxpc6i6aOgcha3dllW",
+      "figma_source": "figma-mcp-design",
       "keywords": [
         "hospitality",
         "safari",
@@ -266,28 +281,24 @@
         "booking",
         "nature",
         "wildlife",
-        "Your Company Name",
-        "South Africa",
         "accommodation",
         "bush",
-        "elephant",
         "elegant",
         "earth tones"
       ],
       "created_at": "2026-02-15T16:00:00Z"
     },
     {
-      "template_id": "manufacturing-Your Company Name-v1",
+      "template_id": "manufacturing-industrial-company-v1",
       "name": "Manufacturing Industrial Company Website",
-      "path": "manufacturing/Your Company Name",
+      "path": "manufacturing/industrial-company",
       "industry": "manufacturing",
       "cta_intent": "contact",
       "design_style": "corporate",
-      "figma_source": "https://www.figma.com/design/EF5ayUwdHLWd0G8Wd7yEC3",
+      "figma_source": "figma-mcp-design",
       "keywords": [
         "manufacturing",
         "industrial",
-        "Your Company Name",
         "corporate",
         "engineering",
         "steel",
@@ -308,13 +319,13 @@
       "created_at": "2026-02-15T16:00:00Z"
     },
     {
-      "template_id": "manufacturing-fuse-factory-v1",
+      "template_id": "manufacturing-creative-factory-v1",
       "name": "Manufacturing Creative Factory Website",
-      "path": "manufacturing/fuse-factory",
+      "path": "manufacturing/creative-factory",
       "industry": "manufacturing",
       "cta_intent": "contact",
       "design_style": "modern-industrial",
-      "figma_source": "https://www.figma.com/design/0Yo1PO6Zyuc2cdmqjSuTYc",
+      "figma_source": "figma-mcp-design",
       "keywords": [
         "manufacturing",
         "creative factory",
@@ -334,13 +345,13 @@
       "created_at": "2026-02-15T16:00:00Z"
     },
     {
-      "template_id": "marketing-Your Company Name-v1",
+      "template_id": "marketing-digital-agency-v1",
       "name": "Digital Marketing Agency Website",
-      "path": "marketing/Your Company Name",
+      "path": "marketing/digital-agency",
       "industry": "marketing",
       "cta_intent": "contact",
       "design_style": "elegant",
-      "figma_source": "https://www.figma.com/design/kFAqZfGpRIwFyFLAKk2GoJ",
+      "figma_source": "figma-mcp-design",
       "keywords": [
         "marketing",
         "digital agency",
@@ -363,13 +374,13 @@
       "created_at": "2026-02-15T16:00:00Z"
     },
     {
-      "template_id": "nonprofit-amandla-omoya-trust-v1",
+      "template_id": "nonprofit-community-trust-1-v1",
       "name": "Nonprofit Trust Organization Website",
-      "path": "nonprofit/amandla-omoya-trust",
+      "path": "nonprofit/community-trust-1",
       "industry": "nonprofit",
       "cta_intent": "contact",
       "design_style": "warm",
-      "figma_source": "https://www.figma.com/design/3ucuFVI3JQRDyVRlKngRQe",
+      "figma_source": "figma-mcp-design",
       "keywords": [
         "nonprofit",
         "trust",
@@ -389,13 +400,13 @@
       "created_at": "2026-02-15T16:00:00Z"
     },
     {
-      "template_id": "nonprofit-letsatsi-borutho-trust-v1",
+      "template_id": "nonprofit-community-trust-2-v1",
       "name": "Nonprofit Community Trust Website",
-      "path": "nonprofit/letsatsi-borutho-trust",
+      "path": "nonprofit/community-trust-2",
       "industry": "nonprofit",
       "cta_intent": "contact",
       "design_style": "warm",
-      "figma_source": "https://www.figma.com/design/IJmiT1qtA0d7ET0R0VR5df",
+      "figma_source": "figma-mcp-design",
       "keywords": [
         "nonprofit",
         "trust",
@@ -409,7 +420,6 @@
         "food security",
         "enterprise development",
         "renewable energy",
-        "South Africa",
         "community development",
         "green",
         "warm"
@@ -417,13 +427,13 @@
       "created_at": "2026-02-15T16:00:00Z"
     },
     {
-      "template_id": "nonprofit-sibona-ilanga-trust-v1",
+      "template_id": "nonprofit-community-trust-3-v1",
       "name": "Nonprofit Community Trust Website",
-      "path": "nonprofit/sibona-ilanga-trust",
+      "path": "nonprofit/community-trust-3",
       "industry": "nonprofit",
       "cta_intent": "contact",
       "design_style": "warm",
-      "figma_source": "https://www.figma.com/design/H6UTqg48VYc2UvZRYUY3Ml",
+      "figma_source": "figma-mcp-design",
       "keywords": [
         "nonprofit",
         "trust",
@@ -436,19 +446,18 @@
         "community upliftment",
         "grants",
         "warm",
-        "earth tones",
-        "South Africa"
+        "earth tones"
       ],
       "created_at": "2026-02-15T16:00:00Z"
     },
     {
-      "template_id": "technology-Your Company Name-ai-page-builder-v1",
-      "name": "Your Company Name Your Company Name Landing Page",
-      "path": "technology/Your Company Name-ai-page-builder",
+      "template_id": "technology-ai-page-builder-v1",
+      "name": "AI Page Builder Landing Page",
+      "path": "technology/ai-page-builder",
       "industry": "technology",
       "cta_intent": "signup",
       "design_style": "modern",
-      "figma_source": "https://figma.com/design/mwrrjDHxuCCap3Sg2i5EXW/Your Company Name-AI-Page-Builder-Landing-Page?node-id=89:13",
+      "figma_source": "figma-mcp-design",
       "keywords": [
         "technology",
         "saas",
@@ -461,13 +470,13 @@
       "created_at": "2026-02-01T16:00:00Z"
     },
     {
-      "template_id": "technology-Your Company Name-v1",
-      "name": "Your Company Name SaaS Product Landing Page",
-      "path": "technology/Your Company Name",
+      "template_id": "technology-saas-product-v1",
+      "name": "SaaS Product Landing Page",
+      "path": "technology/saas-product",
       "industry": "technology",
       "cta_intent": "signup",
       "design_style": "modern",
-      "figma_source": "https://www.figma.com/design/W6Ngo1qUBpo5tkNlcD87fR",
+      "figma_source": "figma-mcp-design",
       "keywords": [
         "technology",
         "saas",
@@ -490,6 +499,7 @@
     }
   ],
   "industries": [
+    "general",
     "restaurant",
     "healthcare",
     "technology",
@@ -531,8 +541,9 @@
     "modern-industrial"
   ],
   "stats": {
-    "total_templates": 19,
+    "total_templates": 20,
     "by_industry": {
+      "general": 1,
       "education": 4,
       "energy": 1,
       "finance": 1,
@@ -545,7 +556,7 @@
     },
     "by_cta_intent": {
       "booking": 1,
-      "contact": 8,
+      "contact": 9,
       "lead_generation": 4,
       "learn_more": 2,
       "signup": 4
@@ -553,10 +564,11 @@
     "by_design_style": {
       "corporate": 3,
       "elegant": 3,
+      "minimal": 1,
       "modern": 9,
       "modern-industrial": 1,
       "warm": 3
     }
   },
-  "updated_at": "2026-02-15T16:51:19Z"
+  "updated_at": "2026-02-23T19:00:00Z"
 }

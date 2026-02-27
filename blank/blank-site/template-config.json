@@ -1,0 +1,163 @@
+{
+  "template_id": "blank-site-v1",
+  "placeholders": {
+    "{{BUSINESS_NAME}}": {
+      "default": "Your Business Name",
+      "description": "Your organization or brand name",
+      "required": true
+    },
+    "{{TAGLINE}}": {
+      "default": "Your tagline goes here",
+      "description": "Short tagline or slogan for the browser title",
+      "required": false
+    },
+    "{{HERO_HEADLINE}}": {
+      "default": "Your Headline Here",
+      "description": "Main hero headline — your primary value proposition",
+      "required": true
+    },
+    "{{HERO_DESCRIPTION}}": {
+      "default": "Describe what your business does and how it helps your customers. This is your elevator pitch.",
+      "description": "Hero sub-heading — brief description of your offering",
+      "required": true
+    },
+    "{{PRIMARY_CTA}}": {
+      "default": "Get Started",
+      "description": "Primary call-to-action button text",
+      "required": true
+    },
+    "{{CONTENT_HEADING}}": {
+      "default": "About Us",
+      "description": "Content section heading",
+      "required": false
+    },
+    "{{CONTENT_BODY}}": {
+      "default": "Tell your story here. Describe your mission, your team, or what makes you different. This section is a blank canvas for any content you need.",
+      "description": "Content section body text",
+      "required": false
+    },
+    "{{FEATURES_HEADING}}": {
+      "default": "What We Offer",
+      "description": "Features section heading",
+      "required": false
+    },
+    "{{FEATURE_1_TITLE}}": {
+      "default": "Feature One",
+      "description": "First feature card title",
+      "required": false
+    },
+    "{{FEATURE_1_DESCRIPTION}}": {
+      "default": "Describe your first key feature or service here.",
+      "description": "First feature card description",
+      "required": false
+    },
+    "{{FEATURE_2_TITLE}}": {
+      "default": "Feature Two",
+      "description": "Second feature card title",
+      "required": false
+    },
+    "{{FEATURE_2_DESCRIPTION}}": {
+      "default": "Describe your second key feature or service here.",
+      "description": "Second feature card description",
+      "required": false
+    },
+    "{{FEATURE_3_TITLE}}": {
+      "default": "Feature Three",
+      "description": "Third feature card title",
+      "required": false
+    },
+    "{{FEATURE_3_DESCRIPTION}}": {
+      "default": "Describe your third key feature or service here.",
+      "description": "Third feature card description",
+      "required": false
+    },
+    "{{CTA_HEADING}}": {
+      "default": "Ready to Get Started?",
+      "description": "Call-to-action section heading",
+      "required": false
+    },
+    "{{CTA_DESCRIPTION}}": {
+      "default": "Take the next step. Reach out today and let us help you achieve your goals.",
+      "description": "Call-to-action section description",
+      "required": false
+    }
+  },
+  "image_slots": [],
+  "sections": {
+    "hero": {
+      "required": true,
+      "customizable": true,
+      "description": "Hero section with headline, description, and primary CTA button"
+    },
+    "content": {
+      "required": false,
+      "customizable": true,
+      "description": "General content area for about text or any body content"
+    },
+    "features": {
+      "required": false,
+      "customizable": true,
+      "description": "Three-column feature cards grid"
+    },
+    "cta": {
+      "required": false,
+      "customizable": true,
+      "description": "Call-to-action section with heading, text, and button"
+    },
+    "footer": {
+      "required": true,
+      "customizable": true,
+      "description": "Simple footer with copyright text"
+    }
+  },
+  "css_variables": {
+    "--primary-color": {
+      "default": "#2563eb",
+      "description": "Primary brand color (blue)"
+    },
+    "--secondary-color": {
+      "default": "#64748b",
+      "description": "Secondary color (slate)"
+    },
+    "--accent-color": {
+      "default": "#0ea5e9",
+      "description": "Accent color (sky blue)"
+    },
+    "--background-color": {
+      "default": "#ffffff",
+      "description": "Page background color (white)"
+    },
+    "--surface-color": {
+      "default": "#f8fafc",
+      "description": "Surface/section background color (light grey)"
+    },
+    "--text-primary": {
+      "default": "#1e293b",
+      "description": "Primary text color (dark slate)"
+    },
+    "--text-secondary": {
+      "default": "#64748b",
+      "description": "Secondary text color (medium slate)"
+    },
+    "--border-color": {
+      "default": "#e2e8f0",
+      "description": "Border color (light grey)"
+    },
+    "--heading-font": {
+      "default": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "description": "Heading font family (system default)"
+    },
+    "--body-font": {
+      "default": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "description": "Body font family (system default)"
+    },
+    "--base-size": {
+      "default": "16px",
+      "description": "Base font size"
+    }
+  },
+  "responsive_breakpoints": {
+    "tablet": "1024px",
+    "mobile": "768px"
+  }
+}

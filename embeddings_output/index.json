@@ -2,100 +2,100 @@
   "embeddings_count": 19,
   "model": "amazon.titan-embed-text-v2:0",
   "dimension": 1024,
-  "generated_at": "2026-02-15T17:05:30.872795Z",
+  "generated_at": "2026-02-23T19:00:00Z",
   "templates": [
     {
-      "template_id": "healthcare-hasa-nhi-v1",
-      "name": "Healthcare NHI Information Portal",
+      "template_id": "healthcare-association-policy-v1",
+      "name": "Healthcare Policy Information Portal",
       "industry": "healthcare"
     },
     {
-      "template_id": "healthcare-hasa-gala-event-v1",
+      "template_id": "healthcare-association-gala-event-v1",
       "name": "Healthcare Gala Awards Event Page",
       "industry": "healthcare"
     },
     {
-      "template_id": "healthcare-hasa-main-site-v1",
+      "template_id": "healthcare-association-corporate-v1",
       "name": "Healthcare Association Corporate Website",
       "industry": "healthcare"
     },
     {
-      "template_id": "healthcare-hasa-conference-newsletter-v1",
+      "template_id": "healthcare-association-newsletter-v1",
       "name": "Healthcare Conference Newsletter Email Template",
       "industry": "healthcare"
     },
     {
-      "template_id": "technology-bbws-ai-page-builder-v1",
+      "template_id": "technology-ai-page-builder-v1",
       "name": "AI Page Builder Landing Page",
       "industry": "technology"
     },
     {
-      "template_id": "technology-chirrup-v1",
+      "template_id": "technology-saas-product-v1",
       "name": "SaaS Product Landing Page",
       "industry": "technology"
     },
     {
-      "template_id": "education-capaciti-phase1-v1",
-      "name": "Education Skills Development Landing Page (Phase 1)",
+      "template_id": "education-skills-training-corporate-v1",
+      "name": "Education Skills Development Landing Page (Corporate)",
       "industry": "education"
     },
     {
-      "template_id": "education-capaciti-blog-option-1-v1",
+      "template_id": "education-skills-training-blog-1-v1",
       "name": "Education Blog Listing - Grid Layout",
       "industry": "education"
     },
     {
-      "template_id": "education-capaciti-landing-page-v1",
+      "template_id": "education-skills-training-landing-v1",
       "name": "Education Skills Development Landing Page",
       "industry": "education"
     },
     {
-      "template_id": "education-capaciti-blog-option-2-v1",
+      "template_id": "education-skills-training-blog-2-v1",
       "name": "Education Blog Listing - Card Layout",
       "industry": "education"
     },
     {
-      "template_id": "nonprofit-amandla-omoya-trust-v1",
+      "template_id": "nonprofit-community-trust-1-v1",
       "name": "Nonprofit Trust Organization Website",
       "industry": "nonprofit"
     },
     {
-      "template_id": "nonprofit-sibona-ilanga-trust-v1",
+      "template_id": "nonprofit-community-trust-3-v1",
       "name": "Nonprofit Community Trust Website",
       "industry": "nonprofit"
     },
     {
-      "template_id": "nonprofit-letsatsi-borutho-trust-v1",
+      "template_id": "nonprofit-community-trust-2-v1",
       "name": "Nonprofit Community Trust Website",
       "industry": "nonprofit"
     },
     {
-      "template_id": "hospitality-experience-madikwe-v1",
+      "template_id": "hospitality-safari-lodge-v1",
       "name": "Safari Lodge Experience Website",
       "industry": "hospitality"
     },
     {
-      "template_id": "finance-denker-website-v1",
+      "template_id": "finance-investment-company-v1",
       "name": "Finance Investment Company Website",
       "industry": "finance"
     },
     {
-      "template_id": "manufacturing-fuse-factory-v1",
+      "template_id": "manufacturing-creative-factory-v1",
       "name": "Manufacturing Creative Factory Website",
       "industry": "manufacturing"
     },
     {
-      "template_id": "manufacturing-Manufacturing Company-v1",
+      "template_id": "manufacturing-industrial-company-v1",
       "name": "Manufacturing Industrial Company Website",
       "industry": "manufacturing"
     },
     {
-      "template_id": "energy-Energy Solutions-v1",
+      "template_id": "energy-solar-provider-v1",
       "name": "Solar Energy Solutions Website",
       "industry": "energy"
     },
     {
-      "template_id": "marketing-metis-v1",
+      "template_id": "marketing-digital-agency-v1",
       "name": "Digital Marketing Agency Website",
       "industry": "marketing"
     }

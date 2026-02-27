@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BigBeard Templates - Preview Gallery</title>
+    <title>Template Gallery - Preview Gallery</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f1117; color: #e0e0e0; padding: 2rem; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f1117; color: #e0e0e0; padding: 1rem 1.5rem; }
+        body.embedded h1, body.embedded .subtitle { display: none; }
         h1 { text-align: center; margin-bottom: 0.5rem; font-size: 2rem; color: #fff; }
         .subtitle { text-align: center; color: #888; margin-bottom: 2rem; font-size: 1.1rem; }
-        .filters { display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem; }
+        .filters { display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap; margin-bottom: 1.5rem; }
         .filter-btn { padding: 0.4rem 1rem; border: 1px solid #333; border-radius: 20px; background: transparent; color: #aaa; cursor: pointer; font-size: 0.85rem; transition: all 0.2s; }
         .filter-btn:hover, .filter-btn.active { background: #2563eb; color: #fff; border-color: #2563eb; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 1.5rem; max-width: 1400px; margin: 0 auto; }
-        .card { background: #1a1d27; border-radius: 12px; overflow: hidden; border: 1px solid #2a2d37; transition: transform 0.2s, border-color 0.2s; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.25rem; max-width: 1400px; margin: 0 auto; }
+        .card { position: relative; background: #1a1d27; border-radius: 12px; overflow: hidden; border: 2px solid #2a2d37; transition: transform 0.2s, border-color 0.2s; cursor: pointer; }
         .card:hover { transform: translateY(-4px); border-color: #2563eb; }
+        .card.selected { border-color: #22c55e; box-shadow: 0 0 0 1px rgba(34, 197, 94, 0.3); }
+        .card.selected:hover { border-color: #22c55e; }
+        .checkmark { position: absolute; top: 8px; right: 8px; z-index: 10; width: 28px; height: 28px; border-radius: 50%; background: #22c55e; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
+        .checkmark svg { width: 16px; height: 16px; fill: none; stroke: #fff; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
         .card-img { width: 100%; height: 200px; object-fit: cover; object-position: top; display: block; }
         .card-body { padding: 1rem; }
-        .card-body h3 { font-size: 1rem; margin: 0.5rem 0; }
-        .card-body h3 a { color: #fff; text-decoration: none; }
-        .card-body h3 a:hover { color: #60a5fa; }
+        .card-body h3 { font-size: 1rem; margin: 0.5rem 0; color: #fff; }
         .card-body p { font-size: 0.85rem; color: #888; line-height: 1.4; margin-bottom: 0.75rem; }
         .badge { display: inline-block; padding: 0.2rem 0.6rem; border-radius: 12px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; }
         .badge-education { background: #1e3a5f; color: #60a5fa; }
@@ -31,22 +34,28 @@
         .badge-marketing { background: #3f1a3f; color: #f472b6; }
         .badge-nonprofit { background: #1a3f1a; color: #4ade80; }
         .badge-energy { background: #3f3f1a; color: #facc15; }
+        .badge-general { background: #2a2d37; color: #e0e0e0; }
         .badge-style { background: #2a2d37; color: #aaa; margin-left: 0.3rem; }
         .card-meta { display: flex; align-items: center; gap: 0.75rem; font-size: 0.8rem; }
         .status { padding: 0.15rem 0.5rem; border-radius: 8px; font-size: 0.7rem; }
         .status-ok { background: #064e3b; color: #34d399; }
         .status-raw { background: #451a03; color: #fb923c; }
+        .blank-thumb { width: 100%; height: 200px; display: flex; align-items: center; justify-content: center; background: #f0f2f5; flex-direction: column; gap: 0.5rem; }
+        .blank-thumb .plus-icon { font-size: 3rem; color: #94a3b8; font-weight: 300; line-height: 1; }
+        .blank-thumb .blank-label { font-size: 0.9rem; color: #64748b; font-weight: 500; }
         .link-raw, .link-preview { color: #60a5fa; text-decoration: none; font-size: 0.8rem; }
         .link-raw:hover, .link-preview:hover { text-decoration: underline; }
+        body.embedded .card-meta { display: none; }
         .stats { text-align: center; color: #666; font-size: 0.9rem; margin-bottom: 1.5rem; }
     </style>
 </head>
 <body>
-    <h1>BigBeard Templates</h1>
-    <p class="subtitle">Preview Gallery - 19 Templates</p>
+    <h1>Template Gallery</h1>
+    <p class="subtitle">Preview Gallery - 20 Templates</p>
     <div class="filters">
-        <button class="filter-btn active" onclick="filterCards('all')">All (19)</button>
+        <button class="filter-btn active" onclick="filterCards('all')">All (20)</button>
         <button class="filter-btn" onclick="filterCards('education')">education (4)</button>
+        <button class="filter-btn" onclick="filterCards('general')">general (1)</button>
         <button class="filter-btn" onclick="filterCards('energy')">energy (1)</button>
         <button class="filter-btn" onclick="filterCards('finance')">finance (1)</button>
         <button class="filter-btn" onclick="filterCards('healthcare')">healthcare (4)</button>
@@ -57,337 +66,419 @@
         <button class="filter-btn" onclick="filterCards('technology')">technology (2)</button>
     </div>
     <div class="grid">
-        
-        <div class="card" data-industry="healthcare">
-            <a href="healthcare/hasa-conference-newsletter/preview.html" target="_blank">
-                <img src="healthcare/hasa-conference-newsletter/preview.png" alt="Healthcare Conference Newsletter Email Template" class="card-img">
-            </a>
+
+        <div class="card" data-industry="general" data-path="blank/blank-site" data-name="Blank Site">
+            <div class="blank-thumb">
+                <span class="plus-icon">+</span>
+                <span class="blank-label">Blank Site</span>
+            </div>
+            <div class="card-body">
+                <span class="badge badge-general">general</span>
+                <span class="badge badge-style">minimal</span>
+                <h3>Blank Site</h3>
+                <p>Start from scratch with a clean, minimal template. Includes hero, content, features, CTA, and footer sections.</p>
+                <div class="card-meta">
+                    <span class="status status-ok">Ready</span>
+                    <a href="blank/blank-site/index.html" target="_blank" class="link-raw">raw</a>
+                    <a href="blank/blank-site/preview.html" target="_blank" class="link-preview">preview</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-industry="healthcare" data-path="healthcare/association-newsletter" data-name="Healthcare Conference Newsletter Email Template">
+            <img src="healthcare/association-newsletter/preview.png" alt="Healthcare Conference Newsletter Email Template" class="card-img">
             <div class="card-body">
                 <span class="badge badge-healthcare">healthcare</span>
                 <span class="badge badge-style">modern</span>
-                <h3><a href="healthcare/hasa-conference-newsletter/preview.html" target="_blank">Healthcare Conference Newsletter Email Template</a></h3>
+                <h3>Healthcare Conference Newsletter Email Template</h3>
                 <p>A professional 680px-wide email newsletter template for a healthcare conference. Features a hero banner with grad</p>
                 <div class="card-meta">
                     <span class="status status-ok">Ready</span>
-                    <a href="healthcare/hasa-conference-newsletter/index.html" target="_blank" class="link-raw">raw</a>
-                    <a href="healthcare/hasa-conference-newsletter/preview.html" target="_blank" class="link-preview">preview</a>
+                    <a href="healthcare/association-newsletter/index.html" target="_blank" class="link-raw">raw</a>
+                    <a href="healthcare/association-newsletter/preview.html" target="_blank" class="link-preview">preview</a>
                 </div>
             </div>
         </div>
 
-        <div class="card" data-industry="healthcare">
-            <a href="healthcare/hasa-gala-event/preview.html" target="_blank">
-                <img src="healthcare/hasa-gala-event/preview.png" alt="Healthcare Gala Awards Event Page" class="card-img">
-            </a>
+        <div class="card" data-industry="healthcare" data-path="healthcare/association-gala-event" data-name="Healthcare Gala Awards Event Page">
+            <img src="healthcare/association-gala-event/preview.png" alt="Healthcare Gala Awards Event Page" class="card-img">
             <div class="card-body">
                 <span class="badge badge-healthcare">healthcare</span>
                 <span class="badge badge-style">elegant</span>
-                <h3><a href="healthcare/hasa-gala-event/preview.html" target="_blank">Healthcare Gala Awards Event Page</a></h3>
+                <h3>Healthcare Gala Awards Event Page</h3>
                 <p>An elegant dark-themed gala awards event page designed for healthcare conferences. Features a dramatic hero section with</p>
                 <div class="card-meta">
                     <span class="status status-ok">Ready</span>
-                    <a href="healthcare/hasa-gala-event/index.html" target="_blank" class="link-raw">raw</a>
-                    <a href="healthcare/hasa-gala-event/preview.html" target="_blank" class="link-preview">preview</a>
+                    <a href="healthcare/association-gala-event/index.html" target="_blank" class="link-raw">raw</a>
+                    <a href="healthcare/association-gala-event/preview.html" target="_blank" class="link-preview">preview</a>
                 </div>
             </div>
         </div>
 
-        <div class="card" data-industry="healthcare">
-            <a href="healthcare/hasa-main-site/preview.html" target="_blank">
-                <img src="healthcare/hasa-main-site/preview.png" alt="Healthcare Association Corporate Website" class="card-img">
-            </a>
+        <div class="card" data-industry="healthcare" data-path="healthcare/association-corporate" data-name="Healthcare Association Corporate Website">
+            <img src="healthcare/association-corporate/preview.png" alt="Healthcare Association Corporate Website" class="card-img">
             <div class="card-body">
                 <span class="badge badge-healthcare">healthcare</span>
                 <span class="badge badge-style">corporate</span>
-                <h3><a href="healthcare/hasa-main-site/preview.html" target="_blank">Healthcare Association Corporate Website</a></h3>
+                <h3>Healthcare Association Corporate Website</h3>
                 <p>A corporate healthcare association website template featuring a teal color scheme with red accents. Includes a utility b</p>
                 <div class="card-meta">
                     <span class="status status-ok">Ready</span>
-                    <a href="healthcare/hasa-main-site/index.html" target="_blank" class="link-raw">raw</a>
-                    <a href="healthcare/hasa-main-site/preview.html" target="_blank" class="link-preview">preview</a>
+                    <a href="healthcare/association-corporate/index.html" target="_blank" class="link-raw">raw</a>
+                    <a href="healthcare/association-corporate/preview.html" target="_blank" class="link-preview">preview</a>
                 </div>
             </div>
         </div>
 
-        <div class="card" data-industry="healthcare">
-            <a href="healthcare/hasa-nhi/preview.html" target="_blank">
-                <img src="healthcare/hasa-nhi/preview.png" alt="Healthcare NHI Information Portal" class="card-img">
-            </a>
+        <div class="card" data-industry="healthcare" data-path="healthcare/association-policy" data-name="Healthcare NHI Information Portal">
+            <img src="healthcare/association-policy/preview.png" alt="Healthcare NHI Information Portal" class="card-img">
             <div class="card-body">
                 <span class="badge badge-healthcare">healthcare</span>
                 <span class="badge badge-style">modern</span>
-                <h3><a href="healthcare/hasa-nhi/preview.html" target="_blank">Healthcare NHI Information Portal</a></h3>
+                <h3>Healthcare NHI Information Portal</h3>
                 <p>A modern healthcare information portal template designed for NHI (National Health Insurance) content. Features a teal-th</p>
                 <div class="card-meta">
                     <span class="status status-ok">Ready</span>
-                    <a href="healthcare/hasa-nhi/index.html" target="_blank" class="link-raw">raw</a>
-                    <a href="healthcare/hasa-nhi/preview.html" target="_blank" class="link-preview">preview</a>
+                    <a href="healthcare/association-policy/index.html" target="_blank" class="link-raw">raw</a>
+                    <a href="healthcare/association-policy/preview.html" target="_blank" class="link-preview">preview</a>
                 </div>
             </div>
         </div>
 
-        <div class="card" data-industry="technology">
-            <a href="technology/bbws-ai-page-builder/preview.html" target="_blank">
-                <img src="technology/bbws-ai-page-builder/preview.png" alt="AI Page Builder Landing Page" class="card-img">
-            </a>
+        <div class="card" data-industry="technology" data-path="technology/ai-page-builder" data-name="AI Page Builder Landing Page">
+            <img src="technology/ai-page-builder/preview.png" alt="AI Page Builder Landing Page" class="card-img">
             <div class="card-body">
                 <span class="badge badge-technology">technology</span>
                 <span class="badge badge-style">modern</span>
-                <h3><a href="technology/bbws-ai-page-builder/preview.html" target="_blank">AI Page Builder Landing Page</a></h3>
+                <h3>AI Page Builder Landing Page</h3>
                 <p>A modern technology landing page for AI-powered website builder. Features gradient buttons, feature cards, example promp</p>
                 <div class="card-meta">
                     <span class="status status-ok">Ready</span>
-                    <a href="technology/bbws-ai-page-builder/index.html" target="_blank" class="link-raw">raw</a>
-                    <a href="technology/bbws-ai-page-builder/preview.html" target="_blank" class="link-preview">preview</a>
+                    <a href="technology/ai-page-builder/index.html" target="_blank" class="link-raw">raw</a>
+                    <a href="technology/ai-page-builder/preview.html" target="_blank" class="link-preview">preview</a>
                 </div>
             </div>
         </div>
 
-        <div class="card" data-industry="technology">
-            <a href="technology/chirrup/preview.html" target="_blank">
-                <img src="technology/chirrup/preview.png" alt="SaaS Product Landing Page" class="card-img">
-            </a>
+        <div class="card" data-industry="technology" data-path="technology/saas-product" data-name="SaaS Product Landing Page">
+            <img src="technology/saas-product/preview.png" alt="SaaS Product Landing Page" class="card-img">
             <div class="card-body">
                 <span class="badge badge-technology">technology</span>
                 <span class="badge badge-style">modern</span>
-                <h3><a href="technology/chirrup/preview.html" target="_blank">SaaS Product Landing Page</a></h3>
+                <h3>SaaS Product Landing Page</h3>
                 <p>A modern technology SaaS product landing page template with a bold yellow and teal color scheme. Features an announcemen</p>
                 <div class="card-meta">
                     <span class="status status-ok">Ready</span>
-                    <a href="technology/chirrup/index.html" target="_blank" class="link-raw">raw</a>
-                    <a href="technology/chirrup/preview.html" target="_blank" class="link-preview">preview</a>
+                    <a href="technology/saas-product/index.html" target="_blank" class="link-raw">raw</a>
+                    <a href="technology/saas-product/preview.html" target="_blank" class="link-preview">preview</a>
                 </div>
             </div>
         </div>
 
-        <div class="card" data-industry="education">
-            <a href="education/capaciti-blog-option-1/preview.html" target="_blank">
-                <img src="education/capaciti-blog-option-1/preview.png" alt="Education Blog Listing - Grid Layout" class="card-img">
-            </a>
+        <div class="card" data-industry="education" data-path="education/skills-training-blog-1" data-name="Education Blog Listing - Grid Layout">
+            <img src="education/skills-training-blog-1/preview.png" alt="Education Blog Listing - Grid Layout" class="card-img">
             <div class="card-body">
                 <span class="badge badge-education">education</span>
                 <span class="badge badge-style">modern</span>
-                <h3><a href="education/capaciti-blog-option-1/preview.html" target="_blank">Education Blog Listing - Grid Layout</a></h3>
+                <h3>Education Blog Listing - Grid Layout</h3>
                 <p>A modern blog listing page with featured story banner and 3-column article grid. Each article card features an image, pu</p>
                 <div class="card-meta">
                     <span class="status status-ok">Ready</span>
-                    <a href="education/capaciti-blog-option-1/index.html" target="_blank" class="link-raw">raw</a>
-                    <a href="education/capaciti-blog-option-1/preview.html" target="_blank" class="link-preview">preview</a>
+                    <a href="education/skills-training-blog-1/index.html" target="_blank" class="link-raw">raw</a>
+                    <a href="education/skills-training-blog-1/preview.html" target="_blank" class="link-preview">preview</a>
                 </div>
             </div>
         </div>
 
-        <div class="card" data-industry="education">
-            <a href="education/capaciti-blog-option-2/preview.html" target="_blank">
-                <img src="education/capaciti-blog-option-2/preview.png" alt="Education Blog Listing - Card Layout" class="card-img">
-            </a>
+        <div class="card" data-industry="education" data-path="education/skills-training-blog-2" data-name="Education Blog Listing - Card Layout">
+            <img src="education/skills-training-blog-2/preview.png" alt="Education Blog Listing - Card Layout" class="card-img">
             <div class="card-body">
                 <span class="badge badge-education">education</span>
                 <span class="badge badge-style">modern</span>
-                <h3><a href="education/capaciti-blog-option-2/preview.html" target="_blank">Education Blog Listing - Card Layout</a></h3>
+                <h3>Education Blog Listing - Card Layout</h3>
                 <p>A modern blog listing page with split-layout featured story (text + image) and 4-column article card grid. Each card fea</p>
                 <div class="card-meta">
                     <span class="status status-ok">Ready</span>
-                    <a href="education/capaciti-blog-option-2/index.html" target="_blank" class="link-raw">raw</a>
-                    <a href="education/capaciti-blog-option-2/preview.html" target="_blank" class="link-preview">preview</a>
+                    <a href="education/skills-training-blog-2/index.html" target="_blank" class="link-raw">raw</a>
+                    <a href="education/skills-training-blog-2/preview.html" target="_blank" class="link-preview">preview</a>
                 </div>
             </div>
         </div>
 
-        <div class="card" data-industry="education">
-            <a href="education/capaciti-landing-page/preview.html" target="_blank">
-                <img src="education/capaciti-landing-page/preview.png" alt="Education Skills Development Landing Page" class="card-img">
-            </a>
+        <div class="card" data-industry="education" data-path="education/skills-training-landing" data-name="Education Skills Development Landing Page">
+            <img src="education/skills-training-landing/preview.png" alt="Education Skills Development Landing Page" class="card-img">
             <div class="card-body">
                 <span class="badge badge-education">education</span>
                 <span class="badge badge-style">modern</span>
-                <h3><a href="education/capaciti-landing-page/preview.html" target="_blank">Education Skills Development Landing Page</a></h3>
+                <h3>Education Skills Development Landing Page</h3>
                 <p>A modern education and skills development landing page with 12 sections including hero, program cards, impact statistics</p>
                 <div class="card-meta">
                     <span class="status status-ok">Ready</span>
-                    <a href="education/capaciti-landing-page/index.html" target="_blank" class="link-raw">raw</a>
-                    <a href="education/capaciti-landing-page/preview.html" target="_blank" class="link-preview">preview</a>
+                    <a href="education/skills-training-landing/index.html" target="_blank" class="link-raw">raw</a>
+                    <a href="education/skills-training-landing/preview.html" target="_blank" class="link-preview">preview</a>
                 </div>
             </div>
         </div>
 
-        <div class="card" data-industry="education">
-            <a href="education/capaciti-phase1/preview.html" target="_blank">
-                <img src="education/capaciti-phase1/preview.png" alt="Education Skills Development Landing Page (Phase 1)" class="card-img">
-            </a>
+        <div class="card" data-industry="education" data-path="education/skills-training-corporate" data-name="Education Skills Development Landing Page (Phase 1)">
+            <img src="education/skills-training-corporate/preview.png" alt="Education Skills Development Landing Page (Phase 1)" class="card-img">
             <div class="card-body">
                 <span class="badge badge-education">education</span>
                 <span class="badge badge-style">modern</span>
-                <h3><a href="education/capaciti-phase1/preview.html" target="_blank">Education Skills Development Landing Page (Phase 1)</a></h3>
+                <h3>Education Skills Development Landing Page (Phase 1)</h3>
                 <p>A modern education and skills development landing page featuring hero section, solution cards, impact statistics, timeli</p>
                 <div class="card-meta">
                     <span class="status status-ok">Ready</span>
-                    <a href="education/capaciti-phase1/index.html" target="_blank" class="link-raw">raw</a>
-                    <a href="education/capaciti-phase1/preview.html" target="_blank" class="link-preview">preview</a>
+                    <a href="education/skills-training-corporate/index.html" target="_blank" class="link-raw">raw</a>
+                    <a href="education/skills-training-corporate/preview.html" target="_blank" class="link-preview">preview</a>
                 </div>
             </div>
         </div>
 
-        <div class="card" data-industry="nonprofit">
-            <a href="nonprofit/amandla-omoya-trust/preview.html" target="_blank">
-                <img src="nonprofit/amandla-omoya-trust/preview.png" alt="Nonprofit Trust Organization Website" class="card-img">
-            </a>
+        <div class="card" data-industry="nonprofit" data-path="nonprofit/community-trust-1" data-name="Nonprofit Trust Organization Website">
+            <img src="nonprofit/community-trust-1/preview.png" alt="Nonprofit Trust Organization Website" class="card-img">
             <div class="card-body">
                 <span class="badge badge-nonprofit">nonprofit</span>
                 <span class="badge badge-style">warm</span>
-                <h3><a href="nonprofit/amandla-omoya-trust/preview.html" target="_blank">Nonprofit Trust Organization Website</a></h3>
+                <h3>Nonprofit Trust Organization Website</h3>
                 <p>A warm and professional nonprofit trust website template with 11 sections including hero banner slider, about/who we are</p>
                 <div class="card-meta">
                     <span class="status status-ok">Ready</span>
-                    <a href="nonprofit/amandla-omoya-trust/index.html" target="_blank" class="link-raw">raw</a>
-                    <a href="nonprofit/amandla-omoya-trust/preview.html" target="_blank" class="link-preview">preview</a>
+                    <a href="nonprofit/community-trust-1/index.html" target="_blank" class="link-raw">raw</a>
+                    <a href="nonprofit/community-trust-1/preview.html" target="_blank" class="link-preview">preview</a>
                 </div>
             </div>
         </div>
 
-        <div class="card" data-industry="nonprofit">
-            <a href="nonprofit/letsatsi-borutho-trust/preview.html" target="_blank">
-                <img src="nonprofit/letsatsi-borutho-trust/preview.png" alt="Nonprofit Community Trust Website" class="card-img">
-            </a>
+        <div class="card" data-industry="nonprofit" data-path="nonprofit/community-trust-2" data-name="Nonprofit Community Trust Website">
+            <img src="nonprofit/community-trust-2/preview.png" alt="Nonprofit Community Trust Website" class="card-img">
             <div class="card-body">
                 <span class="badge badge-nonprofit">nonprofit</span>
                 <span class="badge badge-style">warm</span>
-                <h3><a href="nonprofit/letsatsi-borutho-trust/preview.html" target="_blank">Nonprofit Community Trust Website</a></h3>
+                <h3>Nonprofit Community Trust Website</h3>
                 <p>A warm, community-focused nonprofit trust website template featuring a green and blue color scheme inspired by renewable</p>
                 <div class="card-meta">
                     <span class="status status-ok">Ready</span>
-                    <a href="nonprofit/letsatsi-borutho-trust/index.html" target="_blank" class="link-raw">raw</a>
-                    <a href="nonprofit/letsatsi-borutho-trust/preview.html" target="_blank" class="link-preview">preview</a>
+                    <a href="nonprofit/community-trust-2/index.html" target="_blank" class="link-raw">raw</a>
+                    <a href="nonprofit/community-trust-2/preview.html" target="_blank" class="link-preview">preview</a>
                 </div>
             </div>
         </div>
 
-        <div class="card" data-industry="nonprofit">
-            <a href="nonprofit/sibona-ilanga-trust/preview.html" target="_blank">
-                <img src="nonprofit/sibona-ilanga-trust/preview.png" alt="Nonprofit Community Trust Website" class="card-img">
-            </a>
+        <div class="card" data-industry="nonprofit" data-path="nonprofit/community-trust-3" data-name="Nonprofit Community Trust Website">
+            <img src="nonprofit/community-trust-3/preview.png" alt="Nonprofit Community Trust Website" class="card-img">
             <div class="card-body">
                 <span class="badge badge-nonprofit">nonprofit</span>
                 <span class="badge badge-style">warm</span>
-                <h3><a href="nonprofit/sibona-ilanga-trust/preview.html" target="_blank">Nonprofit Community Trust Website</a></h3>
+                <h3>Nonprofit Community Trust Website</h3>
                 <p>A warm nonprofit trust website featuring a hero banner slider with three images, about us section with rounded image, fo</p>
                 <div class="card-meta">
                     <span class="status status-ok">Ready</span>
-                    <a href="nonprofit/sibona-ilanga-trust/index.html" target="_blank" class="link-raw">raw</a>
-                    <a href="nonprofit/sibona-ilanga-trust/preview.html" target="_blank" class="link-preview">preview</a>
+                    <a href="nonprofit/community-trust-3/index.html" target="_blank" class="link-raw">raw</a>
+                    <a href="nonprofit/community-trust-3/preview.html" target="_blank" class="link-preview">preview</a>
                 </div>
             </div>
         </div>
 
-        <div class="card" data-industry="hospitality">
-            <a href="hospitality/experience-madikwe/preview.html" target="_blank">
-                <img src="hospitality/experience-madikwe/preview.png" alt="Safari Lodge Experience Website" class="card-img">
-            </a>
+        <div class="card" data-industry="hospitality" data-path="hospitality/safari-lodge" data-name="Safari Lodge Experience Website">
+            <img src="hospitality/safari-lodge/preview.png" alt="Safari Lodge Experience Website" class="card-img">
             <div class="card-body">
                 <span class="badge badge-hospitality">hospitality</span>
                 <span class="badge badge-style">elegant</span>
-                <h3><a href="hospitality/experience-madikwe/preview.html" target="_blank">Safari Lodge Experience Website</a></h3>
+                <h3>Safari Lodge Experience Website</h3>
                 <p>An elegant safari lodge website template featuring a full-viewport hero with nature overlay, about section with wildlife</p>
                 <div class="card-meta">
                     <span class="status status-ok">Ready</span>
-                    <a href="hospitality/experience-madikwe/index.html" target="_blank" class="link-raw">raw</a>
-                    <a href="hospitality/experience-madikwe/preview.html" target="_blank" class="link-preview">preview</a>
+                    <a href="hospitality/safari-lodge/index.html" target="_blank" class="link-raw">raw</a>
+                    <a href="hospitality/safari-lodge/preview.html" target="_blank" class="link-preview">preview</a>
                 </div>
             </div>
         </div>
 
-        <div class="card" data-industry="finance">
-            <a href="finance/denker-website/preview.html" target="_blank">
-                <img src="finance/denker-website/preview.png" alt="Finance Investment Company Website" class="card-img">
-            </a>
+        <div class="card" data-industry="finance" data-path="finance/investment-company" data-name="Finance Investment Company Website">
+            <img src="finance/investment-company/preview.png" alt="Finance Investment Company Website" class="card-img">
             <div class="card-body">
                 <span class="badge badge-finance">finance</span>
                 <span class="badge badge-style">corporate</span>
-                <h3><a href="finance/denker-website/preview.html" target="_blank">Finance Investment Company Website</a></h3>
+                <h3>Finance Investment Company Website</h3>
                 <p>A professional corporate finance and investment management website template with a bold orange accent on a clean white-a</p>
                 <div class="card-meta">
                     <span class="status status-ok">Ready</span>
-                    <a href="finance/denker-website/index.html" target="_blank" class="link-raw">raw</a>
-                    <a href="finance/denker-website/preview.html" target="_blank" class="link-preview">preview</a>
+                    <a href="finance/investment-company/index.html" target="_blank" class="link-raw">raw</a>
+                    <a href="finance/investment-company/preview.html" target="_blank" class="link-preview">preview</a>
                 </div>
             </div>
         </div>
 
-        <div class="card" data-industry="manufacturing">
-            <a href="manufacturing/forgeweld/preview.html" target="_blank">
-                <img src="manufacturing/forgeweld/preview.png" alt="Manufacturing Industrial Company Website" class="card-img">
-            </a>
+        <div class="card" data-industry="manufacturing" data-path="manufacturing/industrial-company" data-name="Manufacturing Industrial Company Website">
+            <img src="manufacturing/industrial-company/preview.png" alt="Manufacturing Industrial Company Website" class="card-img">
             <div class="card-body">
                 <span class="badge badge-manufacturing">manufacturing</span>
                 <span class="badge badge-style">corporate</span>
-                <h3><a href="manufacturing/forgeweld/preview.html" target="_blank">Manufacturing Industrial Company Website</a></h3>
+                <h3>Manufacturing Industrial Company Website</h3>
                 <p>A corporate manufacturing/industrial company website template with a bold red (#BF2120) and navy blue (#083A60) color sc</p>
                 <div class="card-meta">
                     <span class="status status-ok">Ready</span>
-                    <a href="manufacturing/forgeweld/index.html" target="_blank" class="link-raw">raw</a>
-                    <a href="manufacturing/forgeweld/preview.html" target="_blank" class="link-preview">preview</a>
+                    <a href="manufacturing/industrial-company/index.html" target="_blank" class="link-raw">raw</a>
+                    <a href="manufacturing/industrial-company/preview.html" target="_blank" class="link-preview">preview</a>
                 </div>
             </div>
         </div>
 
-        <div class="card" data-industry="manufacturing">
-            <a href="manufacturing/fuse-factory/preview.html" target="_blank">
-                <img src="manufacturing/fuse-factory/preview.png" alt="Manufacturing Creative Factory Website" class="card-img">
-            </a>
+        <div class="card" data-industry="manufacturing" data-path="manufacturing/creative-factory" data-name="Manufacturing Creative Factory Website">
+            <img src="manufacturing/creative-factory/preview.png" alt="Manufacturing Creative Factory Website" class="card-img">
             <div class="card-body">
                 <span class="badge badge-manufacturing">manufacturing</span>
                 <span class="badge badge-style">modern-industrial</span>
-                <h3><a href="manufacturing/fuse-factory/preview.html" target="_blank">Manufacturing Creative Factory Website</a></h3>
+                <h3>Manufacturing Creative Factory Website</h3>
                 <p>A modern dark-themed manufacturing/creative factory website with glassmorphism cards, gradient accents, and a bold indus</p>
                 <div class="card-meta">
                     <span class="status status-ok">Ready</span>
-                    <a href="manufacturing/fuse-factory/index.html" target="_blank" class="link-raw">raw</a>
-                    <a href="manufacturing/fuse-factory/preview.html" target="_blank" class="link-preview">preview</a>
+                    <a href="manufacturing/creative-factory/index.html" target="_blank" class="link-raw">raw</a>
+                    <a href="manufacturing/creative-factory/preview.html" target="_blank" class="link-preview">preview</a>
                 </div>
             </div>
         </div>
 
-        <div class="card" data-industry="energy">
-            <a href="energy/sosimple/preview.html" target="_blank">
-                <img src="energy/sosimple/preview.png" alt="Solar Energy Solutions Website" class="card-img">
-            </a>
+        <div class="card" data-industry="energy" data-path="energy/solar-provider" data-name="Solar Energy Solutions Website">
+            <img src="energy/solar-provider/preview.png" alt="Solar Energy Solutions Website" class="card-img">
             <div class="card-body">
                 <span class="badge badge-energy">energy</span>
                 <span class="badge badge-style">modern</span>
-                <h3><a href="energy/sosimple/preview.html" target="_blank">Solar Energy Solutions Website</a></h3>
+                <h3>Solar Energy Solutions Website</h3>
                 <p>A modern solar energy and renewable solutions website template with 10 sections including hero with blue gradient overla</p>
                 <div class="card-meta">
                     <span class="status status-ok">Ready</span>
-                    <a href="energy/sosimple/index.html" target="_blank" class="link-raw">raw</a>
-                    <a href="energy/sosimple/preview.html" target="_blank" class="link-preview">preview</a>
+                    <a href="energy/solar-provider/index.html" target="_blank" class="link-raw">raw</a>
+                    <a href="energy/solar-provider/preview.html" target="_blank" class="link-preview">preview</a>
                 </div>
             </div>
         </div>
 
-        <div class="card" data-industry="marketing">
-            <a href="marketing/metis/preview.html" target="_blank">
-                <img src="marketing/metis/preview.png" alt="Digital Marketing Agency Website" class="card-img">
-            </a>
+        <div class="card" data-industry="marketing" data-path="marketing/digital-agency" data-name="Digital Marketing Agency Website">
+            <img src="marketing/digital-agency/preview.png" alt="Digital Marketing Agency Website" class="card-img">
             <div class="card-body">
                 <span class="badge badge-marketing">marketing</span>
                 <span class="badge badge-style">elegant</span>
-                <h3><a href="marketing/metis/preview.html" target="_blank">Digital Marketing Agency Website</a></h3>
+                <h3>Digital Marketing Agency Website</h3>
                 <p>An elegant digital marketing agency website template featuring a gold-and-dark color scheme with Roboto typography. Incl</p>
                 <div class="card-meta">
                     <span class="status status-ok">Ready</span>
-                    <a href="marketing/metis/index.html" target="_blank" class="link-raw">raw</a>
-                    <a href="marketing/metis/preview.html" target="_blank" class="link-preview">preview</a>
+                    <a href="marketing/digital-agency/index.html" target="_blank" class="link-raw">raw</a>
+                    <a href="marketing/digital-agency/preview.html" target="_blank" class="link-preview">preview</a>
                 </div>
             </div>
         </div>
     </div>
     <script>
+        // Detect if embedded in an iframe
+        const isEmbedded = window.parent !== window;
+        if (isEmbedded) {
+            document.body.classList.add('embedded');
+        }
+
+        let selectedPath = null;
+
         function filterCards(industry) {
             document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
             event.target.classList.add('active');
             document.querySelectorAll('.card').forEach(card => {
                 card.style.display = (industry === 'all' || card.dataset.industry === industry) ? '' : 'none';
             });
+        }
+
+        function selectTemplate(cardEl) {
+            const path = cardEl.dataset.path;
+            const name = cardEl.dataset.name;
+            const industry = cardEl.dataset.industry;
+
+            // Toggle: deselect if already selected
+            if (selectedPath === path) {
+                selectedPath = null;
+                cardEl.classList.remove('selected');
+                removeCheckmark(cardEl);
+                // Notify parent of deselection
+                if (isEmbedded) {
+                    window.parent.postMessage({
+                        type: 'TEMPLATE_DESELECTED'
+                    }, '*');
+                }
+                return;
+            }
+
+            // Deselect previous
+            document.querySelectorAll('.card.selected').forEach(c => {
+                c.classList.remove('selected');
+                removeCheckmark(c);
+            });
+
+            // Select new
+            selectedPath = path;
+            cardEl.classList.add('selected');
+            addCheckmark(cardEl);
+
+            // Notify parent
+            if (isEmbedded) {
+                window.parent.postMessage({
+                    type: 'TEMPLATE_SELECTED',
+                    payload: {
+                        template_path: path,
+                        template_name: name,
+                        industry: industry
+                    }
+                }, '*');
+            }
+        }
+
+        function addCheckmark(cardEl) {
+            if (cardEl.querySelector('.checkmark')) return;
+            const mark = document.createElement('div');
+            mark.className = 'checkmark';
+            mark.innerHTML = '<svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>';
+            cardEl.appendChild(mark);
+        }
+
+        function removeCheckmark(cardEl) {
+            const mark = cardEl.querySelector('.checkmark');
+            if (mark) mark.remove();
+        }
+
+        // Listen for messages from parent (e.g., to set initial selection)
+        window.addEventListener('message', function(event) {
+            if (event.data && event.data.type === 'SELECT_TEMPLATE') {
+                const path = event.data.payload?.template_path;
+                if (path) {
+                    const card = document.querySelector(`.card[data-path="${path}"]`);
+                    if (card) selectTemplate(card);
+                }
+            }
+            if (event.data && event.data.type === 'DESELECT_ALL') {
+                selectedPath = null;
+                document.querySelectorAll('.card.selected').forEach(c => {
+                    c.classList.remove('selected');
+                    removeCheckmark(c);
+                });
+            }
+        });
+
+        // Attach click handlers to all cards immediately
+        // (script is at end of body, so DOM is already ready)
+        function attachCardHandlers() {
+            document.querySelectorAll('.card').forEach(card => {
+                if (card.dataset.clickBound) return;
+                card.dataset.clickBound = 'true';
+                card.addEventListener('click', function(e) {
+                    // Don't intercept link clicks in non-embedded mode
+                    if (!isEmbedded && e.target.closest('a')) return;
+                    e.preventDefault();
+                    selectTemplate(this);
+                });
+            });
+        }
+        attachCardHandlers();
+        // Fallback in case DOM wasn't fully ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', attachCardHandlers);
         }
     </script>
 </body>
